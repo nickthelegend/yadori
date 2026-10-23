@@ -16,45 +16,38 @@
         "handTracking": true,
         "anchors": true,
         "planeDetection": true,
-        "meshDetection": true
+        "meshDetection": true,
+        "gazeTracking": true
       }
     },
     "input": {
-      "canvasPointerEvents": true
+      "canvasPointerEvents": false
     },
     "render": {
-      "fov": 70,
-      "near": 0.001,
-      "far": 200,
+      "fov": 60,
+      "near": 0.01,
+      "far": 60,
       "camera": {
-        "position": [
-          0,
-          1.6,
-          1
-        ],
-        "lookAt": [
-          0,
-          0.95,
-          -1.95
-        ]
+        "position": [0, 1.55, 1.6],
+        "lookAt": [0, 0.85, -2.4]
       }
     },
     "features": {
       "locomotion": false,
-      "grabbing": true,
+      "grabbing": false,
       "physics": false,
       "sceneUnderstanding": true,
       "environmentRaycast": false,
-      "spatialUI": {
-        "kit": "horizon",
-        "preferredColorScheme": "dark"
-      }
+      "spatialUI": false
     }
   },
   "dev": {
     "emulator": {
       "device": "metaQuest3",
-      "environment": "sunlit_living_room"
+      "environment": "sunlit_living_room",
+      "injectOnBuild": true,
+      "activation": "always",
+      "userAgentException": { "source": "OculusBrowser|Quest|Pico|Wolvic" }
     }
   }
 }

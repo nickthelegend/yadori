@@ -14,7 +14,7 @@ export const GESTURE = {
   contactDepth: 0.015, // a fingertip within 1.5 cm of the face surface counts as touching
   pokeApproach: 0.15, // m/s toward the face when it crosses into contact
   flickSpeed: 1.2, // m/s fingertip speed for a flick
-  flickReach: 1.5, // flick counts within 1.5 face radii
+  flickReach: 1.2, // flick counts within 1.2 face radii
   petMinSpeed: 0.04,
   petMaxSpeed: 0.9,
   petPath: 0.2, // metres of stroking needed
@@ -85,7 +85,7 @@ export class GestureTracker {
         vTan > 2 * Math.abs(vz) &&
         cur.r <= R * GESTURE.flickReach &&
         cur.dz > -0.03 &&
-        cur.dz < 0.12
+        cur.dz < 0.08
       ) {
         out = this.fire('flick', t);
       }

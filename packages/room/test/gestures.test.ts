@@ -31,6 +31,12 @@ describe('GestureTracker (hands)', () => {
     for (let i = 0; i <= 8; i++) s.push([i / 72, [-0.12 + i * 0.03, 1, -1 + 0.03], null]); // 2.16 m/s
     expect(run(tr, s)).toEqual(['flick']);
   });
+  it('does not flick when the hand sweeps past 10 cm in front of the face', () => {
+    const tr = new GestureTracker(face);
+    const s: [number, Vec3, Vec3 | null][] = [];
+    for (let i = 0; i <= 8; i++) s.push([i / 72, [-0.12 + i * 0.03, 1, -1 + 0.1], null]);
+    expect(run(tr, s)).toEqual([]);
+  });
   it('detects a pet: slow back-and-forth stroke by the palm, then cools down', () => {
     const tr = new GestureTracker(face);
     const s: [number, Vec3, Vec3 | null][] = [];

@@ -170,7 +170,7 @@ export function buildDen(T: T3, variant: DenVariant = 'den'): Den {
   right.userData.xrPlane = 'wall';
   right.name = 'wall-right';
   root.add(right);
-  const ceiling = new T.Mesh(new T.PlaneGeometry(W, D), mat('ceiling', 0xf6f1e8, { roughness: 1 }));
+  const ceiling = new T.Mesh(new T.PlaneGeometry(W, D), mat('ceiling', 0xf6f1e8, { roughness: 1, emissive: 0xf3ead9, emissiveIntensity: 0.55 }));
   ceiling.rotation.x = Math.PI / 2;
   ceiling.position.set(0, H, Z0 + D / 2);
   ceiling.userData.xrPlane = 'ceiling';

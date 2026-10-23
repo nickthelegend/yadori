@@ -50,7 +50,7 @@ export interface WakeResult {
 }
 
 export type ChatEvent =
-  | { type: 'line'; speaker: string; text: string; source: string }
+  | { type: 'line'; speaker: string; text: string; source: string; to?: string }
   | { type: 'tool'; speaker: string; name: string; args: unknown }
   | { type: 'emote'; speaker: string; expression: string }
   | { type: 'glance'; speaker: string; target: string }

@@ -800,7 +800,7 @@ export class YadoriSystem extends createSystem({
     switch (e.type) {
       case 'line': {
         const sp = this.spirits.get(e.speaker) ?? asked;
-        const to = sp === asked ? null : asked.id;
+        const to = e.to ?? (sp === asked ? null : asked.id);
         void this.queueLine(sp, e.text, e.source || 'Muse Spark', to);
         break;
       }
@@ -838,19 +838,23 @@ export class YadoriSystem extends createSystem({
     this.syncCards();
   }
 
-  private forget(id: string): void {
+  private removeRuntime(id: string): void {
     const s = this.spirits.get(id);
+    if (!s) return;
+    this.spirits.delete(id);
+    if (s.voiceAudio.isPlaying) s.voiceAudio.stop();
+    s.bubble.dispose();
+    s.srcChip.dispose();
+    s.faceMat.dispose();
+    s.sheetTex?.forEach((t) => t.dispose());
+    s.entity.dispose();
+  }
+
+  private forget(id: string): void {
     deleteSpirit(id);
     void gatewayForget(id);
     this.pendingSaved = this.pendingSaved.filter((p) => p.spiritId !== id);
-    if (s) {
-      this.spirits.delete(id);
-      s.bubble.dispose();
-      s.srcChip.dispose();
-      s.faceMat.dispose();
-      s.sheetTex?.forEach((t) => t.dispose());
-      s.entity.dispose();
-    }
+    this.removeRuntime(id);
     this.frameSpirits();
     this.syncCards();
     this.updateHint();
@@ -925,6 +929,12 @@ export class YadoriSystem extends createSystem({
     const xr = this.renderer.xr.isPresenting;
     if (xr !== this.xrActive) {
       this.xrActive = xr;
+      // a different room: put this room's spirits away (they stay saved) and re-find the
+      // new room's own spirits once its furniture is detected
+      for (const id of [...this.spirits.keys()]) this.removeRuntime(id);
+      this.roomKey = '';
+      this.pendingSaved = [];
+      this.waking = null;
       this.den.root.visible = !xr;
       this.updateModeLabel();
       this.hoverTarget.fill(null);

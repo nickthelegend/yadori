@@ -32,7 +32,7 @@ export interface FaceParams {
 }
 
 export const EXPRESSION_PARAMS: Record<Expression, Partial<FaceParams>> = {
-  neutral: { eyeOpen: 1, eyeSmile: 0, pupil: 1, browY: 0, browTilt: 0, smile: 0.25, blush: 0.25 },
+  neutral: { eyeOpen: 1, eyeSmile: 0, pupil: 1, browY: 0, browTilt: 0, smile: 0.25, blush: 0.45 },
   happy: { eyeOpen: 1, eyeSmile: 0.85, pupil: 1, browY: 0.35, browTilt: -0.15, smile: 1, blush: 0.9 },
   surprised: { eyeOpen: 1.25, eyeSmile: 0, pupil: 0.65, browY: 1, browTilt: -0.3, smile: 0, blush: 0.2 },
   grumpy: { eyeOpen: 0.62, eyeSmile: 0, pupil: 1.05, browY: -0.6, browTilt: 1, smile: -0.8, blush: 0 },

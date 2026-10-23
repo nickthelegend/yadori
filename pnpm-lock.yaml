@@ -52,6 +52,15 @@ importers:
         specifier: ^7.1.4
         version: 7.3.7(@types/node@26.6.5)
 
+  packages/rig:
+    devDependencies:
+      typescript:
+        specifier: ^5.5.0
+        version: 5.9.3
+      vitest:
+        specifier: ^3.2.4
+        version: 3.2.7(@types/node@26.6.5)
+
   packages/room:
     devDependencies:
       typescript:

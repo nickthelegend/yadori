@@ -1,0 +1,23 @@
+{
+  "name": "@yadori/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Yadori gateway: the only holder of MODEL_API_KEY. Muse Spark personas + tools, Muse Image sheets, Muse Voice Transcribe, SAM 3.1, MMS-TTS, spirit store, budget cap, MCP",
+  "license": "MIT",
+  "bin": { "yadori-mcp": "./src/mcp.ts" },
+  "scripts": {
+    "start": "node src/main.ts",
+    "mcp": "node src/mcp.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@yadori/room": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.5.0",
+    "vitest": "^3.2.4"
+  }
+}

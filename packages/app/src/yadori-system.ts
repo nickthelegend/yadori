@@ -154,9 +154,10 @@ export class YadoriSystem extends createSystem({
   private rematchAt = 0;
   private lineQueue: Promise<void> = Promise.resolve();
   private session: XRSession | null = null;
-  // per hand (0 left, 1 right) ray hover state in XR; index 2 = browser pointer
-  private hoverTarget: (Target | null)[] = [null, null, null];
-  private hoverFace: (SpiritRT | null)[] = [null, null, null];
+  // ray hover state: 0 left hand, 1 right hand, 2 browser pointer, 3 gaze (Meta VR Glasses)
+  private hoverTarget: (Target | null)[] = [null, null, null, null];
+  private hoverFace: (SpiritRT | null)[] = [null, null, null, null];
+  private gazeSeen = false;
   // browser pointer
   private pointerNdc: { x: number; y: number } | null = null;
   private pointerDown: { x: number; y: number; t: number; target: Target | null; face: SpiritRT | null; orbit: boolean } | null = null;
@@ -179,8 +180,8 @@ export class YadoriSystem extends createSystem({
   private palms: (Vector3 | null)[] = [new Vector3(), new Vector3()];
   private textureLoader = new TextureLoader();
   private faceGeo = new PlaneGeometry(1, 1);
-  private onSessionSelectStart = (e: XRInputSourceEvent) => this.handleSelect(e.inputSource.handedness, true);
-  private onSessionSelectEnd = (e: XRInputSourceEvent) => this.handleSelect(e.inputSource.handedness, false);
+  private onSessionSelectStart = (e: XRInputSourceEvent) => this.handleSelect(e.inputSource, true);
+  private onSessionSelectEnd = (e: XRInputSourceEvent) => this.handleSelect(e.inputSource, false);
 
   init(): void {
     this.emulator = emulatorPresent();
@@ -499,8 +500,11 @@ export class YadoriSystem extends createSystem({
     if (pd.target && moved <= 6) void this.wakeTarget(pd.target);
   }
 
-  private handleSelect(handedness: XRHandedness, start: boolean): void {
-    const h = handedness === 'left' ? 0 : handedness === 'right' ? 1 : -1;
+  private handleSelect(src: XRInputSource, start: boolean): void {
+    // On Meta VR Glasses the gaze ray picks and a pinch from either hand selects: the
+    // select event then comes from the gaze source (or the hand while gaze is tracked).
+    let h = src.targetRayMode === 'gaze' ? 3 : src.handedness === 'left' ? 0 : src.handedness === 'right' ? 1 : -1;
+    if (h !== 3 && this.gazeSeen && !this.hoverTarget[h] && !this.hoverFace[h] && (this.hoverTarget[3] || this.hoverFace[3])) h = 3;
     if (h < 0 || !start) return;
     this.voice.unlock();
     const face = this.hoverFace[h];
@@ -972,6 +976,26 @@ export class YadoriSystem extends createSystem({
           this.tips[h] = this.tips[h] ?? new Vector3();
         }
       }
+      // gaze (Meta VR Glasses): the eye ray from the frame
+      this.hoverFace[3] = null;
+      this.hoverTarget[3] = null;
+      const frame = this.xrFrame;
+      const ref = this.renderer.xr.getReferenceSpace();
+      const session = this.world.session;
+      if (frame && ref && session) {
+        for (const src of session.inputSources) {
+          if (src.targetRayMode !== 'gaze') continue;
+          const pose = frame.getPose(src.targetRaySpace, ref);
+          if (!pose) continue;
+          this.gazeSeen = true;
+          const m = this.tmpM.fromArray(pose.transform.matrix).premultiply(this.player.matrixWorld);
+          this.rayO.setFromMatrixPosition(m);
+          this.rayD.set(0, 0, -1).transformDirection(m);
+          this.hoverFace[3] = this.pickFace(this.rayO, this.rayD);
+          this.hoverTarget[3] = this.hoverFace[3] ? null : this.pickTarget(this.rayO, this.rayD);
+          hovered = hovered ?? this.hoverTarget[3];
+        }
+      }
     } else if (this.pointerNdc && !this.pointerDown?.orbit) {
       this.pointerRay(this.pointerNdc.x, this.pointerNdc.y);
       this.hoverFace[2] = this.pickFace(this.rayO, this.rayD);
@@ -1220,6 +1244,7 @@ export class YadoriSystem extends createSystem({
       voiceMode: (): VoiceMode => this.voice.nextMode(),
       targets: () => this.targets.map((t) => ({ id: t.id, label: t.label, center: t.box.center, dims: t.dims })),
       waking: () => (this.waking ? this.waking.target.id : null),
+      hover: () => ({ targets: this.hoverTarget.map((t) => t?.label ?? null), faces: this.hoverFace.map((f) => f?.name ?? null), gaze: this.gazeSeen }),
       spirits: () =>
         [...this.spirits.values()].map((s) => ({
           id: s.id,

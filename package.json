@@ -1,0 +1,18 @@
+{
+  "name": "yadori",
+  "private": true,
+  "type": "module",
+  "description": "Yadori: pinch a real thing in your room and it wakes up (Quest 3/3S WebXR + Meta Model API)",
+  "license": "MIT",
+  "packageManager": "pnpm@10.29.2",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "test": "pnpm -r --if-present test",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "build": "pnpm -r --if-present build",
+    "gateway": "pnpm --filter @yadori/server start",
+    "dev": "pnpm --filter app dev"
+  }
+}

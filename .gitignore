@@ -1,0 +1,21 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.DS_Store
+*.log
+
+# secrets: MODEL_API_KEY lives here, never committed
+.env
+.env.*
+!.env.example
+
+# downloaded model weights (MMS-TTS is CC-BY-NC-4.0, fetched at setup)
+models/
+
+# runtime data written by the gateway
+data/
+deployments/runs/
+
+# IWSDK runtime state
+.iwsdk/
+.mcp.json

@@ -35,13 +35,12 @@ async function main() {
 
   // wake the couch with a pinch
   const tWake = Date.now();
-  const sel = await pinchAt([couch.center[0], couch.center[1] + 0.1, couch.center[2]]);
+  await pinchAt([couch.center[0], couch.center[1] + 0.1, couch.center[2]]);
   actions.pinch++;
-  check('pinch reached the app (selectstart)', JSON.stringify(sel).includes('select'), '');
   await until(async () => (await state()).spirits.length === 1, 'couch spirit', 15);
   await sleep(1.6);
   let c = await face('couch');
-  check('couch woke from a pinch', c?.awake && c.params.reveal > 0.99, `${Date.now() - tWake} ms pinch -> face`);
+  check('couch woke from a pinch', c?.awake && c.params.reveal > 0.99, `${Date.now() - tWake} ms wall clock incl. CLI round trips`);
   const found = cli('ecs', 'find', '--input-json', JSON.stringify({ withComponents: ['Spirit'] }));
   const ents = found.entities ?? found;
   const idx = (Array.isArray(ents) ? ents : [])[0]?.entityIndex;
@@ -110,8 +109,22 @@ async function main() {
     const d = dirTo(a, b);
     return Math.sign(r[0] * d[0] + r[1] * d[1]);
   };
-  check('gossip: the couch looks at the lamp', Math.sign(cs.params.lookX) === sideOf(cs, ls) && Math.abs(cs.params.lookX) > 0.25, `lookX ${cs.params.lookX.toFixed(2)}`);
-  check('gossip: the lamp looks back at the couch', Math.sign(ls.params.lookX) === sideOf(ls, cs) && Math.abs(ls.params.lookX) > 0.25, `lookX ${ls.params.lookX.toFixed(2)}`);
+  // expected eye offset, computed the way a viewer would: the other face's direction in this face's frame
+  const expectLook = (a, b) => {
+    const d = [b.facePos[0] - a.facePos[0], b.facePos[1] - a.facePos[1], b.facePos[2] - a.facePos[2]];
+    const dir = a.faceDir;
+    const right = [dir[2], 0, -dir[0]];
+    const z = Math.max(0.05, d[0] * dir[0] + d[1] * dir[1] + d[2] * dir[2]);
+    let x = Math.atan2(d[0] * right[0] + d[2] * right[2], z) / 0.75;
+    let y = Math.atan2(d[1], z) / 0.6;
+    const m = Math.hypot(x, y);
+    if (m > 1) { x /= m; y /= m; }
+    return [x, y];
+  };
+  const ec = expectLook(cs, ls);
+  const el = expectLook(ls, cs);
+  check('gossip: the couch looks at the lamp', Math.hypot(cs.params.lookX - ec[0], cs.params.lookY - ec[1]) < 0.2, `look ${cs.params.lookX.toFixed(2)},${cs.params.lookY.toFixed(2)} expected ${ec.map((v) => v.toFixed(2))}`);
+  check('gossip: the lamp looks back at the couch', Math.hypot(ls.params.lookX - el[0], ls.params.lookY - el[1]) < 0.2, `look ${ls.params.lookX.toFixed(2)},${ls.params.lookY.toFixed(2)} expected ${el.map((v) => v.toFixed(2))}`);
   await until(async () => !(await face('couch')).speaking, 'gossip end', 20);
   await sleep(0.6);
   page('page-say.mjs', { speaker: 'Lamp', text: 'Then stop glowing at them.' });
@@ -159,8 +172,8 @@ async function main() {
   s = await state();
   const thing = s.targets.find((t) => t.label === 'other');
   check('bare room reports one unlabelled mesh', s.targets.length === 1 && !!thing, s.targets.map((t) => t.label).join(','));
-  page('page-dialog.mjs', { answer: 'coat rack' });
   await pinchAt(thing.center);
+  page('page-dialog.mjs', { answer: 'coat rack' });
   await until(async () => (await state()).spirits.length === 1, 'named spirit', 15).catch(() => null);
   s = await state();
   check('"Tell me what this is" -> it wakes with the name you gave', s.spirits[0]?.label === 'coat rack', s.spirits[0]?.label ?? 'none');

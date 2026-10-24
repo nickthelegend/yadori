@@ -1,0 +1,48 @@
+{
+  "profile": "metaVRGlasses",
+  "pass": 8,
+  "fail": 0,
+  "results": [
+    {
+      "name": "glasses profile active with gaze",
+      "ok": true,
+      "detail": "Meta VR Glasses"
+    },
+    {
+      "name": "gaze hovers the couch (outline + chip)",
+      "ok": true,
+      "detail": "[null,null,null,\"couch\"]"
+    },
+    {
+      "name": "gaze + pinch wakes the couch",
+      "ok": true,
+      "detail": "couch"
+    },
+    {
+      "name": "inside the glasses view: face top-left",
+      "ok": true,
+      "detail": "h -3.1°, v 2.6°"
+    },
+    {
+      "name": "inside the glasses view: face bottom-right",
+      "ok": true,
+      "detail": "h 3.0°, v -3.3°"
+    },
+    {
+      "name": "inside the glasses view: bubble top (est.)",
+      "ok": true,
+      "detail": "h 0.0°, v 10.9°"
+    },
+    {
+      "name": "with gaze disconnected, the hand ray wakes the lamp",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no console errors",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "at": "2026-10-24T00:46:59.030Z"
+}

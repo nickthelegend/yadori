@@ -1,0 +1,67 @@
+{
+  "pass": 12,
+  "fail": 0,
+  "results": [
+    {
+      "name": "landing 375px: no horizontal scroll",
+      "ok": true,
+      "detail": "375 <= 375"
+    },
+    {
+      "name": "landing 375px: hero + images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "landing respects reduced motion (card does not flip)",
+      "ok": true,
+      "detail": "none"
+    },
+    {
+      "name": "landing 375px: no console errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "landing 1280px: no horizontal scroll",
+      "ok": true,
+      "detail": "1280 <= 1280"
+    },
+    {
+      "name": "landing 1280px: hero + images load",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "landing 1280px: no console errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "app 375px: no horizontal scroll",
+      "ok": true,
+      "detail": "375 <= 375"
+    },
+    {
+      "name": "app on a phone: diorama only (no emulator panel, no XR button)",
+      "ok": true,
+      "detail": "{\"iwer\":false,\"xrButton\":false}"
+    },
+    {
+      "name": "app 375px: tapping the couch wakes it",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "app 375px: compose strip fits the screen",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "app 375px: no console errors",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "at": "2026-10-24T00:43:15.993Z"
+}

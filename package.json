@@ -13,6 +13,10 @@
     "typecheck": "pnpm -r --if-present typecheck",
     "build": "pnpm -r --if-present build",
     "gateway": "pnpm --filter @yadori/server start",
-    "dev": "pnpm --filter app dev"
+    "dev": "pnpm --filter app dev",
+    "e2e:responsive": "node e2e/responsive.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.64.1"
   }
 }

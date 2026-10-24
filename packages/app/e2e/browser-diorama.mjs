@@ -1,5 +1,7 @@
 // Browser mode (no headset): wake two pieces of furniture, poke/pet/flick, puppet lines,
 // gossip, reload and re-match. Prints a PASS/FAIL list.
+import { mkdirSync, writeFileSync } from 'node:fs';
+import { join } from 'node:path';
 import { helpers } from './lib.mjs';
 
 export default async function run(ctx) {
@@ -99,5 +101,13 @@ async function body(ctx, h) {
   const back = await h.spirits();
   check('reload re-matches both spirits', back.length === 2 && back.every((s) => s.awake), back.map((s) => `${s.name}:${s.lines}`).join(','));
   const failed = h.results.filter((r) => !r.ok);
-  return { pass: h.results.length - failed.length, fail: failed.length, results: h.results };
+  const perf = await f.evaluate(async () => {
+    window.__perf.start(600);
+    while (window.__perf.progress().done < 600) await new Promise((r) => setTimeout(r, 250));
+    return window.__perf.result();
+  });
+  const out = { mode: 'browser diorama (no headset), real mouse + keyboard', pass: h.results.length - failed.length, fail: failed.length, results: h.results, perf, at: new Date().toISOString() };
+  mkdirSync(join(ctx.workspaceRoot, 'e2e', 'results'), { recursive: true });
+  writeFileSync(join(ctx.workspaceRoot, 'e2e', 'results', 'browser-diorama.json'), JSON.stringify(out, null, 2));
+  return out;
 }

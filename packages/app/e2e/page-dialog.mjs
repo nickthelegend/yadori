@@ -1,7 +1,10 @@
 import { args } from './page-args.mjs';
-// Answer the next "Tell me what this is" prompt with {answer}.
-export default async function run({ page, workspaceRoot }) {
+// Answer the "Tell me what this is" form with {answer} (real typing and a click).
+export default async function run({ frame, workspaceRoot }) {
   const a = args(workspaceRoot);
-  page.once('dialog', (d) => void d.accept(a.answer));
+  const input = frame.locator('#y-name');
+  await input.waitFor({ timeout: 10000 });
+  await input.pressSequentially(a.answer, { delay: 15 });
+  await frame.locator('#y-naming button[type=submit]').click();
   return true;
 }

@@ -90,6 +90,8 @@ export class Overlay {
   /** Emulated XR: smaller cards so the room stays visible. */
   setCompact(v: boolean): void {
     this.root.classList.toggle('compact', v);
+    // no "Enter mixed reality" while already in it
+    this.xrBtn.style.visibility = v ? 'hidden' : '';
   }
 
   setMode(text: string): void {

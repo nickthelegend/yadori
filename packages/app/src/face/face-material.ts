@@ -43,7 +43,13 @@ float sdCurve(vec2 p, float w, float c) {
 float fill(float d) { float aa = fwidth(d) * 1.2; return 1.0 - smoothstep(-aa, aa, d); }
 float stroke(float d, float w) { return fill(abs(d) - w); }
 
-vec4 over(vec4 dst, vec3 c, float a) { return vec4(mix(dst.rgb, c, a), dst.a + a * (1.0 - dst.a)); }
+// straight-alpha "over": the output colour stays un-premultiplied, so soft edges (cheeks,
+// hover glow, anti-aliased outlines) never darken against the furniture behind them
+vec4 over(vec4 dst, vec3 c, float a) {
+  float outA = a + dst.a * (1.0 - a);
+  vec3 rgb = outA > 1e-4 ? (c * a + dst.rgb * dst.a * (1.0 - a)) / outA : c;
+  return vec4(rgb, outA);
+}
 
 vec4 eye(vec2 p, float side, vec4 col) {
   vec2 c = vec2(0.36 * side, 0.12);

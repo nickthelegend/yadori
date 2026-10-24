@@ -102,13 +102,14 @@ function buildDen(T, variant = "den") {
   floor.name = "floor";
   root.add(floor);
   const boardGeo = new T.PlaneGeometry(0.012, D);
-  for (let x = -W / 2 + 0.18; x < W / 2; x += 0.18) {
-    const b = new T.Mesh(boardGeo, mat("floorDark", PALETTE.floorDark, { roughness: 0.7 }));
-    b.rotation.x = -Math.PI / 2;
-    b.position.set(x, 8e-4, Z0 + D / 2);
-    b.receiveShadow = true;
-    root.add(b);
-  }
+  boardGeo.rotateX(-Math.PI / 2);
+  const seams = [];
+  for (let x = -W / 2 + 0.18; x < W / 2; x += 0.18) seams.push(x);
+  const boards = new T.InstancedMesh(boardGeo, mat("floorDark", PALETTE.floorDark, { roughness: 0.7 }), seams.length);
+  const m4 = new T.Matrix4();
+  seams.forEach((x, i) => boards.setMatrixAt(i, m4.makeTranslation(x, 8e-4, Z0 + D / 2)));
+  boards.receiveShadow = true;
+  root.add(boards);
   const wallMat = mat("wall", PALETTE.wall, { roughness: 0.95 });
   const back = new T.Mesh(new T.PlaneGeometry(W, H), wallMat);
   back.position.set(0, H / 2, Z0);
@@ -225,6 +226,7 @@ function buildDen(T, variant = "den") {
     seed = seed * 16807 % 2147483647;
     return seed / 2147483647;
   };
+  const leafMats = [[], []];
   for (let s = 0; s < 7; s++) {
     const a = s / 7 * Math.PI * 2 + rnd() * 0.5;
     const tilt = 0.12 + rnd() * 0.22;
@@ -234,16 +236,22 @@ function buildDen(T, variant = "den") {
     stemMesh.position.set(Math.sin(a) * tilt * len * 0.5, 0.4 + len / 2 * Math.cos(tilt), -Math.cos(a) * tilt * len * 0.5);
     for (let k = 0; k < 6; k++) {
       const f = 0.35 + k / 6 * 0.65;
-      const leaf = new T.Mesh(leafGeo, k % 2 ? leafA : leafB);
       const ly = 0.4 + len * f * Math.cos(tilt);
       const spread = len * f * tilt;
       const la = a + (k % 2 ? 0.9 : -0.9);
-      leaf.position.set(Math.sin(a) * spread + Math.sin(la) * 0.09, ly, -Math.cos(a) * spread - Math.cos(la) * 0.09);
-      leaf.rotation.set(-0.5 + rnd() * 0.3, -la, 0.3 * (k % 2 ? 1 : -1));
-      leaf.castShadow = true;
-      plant.add(leaf);
+      const o = new T.Object3D();
+      o.position.set(Math.sin(a) * spread + Math.sin(la) * 0.09, ly, -Math.cos(a) * spread - Math.cos(la) * 0.09);
+      o.rotation.set(-0.5 + rnd() * 0.3, -la, 0.3 * (k % 2 ? 1 : -1));
+      o.updateMatrix();
+      leafMats[k % 2].push(o.matrix.clone());
     }
   }
+  [leafB, leafA].forEach((m, i) => {
+    const inst = new T.InstancedMesh(leafGeo, m, leafMats[i].length);
+    leafMats[i].forEach((mm, j) => inst.setMatrixAt(j, mm));
+    inst.castShadow = true;
+    plant.add(inst);
+  });
   volume("plant", "plant", [0.78, 1.5, 0.78], [1.65, 0.75, -3.05]);
   const table = new T.Group();
   table.name = "table";

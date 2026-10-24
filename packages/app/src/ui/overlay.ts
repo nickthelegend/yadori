@@ -54,6 +54,7 @@ export class Overlay {
   private hint = '';
   private hintSmall = '';
   private replyTo: string | null = null;
+  private naming: { onName: (name: string) => void; onCancel: () => void } | null = null;
 
   constructor(private h: OverlayHandlers) {
     this.root = document.getElementById('yadori-ui')!;
@@ -84,6 +85,11 @@ export class Overlay {
   /** Hide the 2D layer while a real headset session runs (it would not be visible anyway). */
   setVisible(v: boolean): void {
     this.root.style.display = v ? '' : 'none';
+  }
+
+  /** Emulated XR: smaller cards so the room stays visible. */
+  setCompact(v: boolean): void {
+    this.root.classList.toggle('compact', v);
   }
 
   setMode(text: string): void {
@@ -156,6 +162,13 @@ export class Overlay {
     (this.stageEl.querySelector('input') as HTMLInputElement | null)?.focus();
   }
 
+  /** "Tell me what this is": a one-field form in the stage strip (no blocking prompt). */
+  askName(onName: (name: string) => void, onCancel: () => void): void {
+    this.naming = { onName, onCancel };
+    this.renderStage();
+    (this.stageEl.querySelector('#y-name') as HTMLInputElement | null)?.focus();
+  }
+
   get selectedId(): string | null {
     return this.selected;
   }
@@ -200,6 +213,28 @@ export class Overlay {
   private renderStage(): void {
     const awake = this.cards.filter((c) => c.awake);
     const hint = this.hint ? `<div class="y-hint">${esc(this.hint)}${this.hintSmall ? `<small>${esc(this.hintSmall)}</small>` : ''}</div>` : '';
+    if (this.naming) {
+      const n = this.naming;
+      this.stageEl.innerHTML = `<form class="y-compose" id="y-naming" autocomplete="off">
+        <div class="y-speakers"><span>Tell me what this is</span></div>
+        <div class="y-line"><input id="y-name" maxlength="32" placeholder="for example: coat rack" aria-label="What is this object?" />
+        <button class="y-mic" type="button" id="y-name-cancel" aria-label="Cancel">✕</button><button class="y-send" type="submit">Wake it</button></div>
+        <div class="y-note">The headset's room scan did not label this one. Its name becomes the label Muse Spark sees.</div></form>`;
+      const form = this.stageEl.querySelector<HTMLFormElement>('#y-naming')!;
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const v = (form.querySelector('#y-name') as HTMLInputElement).value;
+        this.naming = null;
+        n.onName(v);
+        this.renderStage();
+      });
+      form.querySelector('#y-name-cancel')!.addEventListener('click', () => {
+        this.naming = null;
+        n.onCancel();
+        this.renderStage();
+      });
+      return;
+    }
     if (awake.length === 0) {
       this.stageEl.innerHTML = hint;
       return;

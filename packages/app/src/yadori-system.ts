@@ -220,7 +220,9 @@ export class YadoriSystem extends createSystem({
     void this.refreshStatus();
     const statusTimer = window.setInterval(() => void this.refreshStatus(), 15000);
     this.cleanupFuncs.push(() => clearInterval(statusTimer));
-    if (navigator.xr) {
+    // phones get the browser diorama only (no emulator, and no phone AR: it has no mesh detection)
+    const phone = /Android|iPhone|iPad|Mobile/i.test(navigator.userAgent) && !/OculusBrowser|Quest/i.test(navigator.userAgent);
+    if (navigator.xr && !phone) {
       navigator.xr
         .isSessionSupported('immersive-ar')
         .then((ok) => this.overlay.setXRAvailable(ok, this.emulator ? 'Enter mixed reality (emulated)' : 'Enter mixed reality'))
@@ -303,6 +305,7 @@ export class YadoriSystem extends createSystem({
   private updateModeLabel(): void {
     this.overlay.setMode(this.modeLabel());
     this.overlay.setVisible(!this.xrActive || this.emulator);
+    this.overlay.setCompact(this.xrActive);
   }
 
   private updateHint(): void {
@@ -528,7 +531,11 @@ export class YadoriSystem extends createSystem({
     }
     let t = target;
     if (labelKind(t.label) === 'needs-name') {
-      const typed = this.overlay ? window.prompt('Tell me what this is (for example "coat rack")') : null;
+      if (this.xrActive && !this.emulator) {
+        this.overlay.toast('Tell me what this is: naming by voice needs Muse Voice Transcribe (Setup required).');
+        return;
+      }
+      const typed = await new Promise<string | null>((res) => this.overlay.askName(res, () => res(null)));
       const clean = typed ? cleanUserLabel(typed) : null;
       if (!clean) {
         this.overlay.toast('Tell me what this is: it needs a name before it can wake.');
@@ -1051,7 +1058,7 @@ export class YadoriSystem extends createSystem({
     let spread = 0;
     for (const s of awake) spread = Math.max(spread, c.distanceTo(this.tmpA.set(...s.placement.position)));
     this.shot.focus.copy(c);
-    this.shot.dist = Math.min(4.8, Math.max(2.9, 2.6 + spread * 1.5));
+    this.shot.dist = Math.min(4.6, awake.length === 1 ? 2.9 : Math.max(2.4, 1.9 + spread * 1.3));
   }
 
   private updateOrbitCamera(dt: number): void {
@@ -1063,7 +1070,9 @@ export class YadoriSystem extends createSystem({
       o.dist += (this.shot.dist - o.dist) * k;
     }
     const aspect = this.renderer.domElement.clientWidth / Math.max(1, this.renderer.domElement.clientHeight);
-    const dist = o.dist / Math.min(1, Math.max(0.45, aspect * 0.95));
+    // portrait screens: pull back for the whole room, much less once a spirit is the subject
+    const fit = this.spirits.size ? Math.min(1, Math.max(0.72, aspect * 1.4)) : Math.min(1, Math.max(0.45, aspect * 0.95));
+    const dist = o.dist / fit;
     const cp = Math.cos(o.pitch);
     this.camera.position.set(o.focus.x + Math.sin(o.yaw) * cp * dist, o.focus.y + Math.sin(o.pitch) * dist, o.focus.z + Math.cos(o.yaw) * cp * dist);
     this.camera.lookAt(o.focus);
@@ -1114,8 +1123,9 @@ export class YadoriSystem extends createSystem({
       for (let h = 0; h < 2; h++) {
         const tip = this.tips[h];
         const tr = s.trackers[h];
-        tr.face.center = pl.position;
-        tr.face.normal = pl.normal;
+        // gestures are measured against the face as drawn (turned toward you), not the box side
+        tr.face.center = [s.pos.x, s.pos.y, s.pos.z];
+        tr.face.normal = [s.dir.x, s.dir.y, s.dir.z];
         tr.face.radius = pl.size / 2;
         if (!tip || !this.handTracked(HANDS[h])) {
           tr.update(this.t, null, null);
@@ -1190,7 +1200,7 @@ export class YadoriSystem extends createSystem({
     const dist = this.head.distanceTo(s.pos);
     if (this.t > s.bubbleUntil && !s.speaking) s.bubble.set(null);
     if (s.bubble.mesh.visible) {
-      const w = Math.min(0.85, Math.max(0.34, dist * 0.17));
+      const w = Math.min(1.2, Math.max(0.42, dist * 0.32));
       const h = w / s.bubble.aspect;
       s.bubble.mesh.scale.set(w, h, 1);
       s.bubble.mesh.position.copy(s.pos).addScaledVector(s.up, pl.size * 0.55 + h * 0.48);

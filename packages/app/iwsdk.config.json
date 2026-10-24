@@ -47,7 +47,7 @@
       "environment": "sunlit_living_room",
       "injectOnBuild": true,
       "activation": "always",
-      "userAgentException": { "source": "OculusBrowser|Quest|Pico|Wolvic" }
+      "userAgentException": { "source": "OculusBrowser|Quest|Pico|Wolvic|Android|iPhone|iPad|Mobile" }
     }
   }
 }

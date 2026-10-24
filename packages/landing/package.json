@@ -1,0 +1,7 @@
+{
+  "name": "@yadori/landing",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Yadori landing page: a collector's card binder (static HTML, no build step)",
+  "license": "MIT"
+}

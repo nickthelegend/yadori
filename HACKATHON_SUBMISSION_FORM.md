@@ -55,7 +55,10 @@ so voice out is MMS-TTS (non-commercial licence) with labelled fallbacks.
 transcription proxy, a phone "puppeteer" so a second person can voice spirits in the headset, phone clip mode
 for small objects.
 
-**Measured (emulator, not a headset):** see TESTING.md (filled from real runs only).
+**Measured (IWER emulator on a laptop, not a headset; TESTING.md has the raw runs):** hands-only e2e 21/21
+(one pinch to the first face; face 0.00 cm from its computed target; poke/pet/flick from tracked fingertip and
+palm; gossip gaze matches geometry; 0 console errors); Meta VR Glasses profile 8/8 (gaze + pinch, faces within
+±3° of the view centre); 600-frame probe in XR with two spirits: CPU p95 1.6 ms, 20 draw calls; 82 unit tests.
 
 **Video:** not recorded yet. Test clips from the emulator are in `grokbot/videos/yadori/`; the demo video
 follows the spec's script and is captioned "IWER emulator, synthetic room" where it is.

@@ -1,3 +1,4 @@
+process.env.YADORI_NO_RUNLOG = '1'; // the budget test must not write into the real run log
 import { describe, expect, it } from 'vitest';
 import { BudgetExceeded, assertBudget, chatCost, logRun, spent } from '../src/runlog.ts';
 import { boxOverlap, parseSam } from '../src/sam.ts';

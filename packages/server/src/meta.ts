@@ -8,19 +8,22 @@ import { type Config, SETUP_KEY } from './config.ts';
 import { logRun } from './runlog.ts';
 
 export class SetupRequired extends Error {
-  constructor(public what: string, message = SETUP_KEY) {
+  what: string;
+  constructor(what: string, message = SETUP_KEY) {
     super(message);
+    this.what = what;
   }
 }
 
 export class MetaError extends Error {
-  constructor(
-    public status: number,
-    public code: string,
-    message: string,
-    public requestId: string | null,
-  ) {
+  status: number;
+  code: string;
+  requestId: string | null;
+  constructor(status: number, code: string, message: string, requestId: string | null) {
     super(message);
+    this.status = status;
+    this.code = code;
+    this.requestId = requestId;
   }
 }
 
@@ -33,7 +36,10 @@ export interface CallOpts {
 }
 
 export class MetaClient {
-  constructor(private cfg: Config) {}
+  private cfg: Config;
+  constructor(cfg: Config) {
+    this.cfg = cfg;
+  }
 
   get ready(): boolean {
     return !!this.cfg.key;

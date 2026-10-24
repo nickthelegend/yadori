@@ -27,8 +27,12 @@ import { transcribe } from './voice-in.ts';
 const MAX_BODY = 12 * 1024 * 1024;
 
 class HttpError extends Error {
-  constructor(public status: number, public body: Record<string, unknown>) {
+  status: number;
+  body: Record<string, unknown>;
+  constructor(status: number, body: Record<string, unknown>) {
     super(String(body.message ?? body.error ?? status));
+    this.status = status;
+    this.body = body;
   }
 }
 
@@ -63,7 +67,10 @@ const setupRequired = (what: string) => new HttpError(503, { setup_required: 'MO
 /** Small per-IP token bucket (60 requests / minute). */
 class RateLimit {
   private buckets = new Map<string, { tokens: number; at: number }>();
-  constructor(private perMinute = 60) {}
+  private perMinute: number;
+  constructor(perMinute = 60) {
+    this.perMinute = perMinute;
+  }
   take(ip: string): boolean {
     const now = Date.now();
     const b = this.buckets.get(ip) ?? { tokens: this.perMinute, at: now };

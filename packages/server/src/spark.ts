@@ -180,7 +180,12 @@ export type TalkEvent =
 /** Bounds a turn: at most 6 tool calls and 2 ask_object hops. Pure, so tests prove it. */
 export class TurnBudget {
   toolCalls = 0;
-  constructor(public readonly maxTools = MAX_TOOL_CALLS, public readonly maxHops = MAX_HOPS) {}
+  readonly maxTools: number;
+  readonly maxHops: number;
+  constructor(maxTools = MAX_TOOL_CALLS, maxHops = MAX_HOPS) {
+    this.maxTools = maxTools;
+    this.maxHops = maxHops;
+  }
   takeTool(): boolean {
     if (this.toolCalls >= this.maxTools) return false;
     this.toolCalls++;

@@ -18,7 +18,10 @@ export interface SpiritMeta {
 }
 
 export class Store {
-  constructor(private dir: string) {}
+  private dir: string;
+  constructor(dir: string) {
+    this.dir = dir;
+  }
 
   private path(id: string, ...parts: string[]): string {
     if (!/^sp_[a-z0-9]{12}$/.test(id)) throw new Error('bad spirit id');

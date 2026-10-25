@@ -1,7 +1,7 @@
 // Landing page and app at 375 px (phone) and 1280 px: no horizontal scroll, key content
 // present, the app's phone layout usable (tap the couch -> it wakes). Real Chromium,
 // closed in `finally`. Run: node e2e/responsive.mjs  (app dev server on :8091 for the app part)
-import { writeFileSync } from 'node:fs';
+import { mkdirSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { chromium } from 'playwright';
@@ -12,8 +12,10 @@ const check = (name, ok, detail = '') => {
   results.push({ name, ok: !!ok, detail: String(detail) });
   console.log(`${ok ? 'PASS' : 'FAIL'}  ${name}${detail ? `  (${detail})` : ''}`);
 };
-const browser = await chromium.launch({ headless: true });
+let browser;
 try {
+  mkdirSync(join(root, 'e2e/shots'), { recursive: true });
+  browser = await chromium.launch({ headless: true });
   for (const [w, h] of [[375, 812], [1280, 800]]) {
     const ctx = await browser.newContext({ viewport: { width: w, height: h }, deviceScaleFactor: 2, reducedMotion: w === 375 ? 'reduce' : 'no-preference' });
     const page = await ctx.newPage();
@@ -65,9 +67,10 @@ try {
 } catch (e) {
   check('responsive run completed', false, e instanceof Error ? e.message : String(e));
 } finally {
-  await browser.close();
+  await browser?.close();
 }
 const fail = results.filter((r) => !r.ok).length;
+mkdirSync(join(root, 'e2e/results'), { recursive: true });
 writeFileSync(join(root, 'e2e/results/responsive.json'), JSON.stringify({ pass: results.length - fail, fail, results, at: new Date().toISOString() }, null, 2));
 console.log(`\n${results.length - fail} passed, ${fail} failed`);
 process.exit(fail ? 1 : 0);

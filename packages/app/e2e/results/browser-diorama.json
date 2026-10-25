@@ -1,118 +1,13 @@
 {
   "mode": "browser diorama (no headset), real mouse + keyboard",
-  "pass": 18,
-  "fail": 0,
+  "pass": 0,
+  "fail": 1,
   "results": [
     {
-      "name": "diorama has 5 labelled targets",
-      "ok": true,
-      "detail": "couch,lamp,plant,table,screen"
-    },
-    {
-      "name": "mode label is honest",
-      "ok": true,
-      "detail": ""
-    },
-    {
-      "name": "waking starts on click",
-      "ok": true,
-      "detail": ""
-    },
-    {
-      "name": "couch is awake with the built-in face",
-      "ok": true,
-      "detail": "wake 1369 ms"
-    },
-    {
-      "name": "face anchored on the couch front, 1 cm proud",
-      "ok": true,
-      "detail": "err 0.00 cm"
-    },
-    {
-      "name": "poke -> surprised",
-      "ok": true,
-      "detail": "pokes 1 expr surprised"
-    },
-    {
-      "name": "pet -> happy",
-      "ok": true,
-      "detail": "pets 1 expr happy"
-    },
-    {
-      "name": "flick -> grumpy + wobble",
-      "ok": true,
-      "detail": "flicks 1 expr grumpy wobble 0.24"
-    },
-    {
-      "name": "puppet line moves the mouth",
-      "ok": true,
-      "detail": "max mouthOpen 0.80"
-    },
-    {
-      "name": "line counted with a labelled voice mode",
-      "ok": true,
-      "detail": "voice browser"
-    },
-    {
-      "name": "lamp is awake",
-      "ok": true,
-      "detail": ""
-    },
-    {
-      "name": "a draft line is kept when the strip re-renders",
-      "ok": true,
-      "detail": "\"a half-typed line\""
-    },
-    {
-      "name": "gossip: whisper particles fly",
-      "ok": true,
-      "detail": ""
-    },
-    {
-      "name": "gossip: the lamp turns its eyes to the couch",
-      "ok": true,
-      "detail": "lamp lookX 0.73"
-    },
-    {
-      "name": "gossip: the couch looks at the lamp",
-      "ok": true,
-      "detail": "couch lookX -0.69"
-    },
-    {
-      "name": "compose switches to \"reply as Lamp\"",
-      "ok": true,
-      "detail": "Reply as Lamp (you are the voice)…"
-    },
-    {
-      "name": "lamp replied",
-      "ok": true,
-      "detail": ""
-    },
-    {
-      "name": "reload re-matches both spirits",
-      "ok": true,
-      "detail": "Couch:2,Lamp:1"
+      "name": "browser suite completed",
+      "ok": false,
+      "detail": "browser run: No running IWSDK runtime found for /Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvo0ru72/t-e2e/packages/app. Start the dev server with \"iwsdk dev up\"."
     }
   ],
-  "perf": {
-    "frames": 600,
-    "cpuMs": {
-      "p50": 1.599999999627471,
-      "p95": 2.8999999994412065,
-      "max": 3.2999999998137355,
-      "mean": 1.7071666666865348
-    },
-    "drawCalls": {
-      "p50": 102,
-      "p95": 103,
-      "max": 106
-    },
-    "triangles": {
-      "p50": 26848,
-      "max": 27834
-    },
-    "xrFrames": 0,
-    "gl": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)"
-  },
-  "at": "2026-10-25T11:20:54.969Z"
+  "at": "2026-10-25T16:16:07.783Z"
 }

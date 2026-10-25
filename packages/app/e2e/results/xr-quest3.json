@@ -2,120 +2,20 @@
   "profile": "metaQuest3",
   "input": "hands only",
   "actions": {
-    "pinch": 2,
-    "poke": 1,
-    "pet": 1,
-    "flick": 1
+    "pinch": 0,
+    "poke": 0,
+    "pet": 0,
+    "flick": 0
   },
-  "seconds": 79,
-  "pass": 21,
-  "fail": 0,
+  "seconds": 0,
+  "pass": 0,
+  "fail": 1,
   "results": [
     {
-      "name": "emulated room is labelled honestly",
-      "ok": true,
-      "detail": "Emulated room (IWER), not your room"
-    },
-    {
-      "name": "mesh detection reports the 5 labelled pieces",
-      "ok": true,
-      "detail": "couch,lamp,plant,screen,table"
-    },
-    {
-      "name": "couch woke from a pinch",
-      "ok": true,
-      "detail": "3978 ms wall clock incl. CLI round trips"
-    },
-    {
-      "name": "ECS: a Spirit component with an anchored face",
-      "ok": true,
-      "detail": "entity 28"
-    },
-    {
-      "name": "face sits on the couch front, 1 cm proud (±1 cm)",
-      "ok": true,
-      "detail": "0.00 cm"
-    },
-    {
-      "name": "fingertip poke -> surprised",
-      "ok": true,
-      "detail": "pokes 1 pets 0 flicks 0 expr neutral"
-    },
-    {
-      "name": "palm stroke -> pet (happy, hearts)",
-      "ok": true,
-      "detail": "pets 2 expr happy"
-    },
-    {
-      "name": "fast fingertip swipe -> flick (wobble)",
-      "ok": true,
-      "detail": "flicks 1 expr neutral"
-    },
-    {
-      "name": "puppet line: speaking + mouth moves",
-      "ok": true,
-      "detail": "max mouthOpen 0.68"
-    },
-    {
-      "name": "voice mode is labelled",
-      "ok": true,
-      "detail": "browser"
-    },
-    {
-      "name": "lamp woke from a pinch",
-      "ok": true,
-      "detail": ""
-    },
-    {
-      "name": "gossip: whispers fly between them",
-      "ok": true,
-      "detail": "37 particles"
-    },
-    {
-      "name": "gossip: the couch looks at the lamp",
-      "ok": true,
-      "detail": "look -0.64,0.77 expected -0.64,0.77"
-    },
-    {
-      "name": "gossip: the lamp looks back at the couch",
-      "ok": true,
-      "detail": "look 0.13,-0.76 expected 0.13,-0.76"
-    },
-    {
-      "name": "the lamp replies",
-      "ok": true,
-      "detail": ""
-    },
-    {
-      "name": "emulator frame time recorded (600 XR frames)",
-      "ok": true,
-      "detail": "p50 0.70 p95 1.00 ms, draw calls p95 26, tris max 18584"
-    },
-    {
-      "name": "draw calls within budget (≤ 100)",
-      "ok": true,
-      "detail": "max 26"
-    },
-    {
-      "name": "after reload both spirits are re-found in the emulated room",
-      "ok": true,
-      "detail": "Couch:3 lines, Lamp:1 lines"
-    },
-    {
-      "name": "no console errors",
-      "ok": true,
-      "detail": ""
-    },
-    {
-      "name": "bare room reports one unlabelled mesh",
-      "ok": true,
-      "detail": "other"
-    },
-    {
-      "name": "\"Tell me what this is\" -> it wakes with the name you gave",
-      "ok": true,
-      "detail": "coat rack"
+      "name": "flow completed",
+      "ok": false,
+      "detail": "browser run: No running IWSDK runtime found for /Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvo0ru72/t-e2e/packages/app. Start the dev server with \"iwsdk dev up\"."
     }
   ],
-  "at": "2026-10-25T11:19:25.000Z"
+  "at": "2026-10-25T16:16:07.555Z"
 }

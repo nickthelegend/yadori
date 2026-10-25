@@ -20,7 +20,7 @@ body { font-family: var(--sans); color: var(--ink); -webkit-font-smoothing: anti
 button { font: inherit; cursor: pointer; }
 button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid var(--pink); outline-offset: 2px; }
 
-.y-top { position: absolute; top: 14px; left: 14px; right: 14px; display: flex; gap: 10px; align-items: flex-start; pointer-events: none; }
+.y-top { position: absolute; z-index: 2; top: 14px; left: 14px; right: 14px; display: flex; gap: 10px; align-items: flex-start; pointer-events: none; } /* the opened status list drops over the Enter button */
 .y-top > * { pointer-events: auto; }
 .y-brand { display: flex; align-items: center; gap: 10px; background: var(--cream); border-radius: 999px; padding: 6px 16px 6px 6px; box-shadow: 0 6px 24px rgba(10, 20, 80, 0.18); }
 .y-brand .mark { width: 34px; height: 34px; border-radius: 50%; background: var(--cobalt); display: grid; place-items: center; }
@@ -93,6 +93,8 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px s
   .y-rail h2 { display: none; }
   .y-card { min-width: 230px; padding: 10px; box-shadow: 3px 3px 0 var(--ink); }
   .y-card .y-bars, .y-card .y-meta { display: none; }
+  #yadori-ui.compact .y-rail { top: auto; bottom: 196px; width: auto; height: 76px; max-height: none; } /* not over the brand */
+  .y-card .y-chip.pink { display: none; } /* the 120 px rail fits one chip row: keep "not generated" */
   .y-sleeves { display: flex; }
   .y-sleeve { min-width: 70px; aspect-ratio: auto; height: 100%; }
   .y-stage { width: auto; left: 12px; right: 12px; transform: none; bottom: 12px; }

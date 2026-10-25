@@ -1,6 +1,7 @@
 # Testing
 
-Real counts from runs on Oct 25, 2026 (MacBook, Apple M4, Chromium via IWSDK agent mode). **Device: no.**
+Evidence as of Oct 25, 2026: fresh unit, typecheck and build runs below; emulator/browser results restored
+from the last complete run, `74e90e1` (MacBook, Apple M4, Chromium via IWSDK agent mode). **Device: no.**
 Nothing here ran on a Quest or on Meta VR Glasses hardware; emulator numbers are a relative proxy (the M4 CPU
 is several times faster than a Quest 3, and GPU time is not measured). **Meta Model API: no key yet**, so every
 Meta test ran its "Setup required" branch (live when `MODEL_API_KEY` is set; never mocked, never skipped).
@@ -9,17 +10,53 @@ Meta test ran its "Setup required" branch (live when `MODEL_API_KEY` is set; nev
 
 | Suite | Command | Result |
 |---|---|---|
-| `@yadori/room` (Vitest): ray vs box, face placement on all 6 sides + clamps, turn limit, room context, re-match ±10% / 30 cm, poke/flick/pet classifiers incl. a near-miss sweep, pointer strokes | `pnpm --filter @yadori/room test` | **36 passed**, 0 skipped |
-| `@yadori/rig` (Vitest): mouth shapes from envelope and text, blink bounds + determinism, wake/sleep, reactions, springs settle, lip-sync ≤ 80 ms, gaze clamp, thinking look | `pnpm --filter @yadori/rig test` | **14 passed**, 0 skipped |
-| `@yadori/server` (Vitest): HTTP contract without key (status, wake → built-in face, 503 setup_required for chat/transcribe/cut, MMS-TTS setup message, forget deletes the folder, path tricks, rate limit, key never echoed), persona validation, turn budget (6 tools, 2 `ask_object` hops), SAM token parser, WAV checks, budget cap, Meta live-or-setup-required, MCP over stdio as a child process, the gateway as a real process | `pnpm --filter @yadori/server test` | **32 passed**, 0 skipped |
-| Emulator e2e, Quest 3 profile, **hands only**, synthetic room `yadori_den` + `yadori_bare` | `pnpm --filter app e2e:xr` | **21 / 21** |
-| Emulator e2e, Meta VR Glasses profile (gaze + pinch, field of view, gaze-off fallback) | `pnpm --filter app e2e:glasses` (switch `dev.emulator.device` first) | **8 / 8** |
-| Browser diorama e2e (no headset), real mouse + keyboard | `pnpm --filter app e2e:browser` | **18 / 18** |
-| Responsive: landing 375 / 1280 px, app on a phone user agent at 375 px | `pnpm e2e:responsive` | **12 / 12** |
-| Production build | `pnpm --filter app build` | passes (one 4.1 MB chunk: IWSDK + three) |
-| Typecheck | `pnpm typecheck` | passes (app, room, rig, server) |
+| `@yadori/room` (Vitest): ray vs box, face placement on all 6 sides + clamps, turn limit, room context, re-match ±10% / 30 cm, poke/flick/pet classifiers incl. a near-miss sweep, pointer strokes | `pnpm --filter @yadori/room test` | **Passed: 36**, 0 skipped (fresh rerun) |
+| `@yadori/rig` (Vitest): mouth shapes from envelope and text, blink bounds + determinism, wake/sleep, reactions, springs settle, lip-sync ≤ 80 ms, gaze clamp, thinking look | `pnpm --filter @yadori/rig test` | **Passed: 14**, 0 skipped (fresh rerun) |
+| `@yadori/server` (Vitest): HTTP contract without key (status, wake → built-in face, 503 setup_required for chat/transcribe/cut, MMS-TTS setup message, forget deletes the folder, path tricks, rate limit, key never echoed), persona validation, turn budget (6 tools, 2 `ask_object` hops), SAM token parser, WAV checks, budget cap, Meta live-or-setup-required, MCP over stdio as a child process, the gateway as a real process | `pnpm --filter @yadori/server test` | **19 passed; 13 did not complete**: sandbox `listen EPERM` on `127.0.0.1`. Last complete run: **32 passed**, Oct 25 (`74e90e1`) |
+| Emulator e2e, Quest 3 profile, **hands only**, synthetic room `yadori_den` + `yadori_bare` | `pnpm --filter app e2e:xr` | **Restored-from-74e90e1: 21 / 21**, Oct 25; fresh retry not-run (runtime startup blocked) |
+| Emulator e2e, Meta VR Glasses profile (gaze + pinch, field of view, gaze-off fallback) | `pnpm --filter app e2e:glasses` (`bash e2e/run-glasses.sh`; server must already be up; switches to `metaVRGlasses` and restores `metaQuest3`) | **Restored-from-74e90e1: 8 / 8**, Oct 25; fresh retry not-run (runtime startup blocked) |
+| Browser diorama e2e (no headset), real mouse + keyboard | `pnpm --filter app e2e:browser` | **Restored-from-74e90e1: 18 / 18**, Oct 25; fresh retry not-run (runtime startup blocked) |
+| Responsive: landing 375 / 1280 px, app on a phone user agent at 375 px | `pnpm e2e:responsive` | **Restored-from-74e90e1: 12 / 12**, Oct 25; fresh retry not-run (Chromium MachPort permission denied) |
+| Production build | `pnpm --filter app build` | **Passed** (fresh rerun; largest chunk 4.09 MB; chunk-size and dependency annotation warnings) |
+| Typecheck | `pnpm typecheck` | **Passed** (fresh rerun: app, room, rig, server) |
 
-Unit tests: **82**. E2E checks: **59**. Raw results: `packages/app/e2e/results/*.json`, `e2e/results/responsive.json`.
+Fresh unit rerun: **69 passed; 13 did not complete**, out of 82. Server breakdown: `units.test.ts` 17 passed,
+`live-meta.test.ts` 2 passed (no key, Setup required); `contract.test.ts` 9 and `mcp.test.ts` 3 were not-run
+because their loopback-listen setup failed; `process.test.ts` 1 timed out before the gateway became ready.
+Vitest reports **19 passed, 1 failed, 12 skipped**, two unhandled `listen EPERM` errors, plus setup/teardown
+errors in the two blocked suites; the server command exits 1. These are sandbox startup limits, not a new
+complete server pass or evidence of a product regression. The last complete server result remains **32 passed
+on Oct 25**, recorded in `74e90e1` (82 unit tests passed in that run). No product code was changed to avoid listening.
+
+Dependency setup: frozen installation found an outdated lockfile; retrying without writing the lockfile failed
+with DNS `ENOTFOUND registry.npmjs.org`. The rerun used copied `node_modules` directories from the local
+`projects/yadori` checkout. No `.env` was read: the server test command used
+`YADORI_ENV_FILE=/private/tmp/yadori-verify2-no-env MODEL_API_KEY= pnpm --filter @yadori/server test`
+(the configured env-file path does not exist).
+
+Emulator/browser/responsive evidence: **59 checks passed in the Oct 25 run**, not 59 fresh passes.
+The retry task restored all four JSON files in `995a2af` (merged by `50e5345`); each file on disk is
+byte-for-byte identical to `74e90e1`, including its original timestamp:
+
+| Result file | Status | Original UTC timestamp |
+|---|---|---|
+| `packages/app/e2e/results/xr-quest3.json` | restored-from-74e90e1, 21/21 | `2026-10-25T11:19:25.000Z` |
+| `packages/app/e2e/results/xr-glasses.json` | restored-from-74e90e1, 8/8 | `2026-10-25T11:20:06.192Z` |
+| `packages/app/e2e/results/browser-diorama.json` | restored-from-74e90e1, 18/18 | `2026-10-25T11:20:54.969Z` |
+| `e2e/results/responsive.json` | restored-from-74e90e1, 12/12 | `2026-10-25T11:22:54.625Z` |
+
+A fresh rerun in this orchestra did not start in the sandbox: IWSDK runtime startup/birth-identity checks
+and Chromium MachPort permission restrictions blocked execution; loopback listening also hits `listen EPERM`.
+The app server was not launched again during this documentation task, and the restored result JSONs were
+left intact. `dev.emulator.device` remains `metaQuest3`. The detailed emulator findings and frame measurements
+below describe the original Oct 25 run; they do not verify the later UI edits.
+
+## Static landing-page check (separate from app emulator suites)
+
+The landing task checked `packages/landing` in headless Chromium at **375 px and 1280 px**, plus
+`evidence.html`: **23 checks passed**, **0 console errors**, **no horizontal scroll**. This was a static-page
+check without the app server. It is separate from the restored 12/12 responsive suite above and does not
+prove app or immersive interactions; it was not rerun during this documentation task.
 
 ## Emulator e2e: what is proven (Quest 3 profile, hands only)
 
@@ -34,7 +71,7 @@ fingertip and palm paths) and typed puppet lines:
 | Face placement vs the computed target on the true box | **0.00 cm** (target: ≤ 1 cm) |
 | Fingertip poke / palm stroke / fast swipe | poke 1, pet ≥ 1, flick 1 |
 | Puppet line moves the mouth; voice mode labelled | yes; `browser` (Web Speech, labelled; MMS-TTS weights not downloaded) |
-| Second spirit by pinch; gossip | whispers (40 particles); each face's gaze matches the direction to the other within 0.2 |
+| Second spirit by pinch; gossip | whispers (37 particles); each face's gaze matches the direction to the other within 0.2 |
 | Reload → both spirits re-found (label + size + position) | yes |
 | Bare room: unlabelled box → "Tell me what this is" → wakes as "coat rack" | yes |
 | Console errors during the whole run | **0** |

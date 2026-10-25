@@ -19,3 +19,5 @@ deployments/runs/
 # IWSDK runtime state
 .iwsdk/
 .mcp.json
+# Loom's local state (event log, attachments, machine config)
+.loom/

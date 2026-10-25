@@ -6,18 +6,37 @@ import { helpers } from './lib.mjs';
 
 export default async function run(ctx) {
   const h = helpers(ctx);
+  const errors = [];
+  const onConsole = (message) => { if (message.type() === 'error') errors.push(message.text()); };
+  const onError = (error) => errors.push(String(error));
+  ctx.page.on('console', onConsole);
+  ctx.page.on('pageerror', onError);
+  let perf = null;
   try {
-    return await body(ctx, h);
+    perf = await body(ctx, h);
   } catch (e) {
-    return { error: String(e).slice(0, 300), results: h.results, spirits: await h.spirits().catch(() => null) };
+    h.check('browser suite completed', false, String(e));
+  } finally {
+    ctx.page.off('console', onConsole);
+    ctx.page.off('pageerror', onError);
   }
+  h.check('no console errors', errors.length === 0, errors.slice(0, 3).join(' | '));
+  const fail = h.results.filter((r) => !r.ok).length;
+  const out = { mode: 'browser diorama (no headset), real mouse + keyboard', pass: h.results.length - fail, fail, results: h.results, perf, at: new Date().toISOString() };
+  mkdirSync(join(ctx.workspaceRoot, 'e2e', 'results'), { recursive: true });
+  writeFileSync(join(ctx.workspaceRoot, 'e2e', 'results', 'browser-diorama.json'), JSON.stringify(out, null, 2));
+  return out;
 }
 
 async function body(ctx, h) {
   const { page } = ctx;
   const { f, check } = h;
   await f.evaluate(() => localStorage.removeItem('yadori.spirits.v1'));
-  await f.evaluate(() => location.reload());
+  await f.evaluate(() => {
+    const url = new URL(location.href);
+    url.searchParams.set('room', 'den');
+    location.href = url.href;
+  });
   await page.waitForTimeout(500);
   await h.ready();
   const targets = await h.yd(() => window.__yadori.targets());
@@ -104,14 +123,10 @@ async function body(ctx, h) {
   await f.waitForFunction(() => window.__yadori.spirits().length === 2, null, { timeout: 15000 }).catch(() => null);
   const back = await h.spirits();
   check('reload re-matches both spirits', back.length === 2 && back.every((s) => s.awake), back.map((s) => `${s.name}:${s.lines}`).join(','));
-  const failed = h.results.filter((r) => !r.ok);
   const perf = await f.evaluate(async () => {
     window.__perf.start(600);
     while (window.__perf.progress().done < 600) await new Promise((r) => setTimeout(r, 250));
     return window.__perf.result();
   });
-  const out = { mode: 'browser diorama (no headset), real mouse + keyboard', pass: h.results.length - failed.length, fail: failed.length, results: h.results, perf, at: new Date().toISOString() };
-  mkdirSync(join(ctx.workspaceRoot, 'e2e', 'results'), { recursive: true });
-  writeFileSync(join(ctx.workspaceRoot, 'e2e', 'results', 'browser-diorama.json'), JSON.stringify(out, null, 2));
-  return out;
+  return perf;
 }

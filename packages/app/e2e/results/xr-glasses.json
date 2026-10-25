@@ -1,48 +1,13 @@
 {
   "profile": "metaVRGlasses",
-  "pass": 8,
-  "fail": 0,
+  "pass": 0,
+  "fail": 1,
   "results": [
     {
-      "name": "glasses profile active with gaze",
-      "ok": true,
-      "detail": "Meta VR Glasses"
-    },
-    {
-      "name": "gaze hovers the couch (outline + chip)",
-      "ok": true,
-      "detail": "[null,null,null,\"couch\"]"
-    },
-    {
-      "name": "gaze + pinch wakes the couch",
-      "ok": true,
-      "detail": "couch"
-    },
-    {
-      "name": "inside the glasses view: face top-left",
-      "ok": true,
-      "detail": "h -3.1°, v 2.6°"
-    },
-    {
-      "name": "inside the glasses view: face bottom-right",
-      "ok": true,
-      "detail": "h 3.0°, v -3.3°"
-    },
-    {
-      "name": "inside the glasses view: bubble top (est.)",
-      "ok": true,
-      "detail": "h 0.0°, v 10.9°"
-    },
-    {
-      "name": "with gaze disconnected, the hand ray wakes the lamp",
-      "ok": true,
-      "detail": ""
-    },
-    {
-      "name": "no console errors",
-      "ok": true,
-      "detail": ""
+      "name": "glasses profile runner completed",
+      "ok": false,
+      "detail": "The managed server must be running with browserCommandReady: true before the glasses suite."
     }
   ],
-  "at": "2026-10-25T11:20:06.192Z"
+  "at": "2026-10-25T16:18:13.307Z"
 }

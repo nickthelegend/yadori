@@ -68,8 +68,5 @@ export function helpers({ page, frame }) {
       await input.fill(text);
       await f.locator('#y-send').click();
     },
-    async consoleErrors() {
-      return [];
-    },
   };
 }

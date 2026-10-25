@@ -66,13 +66,17 @@ async function body(ctx, h) {
   await f.waitForFunction(() => !window.__yadori.spirits()[0].speaking, null, { timeout: 20000 });
   c = await h.face('couch');
   check('line counted with a labelled voice mode', c.lines === 1 && ['browser', 'silent', 'mms'].includes(c.voiceMode), `voice ${c.voiceMode}`);
-  // wake the lamp, gossip
+  // wake the lamp, gossip; a half-typed line survives the re-render (a new card, the 15 s status poll)
+  await f.locator('#y-text').fill('a half-typed line');
   const lampNow = (await h.yd(() => window.__yadori.targets())).find((t) => t.label === 'lamp');
   await h.clickWorld(lampNow.center);
   await f.waitForFunction(() => window.__yadori.spirits().length === 2, null, { timeout: 15000 });
   await page.waitForTimeout(1500);
   const lampS = await h.face('lamp');
   check('lamp is awake', lampS && lampS.awake);
+  const draft = await f.locator('#y-text').inputValue();
+  check('a draft line is kept when the strip re-renders', draft === 'a half-typed line', JSON.stringify(draft));
+  await f.locator('#y-text').fill('');
   // the couch says something to the lamp
   await f.locator('[data-speaker]', { hasText: 'Couch' }).click();
   await f.locator('#y-to').selectOption({ label: 'Lamp' });

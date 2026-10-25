@@ -212,7 +212,29 @@ export class Overlay {
     });
   }
 
+  /**
+   * The strip is rebuilt on every status poll (15 s), new card or hint. Carry a half-typed line, the focus
+   * and the caret across, or the poll wipes what the user is typing.
+   */
   private renderStage(): void {
+    const keep = ['y-text', 'y-name'].map((id) => {
+      const el = this.stageEl.querySelector<HTMLInputElement>(`#${id}`);
+      return el ? { id, value: el.value, focused: document.activeElement === el, start: el.selectionStart, end: el.selectionEnd } : null;
+    });
+    this.drawStage();
+    for (const k of keep) {
+      if (!k) continue;
+      const el = this.stageEl.querySelector<HTMLInputElement>(`#${k.id}`);
+      if (!el) continue;
+      el.value = k.value;
+      if (k.focused) {
+        el.focus();
+        el.setSelectionRange(k.start, k.end);
+      }
+    }
+  }
+
+  private drawStage(): void {
     const awake = this.cards.filter((c) => c.awake);
     const hint = this.hint ? `<div class="y-hint">${esc(this.hint)}${this.hintSmall ? `<small>${esc(this.hintSmall)}</small>` : ''}</div>` : '';
     if (this.naming) {

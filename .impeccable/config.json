@@ -1,0 +1,36 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "tight-leading",
+        "value": "*",
+        "files": [
+          "packages/landing/evidence.html",
+          "packages/landing/index.html"
+        ],
+        "createdAt": "2026-10-25T11:31:58.109Z",
+        "reason": "False positive: .lede sets line-height 1.4 on clamp(18px, 2vw, 22px). The static cascade resolves 1.4 against a 16px base (22.4px) because clamp() font-size is unresolved, then scores the font as 18, reporting 1.24. Used leading in a browser is 1.4, above the 1.3 gate."
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "packages/landing/index.html"
+        ],
+        "createdAt": "2026-10-25T11:31:58.140Z",
+        "reason": "False positive: .how padding is clamp(16px, 4vw, 48px) so the inset is at least 16px; the static engine cannot parse clamp() and treats it as 0. The Setup-required strip cell is flagged by merging desktop border-left:1px with the max-width 560px rule padding-left:0, which do not apply together."
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "packages/landing/evidence.html"
+        ],
+        "createdAt": "2026-10-25T11:31:58.170Z",
+        "reason": "False positive: evidence display sizes are clamp() (h1 36-64px, h2 32-48px) and the static collector drops unresolved clamp(), leaving 13/18/20px (ratio 1.5). Rendered max/min is at least 36/13."
+      }
+    ]
+  }
+}

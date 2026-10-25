@@ -36,6 +36,8 @@ export const MAX_SPIRITS = 6;
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
 
 const FACE_SVG = `<svg viewBox="0 0 54 54" width="54" height="54" aria-hidden="true"><circle cx="18" cy="24" r="7.5" fill="#fffdf8" stroke="#121212" stroke-width="2.4"/><circle cx="36" cy="24" r="7.5" fill="#fffdf8" stroke="#121212" stroke-width="2.4"/><circle cx="19" cy="25" r="3.4" fill="#121212"/><circle cx="37" cy="25" r="3.4" fill="#121212"/><path d="M20 37 Q27 43 34 37" stroke="#fff8ec" stroke-width="3" fill="none" stroke-linecap="round"/><ellipse cx="11" cy="34" rx="4.5" ry="2.6" fill="#ff9db0"/><ellipse cx="43" cy="34" rx="4.5" ry="2.6" fill="#ff9db0"/></svg>`;
+const ICON_MIC = `<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 14a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v5a3 3 0 0 0 3 3Z"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M8 11.2a4 4 0 0 0 8 0M12 15.2V18M9.5 18h5"/></svg>`;
+const ICON_X = `<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M7 7l10 10M17 7 7 17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>`;
 
 export class Overlay {
   private root: HTMLElement;
@@ -133,7 +135,10 @@ export class Overlay {
       row('MMS-TTS', s.tts);
     }
     pills.push(`<span class="y-pill" title="${esc(VOICE_LABEL[voiceMode])}"><i style="background:${voiceMode === 'mms' ? 'var(--cobalt)' : 'var(--pink)'}"></i>Voice out · ${esc(VOICE_LABEL[voiceMode])}</span>`);
-    const summary = `<button class="y-pill summary y-status-toggle" aria-label="Show model status"><i style="background:${setupCount ? 'var(--pink)' : 'var(--cobalt)'}"></i>${setupCount ? `Setup required (${setupCount})` : 'All models ready'}</button>`;
+    // On a phone only this summary shows. "Setup required (1)" hid "Gateway offline".
+    const summaryLabel = !s.online ? 'Gateway offline' : setupCount ? `Setup required (${setupCount})` : 'All models ready';
+    const summaryDot = !s.online ? '#ff5b5b' : setupCount ? 'var(--pink)' : 'var(--cobalt)';
+    const summary = `<button class="y-pill summary y-status-toggle" aria-label="Show model status"><i style="background:${summaryDot}"></i>${summaryLabel}</button>`;
     this.statusEl.innerHTML = summary + pills.join('');
     this.renderStage();
   }
@@ -193,8 +198,14 @@ export class Overlay {
         </article>`;
       })
       .join('');
-    const empty = Array.from({ length: Math.max(0, MAX_SPIRITS - this.cards.length) }, () => `<div class="y-sleeve">Not awakened yet</div>`).join('');
-    this.railEl.innerHTML = `<h2><span>Binder</span><span>${this.cards.length} / ${MAX_SPIRITS}</span></h2>${filled}${empty ? `<div class="y-sleeves">${empty}</div>` : ''}`;
+    const open = Math.max(0, MAX_SPIRITS - this.cards.length);
+    const sleeves = open
+      ? `<div class="y-sleeves">${Array.from({ length: open }, () => `<div class="y-sleeve">Not awakened yet</div>`).join('')}</div>`
+      : '';
+    // On a phone the empty pockets clip ("Not awak…"). One remainder, and no rail at all until something is awake.
+    const remainder = open && this.cards.length ? `<p class="y-open"><b>${open}</b><span>open</span></p>` : '';
+    this.railEl.classList.toggle('is-empty', this.cards.length === 0);
+    this.railEl.innerHTML = `<h2><span>Binder</span><span>${this.cards.length} / ${MAX_SPIRITS}</span></h2>${filled}${sleeves}${remainder}`;
     this.railEl.querySelectorAll<HTMLElement>('.y-card').forEach((el) => {
       el.addEventListener('click', (e) => {
         const f = (e.target as HTMLElement).closest('[data-forget]') as HTMLElement | null;
@@ -242,7 +253,7 @@ export class Overlay {
       this.stageEl.innerHTML = `<form class="y-compose" id="y-naming" autocomplete="off">
         <div class="y-speakers"><span>Tell me what this is</span></div>
         <div class="y-line"><input id="y-name" maxlength="32" placeholder="for example: coat rack" aria-label="What is this object?" />
-        <button class="y-mic" type="button" id="y-name-cancel" aria-label="Cancel">✕</button><button class="y-send" type="submit">Wake it</button></div>
+        <button class="y-mic" type="button" id="y-name-cancel" aria-label="Cancel">${ICON_X}</button><button class="y-send" type="submit">Wake it</button></div>
         <div class="y-note">The headset's room scan did not label this one. Its name becomes the label Muse Spark sees.</div></form>`;
       const form = this.stageEl.querySelector<HTMLFormElement>('#y-naming')!;
       form.addEventListener('submit', (e) => {
@@ -289,7 +300,7 @@ export class Overlay {
         <div class="y-speakers"><span>${spark ? 'Talk to' : 'Speaker'}</span>${speakerBtns}${spark ? '' : gossip}</div>
         <div class="y-line">
           <input id="y-text" maxlength="240" placeholder="${esc(placeholder)}" aria-label="${esc(placeholder)}" />
-          <button class="y-mic" type="button" id="y-mic" ${micReady ? '' : 'disabled'} title="${micReady ? 'Hold to talk (Muse Voice Transcribe)' : 'Setup required: MODEL_API_KEY (Muse Voice Transcribe)'}" aria-label="Talk with your voice">🎙</button>
+          <button class="y-mic" type="button" id="y-mic" ${micReady ? '' : 'disabled'} title="${micReady ? 'Hold to talk (Muse Voice Transcribe)' : 'Setup required: MODEL_API_KEY (Muse Voice Transcribe)'}" aria-label="Talk with your voice">${ICON_MIC}</button>
           <button class="y-send" type="submit" id="y-send">${spark ? 'Talk' : 'Say'}</button>
         </div>
         <div class="y-note">${note}</div>

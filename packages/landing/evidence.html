@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yadori evidence</title>
+  <meta name="description" content="What Yadori actually ran: emulator checks, the live path, and what still says Setup required." />
+  <meta name="theme-color" content="#2b4cff" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="doc">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav">
+    <a class="logo" href="index.html" aria-label="Yadori home"><img src="assets/favicon.svg" alt="" width="34" height="34" /><span>Yadori</span><small>宿り</small></a>
+    <nav aria-label="Sections">
+      <a href="index.html">Home</a>
+      <a href="#numbers">Numbers</a>
+      <a href="#live">Live</a>
+      <a href="#try">Try it</a>
+    </nav>
+  </header>
+
+  <main id="main" class="sheet">
+    <h1>Evidence</h1>
+    <p class="lede">The landing’s three numbers, unpacked. Counts are from the runs in TESTING.md. Device: no. Meta key: no.</p>
+
+    <section id="numbers">
+      <h2>The three numbers</h2>
+      <dl class="defs">
+        <div><dt>5 pieces</dt><dd>The synthetic room <code>yadori_den</code> reports five labelled meshes: couch, lamp, plant, screen, table.</dd></div>
+        <div><dt>0 keys</dt><dd>The browser never sees <code>MODEL_API_KEY</code>. Only the gateway reads it, and the contract tests assert it is never echoed.</dd></div>
+        <div><dt>1 pinch</dt><dd>One hand pinch wakes the couch. The face centre sat on the computed target at 0.00 cm (limit 1 cm).</dd></div>
+      </dl>
+      <p class="note">Also measured Oct 25: XR CPU p50 0.70 ms, p95 1.00 ms, 26 draw calls; 82 unit tests; emulator 21/21; glasses profile 8/8; browser diorama 18/18; responsive 12/12. Quest frame time is unverified. Full table: <code>TESTING.md</code>.</p>
+    </section>
+
+    <section id="wake">
+      <h2>How a wake works</h2>
+      <ol class="long">
+        <li><b>Point and pinch.</b> Quest Space Setup (or the emulator room) already holds furniture-sized boxes. A hand ray draws a dotted outline and a label chip. Pinch, or click in the browser.</li>
+        <li><b>A face blooms.</b> On the side that faces you, in its upper third, 1 cm proud of the surface, held by a WebXR anchor. It blinks, follows you, and turns at most 40° toward you.</li>
+        <li><b>Poke, pet, flick.</b> A fingertip poke makes it jump. A slow palm stroke makes it purr. A flick sends it spinning and grumpy. In the browser: tap, rub, swipe.</li>
+        <li><b>Wake a second.</b> With a key, Muse Spark writes a persona from the label and the neighbours, and <code>ask_object</code> lets them gossip (at most two hops). Without a key you type both lines. Puppet mode, labelled.</li>
+      </ol>
+    </section>
+
+    <section id="binder">
+      <h2>The binder</h2>
+      <p>Each woken object is a card. Six spirits at most, because a site gets eight persistent anchors. These two pockets are from a recorded IWER run, not from a real home.</p>
+      <div class="pair">
+        <figure><img src="assets/card-couch.jpg" alt="Couch with its built-in face" /><figcaption>Couch · 2.0 × 0.9 m</figcaption></figure>
+        <figure><img src="assets/card-lamp.jpg" alt="Floor lamp with its built-in face" /><figcaption>Lamp · 0.4 × 1.7 m</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="live">
+      <h2>What runs, and what waits</h2>
+      <div class="rows">
+        <article><h3>Pick the object</h3><p><b>With the key.</b> Pinch a labelled mesh.</p><p><b>Right now.</b> The same pinch, or a click.</p></article>
+        <article><h3>Face</h3><p><b>With the key.</b> Muse Image sheet, 10 images, about $0.10.</p><p><b>Right now.</b> Built-in face, labelled “not generated”.</p></article>
+        <article><h3>Personality and replies</h3><p><b>With the key.</b> Muse Spark, six tools.</p><p><b>Right now.</b> Puppet mode. You type the lines.</p></article>
+        <article><h3>Voice in</h3><p><b>With the key.</b> Muse Voice Transcribe.</p><p><b>Right now.</b> Typing.</p></article>
+        <article><h3>Voice out</h3><p><b>With the weights.</b> Meta MMS-TTS, open weights, CC-BY-NC-4.0.</p><p><b>Right now.</b> After <code>fetch-models.sh</code>, or the browser voice, labelled.</p></article>
+        <article><h3>Anchors, gestures, gaze, gossip</h3><p><b>Either way.</b> Local. The same code.</p><p><b>Right now.</b> Identical. No network model.</p></article>
+      </div>
+      <p class="note">Never a canned reply. Without the key, chat, transcribe and cut return 503 <code>setup_required</code>.</p>
+    </section>
+
+    <section id="try">
+      <h2>How to open it</h2>
+      <ol class="long">
+        <li><b>No headset.</b> <code>pnpm gateway</code>, then <code>pnpm --filter app dev</code>, then open <code>https://localhost:8091/</code>. The room is labelled “Browser diorama, not your room”. Click a piece of furniture.</li>
+        <li><b>Desktop emulator.</b> On that same page, “Enter mixed reality (emulated)” uses IWER’s synthetic room. Hands only.</li>
+        <li><b>Quest 3 / 3S.</b> Run Space Setup so the furniture is labelled, open the app in the Quest browser, enter mixed reality, point and pinch. Not run on a headset yet. Steps: <code>docs/QUEST.md</code>.</li>
+      </ol>
+    </section>
+
+    <section id="questions">
+      <h2>Questions</h2>
+      <details><summary>Can it wake a mug?</summary><p>Not in the headset. The room model holds furniture-sized boxes from Space Setup. Small things need camera access, which Quest Browser does not reliably give a web app yet.</p></details>
+      <details><summary>Where does my voice go?</summary><p>To the Yadori gateway, which sends it to Muse Voice Transcribe. No audio is stored. The spirits’ voices are made on the gateway.</p></details>
+      <details><summary>Does the face stick to the couch?</summary><p>It is placed on the couch’s detected box and fixed with a WebXR anchor. In the emulator the face centre sat on the computed target within 1 cm (measured 0.00 cm).</p></details>
+      <details><summary>Is the key ever in the browser?</summary><p>No. Only the gateway reads <code>MODEL_API_KEY</code>. The app talks to <code>/api</code>.</p></details>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><img src="assets/favicon.svg" alt="" width="28" height="28" /> <b>Yadori</b> · 宿り, to dwell in a thing.</div>
+    <p class="mono"><a href="index.html">Home</a> · MIT · MMS-TTS weights CC-BY-NC-4.0, never committed</p>
+  </footer>
+</body>
+</html>

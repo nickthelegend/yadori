@@ -68,7 +68,7 @@ On a Quest: [docs/QUEST.md](docs/QUEST.md).
 | `packages/rig` | the face rig: 5 expressions, 5 mouth shapes from audio envelope or text timing, blinks, gaze, squash/wobble springs |
 | `packages/room` | pure geometry: ray vs box, face placement rule, room context for Spark, re-match, poke/pet/flick classifiers |
 | `packages/server` | the gateway (Node, no framework): Meta client, Spark persona + tool loop, Image sheet, Transcribe, SAM 3.1, MMS-TTS, spirit store, budget cap, rate limit, run log, MCP over stdio |
-| `packages/landing` | landing page (collector's card binder) |
+| `packages/landing` | landing page (one story, the couch card) and `evidence.html` |
 | `docs/` | Quest guide |
 
 The spec planned a Python FastAPI gateway; it is TypeScript on `node:http` instead, to keep one toolchain and

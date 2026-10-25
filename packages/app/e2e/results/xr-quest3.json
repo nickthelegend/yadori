@@ -7,7 +7,7 @@
     "pet": 1,
     "flick": 1
   },
-  "seconds": 80,
+  "seconds": 79,
   "pass": 21,
   "fail": 0,
   "results": [
@@ -24,7 +24,7 @@
     {
       "name": "couch woke from a pinch",
       "ok": true,
-      "detail": "3997 ms wall clock incl. CLI round trips"
+      "detail": "3947 ms wall clock incl. CLI round trips"
     },
     {
       "name": "ECS: a Spirit component with an anchored face",
@@ -69,7 +69,7 @@
     {
       "name": "gossip: whispers fly between them",
       "ok": true,
-      "detail": "40 particles"
+      "detail": "47 particles"
     },
     {
       "name": "gossip: the couch looks at the lamp",
@@ -89,17 +89,17 @@
     {
       "name": "emulator frame time recorded (600 XR frames)",
       "ok": true,
-      "detail": "p50 1.40 p95 1.60 ms, draw calls p95 20, tris max 18576"
+      "detail": "p50 1.40 p95 1.80 ms, draw calls p95 26, tris max 18584"
     },
     {
       "name": "draw calls within budget (≤ 100)",
       "ok": true,
-      "detail": "max 20"
+      "detail": "max 26"
     },
     {
       "name": "after reload both spirits are re-found in the emulated room",
       "ok": true,
-      "detail": "Couch:2 lines, Lamp:1 lines"
+      "detail": "Couch:3 lines, Lamp:1 lines"
     },
     {
       "name": "no console errors",
@@ -117,5 +117,5 @@
       "detail": "coat rack"
     }
   ],
-  "at": "2026-10-24T00:46:35.053Z"
+  "at": "2026-10-25T04:59:23.308Z"
 }

@@ -14,12 +14,12 @@ Meta test ran its "Setup required" branch (live when `MODEL_API_KEY` is set; nev
 | `@yadori/server` (Vitest): HTTP contract without key (status, wake → built-in face, 503 setup_required for chat/transcribe/cut, MMS-TTS setup message, forget deletes the folder, path tricks, rate limit, key never echoed), persona validation, turn budget (6 tools, 2 `ask_object` hops), SAM token parser, WAV checks, budget cap, Meta live-or-setup-required, MCP over stdio as a child process, the gateway as a real process | `pnpm --filter @yadori/server test` | **32 passed**, 0 skipped |
 | Emulator e2e, Quest 3 profile, **hands only**, synthetic room `yadori_den` + `yadori_bare` | `pnpm --filter app e2e:xr` | **21 / 21** |
 | Emulator e2e, Meta VR Glasses profile (gaze + pinch, field of view, gaze-off fallback) | `pnpm --filter app e2e:glasses` (switch `dev.emulator.device` first) | **8 / 8** |
-| Browser diorama e2e (no headset), real mouse + keyboard | `pnpm --filter app e2e:browser` | **17 / 17** |
+| Browser diorama e2e (no headset), real mouse + keyboard | `pnpm --filter app e2e:browser` | **18 / 18** |
 | Responsive: landing 375 / 1280 px, app on a phone user agent at 375 px | `pnpm e2e:responsive` | **12 / 12** |
 | Production build | `pnpm --filter app build` | passes (one 4.1 MB chunk: IWSDK + three) |
 | Typecheck | `pnpm typecheck` | passes (app, room, rig, server) |
 
-Unit tests: **82**. E2E checks: **58**. Raw results: `packages/app/e2e/results/*.json`, `e2e/results/responsive.json`.
+Unit tests: **82**. E2E checks: **59**. Raw results: `packages/app/e2e/results/*.json`, `e2e/results/responsive.json`.
 
 ## Emulator e2e: what is proven (Quest 3 profile, hands only)
 

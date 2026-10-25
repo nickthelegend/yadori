@@ -1,6 +1,6 @@
 {
   "mode": "browser diorama (no headset), real mouse + keyboard",
-  "pass": 17,
+  "pass": 18,
   "fail": 0,
   "results": [
     {
@@ -21,7 +21,7 @@
     {
       "name": "couch is awake with the built-in face",
       "ok": true,
-      "detail": "wake 1371 ms"
+      "detail": "wake 1383 ms"
     },
     {
       "name": "face anchored on the couch front, 1 cm proud",
@@ -46,7 +46,7 @@
     {
       "name": "puppet line moves the mouth",
       "ok": true,
-      "detail": "max mouthOpen 0.73"
+      "detail": "max mouthOpen 0.80"
     },
     {
       "name": "line counted with a labelled voice mode",
@@ -57,6 +57,11 @@
       "name": "lamp is awake",
       "ok": true,
       "detail": ""
+    },
+    {
+      "name": "a draft line is kept when the strip re-renders",
+      "ok": true,
+      "detail": "\"a half-typed line\""
     },
     {
       "name": "gossip: whisper particles fly",
@@ -92,22 +97,22 @@
   "perf": {
     "frames": 600,
     "cpuMs": {
-      "p50": 2.5,
-      "p95": 3.100000023841858,
-      "max": 3.7000000178813934,
-      "mean": 2.307000000824531
+      "p50": 2.800000011920929,
+      "p95": 3.300000011920929,
+      "max": 4.100000023841858,
+      "mean": 2.594833336472511
     },
     "drawCalls": {
-      "p50": 106,
-      "p95": 107,
-      "max": 107
+      "p50": 102,
+      "p95": 103,
+      "max": 106
     },
     "triangles": {
-      "p50": 27834,
-      "max": 27846
+      "p50": 26848,
+      "max": 27834
     },
     "xrFrames": 0,
     "gl": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)"
   },
-  "at": "2026-10-24T00:45:08.185Z"
+  "at": "2026-10-25T05:03:45.575Z"
 }

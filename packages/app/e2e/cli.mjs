@@ -10,9 +10,10 @@ const CLI = join(APP, 'node_modules/@iwsdk/cli/dist/cli.js');
 export function cli(...argv) {
   let out;
   try {
-    out = execFileSync(process.execPath, [CLI, ...argv], { cwd: APP, encoding: 'utf8', timeout: 150000, maxBuffer: 64 << 20 });
+    out = execFileSync(process.execPath, [CLI, ...argv], { cwd: APP, encoding: 'utf8', timeout: 150000, maxBuffer: 64 << 20, stdio: ['ignore', 'pipe', 'pipe'] });
   } catch (e) {
-    out = e.stdout?.toString() ?? '';
+    // The CLI writes failed command envelopes to stderr, successful ones to stdout.
+    out = e.stdout?.toString().trim() || e.stderr?.toString().trim() || '';
     if (!out) throw e;
   }
   const j = JSON.parse(out);

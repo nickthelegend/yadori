@@ -15,8 +15,8 @@
     "preview": "vite preview",
     "rooms": "node scripts/build-rooms.mjs",
     "e2e:xr": "node e2e/xr-flow.mjs",
-    "e2e:glasses": "node e2e/glasses-flow.mjs",
-    "e2e:browser": "iwsdk browser run e2e/browser-diorama.mjs --timeout 110000",
+    "e2e:glasses": "bash e2e/run-glasses.sh",
+    "e2e:browser": "node e2e/browser-flow.mjs",
     "record:xr": "node e2e/record-xr.mjs"
   },
   "dependencies": {

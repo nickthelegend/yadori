@@ -21,7 +21,7 @@
     {
       "name": "couch is awake with the built-in face",
       "ok": true,
-      "detail": "wake 1383 ms"
+      "detail": "wake 1369 ms"
     },
     {
       "name": "face anchored on the couch front, 1 cm proud",
@@ -97,10 +97,10 @@
   "perf": {
     "frames": 600,
     "cpuMs": {
-      "p50": 2.800000011920929,
-      "p95": 3.300000011920929,
-      "max": 4.100000023841858,
-      "mean": 2.594833336472511
+      "p50": 1.599999999627471,
+      "p95": 2.8999999994412065,
+      "max": 3.2999999998137355,
+      "mean": 1.7071666666865348
     },
     "drawCalls": {
       "p50": 102,
@@ -114,5 +114,5 @@
     "xrFrames": 0,
     "gl": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)"
   },
-  "at": "2026-10-25T05:03:45.575Z"
+  "at": "2026-10-25T11:20:54.969Z"
 }

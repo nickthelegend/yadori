@@ -1,6 +1,6 @@
 # Testing
 
-Real counts from runs on Oct 24, 2026 (MacBook, Apple M4, Chromium via IWSDK agent mode). **Device: no.**
+Real counts from runs on Oct 25, 2026 (MacBook, Apple M4, Chromium via IWSDK agent mode). **Device: no.**
 Nothing here ran on a Quest or on Meta VR Glasses hardware; emulator numbers are a relative proxy (the M4 CPU
 is several times faster than a Quest 3, and GPU time is not measured). **Meta Model API: no key yet**, so every
 Meta test ran its "Setup required" branch (live when `MODEL_API_KEY` is set; never mocked, never skipped).
@@ -46,17 +46,17 @@ Probe: CPU ms from `world.update` to the end of `renderer.render`, plus `rendere
 
 | Scene | CPU p50 | CPU p95 | max | Draw calls p95 | Triangles max |
 |---|---|---|---|---|---|
-| XR (Quest 3 profile), 2 spirits, one talking, whispers on | 1.40 ms | 1.60 ms | – | 20 | 18,576 |
-| Browser diorama (whole den rendered + shadow pass), 2 spirits | 2.5 ms | 3.1 ms | 3.7 ms | 107 | 27,846 |
+| XR (Quest 3 profile), 2 spirits, one talking, whispers on | 0.70 ms | 1.00 ms | – | 26 | 18,584 |
+| Browser diorama (whole den rendered + shadow pass), 2 spirits | 1.6 ms | 2.9 ms | 3.3 ms | 103 | 27,834 |
 
 In XR the room is passthrough (IWER draws its synthetic room itself), so the app draws only faces, bubbles,
 outline, chip and particles: one draw call per face. Quest target: ≤ 13.9 ms p95 at 72 Hz, **unverified on hardware**.
 
 ## Meta VR Glasses (emulator profile)
 
-Gaze hovers the couch, a pinch wakes it; the face corners sit at ±3° horizontally and +2.6° / −3.3° vertically,
-the bubble top at +10.9° (limits: ±37°, +25°, −43°); with gaze disconnected the hand ray wakes the lamp; 0
-console errors. Screenshot: `e2e/shots/glasses-fov.png`.
+Gaze hovers the couch, a pinch wakes it; the face corners sit at −3.1° / +3.0° horizontally and +2.6° / −3.3°
+vertically, the bubble top at +10.9° (limits: ±37°, +25°, −43°); with gaze disconnected the hand ray wakes the
+lamp; 0 console errors. Screenshot: `e2e/shots/glasses-fov.png`.
 
 ## Recordings (test clips, not the demo video)
 

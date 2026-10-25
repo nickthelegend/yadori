@@ -24,7 +24,7 @@
     {
       "name": "couch woke from a pinch",
       "ok": true,
-      "detail": "3947 ms wall clock incl. CLI round trips"
+      "detail": "3978 ms wall clock incl. CLI round trips"
     },
     {
       "name": "ECS: a Spirit component with an anchored face",
@@ -54,7 +54,7 @@
     {
       "name": "puppet line: speaking + mouth moves",
       "ok": true,
-      "detail": "max mouthOpen 0.35"
+      "detail": "max mouthOpen 0.68"
     },
     {
       "name": "voice mode is labelled",
@@ -69,7 +69,7 @@
     {
       "name": "gossip: whispers fly between them",
       "ok": true,
-      "detail": "47 particles"
+      "detail": "37 particles"
     },
     {
       "name": "gossip: the couch looks at the lamp",
@@ -89,7 +89,7 @@
     {
       "name": "emulator frame time recorded (600 XR frames)",
       "ok": true,
-      "detail": "p50 1.40 p95 1.80 ms, draw calls p95 26, tris max 18584"
+      "detail": "p50 0.70 p95 1.00 ms, draw calls p95 26, tris max 18584"
     },
     {
       "name": "draw calls within budget (≤ 100)",
@@ -117,5 +117,5 @@
       "detail": "coat rack"
     }
   ],
-  "at": "2026-10-25T04:59:23.308Z"
+  "at": "2026-10-25T11:19:25.000Z"
 }

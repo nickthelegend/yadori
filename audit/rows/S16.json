@@ -1,15 +1,16 @@
 {
   "id": "S16",
-  "status": "PASS",
-  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "status": "FAIL",
+  "runStartedAt": "2026-10-26T23:02:49.230Z",
   "observations": [
     {
-      "ok": true,
-      "source": "audit/browser/offline-results.json",
+      "ok": false,
+      "source": "audit/browser/offline-502/results.json",
       "detail": {
-        "s": [
+        "waking": null,
+        "spirits": [
           {
-            "id": "local-lc2t114w",
+            "id": "local-0z5fhgyj",
             "name": "Couch",
             "label": "couch",
             "targetId": "den-couch",
@@ -18,21 +19,21 @@
             "expression": "surprised",
             "mouth": "O",
             "params": {
-              "eyeOpen": 1.1871053617350609,
+              "eyeOpen": 1.1376677589706947,
               "eyeSmile": 0,
-              "pupil": 0.89787712371373,
-              "lookX": -0.000268735947362432,
-              "lookY": 0.17152127001073558,
-              "browY": 0.2917796465322,
-              "browTilt": -0.08753389395966,
-              "mouthOpen": 0.4335783151225985,
-              "mouthWide": 0.3451506017419291,
-              "mouthRound": 0.6193975930322836,
-              "smile": 0.17705508836695,
-              "blush": 0.2435549345872899,
-              "squash": 0.093785630112,
+              "pupil": 0.9365557635772936,
+              "lookX": 0,
+              "lookY": 0.11221789160115851,
+              "browY": 0.18126924692201818,
+              "browTilt": -0.05438077407660545,
+              "mouthOpen": 0.30015365530582955,
+              "mouthWide": 0.3928022659622037,
+              "mouthRound": 0.42879093615118513,
+              "smile": 0.20468268826949546,
+              "blush": 0.24615581731933178,
+              "squash": 0.059039999999999995,
               "wobble": 0,
-              "reveal": 0.15844171118822678
+              "reveal": 0.09516258196404048
             },
             "anchor": [
               0,
@@ -41,14 +42,14 @@
             ],
             "size": 0.301,
             "facePos": [
-              -0.0010357521583327202,
+              -0.0010219702982423844,
               0.7095,
-              -2.627557817020491
+              -2.627640303134988
             ],
             "faceDir": [
-              -0.08295826747073329,
+              -0.08240449211388547,
               0,
-              0.9965530221008084
+              0.996598966324696
             ],
             "pokes": 0,
             "pets": 0,
@@ -66,24 +67,24 @@
               },
               "corners": [
                 [
-                  -0.601995536225461,
-                  0.8652786863361859,
-                  -2.640958663744374
+                  -0.6020177910490289,
+                  0.865321558816077,
+                  -2.6403603169038408
                 ],
                 [
-                  0.5938680902955091,
-                  0.8652786863361859,
-                  -2.541408742779494
+                  0.5939009685406064,
+                  0.865321558816077,
+                  -2.541474926367178
                 ],
                 [
-                  0.5999240319087955,
-                  1.4608213136638144,
-                  -2.6141569702966083
+                  0.5999738504525441,
+                  1.4607784411839233,
+                  -2.6149202893661356
                 ],
                 [
-                  -0.5959395946121746,
-                  1.4608213136638144,
-                  -2.7137068912614883
+                  -0.5959449091370911,
+                  1.4607784411839233,
+                  -2.7138056799027983
                 ]
               ]
             },
@@ -96,12 +97,40 @@
             "anchorErrorCm": 0
           }
         ],
-        "failureBody": "Yadori\n宿り · wake up your room\nBrowser diorama, not your room\nMuse Spark · Setup required: MODEL_API_KEY\nMuse Image · Setup required: MODEL_API_KEY\nVoice in · Setup required: MODEL_API_KEY\nSAM 3.1 · Setup required: MODEL_API_KEY\nMMS-TTS · Setup required: fetch-models\nVoice out · Browser voice, not a Meta model\nBINDER\n1 / 6\nforget\nCouch\ncouch · 2.0 × 0.9 m\nBuilt-in face, not generatedDrawn from the label\nNo persona · Setup required for Muse Spark\nvoice browser\n0 memories\n0 lines\nfirst woke 2026-10-27\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nTap, rub or swipe its face · wake a second one and they gossip\nSpeaker\nCouch\nSay\nPuppet mode: you are the voice. Setup required for Muse Spark (MODEL_API_KEY). Lines are yours, spoken by Browser voice, not a Meta model.\nEnter mixed reality (emulated)\nGateway: Gateway offline: start it with pnpm gateway. Waking with the built-in face.",
-        "events": []
+        "body": "Yadori\n宿り · wake up your room\nBrowser diorama, not your room\nMuse Spark · Setup required: MODEL_API_KEY\nMuse Image · Setup required: MODEL_API_KEY\nVoice in · Setup required: MODEL_API_KEY\nSAM 3.1 · Setup required: MODEL_API_KEY\nMMS-TTS · Setup required: fetch-models\nVoice out · Browser voice, not a Meta model\nBINDER\n1 / 6\nforget\nCouch\ncouch · 2.0 × 0.9 m\nBuilt-in face, not generatedDrawn from the label\nNo persona · Setup required for Muse Spark\nvoice browser\n0 memories\n0 lines\nfirst woke 2026-10-27\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nTap, rub or swipe its face · wake a second one and they gossip\nSpeaker\nCouch\nSay\nPuppet mode: you are the voice. Setup required for Muse Spark (MODEL_API_KEY). Lines are yours, spoken by Browser voice, not a Meta model.\nEnter mixed reality (emulated)\nGateway: Gateway offline: start it with pnpm gateway. Waking with the built-in face.",
+        "network": {
+          "at": "2026-10-26T23:02:57.064Z",
+          "group": "S16",
+          "kind": "response",
+          "requestId": 380,
+          "url": "https://localhost:8091/api/wake",
+          "method": "POST",
+          "status": 502,
+          "body": {
+            "gateway": "offline",
+            "error": "Gateway offline: start it with pnpm gateway"
+          }
+        },
+        "errors": [
+          {
+            "at": "2026-10-26T23:02:57.065Z",
+            "group": "S16",
+            "kind": "console",
+            "level": "error",
+            "text": "Failed to load resource: the server responded with a status of 502 ()",
+            "location": {
+              "url": "https://localhost:8091/api/wake",
+              "line": 0,
+              "column": 0,
+              "lineNumber": 0,
+              "columnNumber": 0
+            }
+          }
+        ]
       },
-      "at": "2026-10-26T22:49:32.723Z",
-      "shot": "offline-wake-failure.jpg",
-      "capture": "audit/browser/recovery-events.jsonl"
+      "at": "2026-10-26T23:02:58.282Z",
+      "shot": "S16.jpg",
+      "capture": "audit/browser/offline-502/events.jsonl"
     }
   ]
 }

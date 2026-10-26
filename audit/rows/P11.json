@@ -1,0 +1,203 @@
+{
+  "id": "P11",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/offline-results.json",
+      "detail": {
+        "body": "Yadori\nBrowser diorama, not your room\nGateway offline\nGateway offline · Meta models unavailable\nVoice out · Browser voice, not a Meta model\nClick a piece of furniture to wake it\nThen poke it, pet it, flick it · drag the room to look around",
+        "spirits": [
+          {
+            "id": "local-2qpzzh47",
+            "name": "Couch",
+            "label": "couch",
+            "targetId": "den-couch",
+            "awake": true,
+            "speaking": false,
+            "expression": "neutral",
+            "mouth": "rest",
+            "params": {
+              "eyeOpen": 1,
+              "eyeSmile": 0,
+              "pupil": 0.9999999997349793,
+              "lookX": -0.000010410884950980046,
+              "lookY": 0.33454078199213494,
+              "browY": 7.572020423551166e-10,
+              "browTilt": -2.2716061270653486e-10,
+              "mouthOpen": 0.0015725132393196576,
+              "mouthWide": 0.49943838824298087,
+              "mouthRound": 0.0022464473934091945,
+              "smile": 0.24999999981069948,
+              "blush": 0.44994429268500824,
+              "squash": 0.0028771623992592974,
+              "wobble": 0,
+              "reveal": 1
+            },
+            "anchor": [
+              0,
+              0.7095,
+              -2.64
+            ],
+            "size": 0.301,
+            "facePos": [
+              -0.0021472575470492085,
+              0.7095,
+              -2.6221519876216552
+            ],
+            "faceDir": [
+              -0.11944660734810113,
+              0,
+              0.9928406256761598
+            ],
+            "pokes": 0,
+            "pets": 0,
+            "flicks": 0,
+            "lines": 1,
+            "voiceMode": "browser",
+            "bubble": true,
+            "bubbleInfo": {
+              "content": {
+                "speaker": "Couch",
+                "tag": "puppet line (you)",
+                "text": "Hello couch.",
+                "shown": 999
+              },
+              "corners": [
+                [
+                  -0.6025348624292453,
+                  0.8656231107166483,
+                  -2.6548929319429306
+                ],
+                [
+                  0.5888738883821465,
+                  0.8656231107166483,
+                  -2.5115570031252092
+                ],
+                [
+                  0.5982403473351467,
+                  1.460476889283352,
+                  -2.58941104330038
+                ],
+                [
+                  -0.593168403476245,
+                  1.460476889283352,
+                  -2.7327469721181012
+                ]
+              ]
+            },
+            "sourceChip": {
+              "visible": true,
+              "text": "Built-in face · not generated"
+            },
+            "faceSource": "built-in",
+            "hasPersona": false,
+            "anchorErrorCm": 0
+          }
+        ],
+        "events": [
+          {
+            "at": "2026-10-26T22:49:32.788Z",
+            "group": "offline-status",
+            "kind": "console",
+            "level": "debug",
+            "text": "[vite] connecting..."
+          },
+          {
+            "at": "2026-10-26T22:49:32.890Z",
+            "group": "offline-status",
+            "kind": "console",
+            "level": "debug",
+            "text": "[vite] connected."
+          },
+          {
+            "at": "2026-10-26T22:49:32.911Z",
+            "group": "offline-status",
+            "kind": "console",
+            "level": "log",
+            "text": "[IWSDK Dev] Configuration: {device: metaQuest3, activation: always, verbose: false, sem: Object, ai: Object}"
+          },
+          {
+            "at": "2026-10-26T22:49:33.027Z",
+            "group": "offline-status",
+            "kind": "console",
+            "level": "log",
+            "text": "                                                 \n▄▄▄▄▄▄  ▄▄      ▄▄   ▄▄▄▄    ▄▄▄▄▄     ▄▄   ▄▄▄ \n▀▀██▀▀  ██      ██ ▄█▀▀▀▀█   ██▀▀▀██   ██  ██▀  \n  ██    ▀█▄ ██ ▄█▀ ██▄       ██    ██  ██▄██    \n  ██     ██ ██ ██   ▀████▄   ██    ██  █████    \n  ██     ███▀▀███       ▀██  ██    ██  ██  ██▄  \n▄▄██▄▄   ███  ███  █▄▄▄▄▄█▀  ██▄▄▄██   ██   ██▄ \n▀▀▀▀▀▀   ▀▀▀  ▀▀▀   ▀▀▀▀▀    ▀▀▀▀▀     ▀▀    ▀▀                                                \n===============================================\nImmersive Web SDK v1.1.0-rc.2\nThree.js r185\nEliCS v3.4.2"
+          },
+          {
+            "at": "2026-10-26T22:49:33.139Z",
+            "group": "offline-status",
+            "kind": "response",
+            "url": "https://localhost:8091/api/status",
+            "status": 200,
+            "method": "GET"
+          },
+          {
+            "at": "2026-10-26T22:49:34.950Z",
+            "group": "offline-status",
+            "kind": "response",
+            "url": "https://localhost:8091/api/status",
+            "status": 200,
+            "method": "GET"
+          },
+          {
+            "at": "2026-10-26T22:49:34.951Z",
+            "group": "offline-status",
+            "kind": "response",
+            "url": "https://localhost:8091/api/status",
+            "status": 200,
+            "method": "GET"
+          },
+          {
+            "at": "2026-10-26T22:49:48.098Z",
+            "group": "offline-status",
+            "kind": "response",
+            "url": "https://localhost:8091/api/status",
+            "status": 200,
+            "method": "GET"
+          },
+          {
+            "at": "2026-10-26T22:49:56.656Z",
+            "group": "mobile-offline",
+            "kind": "console",
+            "level": "debug",
+            "text": "[vite] connecting..."
+          },
+          {
+            "at": "2026-10-26T22:49:56.826Z",
+            "group": "mobile-offline",
+            "kind": "console",
+            "level": "log",
+            "text": "[IWSDK Dev] Configuration: {device: metaQuest3, activation: always, verbose: false, sem: Object, ai: Object}"
+          },
+          {
+            "at": "2026-10-26T22:49:56.826Z",
+            "group": "mobile-offline",
+            "kind": "console",
+            "level": "debug",
+            "text": "[vite] connected."
+          },
+          {
+            "at": "2026-10-26T22:49:56.982Z",
+            "group": "mobile-offline",
+            "kind": "console",
+            "level": "log",
+            "text": "                                                 \n▄▄▄▄▄▄  ▄▄      ▄▄   ▄▄▄▄    ▄▄▄▄▄     ▄▄   ▄▄▄ \n▀▀██▀▀  ██      ██ ▄█▀▀▀▀█   ██▀▀▀██   ██  ██▀  \n  ██    ▀█▄ ██ ▄█▀ ██▄       ██    ██  ██▄██    \n  ██     ██ ██ ██   ▀████▄   ██    ██  █████    \n  ██     ███▀▀███       ▀██  ██    ██  ██  ██▄  \n▄▄██▄▄   ███  ███  █▄▄▄▄▄█▀  ██▄▄▄██   ██   ██▄ \n▀▀▀▀▀▀   ▀▀▀  ▀▀▀   ▀▀▀▀▀    ▀▀▀▀▀     ▀▀    ▀▀                                                \n===============================================\nImmersive Web SDK v1.1.0-rc.2\nThree.js r185\nEliCS v3.4.2"
+          },
+          {
+            "at": "2026-10-26T22:49:57.085Z",
+            "group": "mobile-offline",
+            "kind": "response",
+            "url": "https://localhost:8091/api/status",
+            "status": 200,
+            "method": "GET"
+          }
+        ]
+      },
+      "at": "2026-10-26T22:50:03.021Z",
+      "shot": "mobile-offline.jpg",
+      "capture": "audit/browser/recovery-events.jsonl"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "R06",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/doc-review.json",
+      "detail": {
+        "generatorLog": "commands/rooms.txt",
+        "inventories": "browser/xr-extra-results.json Q02/Q24; real IWER load of regenerated rooms"
+      },
+      "at": "2026-10-26T22:51:43.637Z",
+      "capture": null
+    }
+  ]
+}

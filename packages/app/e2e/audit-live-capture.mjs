@@ -1,0 +1,9 @@
+// Independent read-only live sampling: CLI commands block their own Node process,
+// so a separate CDP client records brief real hand/speech reactions as they occur.
+import{chromium}from'playwright';import{writeFileSync}from'node:fs';import{join}from'node:path';import{APP,cli}from'./cli.mjs';
+const dir=join(APP,'../../audit/browser'),samples=[],shots=[];let stop=false,browser,last='';
+for(const signal of['SIGINT','SIGTERM'])process.on(signal,()=>{stop=true;});
+try{browser=await chromium.connectOverCDP(cli('dev','status').state.session.browserAutomation.endpoint);writeFileSync(join(dir,'quest-live.ready'),new Date().toISOString());
+while(!stop){for(const ctx of browser.contexts())for(const p of ctx.pages())for(const f of p.frames())try{const sample=await f.evaluate(()=>{if(!window.__yadori||!__yadori.mode().xr)return null;const spirits=__yadori.spirits();if(!spirits.some(s=>s.expression!=='neutral'||s.speaking))return null;return{mode:__yadori.mode(),particles:__yadori.particles(),spirits:spirits.map(s=>({id:s.id,label:s.label,expression:s.expression,pokes:s.pokes,pets:s.pets,flicks:s.flicks,speaking:s.speaking,lines:s.lines,voiceMode:s.voiceMode,params:s.params,bubble:s.bubble,content:s.bubbleInfo.content}))};});if(!sample)continue;sample.at=new Date().toISOString();if(samples.length<1600)samples.push(sample);const key=JSON.stringify(sample.spirits.map(s=>[s.label,s.expression,s.pokes,s.pets,s.flicks,s.speaking,s.params.mouthOpen>.3]));if(key!==last){last=key;if(shots.length<18){const shot='quest-live-'+shots.length+'.jpg';await p.screenshot({path:join(dir,shot),type:'jpeg',quality:55});shots.push({at:sample.at,shot,key});}}}catch{}
+await new Promise(r=>setTimeout(r,40));}
+}finally{await browser?.close();writeFileSync(join(dir,'quest-live.json'),JSON.stringify({startedAt:samples[0]?.at,endedAt:new Date().toISOString(),samples,shots},null,2));}

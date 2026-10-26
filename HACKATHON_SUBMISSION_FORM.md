@@ -55,10 +55,10 @@ so voice out is MMS-TTS (non-commercial licence) with labelled fallbacks.
 transcription proxy, a phone "puppeteer" so a second person can voice spirits in the headset, phone clip mode
 for small objects.
 
-**Measured (IWER emulator on a laptop, not a headset; TESTING.md has the raw runs):** hands-only e2e 21/21
-(one pinch to the first face; face 0.00 cm from its computed target; poke/pet/flick from tracked fingertip and
-palm; gossip gaze matches geometry; 0 console errors); Meta VR Glasses profile 8/8 (gaze + pinch, faces within
-±3° of the view centre); 600-frame probe in XR with two spirits: CPU p95 1.6 ms, 20 draw calls; 82 unit tests.
+**Measurements:** [TESTING.md](TESTING.md) records the current complete no-key rerun, exact suite counts,
+600-frame host CPU measurements and linked evidence. IWER uses emulated hands and synthetic rooms on a
+laptop; it does not measure headset GPU/frame time. Live Meta calls, MMS-TTS synthesis and physical Quest
+and Glasses behavior remain untested. The Oct 25 figures on the evidence page are explicitly historical.
 
 **Video:** not recorded yet. Test clips from the emulator are in `grokbot/videos/yadori/`; the demo video
 follows the spec's script and is captioned "IWER emulator, synthetic room" where it is.

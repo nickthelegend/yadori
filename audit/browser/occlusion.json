@@ -1,18 +1,19 @@
 {
   "id": "Q35",
-  "ok": false,
+  "ok": true,
   "detail": {
-    "crop": {
-      "left": 374,
-      "top": 507,
-      "width": 52,
-      "height": 52
-    },
-    "overlapPixels": 4,
-    "leakPixels": 3,
-    "leakPercent": 75,
-    "method": "Actual rendered face/hand masks from four Chrome screenshots; RGB Euclidean thresholds 75 mask, 45 leak; emulated hand only"
+    "faceDepthTest": true,
+    "faceOrder": 15,
+    "handDepthWrite": true,
+    "handDepthTest": true,
+    "handOrder": 0,
+    "handVertices": 1360,
+    "sessionActive": true,
+    "overlapPixels": 3192,
+    "leakPixels": 0,
+    "leakPercent": 0,
+    "method": "Frozen ECS; actual face/room/composite plus white diagnostic of the same skinned hand geometry. Compare composite to the original hand-only render on face pixels inside the solid hand mask. Diagnostic material restored in finally. Emulator only; physical hand/depth remains UNTESTED."
   },
-  "at": "2026-10-26T21:45:23.797Z",
+  "at": "2026-10-26T22:43:51.043Z",
   "shot": "occlusion-composite.jpg"
 }

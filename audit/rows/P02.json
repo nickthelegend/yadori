@@ -1,0 +1,15 @@
+{
+  "id": "P02",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/mobile-results.json",
+      "detail": "Yadori\nBrowser diorama, not your room\nSetup required (5)\nClick a piece of furniture to wake it\nThen poke it, pet it, flick it · drag the room to look around",
+      "at": "2026-10-26T22:48:35.642Z",
+      "shot": "mobile.jpg",
+      "capture": "audit/browser/mobile-events.jsonl"
+    }
+  ]
+}

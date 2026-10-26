@@ -1,0 +1,5 @@
+{"at":"2026-10-26T22:50:37.411Z","kind":"capture-start","suite":"glasses-interrupt-active"}
+{"at":"2026-10-26T22:50:37.515Z","kind":"response","url":"https://localhost:8091/api/status","status":200,"method":"GET"}
+{"at":"2026-10-26T22:50:37.633Z","kind":"console","level":"log","text":"[vite] server connection lost. Polling for restart..."}
+{"at":"2026-10-26T22:50:37.634Z","kind":"console","level":"log","text":"[vite] server connection lost. Polling for restart..."}
+{"at":"2026-10-26T22:50:37.687Z","kind":"capture-end","responses":1,"errorCount":0}

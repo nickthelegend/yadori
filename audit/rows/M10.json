@@ -1,0 +1,25 @@
+{
+  "id": "M10",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/server/results.json",
+      "detail": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"forgotten\":\"sp_tifrxsbwb9f3\"}"
+          }
+        ],
+        "isError": false,
+        "body": {
+          "forgotten": "sp_tifrxsbwb9f3"
+        }
+      },
+      "at": "2026-10-26T22:39:25.866Z",
+      "capture": "audit/server/network.json"
+    }
+  ]
+}

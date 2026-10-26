@@ -43,7 +43,7 @@ try {
       check('landing respects reduced motion (card does not flip)', anim === 'none', anim);
     }
     check(`landing ${w}px: no console errors`, errors.length === 0, errors.slice(0, 2).join(' | '));
-    await page.screenshot({ path: join(root, `e2e/shots/landing-${w}.png`), fullPage: w === 375 });
+    await page.screenshot({ path: join(root, `audit/browser/landing-responsive-${w}.jpg`), type: 'jpeg', quality: 55, fullPage: w === 375 });
     await ctx.close();
   }
   // the app in a phone-sized browser (browser diorama)
@@ -76,7 +76,7 @@ try {
     return r ? r.left >= 0 && r.right <= innerWidth && r.bottom <= innerHeight : false;
   });
   check('app 375px: compose strip fits the screen', visible);
-  await page.screenshot({ path: join(root, 'e2e/shots/app-375.png') });
+  await page.screenshot({ path: join(root, 'audit/browser/app-responsive-375.jpg'), type: 'jpeg', quality: 55 });
   check('app 375px: no console errors', errors.length === 0, errors.slice(0, 2).join(' | '));
   await ctx.close();
 } catch (e) {

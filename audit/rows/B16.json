@@ -1,0 +1,58 @@
+{
+  "id": "B16",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/camera-results.json",
+      "detail": {
+        "zoom": [
+          {
+            "denVisible": true,
+            "camera": [
+              -2.8680272102355957,
+              2.512883424758911,
+              0.822282612323761
+            ],
+            "orbit": {
+              "yaw": -0.745,
+              "pitch": 0.3575000000000001,
+              "dist": 4.752000000000001
+            }
+          },
+          {
+            "denVisible": true,
+            "camera": [
+              -2.6265852451324463,
+              2.379852771759033,
+              0.5605000257492065
+            ],
+            "orbit": {
+              "yaw": -0.745,
+              "pitch": 0.3575000000000001,
+              "dist": 4.371840000000001
+            }
+          },
+          {
+            "denVisible": true,
+            "camera": [
+              -2.8487119674682617,
+              2.5022411346435547,
+              0.8013400435447693
+            ],
+            "orbit": {
+              "yaw": -0.745,
+              "pitch": 0.3575000000000001,
+              "dist": 4.721587200000001
+            }
+          }
+        ],
+        "scrollY": 0
+      },
+      "at": "2026-10-26T22:49:04.584Z",
+      "shot": "browser-camera.jpg",
+      "capture": "audit/browser/recovery-events.jsonl"
+    }
+  ]
+}

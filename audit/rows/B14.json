@@ -1,0 +1,26 @@
+{
+  "id": "B14",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": {
+        "before": [
+          1,
+          1,
+          1
+        ],
+        "after": [
+          1,
+          1,
+          1
+        ]
+      },
+      "at": "2026-10-26T22:45:56.333Z",
+      "shot": "desktop-awake.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

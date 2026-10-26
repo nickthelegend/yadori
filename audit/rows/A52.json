@@ -1,0 +1,30 @@
+{
+  "id": "A52",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/server/results.json",
+      "detail": [
+        {
+          "path": "/%2e%2e%2fdist-audit-canary/canary.txt",
+          "status": 403,
+          "body": "{\"error\":\"forbidden\"}"
+        },
+        {
+          "path": "/%2e%2e%2fpackage.json",
+          "status": 403,
+          "body": "{\"error\":\"forbidden\"}"
+        },
+        {
+          "path": "/..%2f..%2fpackage.json",
+          "status": 403,
+          "body": "{\"error\":\"forbidden\"}"
+        }
+      ],
+      "at": "2026-10-26T22:39:25.632Z",
+      "capture": "audit/server/network.json"
+    }
+  ]
+}

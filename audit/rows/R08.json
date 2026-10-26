@@ -1,0 +1,14 @@
+{
+  "id": "R08",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/doc-review.json",
+      "detail": "Recording CLI caption source reviewed; old clips are excluded from fresh automated/hardware/model evidence. No existing clip reviewed or counted as this run.",
+      "at": "2026-10-26T22:51:43.638Z",
+      "capture": null
+    }
+  ]
+}

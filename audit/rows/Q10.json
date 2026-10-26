@@ -1,0 +1,321 @@
+{
+  "id": "Q10",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/quest-results.json",
+      "detail": {
+        "assertion": {
+          "name": "palm stroke -> pet (happy, hearts)",
+          "ok": true,
+          "detail": "pets 2 expr happy"
+        },
+        "observations": {
+          "stage": "pet",
+          "at": "2026-10-26T22:39:54.001Z",
+          "mode": {
+            "xr": true,
+            "emulator": true,
+            "room": "iwer:yadori_den",
+            "label": "Emulated room (IWER), not your room"
+          },
+          "status": {
+            "online": true,
+            "gateway": "yadori",
+            "spark": {
+              "ready": false,
+              "model": "muse-spark-1.3",
+              "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+            },
+            "wonder": {
+              "ready": false,
+              "model": "muse-wonder-1.0",
+              "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+            },
+            "image": {
+              "ready": false,
+              "model": "muse-image-1.0",
+              "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+            },
+            "transcribe": {
+              "ready": false,
+              "model": "muse-voice-transcribe-1.0",
+              "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+            },
+            "sam3": {
+              "ready": false,
+              "model": "sam-3.1",
+              "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+            },
+            "tts": {
+              "ready": false,
+              "setup": "Setup required: run scripts/fetch-models.sh (MMS-TTS weights, CC-BY-NC-4.0)",
+              "model": "facebook/mms-tts-eng",
+              "license": "CC-BY-NC-4.0"
+            },
+            "budget": {
+              "cap_usd": 3,
+              "spent_usd": 0
+            }
+          },
+          "hover": {
+            "targets": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "faces": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "gaze": false
+          },
+          "spirits": [
+            {
+              "id": "sp_rkysulofhqp0",
+              "name": "Couch",
+              "label": "couch",
+              "targetId": "mesh-23",
+              "awake": true,
+              "speaking": false,
+              "expression": "happy",
+              "mouth": "rest",
+              "params": {
+                "eyeOpen": 1,
+                "eyeSmile": 0.849999999999965,
+                "pupil": 0.9999999999999998,
+                "lookX": 0.6132192723136267,
+                "lookY": -0.7899127318474266,
+                "browY": 0.34999999999998566,
+                "browTilt": -0.14999999999999386,
+                "mouthOpen": 3.497585478748464e-84,
+                "mouthWide": 0.49999999999999994,
+                "mouthRound": 4.99655068392638e-84,
+                "smile": 0.9999999999999692,
+                "blush": 0.8999980114553976,
+                "squash": 0.00002835528232368341,
+                "wobble": 0,
+                "reveal": 1
+              },
+              "anchor": [
+                0,
+                0.7095000118017196,
+                -2.6399999165534975
+              ],
+              "size": 0.30100000500679014,
+              "facePos": [
+                -0.06218297566490603,
+                0.7095000118017196,
+                -2.5658931319066474
+              ],
+              "faceDir": [
+                -0.6427876096865394,
+                0,
+                0.7660444431189781
+              ],
+              "pokes": 1,
+              "pets": 2,
+              "flicks": 0,
+              "lines": 0,
+              "voiceMode": "",
+              "bubble": false,
+              "bubbleInfo": {
+                "content": null,
+                "corners": [
+                  [
+                    -0.23744098340007236,
+                    0.9343865108680994,
+                    -2.7165264900537363
+                  ],
+                  [
+                    -0.062278133852296226,
+                    0.9343865108680994,
+                    -2.3347962500434596
+                  ],
+                  [
+                    0.11307503207026032,
+                    1.0173135182428088,
+                    -2.4152597737595585
+                  ],
+                  [
+                    -0.06208781747751583,
+                    1.017313518242809,
+                    -2.796990013769835
+                  ]
+                ]
+              },
+              "sourceChip": {
+                "visible": false,
+                "text": "Built-in face · not generated"
+              },
+              "faceSource": "built-in",
+              "hasPersona": false,
+              "anchorErrorCm": 0
+            }
+          ],
+          "targets": [
+            {
+              "id": "mesh-23",
+              "label": "couch",
+              "center": [
+                0,
+                0.4300000071525574,
+                -3.0999999046325684
+              ],
+              "dims": [
+                2,
+                0.8600000143051147,
+                0.8999999761581421
+              ]
+            },
+            {
+              "id": "mesh-24",
+              "label": "lamp",
+              "center": [
+                -1.6200000047683716,
+                0.8500000238418579,
+                -3.1500000953674316
+              ],
+              "dims": [
+                0.4399999976158142,
+                1.7000000476837158,
+                0.4399999976158142
+              ]
+            },
+            {
+              "id": "mesh-25",
+              "label": "plant",
+              "center": [
+                1.649999976158142,
+                0.75,
+                -3.049999952316284
+              ],
+              "dims": [
+                0.7799999713897705,
+                1.5,
+                0.7799999713897705
+              ]
+            },
+            {
+              "id": "mesh-26",
+              "label": "table",
+              "center": [
+                0,
+                0.22499999403953552,
+                -1.850000023841858
+              ],
+              "dims": [
+                1.100000023841858,
+                0.44999998807907104,
+                0.6000000238418579
+              ]
+            },
+            {
+              "id": "mesh-27",
+              "label": "screen",
+              "center": [
+                2.319999933242798,
+                1,
+                -1.7000000476837158
+              ],
+              "dims": [
+                1.2000000476837158,
+                0.7200000286102295,
+                0.05999999865889549
+              ]
+            }
+          ],
+          "saved": [
+            {
+              "spiritId": "sp_rkysulofhqp0",
+              "label": "couch",
+              "name": "Couch",
+              "dims": [
+                2,
+                0.8600000143051147,
+                0.8999999761581421
+              ],
+              "position": [
+                0,
+                0.4300000071525574,
+                -3.0999999046325684
+              ],
+              "persona": null,
+              "sheet": null,
+              "faceSource": "built-in",
+              "source": "label",
+              "firstWoke": "2026-10-27",
+              "lines": 0,
+              "memories": 0,
+              "room": "iwer:yadori_den"
+            }
+          ],
+          "body": "Yadori\nEmulated room (IWER), not your room\nSetup required (5)\nforget\nCouch\ncouch · 2.0 × 0.9 m\n\n5\nopen\n\nSpeaker\nCouch\nSay\nPuppet mode: you are the voice. Setup required for Muse Spark (MODEL_API_KEY). Lines are yours, spoken by Browser voice, not a Meta model."
+        }
+      },
+      "at": "2026-10-26T22:40:53.539Z",
+      "shot": "quest-pet.jpg",
+      "capture": "audit/browser/quest-network.json"
+    },
+    {
+      "ok": true,
+      "source": "audit/browser/quest-live.json",
+      "detail": {
+        "mode": {
+          "xr": true,
+          "emulator": true,
+          "room": "iwer:yadori_den",
+          "label": "Emulated room (IWER), not your room"
+        },
+        "particles": 7,
+        "spirits": [
+          {
+            "id": "sp_rkysulofhqp0",
+            "label": "couch",
+            "expression": "happy",
+            "pokes": 1,
+            "pets": 1,
+            "flicks": 0,
+            "speaking": false,
+            "lines": 0,
+            "voiceMode": "",
+            "params": {
+              "eyeOpen": 1,
+              "eyeSmile": 0.12929035152527152,
+              "pupil": 0.9999999999999997,
+              "lookX": 0.2800844462522265,
+              "lookY": -0.9370985256559088,
+              "browY": 0.05323720356922947,
+              "browTilt": -0.02281594438681263,
+              "mouthOpen": 6.69676401309415e-47,
+              "mouthWide": 0.49999999999999994,
+              "mouthRound": 9.566805732991626e-47,
+              "smile": 0.364079721934063,
+              "blush": 0.4787410462548089,
+              "squash": 0.021074625039870253,
+              "wobble": 0,
+              "reveal": 1
+            },
+            "bubble": true,
+            "content": {
+              "speaker": "Couch",
+              "tag": "",
+              "text": "",
+              "shown": 0,
+              "glyph": "♥"
+            }
+          }
+        ],
+        "at": "2026-10-26T22:39:51.227Z"
+      },
+      "at": "2026-10-26T22:40:53.365Z",
+      "shot": "quest-live-3.jpg",
+      "capture": "audit/browser/quest-network.json"
+    }
+  ]
+}

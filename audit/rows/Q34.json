@@ -1,0 +1,820 @@
+{
+  "id": "Q34",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/capacity.json",
+      "detail": {
+        "id": "Q34",
+        "ok": true,
+        "counts": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          6
+        ],
+        "snapshot": {
+          "mode": {
+            "xr": true,
+            "emulator": true,
+            "room": "iwer:yadori_den",
+            "label": "Emulated room (IWER), not your room"
+          },
+          "status": {
+            "online": true,
+            "gateway": "yadori",
+            "spark": {
+              "ready": false,
+              "model": "muse-spark-1.3",
+              "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+            },
+            "wonder": {
+              "ready": false,
+              "model": "muse-wonder-1.0",
+              "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+            },
+            "image": {
+              "ready": false,
+              "model": "muse-image-1.0",
+              "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+            },
+            "transcribe": {
+              "ready": false,
+              "model": "muse-voice-transcribe-1.0",
+              "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+            },
+            "sam3": {
+              "ready": false,
+              "model": "sam-3.1",
+              "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+            },
+            "tts": {
+              "ready": false,
+              "setup": "Setup required: run scripts/fetch-models.sh (MMS-TTS weights, CC-BY-NC-4.0)",
+              "model": "facebook/mms-tts-eng",
+              "license": "CC-BY-NC-4.0"
+            },
+            "budget": {
+              "cap_usd": 3,
+              "spent_usd": 0
+            }
+          },
+          "hover": {
+            "targets": [
+              null,
+              "table",
+              null,
+              null
+            ],
+            "faces": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "gaze": false
+          },
+          "spirits": [
+            {
+              "id": "sp_cobafh8ggtol",
+              "name": "Table",
+              "label": "table",
+              "targetId": "mesh-18",
+              "awake": true,
+              "speaking": false,
+              "expression": "neutral",
+              "mouth": "rest",
+              "params": {
+                "eyeOpen": 1,
+                "eyeSmile": 0,
+                "pupil": 0.9999999999999999,
+                "lookX": 5.598471720639602e-17,
+                "lookY": 0.37190111416286636,
+                "browY": 1.0787823033962642e-79,
+                "browTilt": -3.2363469101887916e-80,
+                "mouthOpen": 5.467468433769872e-222,
+                "mouthWide": 0.5,
+                "mouthRound": 7.810669191099808e-222,
+                "smile": 0.24999999999999997,
+                "blush": 0.44999999999999973,
+                "squash": -1.072316779429319e-41,
+                "wobble": 0,
+                "reveal": 1
+              },
+              "anchor": [
+                -2.521271040439606,
+                1.0000000397364297,
+                -0.9174507260322571
+              ],
+              "size": 0.2274999916553497,
+              "facePos": [
+                -2.4847191160082946,
+                1.0000000397364297,
+                -0.904150057809956
+              ],
+              "faceDir": [
+                0.9397185984677687,
+                0,
+                0.34194876179593403
+              ],
+              "pokes": 0,
+              "pets": 0,
+              "flicks": 0,
+              "lines": 0,
+              "voiceMode": "",
+              "bubble": false,
+              "bubbleInfo": {
+                "content": null,
+                "corners": [
+                  [
+                    -2.6126093507932,
+                    1.1175433683248372,
+                    -0.48904592880376474
+                  ],
+                  [
+                    -2.3159257296022355,
+                    1.1175433683248372,
+                    -1.3043701757162172
+                  ],
+                  [
+                    -2.3568288812233895,
+                    1.5491671606169435,
+                    -1.3192541868161474
+                  ],
+                  [
+                    -2.6535125024143538,
+                    1.5491671606169435,
+                    -0.5039299399036948
+                  ]
+                ]
+              },
+              "sourceChip": {
+                "visible": false,
+                "text": "Built-in face · not generated"
+              },
+              "faceSource": "built-in",
+              "hasPersona": false,
+              "anchorErrorCm": 0
+            },
+            {
+              "id": "sp_fhtxgaviwb7i",
+              "name": "Table 2",
+              "label": "table",
+              "targetId": "mesh-19",
+              "awake": true,
+              "speaking": false,
+              "expression": "neutral",
+              "mouth": "rest",
+              "params": {
+                "eyeOpen": 1,
+                "eyeSmile": 0,
+                "pupil": 0.9999999999999999,
+                "lookX": -0.15582492465751105,
+                "lookY": 0.3685910813357822,
+                "browY": 3.560157258020286e-67,
+                "browTilt": -1.0680471774060862e-67,
+                "mouthOpen": 6.161605922761072e-187,
+                "mouthWide": 0.5,
+                "mouthRound": 8.802294175372962e-187,
+                "smile": 0.24999999999999997,
+                "blush": 0.44999999999999973,
+                "squash": -1.1486202100502205e-35,
+                "wobble": 0,
+                "reveal": 1
+              },
+              "anchor": [
+                -1.8989294075965881,
+                1.0000000397364297,
+                -2.0023884773254395
+              ],
+              "size": 0.2274999916553497,
+              "facePos": [
+                -1.8429184686984879,
+                1.0000000397364297,
+                -1.9553897191541503
+              ],
+              "faceDir": [
+                0.7660444431189781,
+                0,
+                0.6427876096865394
+              ],
+              "pokes": 0,
+              "pets": 0,
+              "flicks": 0,
+              "lines": 0,
+              "voiceMode": "",
+              "bubble": false,
+              "bubbleInfo": {
+                "content": null,
+                "corners": [
+                  [
+                    -2.1487462553534344,
+                    1.1173658669197364,
+                    -1.6376215913645868
+                  ],
+                  [
+                    -1.5076112999211966,
+                    1.1173658669197364,
+                    -2.241879371141277
+                  ],
+                  [
+                    -1.5370906820435413,
+                    1.555769786673654,
+                    -2.2731578469437137
+                  ],
+                  [
+                    -2.178225637475779,
+                    1.555769786673654,
+                    -1.6689000671670235
+                  ]
+                ]
+              },
+              "sourceChip": {
+                "visible": false,
+                "text": "Built-in face · not generated"
+              },
+              "faceSource": "built-in",
+              "hasPersona": false,
+              "anchorErrorCm": 0
+            },
+            {
+              "id": "sp_x2lqhhufxq4x",
+              "name": "Table 3",
+              "label": "table",
+              "targetId": "mesh-20",
+              "awake": true,
+              "speaking": false,
+              "expression": "neutral",
+              "mouth": "rest",
+              "params": {
+                "eyeOpen": 1,
+                "eyeSmile": 0,
+                "pupil": 0.9999999999999999,
+                "lookX": 2.0557402928744424e-11,
+                "lookY": 0.3716450610637405,
+                "browY": 1.663965536583605e-54,
+                "browTilt": -4.99189660975082e-55,
+                "mouthOpen": 1.8398316960042135e-151,
+                "mouthWide": 0.5,
+                "mouthRound": 2.6283309942917347e-151,
+                "smile": 0.24999999999999997,
+                "blush": 0.44999999999999973,
+                "squash": -8.677539397540792e-31,
+                "wobble": 0,
+                "reveal": 1
+              },
+              "anchor": [
+                -1.2232813835144043,
+                1.0000000397364297,
+                -2.404266884326935
+              ],
+              "size": 0.2274999916553497,
+              "facePos": [
+                -1.199889956067751,
+                1.0000000397364297,
+                -2.358292805799268
+              ],
+              "faceDir": [
+                0.4534742883016995,
+                0,
+                0.891269358751476
+              ],
+              "pokes": 0,
+              "pets": 0,
+              "flicks": 0,
+              "lines": 0,
+              "voiceMode": "",
+              "bubble": false,
+              "bubbleInfo": {
+                "content": null,
+                "corners": [
+                  [
+                    -1.5769323728761593,
+                    1.1175355361963153,
+                    -2.1420500400496887
+                  ],
+                  [
+                    -0.8031200386407724,
+                    1.1175355361963153,
+                    -2.535762663625157
+                  ],
+                  [
+                    -0.8228475392593426,
+                    1.5494571459530622,
+                    -2.574535571548847
+                  ],
+                  [
+                    -1.5966598734947295,
+                    1.5494571459530622,
+                    -2.1808229479733785
+                  ]
+                ]
+              },
+              "sourceChip": {
+                "visible": false,
+                "text": "Built-in face · not generated"
+              },
+              "faceSource": "built-in",
+              "hasPersona": false,
+              "anchorErrorCm": 0
+            },
+            {
+              "id": "sp_8aezgjuxahcz",
+              "name": "Table 4",
+              "label": "table",
+              "targetId": "mesh-21",
+              "awake": true,
+              "speaking": false,
+              "expression": "neutral",
+              "mouth": "rest",
+              "params": {
+                "eyeOpen": 1,
+                "eyeSmile": 0,
+                "pupil": 0.9999999999999999,
+                "lookX": -0.9999999992597254,
+                "lookY": 2.732209762722198e-10,
+                "browY": 7.631138455098456e-42,
+                "browTilt": -2.2893415365295324e-42,
+                "mouthOpen": 5.209041383509274e-116,
+                "mouthWide": 0.5,
+                "mouthRound": 7.44148769072752e-116,
+                "smile": 0.24999999999999997,
+                "blush": 0.44999999999999973,
+                "squash": 1.3818387162729255e-23,
+                "wobble": 0,
+                "reveal": 1
+              },
+              "anchor": [
+                0,
+                1.0000000397364297,
+                -2.665000011920929
+              ],
+              "size": 0.2274999916553497,
+              "facePos": [
+                0,
+                1.0000000397364297,
+                -2.665000011920929
+              ],
+              "faceDir": [
+                0,
+                0,
+                1
+              ],
+              "pokes": 0,
+              "pets": 0,
+              "flicks": 0,
+              "lines": 0,
+              "voiceMode": "",
+              "bubble": false,
+              "bubbleInfo": {
+                "content": null,
+                "corners": [
+                  [
+                    -0.4370731759537592,
+                    1.1174566838613689,
+                    -2.6433695472422327
+                  ],
+                  [
+                    0.4370731759537592,
+                    1.1174566838613689,
+                    -2.6433695472422327
+                  ],
+                  [
+                    0.4370731759537592,
+                    1.552383635347984,
+                    -2.6866304765996256
+                  ],
+                  [
+                    -0.4370731759537592,
+                    1.552383635347984,
+                    -2.6866304765996256
+                  ]
+                ]
+              },
+              "sourceChip": {
+                "visible": false,
+                "text": "Built-in face · not generated"
+              },
+              "faceSource": "built-in",
+              "hasPersona": false,
+              "anchorErrorCm": 0
+            },
+            {
+              "id": "sp_cppdojfxiape",
+              "name": "Table 5",
+              "label": "table",
+              "targetId": "mesh-22",
+              "awake": true,
+              "speaking": false,
+              "expression": "neutral",
+              "mouth": "rest",
+              "params": {
+                "eyeOpen": 1,
+                "eyeSmile": 0,
+                "pupil": 0.9999999999999999,
+                "lookX": -0.00004690720975288102,
+                "lookY": 0.37162700838433504,
+                "browY": 3.0000576530196434e-29,
+                "browTilt": -9.000172959058919e-30,
+                "mouthOpen": 9.582299443107223e-81,
+                "mouthWide": 0.5,
+                "mouthRound": 1.3688999204438873e-80,
+                "smile": 0.24999999999999997,
+                "blush": 0.44999999999903334,
+                "squash": 3.696570254714312e-17,
+                "wobble": 0,
+                "reveal": 1
+              },
+              "anchor": [
+                1.2232813835144043,
+                1.0000000397364297,
+                -2.404266884326935
+              ],
+              "size": 0.2274999916553497,
+              "facePos": [
+                1.199889956067751,
+                1.0000000397364297,
+                -2.358292805799268
+              ],
+              "faceDir": [
+                -0.4534742883016995,
+                0,
+                0.891269358751476
+              ],
+              "pokes": 0,
+              "pets": 0,
+              "flicks": 0,
+              "lines": 0,
+              "voiceMode": "",
+              "bubble": false,
+              "bubbleInfo": {
+                "content": null,
+                "corners": [
+                  [
+                    0.8031200386407724,
+                    1.1175355361963153,
+                    -2.535762663625157
+                  ],
+                  [
+                    1.5769323728761593,
+                    1.1175355361963153,
+                    -2.1420500400496887
+                  ],
+                  [
+                    1.5966598734947295,
+                    1.5494571459530622,
+                    -2.1808229479733785
+                  ],
+                  [
+                    0.8228475392593426,
+                    1.5494571459530622,
+                    -2.574535571548847
+                  ]
+                ]
+              },
+              "sourceChip": {
+                "visible": false,
+                "text": "Built-in face · not generated"
+              },
+              "faceSource": "built-in",
+              "hasPersona": false,
+              "anchorErrorCm": 0
+            },
+            {
+              "id": "sp_szrmfrdptfib",
+              "name": "Table 6",
+              "label": "table",
+              "targetId": "mesh-23",
+              "awake": true,
+              "speaking": false,
+              "expression": "neutral",
+              "mouth": "rest",
+              "params": {
+                "eyeOpen": 1,
+                "eyeSmile": 0,
+                "pupil": 0.9999999999999998,
+                "lookX": -0.9998624035855358,
+                "lookY": 0.000043879319534754116,
+                "browY": 1.9387148345078482e-16,
+                "browTilt": -5.81614450352355e-17,
+                "mouthOpen": 7.088361689565146e-45,
+                "mouthWide": 0.5,
+                "mouthRound": 1.0126230985093071e-44,
+                "smile": 0.24999999999999994,
+                "blush": 0.4499998713392566,
+                "squash": 1.0267788503788602e-10,
+                "wobble": 0,
+                "reveal": 1
+              },
+              "anchor": [
+                1.8989294075965881,
+                1.0000000397364297,
+                -2.0023884773254395
+              ],
+              "size": 0.2274999916553497,
+              "facePos": [
+                1.8429184686984879,
+                1.0000000397364297,
+                -1.9553897191541503
+              ],
+              "faceDir": [
+                -0.7660444431189781,
+                0,
+                0.6427876096865394
+              ],
+              "pokes": 0,
+              "pets": 0,
+              "flicks": 0,
+              "lines": 0,
+              "voiceMode": "",
+              "bubble": false,
+              "bubbleInfo": {
+                "content": null,
+                "corners": [
+                  [
+                    1.5076112999211966,
+                    1.1173658669197364,
+                    -2.241879371141277
+                  ],
+                  [
+                    2.1487462553534344,
+                    1.1173658669197364,
+                    -1.6376215913645868
+                  ],
+                  [
+                    2.178225637475779,
+                    1.555769786673654,
+                    -1.6689000671670235
+                  ],
+                  [
+                    1.5370906820435413,
+                    1.555769786673654,
+                    -2.2731578469437137
+                  ]
+                ]
+              },
+              "sourceChip": {
+                "visible": true,
+                "text": "Built-in face · not generated"
+              },
+              "faceSource": "built-in",
+              "hasPersona": false,
+              "anchorErrorCm": 0
+            }
+          ],
+          "targets": [
+            {
+              "id": "mesh-18",
+              "label": "table",
+              "center": [
+                -2.8562710285186768,
+                0.6000000238418579,
+                -0.9174507260322571
+              ],
+              "dims": [
+                0.6499999761581421,
+                1.2000000476837158,
+                0.6499999761581421
+              ]
+            },
+            {
+              "id": "mesh-19",
+              "label": "table",
+              "center": [
+                -2.233929395675659,
+                0.6000000238418579,
+                -2.0023884773254395
+              ],
+              "dims": [
+                0.6499999761581421,
+                1.2000000476837158,
+                0.6499999761581421
+              ]
+            },
+            {
+              "id": "mesh-20",
+              "label": "table",
+              "center": [
+                -1.2232813835144043,
+                0.6000000238418579,
+                -2.739266872406006
+              ],
+              "dims": [
+                0.6499999761581421,
+                1.2000000476837158,
+                0.6499999761581421
+              ]
+            },
+            {
+              "id": "mesh-21",
+              "label": "table",
+              "center": [
+                0,
+                0.6000000238418579,
+                -3
+              ],
+              "dims": [
+                0.6499999761581421,
+                1.2000000476837158,
+                0.6499999761581421
+              ]
+            },
+            {
+              "id": "mesh-22",
+              "label": "table",
+              "center": [
+                1.2232813835144043,
+                0.6000000238418579,
+                -2.739266872406006
+              ],
+              "dims": [
+                0.6499999761581421,
+                1.2000000476837158,
+                0.6499999761581421
+              ]
+            },
+            {
+              "id": "mesh-23",
+              "label": "table",
+              "center": [
+                2.233929395675659,
+                0.6000000238418579,
+                -2.0023884773254395
+              ],
+              "dims": [
+                0.6499999761581421,
+                1.2000000476837158,
+                0.6499999761581421
+              ]
+            },
+            {
+              "id": "mesh-24",
+              "label": "table",
+              "center": [
+                2.8562710285186768,
+                0.6000000238418579,
+                -0.9174507260322571
+              ],
+              "dims": [
+                0.6499999761581421,
+                1.2000000476837158,
+                0.6499999761581421
+              ]
+            }
+          ],
+          "saved": [
+            {
+              "spiritId": "sp_cobafh8ggtol",
+              "label": "table",
+              "name": "Table",
+              "dims": [
+                0.6499999761581421,
+                1.2000000476837158,
+                0.6499999761581421
+              ],
+              "position": [
+                -2.8562710285186768,
+                0.6000000238418579,
+                -0.9174507260322571
+              ],
+              "persona": null,
+              "sheet": null,
+              "faceSource": "built-in",
+              "source": "label",
+              "firstWoke": "2026-10-27",
+              "lines": 0,
+              "memories": 0,
+              "room": "iwer:yadori_den"
+            },
+            {
+              "spiritId": "sp_fhtxgaviwb7i",
+              "label": "table",
+              "name": "Table 2",
+              "dims": [
+                0.6499999761581421,
+                1.2000000476837158,
+                0.6499999761581421
+              ],
+              "position": [
+                -2.233929395675659,
+                0.6000000238418579,
+                -2.0023884773254395
+              ],
+              "persona": null,
+              "sheet": null,
+              "faceSource": "built-in",
+              "source": "label",
+              "firstWoke": "2026-10-27",
+              "lines": 0,
+              "memories": 0,
+              "room": "iwer:yadori_den"
+            },
+            {
+              "spiritId": "sp_x2lqhhufxq4x",
+              "label": "table",
+              "name": "Table 3",
+              "dims": [
+                0.6499999761581421,
+                1.2000000476837158,
+                0.6499999761581421
+              ],
+              "position": [
+                -1.2232813835144043,
+                0.6000000238418579,
+                -2.739266872406006
+              ],
+              "persona": null,
+              "sheet": null,
+              "faceSource": "built-in",
+              "source": "label",
+              "firstWoke": "2026-10-27",
+              "lines": 0,
+              "memories": 0,
+              "room": "iwer:yadori_den"
+            },
+            {
+              "spiritId": "sp_8aezgjuxahcz",
+              "label": "table",
+              "name": "Table 4",
+              "dims": [
+                0.6499999761581421,
+                1.2000000476837158,
+                0.6499999761581421
+              ],
+              "position": [
+                0,
+                0.6000000238418579,
+                -3
+              ],
+              "persona": null,
+              "sheet": null,
+              "faceSource": "built-in",
+              "source": "label",
+              "firstWoke": "2026-10-27",
+              "lines": 0,
+              "memories": 0,
+              "room": "iwer:yadori_den"
+            },
+            {
+              "spiritId": "sp_cppdojfxiape",
+              "label": "table",
+              "name": "Table 5",
+              "dims": [
+                0.6499999761581421,
+                1.2000000476837158,
+                0.6499999761581421
+              ],
+              "position": [
+                1.2232813835144043,
+                0.6000000238418579,
+                -2.739266872406006
+              ],
+              "persona": null,
+              "sheet": null,
+              "faceSource": "built-in",
+              "source": "label",
+              "firstWoke": "2026-10-27",
+              "lines": 0,
+              "memories": 0,
+              "room": "iwer:yadori_den"
+            },
+            {
+              "spiritId": "sp_szrmfrdptfib",
+              "label": "table",
+              "name": "Table 6",
+              "dims": [
+                0.6499999761581421,
+                1.2000000476837158,
+                0.6499999761581421
+              ],
+              "position": [
+                2.233929395675659,
+                0.6000000238418579,
+                -2.0023884773254395
+              ],
+              "persona": null,
+              "sheet": null,
+              "faceSource": "built-in",
+              "source": "label",
+              "firstWoke": "2026-10-27",
+              "lines": 0,
+              "memories": 0,
+              "room": "iwer:yadori_den"
+            }
+          ],
+          "body": "Yadori\nEmulated room (IWER), not your room\nSetup required (5)\nforget\nTable\ntable · 0.6 × 1.2 m\nforget\nTable 2\ntable · 0.6 × 1.2 m\nforget\nTable 3\ntable · 0.6 × 1.2 m\nforget\nTable 4\ntable · 0.6 × 1.2 m\nforget\nTable 5\ntable · 0.6 × 1.2 m\nforget\nTable 6\ntable · 0.6 × 1.2 m\nSpeaker\nTable\nTable 2\nTable 3\nTable 4\nTable 5\nTable 6\nto \nyou\nTable\nTable 2\nTable 3\nTable 4\nTable 5\nSay\nPuppet mode: you are the voice. Setup required for Muse Spark (MODEL_API_KEY). Lines are yours, spoken by Browser voice, not a Meta model.\nAt most 6 spirits (persistent anchors are limited); forget one first."
+        },
+        "shot": "xr-capacity.jpg",
+        "at": "2026-10-26T22:42:59.321Z"
+      },
+      "at": "2026-10-26T22:42:59.321Z",
+      "shot": "xr-capacity.jpg",
+      "capture": "audit/browser/capacity-network.json"
+    }
+  ]
+}

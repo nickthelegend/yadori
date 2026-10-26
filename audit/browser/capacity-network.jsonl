@@ -1,16 +1,16 @@
-{"at":"2026-10-26T22:02:28.547Z","kind":"capture-start","suite":"capacity"}
-{"at":"2026-10-26T22:02:28.930Z","kind":"response","url":"https://localhost:8091/?room=den","status":200,"method":"GET"}
-{"at":"2026-10-26T22:02:29.105Z","kind":"console","level":"log","text":"[IWSDK Dev] Configuration: {device: metaQuest3, activation: always, verbose: false, sem: Object, ai: Object}"}
-{"at":"2026-10-26T22:02:30.530Z","kind":"console","level":"log","text":"                                                 \n▄▄▄▄▄▄  ▄▄      ▄▄   ▄▄▄▄    ▄▄▄▄▄     ▄▄   ▄▄▄ \n▀▀██▀▀  ██      ██ ▄█▀▀▀▀█   ██▀▀▀██   ██  ██▀  \n  ██    ▀█▄ ██ ▄█▀ ██▄       ██    ██  ██▄██    \n  ██     ██ ██ ██   ▀████▄   ██    ██  █████    \n  ██     ███▀▀███       ▀██  ██    ██  ██  ██▄  \n▄▄██▄▄   ███  ███  █▄▄▄▄▄█▀  ██▄▄▄██   ██   ██▄ \n▀▀▀▀▀▀   ▀▀▀  ▀▀▀   ▀▀▀▀▀    ▀▀▀▀▀     ▀▀    ▀▀                                                \n===============================================\nImmersive Web SDK v1.1.0-rc.2\nThree.js r185\nEliCS v3.4.2"}
-{"at":"2026-10-26T22:02:30.593Z","kind":"response","url":"https://localhost:8091/api/status","status":200,"method":"GET"}
-{"at":"2026-10-26T22:02:36.569Z","kind":"console","level":"warning","text":"[iwsdk][gaze] 'gaze-tracking' was NOT granted for this session, so tracked gaze is unavailable. Check that the project requests xr.features.gazeTracking, that this browser build exposes eye tracking, and that the page's permissions policy allows xr-spatial-tracking. {enabledFeatures: Array(8)}"}
-{"at":"2026-10-26T22:02:37.376Z","kind":"response","url":"https://localhost:8091/api/wake","status":200,"method":"POST"}
-{"at":"2026-10-26T22:02:38.446Z","kind":"console","level":"warning","text":"[iwsdk][gaze] no XRInputSource with targetRayMode === \"gaze\" appeared within 3s of session start. Ordinary hand/controller far targeting remains active. Common causes: the feature was not granted, eye tracking is disabled in system settings, the headset has not been calibrated for this user, or the hardware has no eye tracking."}
-{"at":"2026-10-26T22:02:40.278Z","kind":"response","url":"https://localhost:8091/api/wake","status":200,"method":"POST"}
-{"at":"2026-10-26T22:02:43.174Z","kind":"response","url":"https://localhost:8091/api/wake","status":200,"method":"POST"}
-{"at":"2026-10-26T22:02:45.555Z","kind":"response","url":"https://localhost:8091/api/status","status":200,"method":"GET"}
-{"at":"2026-10-26T22:02:46.076Z","kind":"response","url":"https://localhost:8091/api/wake","status":200,"method":"POST"}
-{"at":"2026-10-26T22:02:48.956Z","kind":"response","url":"https://localhost:8091/api/wake","status":200,"method":"POST"}
-{"at":"2026-10-26T22:02:51.839Z","kind":"response","url":"https://localhost:8091/api/wake","status":200,"method":"POST"}
-{"at":"2026-10-26T22:02:57.178Z","kind":"console","level":"warning","text":"THREE.WebGLRenderer: Can't change size while VR device is presenting."}
-{"at":"2026-10-26T22:02:57.328Z","kind":"capture-end","responses":397,"errorCount":0}
+{"at":"2026-10-26T22:42:30.703Z","kind":"capture-start","suite":"capacity"}
+{"at":"2026-10-26T22:42:31.059Z","kind":"response","url":"https://localhost:8091/?room=den","status":200,"method":"GET"}
+{"at":"2026-10-26T22:42:31.251Z","kind":"console","level":"log","text":"[IWSDK Dev] Configuration: {device: metaQuest3, activation: always, verbose: false, sem: Object, ai: Object}"}
+{"at":"2026-10-26T22:42:32.690Z","kind":"console","level":"log","text":"                                                 \n▄▄▄▄▄▄  ▄▄      ▄▄   ▄▄▄▄    ▄▄▄▄▄     ▄▄   ▄▄▄ \n▀▀██▀▀  ██      ██ ▄█▀▀▀▀█   ██▀▀▀██   ██  ██▀  \n  ██    ▀█▄ ██ ▄█▀ ██▄       ██    ██  ██▄██    \n  ██     ██ ██ ██   ▀████▄   ██    ██  █████    \n  ██     ███▀▀███       ▀██  ██    ██  ██  ██▄  \n▄▄██▄▄   ███  ███  █▄▄▄▄▄█▀  ██▄▄▄██   ██   ██▄ \n▀▀▀▀▀▀   ▀▀▀  ▀▀▀   ▀▀▀▀▀    ▀▀▀▀▀     ▀▀    ▀▀                                                \n===============================================\nImmersive Web SDK v1.1.0-rc.2\nThree.js r185\nEliCS v3.4.2"}
+{"at":"2026-10-26T22:42:32.760Z","kind":"response","url":"https://localhost:8091/api/status","status":200,"method":"GET"}
+{"at":"2026-10-26T22:42:38.706Z","kind":"console","level":"warning","text":"[iwsdk][gaze] 'gaze-tracking' was NOT granted for this session, so tracked gaze is unavailable. Check that the project requests xr.features.gazeTracking, that this browser build exposes eye tracking, and that the page's permissions policy allows xr-spatial-tracking. {enabledFeatures: Array(8)}"}
+{"at":"2026-10-26T22:42:39.510Z","kind":"response","url":"https://localhost:8091/api/wake","status":200,"method":"POST"}
+{"at":"2026-10-26T22:42:40.600Z","kind":"console","level":"warning","text":"[iwsdk][gaze] no XRInputSource with targetRayMode === \"gaze\" appeared within 3s of session start. Ordinary hand/controller far targeting remains active. Common causes: the feature was not granted, eye tracking is disabled in system settings, the headset has not been calibrated for this user, or the hardware has no eye tracking."}
+{"at":"2026-10-26T22:42:42.390Z","kind":"response","url":"https://localhost:8091/api/wake","status":200,"method":"POST"}
+{"at":"2026-10-26T22:42:45.308Z","kind":"response","url":"https://localhost:8091/api/wake","status":200,"method":"POST"}
+{"at":"2026-10-26T22:42:47.719Z","kind":"response","url":"https://localhost:8091/api/status","status":200,"method":"GET"}
+{"at":"2026-10-26T22:42:48.214Z","kind":"response","url":"https://localhost:8091/api/wake","status":200,"method":"POST"}
+{"at":"2026-10-26T22:42:51.125Z","kind":"response","url":"https://localhost:8091/api/wake","status":200,"method":"POST"}
+{"at":"2026-10-26T22:42:54.079Z","kind":"response","url":"https://localhost:8091/api/wake","status":200,"method":"POST"}
+{"at":"2026-10-26T22:42:59.411Z","kind":"console","level":"warning","text":"THREE.WebGLRenderer: Can't change size while VR device is presenting."}
+{"at":"2026-10-26T22:42:59.563Z","kind":"capture-end","responses":397,"errorCount":0}

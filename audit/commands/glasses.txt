@@ -1,0 +1,16 @@
+
+> app@0.1.0 e2e:glasses /Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4/packages/app
+> bash e2e/run-glasses.sh
+
+PASS  glasses profile active with gaze  (Meta VR Glasses)
+PASS  gaze hovers the couch (outline + chip)  ([null,null,null,"couch"])
+PASS  gaze + pinch wakes the couch  (couch)
+PASS  inside the glasses view: face top-left  (h -3.1°, v 2.6°)
+PASS  inside the glasses view: face bottom-right  (h 3.0°, v -3.3°)
+PASS  inside the glasses view: bubble top (est.)  (h 0.0°, v 10.9°)
+PASS  actual speech bubble corners fit the glasses view  ([{"h":-9.390233469627299,"v":2.5202469484033685},{"h":9.390233469627299,"v":2.5202469484033685},{"h":9.58694639890725,"v":11.997101947083594},{"h":-9.58694639890725,"v":11.997101947083594}])
+PASS  with gaze disconnected, the hand ray wakes the lamp
+PASS  no console errors
+PASS  independent console, page and network capture is clean  (389 responses; 0 errors)
+
+10 passed, 0 failed

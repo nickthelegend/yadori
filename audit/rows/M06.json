@@ -1,0 +1,39 @@
+{
+  "id": "M06",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/server/results.json",
+      "detail": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"error\":\"mesh {label, dims[3], room_context} required\"}"
+            }
+          ],
+          "isError": true,
+          "body": {
+            "error": "mesh {label, dims[3], room_context} required"
+          }
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"error\":\"mesh {label, dims[3], room_context} required\"}"
+            }
+          ],
+          "isError": true,
+          "body": {
+            "error": "mesh {label, dims[3], room_context} required"
+          }
+        }
+      ],
+      "at": "2026-10-26T22:39:25.856Z",
+      "capture": "audit/server/network.json"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "Q24",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/xr-extra-results.json",
+      "detail": [
+        {
+          "id": "mesh-23",
+          "label": "other",
+          "center": [
+            0.20000000298023224,
+            0.2750000059604645,
+            -2.4000000953674316
+          ],
+          "dims": [
+            0.699999988079071,
+            0.550000011920929,
+            0.5
+          ]
+        }
+      ],
+      "at": "2026-10-26T22:41:18.615Z",
+      "shot": "xr-bare.jpg",
+      "capture": "audit/browser/xr-details-network.json"
+    }
+  ]
+}

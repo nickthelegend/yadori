@@ -1,0 +1,31 @@
+{
+  "id": "G10",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/glasses-results.json",
+      "detail": {
+        "device": "metaQuest3",
+        "command": {
+          "name": "glasses",
+          "command": [
+            "pnpm",
+            "--filter",
+            "app",
+            "e2e:glasses"
+          ],
+          "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+          "startedAt": "2026-10-26T22:50:42.430Z",
+          "endedAt": "2026-10-26T22:51:12.307Z",
+          "exitCode": 0,
+          "log": "commands/glasses.txt"
+        }
+      },
+      "at": "2026-10-26T22:51:15.102Z",
+      "shot": "glasses-bubble.jpg",
+      "capture": "audit/browser/glasses-network.json"
+    }
+  ]
+}

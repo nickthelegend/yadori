@@ -1,0 +1,352 @@
+{
+  "id": "Q33",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/furniture.json",
+      "detail": [
+        {
+          "label": "plant",
+          "target": {
+            "id": "mesh-25",
+            "label": "plant",
+            "center": [
+              1.649999976158142,
+              0.75,
+              -3.049999952316284
+            ],
+            "dims": [
+              0.7799999713897705,
+              1.5,
+              0.7799999713897705
+            ]
+          },
+          "face": {
+            "id": "sp_tdyhkrp7fcdb",
+            "name": "Plant",
+            "label": "plant",
+            "targetId": "mesh-25",
+            "awake": true,
+            "speaking": false,
+            "expression": "neutral",
+            "mouth": "rest",
+            "params": {
+              "eyeOpen": 1,
+              "eyeSmile": 0,
+              "pupil": 0.9999999999737464,
+              "lookX": 0,
+              "lookY": -0.1844287523539176,
+              "browY": 7.501032650624614e-11,
+              "browTilt": -2.250309795187385e-11,
+              "mouthOpen": 3.132692167448803e-29,
+              "mouthWide": 0.49999999999999994,
+              "mouthRound": 4.4752745249268644e-29,
+              "smile": 0.24999999998124742,
+              "blush": 0.4499779067327422,
+              "squash": -4.128843746297094e-9,
+              "wobble": 0,
+              "reveal": 1
+            },
+            "anchor": [
+              1.649999976158142,
+              1.25,
+              -2.649999966621399
+            ],
+            "size": 0.27299998998641967,
+            "facePos": [
+              1.649999976158142,
+              1.25,
+              -2.649999966621399
+            ],
+            "faceDir": [
+              0,
+              0,
+              1
+            ],
+            "pokes": 0,
+            "pets": 0,
+            "flicks": 0,
+            "lines": 0,
+            "voiceMode": "",
+            "bubble": false,
+            "bubbleInfo": {
+              "content": null,
+              "corners": [
+                [
+                  1.4399999761581421,
+                  1.4031244277425532,
+                  -2.688146506307793
+                ],
+                [
+                  1.859999976158142,
+                  1.4031244277425532,
+                  -2.688146506307793
+                ],
+                [
+                  1.859999976158142,
+                  1.5987755612425085,
+                  -2.611853426935005
+                ],
+                [
+                  1.4399999761581421,
+                  1.5987755612425085,
+                  -2.611853426935005
+                ]
+              ]
+            },
+            "sourceChip": {
+              "visible": true,
+              "text": "Built-in face · not generated"
+            },
+            "faceSource": "built-in",
+            "hasPersona": false,
+            "anchorErrorCm": 0
+          },
+          "head": {
+            "position": {
+              "x": 1.649999976158142,
+              "y": 1.149999976158142,
+              "z": -1.75
+            },
+            "orientation": {
+              "x": 0.055300407111644745,
+              "y": 0,
+              "z": 0,
+              "w": 0.9984697699546814
+            }
+          },
+          "shot": "xr-plant.jpg"
+        },
+        {
+          "label": "screen",
+          "target": {
+            "id": "mesh-27",
+            "label": "screen",
+            "center": [
+              2.319999933242798,
+              1,
+              -1.7000000476837158
+            ],
+            "dims": [
+              1.2000000476837158,
+              0.7200000286102295,
+              0.05999999865889549
+            ]
+          },
+          "face": {
+            "id": "sp_h2bbxj0amb2a",
+            "name": "Screen",
+            "label": "screen",
+            "targetId": "mesh-27",
+            "awake": true,
+            "speaking": false,
+            "expression": "neutral",
+            "mouth": "rest",
+            "params": {
+              "eyeOpen": 1,
+              "eyeSmile": 0,
+              "pupil": 0.9999999999744188,
+              "lookX": 5.4963528937215074e-17,
+              "lookY": 0.21831935848274964,
+              "browY": 7.30888425963955e-11,
+              "browTilt": -2.1926652778918684e-11,
+              "mouthOpen": 2.912735731158508e-29,
+              "mouthWide": 0.49999999999999994,
+              "mouthRound": 4.1610510445121483e-29,
+              "smile": 0.24999999998172778,
+              "blush": 0.44997812521862485,
+              "squash": -1.482026401576352e-8,
+              "wobble": 0,
+              "reveal": 1
+            },
+            "anchor": [
+              2.2799999339133508,
+              1.2340000092983245,
+              -1.7000000395710781
+            ],
+            "size": 0.2520000100135803,
+            "facePos": [
+              2.279999907493931,
+              1.2340000092983245,
+              -1.7000000395710784
+            ],
+            "faceDir": [
+              -1,
+              0,
+              -6.438601567818703e-9
+            ],
+            "pokes": 0,
+            "pets": 0,
+            "flicks": 0,
+            "lines": 0,
+            "voiceMode": "",
+            "bubble": false,
+            "bubbleInfo": {
+              "content": null,
+              "corners": [
+                [
+                  2.2861062268819934,
+                  1.3685777229016203,
+                  -1.9100000395317622
+                ],
+                [
+                  2.286106224177781,
+                  1.3685777229016203,
+                  -1.4900000395317623
+                ],
+                [
+                  2.273893588105869,
+                  1.5782223067099672,
+                  -1.4900000396103945
+                ],
+                [
+                  2.2738935908100815,
+                  1.5782223067099672,
+                  -1.9100000396103944
+                ]
+              ]
+            },
+            "sourceChip": {
+              "visible": true,
+              "text": "Built-in face · not generated"
+            },
+            "faceSource": "built-in",
+            "hasPersona": false,
+            "anchorErrorCm": 0
+          },
+          "head": {
+            "position": {
+              "x": 1.0199999809265137,
+              "y": 1.399999976158142,
+              "z": -1.7000000476837158
+            },
+            "orientation": {
+              "x": -0.046279434114694595,
+              "y": -0.7055906653404236,
+              "z": -0.046279434114694595,
+              "w": 0.7055906653404236
+            }
+          },
+          "shot": "xr-screen.jpg"
+        },
+        {
+          "label": "table",
+          "target": {
+            "id": "mesh-26",
+            "label": "table",
+            "center": [
+              0,
+              0.22499999403953552,
+              -1.850000023841858
+            ],
+            "dims": [
+              1.100000023841858,
+              0.44999998807907104,
+              0.6000000238418579
+            ]
+          },
+          "face": {
+            "id": "sp_cfqkx7rrlwni",
+            "name": "Table",
+            "label": "table",
+            "targetId": "mesh-26",
+            "awake": true,
+            "speaking": false,
+            "expression": "neutral",
+            "mouth": "rest",
+            "params": {
+              "eyeOpen": 1,
+              "eyeSmile": 0,
+              "pupil": 0.9999999999779159,
+              "lookX": 0,
+              "lookY": 0.41818593402675314,
+              "browY": 6.309756785361209e-11,
+              "browTilt": -1.892927035608363e-11,
+              "mouthOpen": 1.929947408113113e-29,
+              "mouthWide": 0.49999999999999994,
+              "mouthRound": 2.757067725875877e-29,
+              "smile": 0.2499999999842256,
+              "blush": 0.44997937307215713,
+              "squash": -2.4602895036576744e-8,
+              "wobble": 0,
+              "reveal": 1
+            },
+            "anchor": [
+              0,
+              0.37124999016523363,
+              -1.540000011920929
+            ],
+            "size": 0.15749999582767485,
+            "facePos": [
+              0,
+              0.37124999016523363,
+              -1.540000011920929
+            ],
+            "faceDir": [
+              0,
+              0,
+              1
+            ],
+            "pokes": 0,
+            "pets": 0,
+            "flicks": 0,
+            "lines": 0,
+            "voiceMode": "",
+            "bubble": false,
+            "bubbleInfo": {
+              "content": null,
+              "corners": [
+                [
+                  -0.21,
+                  0.4539098346711463,
+                  -1.5329812744899212
+                ],
+                [
+                  0.21,
+                  0.4539098346711463,
+                  -1.5329812744899212
+                ],
+                [
+                  0.21,
+                  0.6634401410697632,
+                  -1.5470187493519367
+                ],
+                [
+                  -0.21,
+                  0.6634401410697632,
+                  -1.5470187493519367
+                ]
+              ]
+            },
+            "sourceChip": {
+              "visible": true,
+              "text": "Built-in face · not generated"
+            },
+            "faceSource": "built-in",
+            "hasPersona": false,
+            "anchorErrorCm": 0
+          },
+          "head": {
+            "position": {
+              "x": 0,
+              "y": 0.625,
+              "z": -0.550000011920929
+            },
+            "orientation": {
+              "x": -0.1251269429922104,
+              "y": 0,
+              "z": 0,
+              "w": 0.9921407103538513
+            }
+          },
+          "shot": "xr-table.jpg"
+        }
+      ],
+      "at": "2026-10-26T22:42:30.152Z",
+      "shot": "xr-screen.jpg",
+      "capture": "audit/browser/furniture-network.json"
+    }
+  ]
+}

@@ -40,6 +40,14 @@ describe('no key', () => {
   it('wake rejects a malformed mesh', async () => {
     expect((await post('/api/wake', { mesh: { label: 'couch' } })).status).toBe(400);
     expect((await post('/api/wake', 'not json')).status).toBe(400);
+    expect((await post('/api/wake', 'null')).status).toBe(400);
+    for (const dims of [[0, 1, 1], [-1, 1, 1], [null, 1, 1], ['2', 1, 1]]) {
+      expect((await post('/api/wake', { mesh: { label: 'couch', dims, room_context: ctx } })).status).toBe(400);
+    }
+    for (const room_context of [null, 'oops', {}, []]) {
+      expect((await post('/api/wake', { mesh: { label: 'couch', dims: [1, 1, 1], room_context } })).status).toBe(400);
+    }
+    expect((await post('/api/say', 'null')).status).toBe(400);
   });
 
   it('chat, transcribe and cut are 503 setup_required', async () => {

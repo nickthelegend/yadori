@@ -1,0 +1,105 @@
+{
+  "id": "P09",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/mobile-results.json",
+      "detail": {
+        "naming": {
+          "x": 12,
+          "y": 670.625,
+          "width": 351,
+          "height": 129.375
+        },
+        "spirits": [
+          {
+            "id": "sp_iyctj3gldxwg",
+            "name": "Coat Rack",
+            "label": "coat rack",
+            "targetId": "den-thing",
+            "awake": true,
+            "speaking": false,
+            "expression": "neutral",
+            "mouth": "rest",
+            "params": {
+              "eyeOpen": 1,
+              "eyeSmile": 0,
+              "pupil": 0.9999949806631416,
+              "lookX": 0.00002441553086488592,
+              "lookY": 0.3397874635097916,
+              "browY": 0.000014340962452538499,
+              "browTilt": -0.000004302288735761549,
+              "mouthOpen": 1.923057482057592e-14,
+              "mouthWide": 0.4999999999999931,
+              "mouthRound": 2.7472249743679863e-14,
+              "smile": 0.24999641475938686,
+              "blush": 0.4471367432975823,
+              "squash": -0.000004870761282626416,
+              "wobble": 0,
+              "reveal": 1
+            },
+            "anchor": [
+              0.2,
+              0.45375000000000004,
+              -2.14
+            ],
+            "size": 0.1925,
+            "facePos": [
+              0.19860589972937961,
+              0.45375000000000004,
+              -2.1285004941200647
+            ],
+            "faceDir": [
+              -0.12035015021094185,
+              0,
+              0.9927315051635078
+            ],
+            "pokes": 0,
+            "pets": 0,
+            "flicks": 0,
+            "lines": 0,
+            "voiceMode": "",
+            "bubble": false,
+            "bubbleInfo": {
+              "content": null,
+              "corners": [
+                [
+                  -0.40281313638698746,
+                  0.5515004489326591,
+                  -2.1541567393805634
+                ],
+                [
+                  0.7881312388212319,
+                  0.5515004489326591,
+                  -2.00701226901248
+                ],
+                [
+                  0.7999187524854031,
+                  1.143749551067341,
+                  -2.1024169625148446
+                ],
+                [
+                  -0.39102562272281627,
+                  1.143749551067341,
+                  -2.249561432882928
+                ]
+              ]
+            },
+            "sourceChip": {
+              "visible": true,
+              "text": "Built-in face · not generated"
+            },
+            "faceSource": "built-in",
+            "hasPersona": false,
+            "anchorErrorCm": 0
+          }
+        ]
+      },
+      "at": "2026-10-26T22:48:54.086Z",
+      "shot": "mobile-bare.jpg",
+      "capture": "audit/browser/mobile-events.jsonl"
+    }
+  ]
+}

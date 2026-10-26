@@ -1,0 +1,72 @@
+[
+  {
+    "id": "D01",
+    "ok": true,
+    "detail": "README, submission next steps, evidence all disclose phone clip pipeline as unbuilt. Phone only runs the diorama.",
+    "at": "2026-10-26T22:51:43.622Z"
+  },
+  {
+    "id": "D02",
+    "ok": true,
+    "detail": "Camera probe/crop picker and SAM sheet-part cutting disclosed as unbuilt; current app wake builds source=label context.",
+    "at": "2026-10-26T22:51:43.623Z"
+  },
+  {
+    "id": "D03",
+    "ok": true,
+    "detail": "No realtime proxy; current gateway integration sends a WAV file, live Transcribe untested.",
+    "at": "2026-10-26T22:51:43.623Z"
+  },
+  {
+    "id": "D04",
+    "ok": true,
+    "detail": "Current results only in TESTING.md; submission links that table; evidence page Oct 25 metrics clearly historical and not counted. No inconsistent current CPU claim remains.",
+    "at": "2026-10-26T22:51:43.623Z"
+  },
+  {
+    "id": "D05",
+    "ok": true,
+    "detail": {
+      "assets": [
+        "packages/landing/assets/favicon.svg",
+        "packages/landing/assets/card-couch.jpg",
+        "packages/landing/assets/card-lamp.jpg"
+      ],
+      "provenance": "ASSETS.md; own procedural face/den and emulator crops; Fontshare/ITF, SIL OFL 1.1; no tracked weights."
+    },
+    "at": "2026-10-26T22:51:43.637Z"
+  },
+  {
+    "id": "D06",
+    "ok": true,
+    "detail": "Local HTTPS :8091 and gateway :8440 instructions; docs/QUEST.md for a later device run; no deployment performed.",
+    "at": "2026-10-26T22:51:43.637Z"
+  },
+  {
+    "id": "R06",
+    "ok": true,
+    "detail": {
+      "generatorLog": "commands/rooms.txt",
+      "inventories": "browser/xr-extra-results.json Q02/Q24; real IWER load of regenerated rooms"
+    },
+    "at": "2026-10-26T22:51:43.637Z"
+  },
+  {
+    "id": "R07",
+    "ok": true,
+    "detail": "Actual stdin N; expected script exit 1; no package install or weight download reached.",
+    "at": "2026-10-26T22:51:43.638Z"
+  },
+  {
+    "id": "R08",
+    "ok": true,
+    "detail": "Recording CLI caption source reviewed; old clips are excluded from fresh automated/hardware/model evidence. No existing clip reviewed or counted as this run.",
+    "at": "2026-10-26T22:51:43.638Z"
+  },
+  {
+    "id": "I15",
+    "ok": true,
+    "detail": "App gateway client uses /api; server alone owns Meta client; MMS runtime disallows remote model fetch. Fresh independent browser network captures corroborate.",
+    "at": "2026-10-26T22:51:43.639Z"
+  }
+]

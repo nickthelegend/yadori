@@ -1,0 +1,325 @@
+{
+  "id": "Q14",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/quest-results.json",
+      "detail": {
+        "assertion": {
+          "name": "puppet line: speaking + mouth moves",
+          "ok": true,
+          "detail": "max mouthOpen 0.80"
+        },
+        "observations": {
+          "stage": "speech",
+          "at": "2026-10-26T22:40:07.893Z",
+          "mode": {
+            "xr": true,
+            "emulator": true,
+            "room": "iwer:yadori_den",
+            "label": "Emulated room (IWER), not your room"
+          },
+          "status": {
+            "online": true,
+            "gateway": "yadori",
+            "spark": {
+              "ready": false,
+              "model": "muse-spark-1.3",
+              "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+            },
+            "wonder": {
+              "ready": false,
+              "model": "muse-wonder-1.0",
+              "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+            },
+            "image": {
+              "ready": false,
+              "model": "muse-image-1.0",
+              "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+            },
+            "transcribe": {
+              "ready": false,
+              "model": "muse-voice-transcribe-1.0",
+              "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+            },
+            "sam3": {
+              "ready": false,
+              "model": "sam-3.1",
+              "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+            },
+            "tts": {
+              "ready": false,
+              "setup": "Setup required: run scripts/fetch-models.sh (MMS-TTS weights, CC-BY-NC-4.0)",
+              "model": "facebook/mms-tts-eng",
+              "license": "CC-BY-NC-4.0"
+            },
+            "budget": {
+              "cap_usd": 3,
+              "spent_usd": 0
+            }
+          },
+          "hover": {
+            "targets": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "faces": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "gaze": false
+          },
+          "spirits": [
+            {
+              "id": "sp_rkysulofhqp0",
+              "name": "Couch",
+              "label": "couch",
+              "targetId": "mesh-23",
+              "awake": true,
+              "speaking": false,
+              "expression": "neutral",
+              "mouth": "rest",
+              "params": {
+                "eyeOpen": 1,
+                "eyeSmile": 2.2605014065143312e-60,
+                "pupil": 1.0000000000000004,
+                "lookX": 0.6730707137033809,
+                "lookY": 1.648354760990779e-8,
+                "browY": -1.4286750024090212e-42,
+                "browTilt": 2.3811250040150303e-42,
+                "mouthOpen": 2.4238002014652962e-43,
+                "mouthWide": 0.5000000000000001,
+                "mouthRound": 3.4996582068970226e-50,
+                "smile": 0.24999999999999994,
+                "blush": 0.4499999999999997,
+                "squash": -1.2224348723141643e-10,
+                "wobble": 1.0751462414914215e-13,
+                "reveal": 1
+              },
+              "anchor": [
+                0,
+                0.7095000118017196,
+                -2.6399999165534975
+              ],
+              "size": 0.30100000500679014,
+              "facePos": [
+                -0.029110135679449773,
+                0.7095000118017196,
+                -2.5805551901822255
+              ],
+              "faceDir": [
+                -0.4397986189354342,
+                0,
+                0.8980964173085677
+              ],
+              "pokes": 1,
+              "pets": 2,
+              "flicks": 1,
+              "lines": 1,
+              "voiceMode": "browser",
+              "bubble": true,
+              "bubbleInfo": {
+                "content": {
+                  "speaker": "Couch",
+                  "tag": "puppet line (you)",
+                  "text": "Oh. Hello. You have very cold fingers.",
+                  "shown": 999
+                },
+                "corners": [
+                  [
+                    -0.2626887722764629,
+                    0.9520642744782675,
+                    -2.581064203405015
+                  ],
+                  [
+                    0.11451172299313532,
+                    0.9520642744782675,
+                    -2.396348783452132
+                  ],
+                  [
+                    0.20446850091756338,
+                    0.9996357546326409,
+                    -2.580046176959436
+                  ],
+                  [
+                    -0.17273199435203487,
+                    0.9996357546326409,
+                    -2.7647615969123187
+                  ]
+                ]
+              },
+              "sourceChip": {
+                "visible": false,
+                "text": "Built-in face · not generated"
+              },
+              "faceSource": "built-in",
+              "hasPersona": false,
+              "anchorErrorCm": 0
+            }
+          ],
+          "targets": [
+            {
+              "id": "mesh-23",
+              "label": "couch",
+              "center": [
+                0,
+                0.4300000071525574,
+                -3.0999999046325684
+              ],
+              "dims": [
+                2,
+                0.8600000143051147,
+                0.8999999761581421
+              ]
+            },
+            {
+              "id": "mesh-24",
+              "label": "lamp",
+              "center": [
+                -1.6200000047683716,
+                0.8500000238418579,
+                -3.1500000953674316
+              ],
+              "dims": [
+                0.4399999976158142,
+                1.7000000476837158,
+                0.4399999976158142
+              ]
+            },
+            {
+              "id": "mesh-25",
+              "label": "plant",
+              "center": [
+                1.649999976158142,
+                0.75,
+                -3.049999952316284
+              ],
+              "dims": [
+                0.7799999713897705,
+                1.5,
+                0.7799999713897705
+              ]
+            },
+            {
+              "id": "mesh-26",
+              "label": "table",
+              "center": [
+                0,
+                0.22499999403953552,
+                -1.850000023841858
+              ],
+              "dims": [
+                1.100000023841858,
+                0.44999998807907104,
+                0.6000000238418579
+              ]
+            },
+            {
+              "id": "mesh-27",
+              "label": "screen",
+              "center": [
+                2.319999933242798,
+                1,
+                -1.7000000476837158
+              ],
+              "dims": [
+                1.2000000476837158,
+                0.7200000286102295,
+                0.05999999865889549
+              ]
+            }
+          ],
+          "saved": [
+            {
+              "spiritId": "sp_rkysulofhqp0",
+              "label": "couch",
+              "name": "Couch",
+              "dims": [
+                2,
+                0.8600000143051147,
+                0.8999999761581421
+              ],
+              "position": [
+                0,
+                0.4300000071525574,
+                -3.0999999046325684
+              ],
+              "persona": null,
+              "sheet": null,
+              "faceSource": "built-in",
+              "source": "label",
+              "firstWoke": "2026-10-27",
+              "lines": 1,
+              "memories": 0,
+              "room": "iwer:yadori_den"
+            }
+          ],
+          "body": "Yadori\nEmulated room (IWER), not your room\nSetup required (5)\nforget\nCouch\ncouch · 2.0 × 0.9 m\n\n5\nopen\n\nSpeaker\nCouch\nSay\nPuppet mode: you are the voice. Setup required for Muse Spark (MODEL_API_KEY). Lines are yours, spoken by Browser voice, not a Meta model."
+        }
+      },
+      "at": "2026-10-26T22:40:53.539Z",
+      "shot": "quest-speech.jpg",
+      "capture": "audit/browser/quest-network.json"
+    },
+    {
+      "ok": true,
+      "source": "audit/browser/quest-live.json",
+      "detail": {
+        "mode": {
+          "xr": true,
+          "emulator": true,
+          "room": "iwer:yadori_den",
+          "label": "Emulated room (IWER), not your room"
+        },
+        "particles": 0,
+        "spirits": [
+          {
+            "id": "sp_rkysulofhqp0",
+            "label": "couch",
+            "expression": "neutral",
+            "pokes": 1,
+            "pets": 2,
+            "flicks": 1,
+            "speaking": true,
+            "lines": 0,
+            "voiceMode": "browser",
+            "params": {
+              "eyeOpen": 1,
+              "eyeSmile": 2.6665596984526317e-33,
+              "pupil": 1.0000000000000004,
+              "lookX": 0.6730707137033809,
+              "lookY": 1.648354760990779e-8,
+              "browY": -1.6853106893151816e-15,
+              "browTilt": 2.808851148858637e-15,
+              "mouthOpen": 0.5297819376041529,
+              "mouthWide": 0.3107921651413739,
+              "mouthRound": 0.7568313394345043,
+              "smile": 0.24999999999999706,
+              "blush": 0.44999932234387374,
+              "squash": -0.002396138636590957,
+              "wobble": 6.622626239356296e-7,
+              "reveal": 1
+            },
+            "bubble": true,
+            "content": {
+              "speaker": "Couch",
+              "tag": "puppet line (you)",
+              "text": "Oh. Hello. You have very cold fingers.",
+              "shown": 1
+            }
+          }
+        ],
+        "at": "2026-10-26T22:40:01.961Z"
+      },
+      "at": "2026-10-26T22:40:53.365Z",
+      "shot": "quest-live-7.jpg",
+      "capture": "audit/browser/quest-network.json"
+    }
+  ]
+}

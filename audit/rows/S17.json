@@ -1,0 +1,25 @@
+{
+  "id": "S17",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": {
+        "observations": [
+          {
+            "value": "{broken",
+            "pre": 0,
+            "spirits": 1,
+            "valid": true
+          }
+        ],
+        "errors": []
+      },
+      "at": "2026-10-26T22:47:34.979Z",
+      "shot": "storage-S17.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

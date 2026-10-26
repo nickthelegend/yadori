@@ -1,0 +1,100 @@
+{
+  "id": "A16",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/server/results.json",
+      "detail": [
+        {
+          "at": "2026-10-26T22:39:25.346Z",
+          "method": "POST",
+          "path": "/api/wake",
+          "status": 400,
+          "headers": {
+            "cache-control": "no-store",
+            "connection": "keep-alive",
+            "content-type": "application/json",
+            "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+            "keep-alive": "timeout=5",
+            "transfer-encoding": "chunked"
+          },
+          "body": {
+            "error": "dims must be three finite positive numbers"
+          }
+        },
+        {
+          "at": "2026-10-26T22:39:25.348Z",
+          "method": "POST",
+          "path": "/api/wake",
+          "status": 400,
+          "headers": {
+            "cache-control": "no-store",
+            "connection": "keep-alive",
+            "content-type": "application/json",
+            "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+            "keep-alive": "timeout=5",
+            "transfer-encoding": "chunked"
+          },
+          "body": {
+            "error": "dims must be three finite positive numbers"
+          }
+        },
+        {
+          "at": "2026-10-26T22:39:25.350Z",
+          "method": "POST",
+          "path": "/api/wake",
+          "status": 400,
+          "headers": {
+            "cache-control": "no-store",
+            "connection": "keep-alive",
+            "content-type": "application/json",
+            "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+            "keep-alive": "timeout=5",
+            "transfer-encoding": "chunked"
+          },
+          "body": {
+            "error": "dims must be three finite positive numbers"
+          }
+        },
+        {
+          "at": "2026-10-26T22:39:25.350Z",
+          "method": "POST",
+          "path": "/api/wake",
+          "status": 400,
+          "headers": {
+            "cache-control": "no-store",
+            "connection": "keep-alive",
+            "content-type": "application/json",
+            "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+            "keep-alive": "timeout=5",
+            "transfer-encoding": "chunked"
+          },
+          "body": {
+            "error": "dims must be three finite positive numbers"
+          }
+        },
+        {
+          "at": "2026-10-26T22:39:25.352Z",
+          "method": "POST",
+          "path": "/api/wake",
+          "status": 400,
+          "headers": {
+            "cache-control": "no-store",
+            "connection": "keep-alive",
+            "content-type": "application/json",
+            "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+            "keep-alive": "timeout=5",
+            "transfer-encoding": "chunked"
+          },
+          "body": {
+            "error": "dims must be three finite positive numbers"
+          }
+        }
+      ],
+      "at": "2026-10-26T22:39:25.352Z",
+      "capture": "audit/server/network.json"
+    }
+  ]
+}

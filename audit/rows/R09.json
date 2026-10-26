@@ -1,0 +1,17 @@
+{
+  "id": "R09",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/run.json",
+      "detail": {
+        "evidenceOnlyThisRun": true,
+        "sourceHashes": "audit/source-sha256.txt",
+        "hygiene": "audit/runtime-hygiene.json"
+      },
+      "at": "2026-10-26T22:52:14.131Z"
+    }
+  ]
+}

@@ -18,8 +18,10 @@ const gateway: ProxyOptions = {
     proxy.on('error', (_err, req, res) => {
       const r = res as ServerResponse;
       if (r.headersSent) return;
-      const isStatus = (req.url ?? '').startsWith('/api/status');
-      r.writeHead(isStatus ? 200 : 502, { 'content-type': 'application/json' });
+      // A reachable proxy can report its unavailable dependency in the JSON
+      // envelope. The client already handles `error` without inventing a wake.
+      // Avoid a browser resource error for this recoverable local-only mode.
+      r.writeHead(200, { 'content-type': 'application/json', 'cache-control': 'no-store' });
       r.end(JSON.stringify({ gateway: 'offline', error: 'Gateway offline: start it with pnpm gateway' }));
     });
   },

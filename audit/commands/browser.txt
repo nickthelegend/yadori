@@ -1,0 +1,26 @@
+
+> app@0.1.0 e2e:browser /Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4/packages/app
+> node e2e/browser-flow.mjs
+
+PASS  diorama has 5 labelled targets  (couch,lamp,plant,table,screen)
+PASS  mode label is honest
+PASS  waking starts on click
+PASS  couch is awake with the built-in face  (wake 1374 ms)
+PASS  face anchored on the couch front, 1 cm proud  (err 0.00 cm)
+PASS  poke -> surprised  (pokes 1 expr surprised)
+PASS  pet -> happy  (pets 1 expr happy)
+PASS  flick -> grumpy + wobble  (flicks 1 expr grumpy wobble 0.24)
+PASS  puppet line moves the mouth  (max mouthOpen 0.72)
+PASS  line counted with a labelled voice mode  (voice browser)
+PASS  lamp is awake
+PASS  a draft line is kept when the strip re-renders  ("a half-typed line")
+PASS  gossip: whisper particles fly
+PASS  gossip: the lamp turns its eyes to the couch  (lamp lookX 0.73)
+PASS  gossip: the couch looks at the lamp  (couch lookX -0.68)
+PASS  compose switches to "reply as Lamp"  (Reply as Lamp (you are the voice)…)
+PASS  lamp replied
+PASS  reload re-matches both spirits  (Couch:2,Lamp:1)
+PASS  no console errors
+PASS  independent console, page and network capture is clean  (763 responses; 0 errors)
+
+20 passed, 0 failed

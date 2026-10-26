@@ -73,6 +73,10 @@ On a Quest: [docs/QUEST.md](docs/QUEST.md).
 
 The spec planned a Python FastAPI gateway; it is TypeScript on `node:http` instead, to keep one toolchain and
 a light install. Phone clip mode (SAM 3.1 video tracking of a mug) from the spec is not built.
+The camera probe/crop picker, SAM sheet-part cutting and realtime voice proxy are also unbuilt.
+IWSDK's tracked hand mesh writes depth before the face; the emulator audit measures hand-surface masking.
+Environment depth sensing is not integrated, and physical hand occlusion still needs a Quest headset.
+Current test counts and host CPU measurements are in [TESTING.md](TESTING.md); no hosted app is deployed.
 
 ## Honesty rules in the code
 

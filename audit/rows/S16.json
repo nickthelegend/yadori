@@ -1,0 +1,107 @@
+{
+  "id": "S16",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/offline-results.json",
+      "detail": {
+        "s": [
+          {
+            "id": "local-lc2t114w",
+            "name": "Couch",
+            "label": "couch",
+            "targetId": "den-couch",
+            "awake": true,
+            "speaking": false,
+            "expression": "surprised",
+            "mouth": "O",
+            "params": {
+              "eyeOpen": 1.1871053617350609,
+              "eyeSmile": 0,
+              "pupil": 0.89787712371373,
+              "lookX": -0.000268735947362432,
+              "lookY": 0.17152127001073558,
+              "browY": 0.2917796465322,
+              "browTilt": -0.08753389395966,
+              "mouthOpen": 0.4335783151225985,
+              "mouthWide": 0.3451506017419291,
+              "mouthRound": 0.6193975930322836,
+              "smile": 0.17705508836695,
+              "blush": 0.2435549345872899,
+              "squash": 0.093785630112,
+              "wobble": 0,
+              "reveal": 0.15844171118822678
+            },
+            "anchor": [
+              0,
+              0.7095,
+              -2.64
+            ],
+            "size": 0.301,
+            "facePos": [
+              -0.0010357521583327202,
+              0.7095,
+              -2.627557817020491
+            ],
+            "faceDir": [
+              -0.08295826747073329,
+              0,
+              0.9965530221008084
+            ],
+            "pokes": 0,
+            "pets": 0,
+            "flicks": 0,
+            "lines": 0,
+            "voiceMode": "",
+            "bubble": true,
+            "bubbleInfo": {
+              "content": {
+                "speaker": "Couch",
+                "tag": "",
+                "text": "",
+                "shown": 0,
+                "glyph": "!"
+              },
+              "corners": [
+                [
+                  -0.601995536225461,
+                  0.8652786863361859,
+                  -2.640958663744374
+                ],
+                [
+                  0.5938680902955091,
+                  0.8652786863361859,
+                  -2.541408742779494
+                ],
+                [
+                  0.5999240319087955,
+                  1.4608213136638144,
+                  -2.6141569702966083
+                ],
+                [
+                  -0.5959395946121746,
+                  1.4608213136638144,
+                  -2.7137068912614883
+                ]
+              ]
+            },
+            "sourceChip": {
+              "visible": false,
+              "text": "Built-in face · not generated"
+            },
+            "faceSource": "built-in",
+            "hasPersona": false,
+            "anchorErrorCm": 0
+          }
+        ],
+        "failureBody": "Yadori\n宿り · wake up your room\nBrowser diorama, not your room\nMuse Spark · Setup required: MODEL_API_KEY\nMuse Image · Setup required: MODEL_API_KEY\nVoice in · Setup required: MODEL_API_KEY\nSAM 3.1 · Setup required: MODEL_API_KEY\nMMS-TTS · Setup required: fetch-models\nVoice out · Browser voice, not a Meta model\nBINDER\n1 / 6\nforget\nCouch\ncouch · 2.0 × 0.9 m\nBuilt-in face, not generatedDrawn from the label\nNo persona · Setup required for Muse Spark\nvoice browser\n0 memories\n0 lines\nfirst woke 2026-10-27\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nTap, rub or swipe its face · wake a second one and they gossip\nSpeaker\nCouch\nSay\nPuppet mode: you are the voice. Setup required for Muse Spark (MODEL_API_KEY). Lines are yours, spoken by Browser voice, not a Meta model.\nEnter mixed reality (emulated)\nGateway: Gateway offline: start it with pnpm gateway. Waking with the built-in face.",
+        "events": []
+      },
+      "at": "2026-10-26T22:49:32.723Z",
+      "shot": "offline-wake-failure.jpg",
+      "capture": "audit/browser/recovery-events.jsonl"
+    }
+  ]
+}

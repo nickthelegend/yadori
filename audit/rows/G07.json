@@ -1,0 +1,44 @@
+{
+  "id": "G07",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/glasses-bubble.json",
+      "detail": {
+        "id": "G07",
+        "ok": true,
+        "angles": [
+          {
+            "h": -9.390233469627299,
+            "v": 2.5202469484033685
+          },
+          {
+            "h": 9.390233469627299,
+            "v": 2.5202469484033685
+          },
+          {
+            "h": 9.58694639890725,
+            "v": 11.997101947083594
+          },
+          {
+            "h": -9.58694639890725,
+            "v": 11.997101947083594
+          }
+        ],
+        "content": {
+          "speaker": "Couch",
+          "tag": "puppet line (you)",
+          "text": "Hello. I am the couch, and this is a typed puppet line.",
+          "shown": 1
+        },
+        "at": "2026-10-26T22:51:02.157Z",
+        "shot": "glasses-bubble.jpg"
+      },
+      "at": "2026-10-26T22:51:02.157Z",
+      "shot": "glasses-bubble.jpg",
+      "capture": "audit/browser/glasses-network.json"
+    }
+  ]
+}

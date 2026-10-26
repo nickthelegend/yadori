@@ -1,0 +1,21 @@
+{
+  "id": "M14",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/server/results.json",
+      "detail": {
+        "jsonrpc": "2.0",
+        "id": null,
+        "error": {
+          "code": -32700,
+          "message": "parse error"
+        }
+      },
+      "at": "2026-10-26T22:39:25.874Z",
+      "capture": "audit/server/network.json"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "I12",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/server/results.json",
+      "detail": {
+        "at": "2026-10-26T22:39:26.011Z",
+        "method": "GET",
+        "path": "/api/spirits",
+        "status": 200,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:26 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "spirits": [
+            {
+              "spirit_id": "sp_60nshnioqrnq",
+              "label": "plant",
+              "dims": [
+                2,
+                0.86,
+                0.9
+              ],
+              "face": "built-in",
+              "source": "label",
+              "created": "2026-10-26T22:39:25.625Z"
+            },
+            {
+              "spirit_id": "sp_qvy79bjaerlu",
+              "label": "lamp",
+              "dims": [
+                1,
+                1,
+                1
+              ],
+              "face": "built-in",
+              "source": "label",
+              "created": "2026-10-26T22:39:25.851Z"
+            },
+            {
+              "spirit_id": "sp_tdnlliyxv1zo",
+              "label": "lamp",
+              "dims": [
+                0.44,
+                1.7,
+                0.44
+              ],
+              "face": "built-in",
+              "source": "label",
+              "created": "2026-10-26T22:39:25.458Z"
+            }
+          ]
+        }
+      },
+      "at": "2026-10-26T22:39:26.012Z",
+      "capture": "audit/server/network.json"
+    }
+  ]
+}

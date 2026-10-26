@@ -1,0 +1,5 @@
+
+> @yadori/server@0.1.0 start /Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4/packages/server
+> node src/main.ts
+
+[yadori] gateway on http://127.0.0.1:8440 · Meta key: missing (Setup required)

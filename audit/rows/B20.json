@@ -1,0 +1,34 @@
+{
+  "id": "B20",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": {
+        "length": 240
+      },
+      "at": "2026-10-26T22:46:01.038Z",
+      "shot": "desktop-speech.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    },
+    {
+      "ok": true,
+      "source": "audit/browser/inputs-results.json",
+      "detail": {
+        "acceptedLength": 240,
+        "expected": "hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello",
+        "bubble": {
+          "speaker": "Couch",
+          "tag": "puppet line (you)",
+          "text": "hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello",
+          "shown": 0
+        }
+      },
+      "at": "2026-10-26T22:48:14.660Z",
+      "shot": "inputs.jpg",
+      "capture": "audit/browser/inputs-events.json"
+    }
+  ]
+}

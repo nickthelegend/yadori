@@ -12,6 +12,19 @@ test('classifies only the observed expected S16 wake response as allowed',()=>{
   assert.equal(isRuntimeFailure(event,null,source),true);
   assert.equal(isRuntimeFailure(event,{...proof,detail:{...proof.detail,waking:'pending'}},source),true);
 });
-test('all console errors, page errors and failed requests remain failures',()=>{
+test('the exact Chrome wake 502 resource line is not a runtime failure when the S16 proof is present',()=>{
+  const chrome={kind:'console',group:'S16',level:'error',text:'Failed to load resource: the server responded with a status of 502 ()',location:{url:'https://localhost:8091/api/wake'}};
+  assert.equal(isRuntimeFailure(chrome,proof,source),false);
+  assert.equal(isRuntimeFailure(chrome,proof,'audit/browser/offline-502/network.json'),false);
+  assert.equal(isRuntimeFailure({...chrome,text:'Failed to load resource: 502'},proof,source),true);
+  assert.equal(isRuntimeFailure({...chrome,text:'unrelated error'},proof,source),true);
+  assert.equal(isRuntimeFailure({...chrome,kind:'pageerror'},proof,source),true);
+  assert.equal(isRuntimeFailure({...chrome,kind:'requestfailed'},proof,source),true);
+  assert.equal(isRuntimeFailure(chrome,null,source),true);
+  assert.equal(isRuntimeFailure(chrome,proof,'audit/browser/another-events.jsonl'),true);
+  assert.equal(isRuntimeFailure({...chrome,location:{url:'https://localhost:8091/api/status'}},proof,source),true);
+  assert.equal(isRuntimeFailure(chrome,{...proof,detail:{...proof.detail,network:{...proof.detail.network,status:500}}},source),true);
+});
+test('all other console errors, page errors and failed requests remain failures',()=>{
   for(const e of[{kind:'console',level:'error',text:'Failed to load resource: 502'}, {kind:'console',level:'error',text:'unrelated error'},{kind:'pageerror',text:'error'},{kind:'requestfailed',url:event.url}])assert.equal(isRuntimeFailure({...event,...e},proof,source),true);
 });

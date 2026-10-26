@@ -1,0 +1,24 @@
+Command: pnpm --filter @yadori/room test
+Started UTC: 2026-10-26T21:24:21.241411+00:00
+Environment guards: YADORI_ENV_FILE is an explicitly nonexistent path; MODEL_API_KEY is empty.
+
+
+> @yadori/room@0.1.0 test /Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t2/packages/room
+> vitest run
+
+
+ RUN  v3.2.7 /Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t2/packages/room
+
+ ✓ test/geometry.test.ts (9 tests) 2ms
+ ✓ test/gestures.test.ts (10 tests) 3ms
+ ✓ test/placement.test.ts (9 tests) 3ms
+ ✓ test/room.test.ts (8 tests) 3ms
+
+ Test Files  4 passed (4)
+      Tests  36 passed (36)
+   Start at  02:54:21
+   Duration  347ms (transform 430ms, setup 0ms, collect 528ms, tests 10ms, environment 0ms, prepare 244ms)
+
+
+Exit code: 0
+Finished UTC: 2026-10-26T21:24:22.139290+00:00

@@ -1,0 +1,93 @@
+[
+  {
+    "suite": "typecheck",
+    "command": [
+      "pnpm",
+      "typecheck"
+    ],
+    "started_utc": "2026-10-26T21:24:18.447652+00:00",
+    "finished_utc": "2026-10-26T21:24:21.240703+00:00",
+    "exit_code": 0,
+    "log": "audit/suites/typecheck.txt"
+  },
+  {
+    "suite": "room",
+    "command": [
+      "pnpm",
+      "--filter",
+      "@yadori/room",
+      "test"
+    ],
+    "started_utc": "2026-10-26T21:24:21.241411+00:00",
+    "finished_utc": "2026-10-26T21:24:22.139290+00:00",
+    "exit_code": 0,
+    "log": "audit/suites/room.txt",
+    "passed": 36,
+    "failed": 0,
+    "skipped": 0,
+    "todo": 0,
+    "test_files": {
+      "geometry.test.ts": 9,
+      "gestures.test.ts": 10,
+      "placement.test.ts": 9,
+      "room.test.ts": 8
+    }
+  },
+  {
+    "suite": "rig",
+    "command": [
+      "pnpm",
+      "--filter",
+      "@yadori/rig",
+      "test"
+    ],
+    "started_utc": "2026-10-26T21:24:22.139811+00:00",
+    "finished_utc": "2026-10-26T21:24:22.787281+00:00",
+    "exit_code": 0,
+    "log": "audit/suites/rig.txt",
+    "passed": 14,
+    "failed": 0,
+    "skipped": 0,
+    "todo": 0,
+    "test_files": {
+      "rig.test.ts": 14
+    }
+  },
+  {
+    "suite": "server",
+    "command": [
+      "pnpm",
+      "--filter",
+      "@yadori/server",
+      "test"
+    ],
+    "started_utc": "2026-10-26T21:24:22.787769+00:00",
+    "finished_utc": "2026-10-26T21:24:23.711277+00:00",
+    "exit_code": 0,
+    "log": "audit/suites/server.txt",
+    "passed": 32,
+    "failed": 0,
+    "skipped": 0,
+    "todo": 0,
+    "test_files": {
+      "contract.test.ts": 9,
+      "units.test.ts": 17,
+      "mcp.test.ts": 3,
+      "process.test.ts": 1,
+      "live-meta.test.ts": 2
+    }
+  },
+  {
+    "suite": "app-build",
+    "command": [
+      "pnpm",
+      "--filter",
+      "app",
+      "build"
+    ],
+    "started_utc": "2026-10-26T21:24:23.712175+00:00",
+    "finished_utc": "2026-10-26T21:24:30.727928+00:00",
+    "exit_code": 0,
+    "log": "audit/suites/app-build.txt"
+  }
+]

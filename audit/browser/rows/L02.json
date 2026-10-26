@@ -1,0 +1,23 @@
+{
+  "id": "L02",
+  "ok": true,
+  "detail": [
+    {
+      "src": "assets/favicon.svg",
+      "ok": true
+    },
+    {
+      "src": "assets/card-couch.jpg",
+      "ok": true
+    },
+    {
+      "src": "assets/favicon.svg",
+      "ok": true
+    }
+  ],
+  "at": "2026-10-26T21:34:44.163Z",
+  "shot": "index-375.jpg",
+  "source": "extra-results.json",
+  "status": "PASS",
+  "screenshot": "index-375.jpg"
+}

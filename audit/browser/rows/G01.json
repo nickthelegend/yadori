@@ -1,0 +1,10 @@
+{
+  "id": "G01",
+  "ok": true,
+  "detail": "Meta VR Glasses",
+  "at": "2026-10-26T22:03:32.701Z",
+  "shot": "glasses-face.jpg",
+  "source": "glasses-results.json",
+  "status": "PASS",
+  "screenshot": "glasses-face.jpg"
+}

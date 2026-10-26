@@ -80,6 +80,7 @@ export class FaceRig {
   private wb = 0;
   private wbV = 0;
   private revealTarget = 0;
+  private expressionEyeOpen = 1;
   private speech: { keys: MouthKey[]; start: number; end: number } | null = null;
   private envelopeShape: MouthShape | null = null;
   thinking = false;
@@ -200,8 +201,10 @@ export class FaceRig {
     p.browTilt = approach(p.browTilt, e.browTilt ?? 0, er, dt);
     p.smile = approach(p.smile, e.smile ?? 0, er, dt);
     p.blush = approach(p.blush, e.blush ?? 0, 4, dt);
-    const open = (e.eyeOpen ?? 1) * this.blinker.sample(t) * (this.awake ? 1 : 0.05);
-    p.eyeOpen = approach(p.eyeOpen, open, 40, dt);
+    this.expressionEyeOpen = approach(this.expressionEyeOpen, (e.eyeOpen ?? 1) * (this.awake ? 1 : 0.05), 40, dt);
+    // The blink already has its own closing/opening envelope. Smoothing it again
+    // prevents the short closure from ever reaching the shader's closed-eye range.
+    p.eyeOpen = this.expressionEyeOpen * this.blinker.sample(t);
 
     // gaze: target, thinking (up and aside), or idle saccades
     let gx = this.gazeX;

@@ -1,0 +1,32 @@
+{
+  "id": "B40",
+  "ok": true,
+  "detail": {
+    "measurement": "Host CPU submit time on Apple M4 (this machine reports Mac mini Speakers); excludes GPU and headset timing. The initial plan called the host a laptop.",
+    "perf": {
+      "frames": 600,
+      "cpuMs": {
+        "p50": 0.7999999970197678,
+        "p95": 1.7000000029802322,
+        "max": 87.30000001192093,
+        "mean": 1.3415000001589457
+      },
+      "drawCalls": {
+        "p50": 102,
+        "p95": 107,
+        "max": 107
+      },
+      "triangles": {
+        "p50": 27826,
+        "max": 27846
+      },
+      "xrFrames": 0,
+      "gl": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)"
+    }
+  },
+  "at": "2026-10-26T21:49:42.323Z",
+  "shot": "desktop-gossip.jpg",
+  "source": "extra-results.json",
+  "status": "PASS",
+  "screenshot": "desktop-gossip.jpg"
+}

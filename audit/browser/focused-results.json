@@ -1,0 +1,26 @@
+[
+  {
+    "id": "B09",
+    "ok": true,
+    "detail": {
+      "min": 0.02708333327124631,
+      "max": 1,
+      "finite": true
+    },
+    "at": "2026-10-26T21:41:27.659Z",
+    "shot": "focused.jpg"
+  },
+  {
+    "id": "B37",
+    "ok": true,
+    "detail": {
+      "after": {
+        "speaking": false,
+        "spirits": []
+      },
+      "errors": []
+    },
+    "at": "2026-10-26T21:41:28.019Z",
+    "shot": "focused.jpg"
+  }
+]

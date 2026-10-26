@@ -1,0 +1,175 @@
+{
+  "id": "B34",
+  "ok": true,
+  "detail": {
+    "spirits": [
+      {
+        "id": "sp_blblm7kf2oyi",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "den-couch",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 0,
+          "pupil": 0.9999993414058274,
+          "lookX": -0.0006119208586412322,
+          "lookY": 0.5083206711970678,
+          "browY": 1.8816976360129363e-06,
+          "browTilt": -5.645092908038807e-07,
+          "mouthOpen": 6.519982141202606e-17,
+          "mouthWide": 0.49999999999999994,
+          "mouthRound": 9.314260201718019e-17,
+          "smile": 0.249999529575591,
+          "blush": 0.4487286637839288,
+          "squash": -4.136888089586721e-06,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095,
+          -2.64
+        ],
+        "size": 0.301,
+        "facePos": [
+          -0.02022617535736557,
+          0.7095,
+          -2.5886683214603634
+        ],
+        "faceDir": [
+          -0.3665967699575281,
+          0,
+          0.9303799268345739
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 3,
+        "voiceMode": "",
+        "bubble": false,
+        "bubbleInfo": {
+          "content": null,
+          "corners": [
+            [
+              -0.5,
+              -0.5,
+              0
+            ],
+            [
+              0.5,
+              -0.5,
+              0
+            ],
+            [
+              0.5,
+              0.5,
+              0
+            ],
+            [
+              -0.5,
+              0.5,
+              0
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": true,
+          "text": "Built-in face \u00b7 not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      },
+      {
+        "id": "sp_svyx2j7jtbcf",
+        "name": "Lamp",
+        "label": "lamp",
+        "targetId": "den-lamp",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 0,
+          "pupil": 0.9999993414058274,
+          "lookX": -0.00023941808358099125,
+          "lookY": 0.13328282601481706,
+          "browY": 1.8816976360129363e-06,
+          "browTilt": -5.645092908038807e-07,
+          "mouthOpen": 6.519982141202606e-17,
+          "mouthWide": 0.49999999999999994,
+          "mouthRound": 9.314260201718019e-17,
+          "smile": 0.249999529575591,
+          "blush": 0.4487286637839288,
+          "squash": -4.136888089586721e-06,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          -1.62,
+          1.4166666666666665,
+          -2.92
+        ],
+        "size": 0.154,
+        "facePos": [
+          -1.6182926274983689,
+          1.4166666666666665,
+          -2.9086618977881535
+        ],
+        "faceDir": [
+          0.14890825649490924,
+          0,
+          0.9888510156477802
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 3,
+        "voiceMode": "",
+        "bubble": false,
+        "bubbleInfo": {
+          "content": null,
+          "corners": [
+            [
+              -0.5,
+              -0.5,
+              0
+            ],
+            [
+              0.5,
+              -0.5,
+              0
+            ],
+            [
+              0.5,
+              0.5,
+              0
+            ],
+            [
+              -0.5,
+              0.5,
+              0
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": true,
+          "text": "Built-in face \u00b7 not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ]
+  },
+  "at": "2026-10-26T21:49:50.884Z",
+  "shot": "desktop-forget.jpg",
+  "source": "extra-results.json",
+  "status": "PASS",
+  "screenshot": "desktop-forget.jpg"
+}

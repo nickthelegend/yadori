@@ -1,0 +1,10 @@
+{
+  "id": "N06",
+  "ok": true,
+  "detail": "Cancelled; next click reopens",
+  "at": "2026-10-26T21:32:56.789Z",
+  "shot": "bare.jpg",
+  "source": "extra-results.json",
+  "status": "PASS",
+  "screenshot": "bare.jpg"
+}

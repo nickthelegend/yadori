@@ -1,0 +1,796 @@
+[
+  {
+    "id": "B15",
+    "ok": true,
+    "detail": {
+      "before": {
+        "denVisible": true,
+        "camera": [
+          -0.36623409390449524,
+          1.7241450548171997,
+          1.8312816619873047
+        ],
+        "orbit": {
+          "yaw": -0.12,
+          "pitch": 0.2,
+          "dist": 4.4
+        }
+      },
+      "after": {
+        "denVisible": true,
+        "camera": [
+          -2.644469738006592,
+          2.38970685005188,
+          0.5798913240432739
+        ],
+        "orbit": {
+          "yaw": -0.745,
+          "pitch": 0.3575000000000001,
+          "dist": 4.4
+        }
+      }
+    },
+    "shot": "browser-camera.jpg",
+    "at": "2026-10-26T21:35:32.531Z"
+  },
+  {
+    "id": "B16",
+    "ok": true,
+    "detail": {
+      "zoom": [
+        {
+          "denVisible": true,
+          "camera": [
+            -2.8680272102355957,
+            2.512883424758911,
+            0.822282612323761
+          ],
+          "orbit": {
+            "yaw": -0.745,
+            "pitch": 0.3575000000000001,
+            "dist": 4.752000000000001
+          }
+        },
+        {
+          "denVisible": true,
+          "camera": [
+            -2.6265852451324463,
+            2.379852771759033,
+            0.5605000257492065
+          ],
+          "orbit": {
+            "yaw": -0.745,
+            "pitch": 0.3575000000000001,
+            "dist": 4.371840000000001
+          }
+        },
+        {
+          "denVisible": true,
+          "camera": [
+            -2.8487119674682617,
+            2.5022411346435547,
+            0.8013400435447693
+          ],
+          "orbit": {
+            "yaw": -0.745,
+            "pitch": 0.3575000000000001,
+            "dist": 4.721587200000001
+          }
+        }
+      ],
+      "scrollY": 0
+    },
+    "shot": "browser-camera.jpg",
+    "at": "2026-10-26T21:35:33.267Z"
+  },
+  {
+    "id": "S19",
+    "ok": true,
+    "detail": {
+      "capability": {
+        "storage": false,
+        "voices": 180
+      },
+      "s": [
+        {
+          "id": "sp_hu1b4zoqv9wg",
+          "name": "Couch",
+          "label": "couch",
+          "targetId": "den-couch",
+          "awake": true,
+          "speaking": false,
+          "expression": "neutral",
+          "mouth": "rest",
+          "params": {
+            "eyeOpen": 1,
+            "eyeSmile": 0,
+            "pupil": 0.9999999999999998,
+            "lookX": -4.0645198703847006e-07,
+            "lookY": 0.3354135200653472,
+            "browY": 7.433127530183865e-21,
+            "browTilt": -2.2299382590551612e-21,
+            "mouthOpen": 0.0031528662183546467,
+            "mouthWide": 0.5045040731974876,
+            "mouthRound": 1.7034527560430002e-09,
+            "smile": 0.24999999999999994,
+            "blush": 0.44999999779761807,
+            "squash": -0.00041898806545932223,
+            "wobble": 0,
+            "reveal": 1
+          },
+          "anchor": [
+            0,
+            0.7095,
+            -2.64
+          ],
+          "size": 0.301,
+          "facePos": [
+            -0.0021564551744921254,
+            0.7095,
+            -2.6221143575781727
+          ],
+          "faceDir": [
+            -0.1197021545778479,
+            0,
+            0.9928098479514701
+          ],
+          "pokes": 0,
+          "pets": 0,
+          "flicks": 0,
+          "lines": 1,
+          "voiceMode": "browser",
+          "bubble": true,
+          "bubbleInfo": {
+            "content": {
+              "speaker": "Couch",
+              "tag": "puppet line (you)",
+              "text": "Hello. This mouth speaks a typed puppet line.",
+              "shown": 999
+            },
+            "corners": [
+              [
+                -0.46190683554277706,
+                0.8663416703505491,
+                -2.662014757908148
+              ],
+              [
+                0.4539024063375772,
+                0.8663416703505491,
+                -2.5515964943689826
+              ],
+              [
+                0.45759392519379277,
+                1.3265303640018518,
+                -2.5822139572481975
+              ],
+              [
+                -0.4582153166865615,
+                1.3265303640018518,
+                -2.6926322207873628
+              ]
+            ]
+          },
+          "faceSource": "built-in",
+          "hasPersona": false,
+          "anchorErrorCm": 0
+        }
+      ],
+      "max": 0.6783508328659539
+    },
+    "shot": "storage-denied.jpg",
+    "at": "2026-10-26T21:37:23.886Z"
+  },
+  {
+    "id": "S11",
+    "ok": true,
+    "detail": {
+      "capability": {
+        "storage": true,
+        "voices": 0
+      },
+      "s": [
+        {
+          "id": "sp_e9bjorytxdsp",
+          "name": "Couch",
+          "label": "couch",
+          "targetId": "den-couch",
+          "awake": true,
+          "speaking": false,
+          "expression": "neutral",
+          "mouth": "rest",
+          "params": {
+            "eyeOpen": 0.5817000524610715,
+            "eyeSmile": 0,
+            "pupil": 0.9999999999999998,
+            "lookX": -3.8049483315115387e-07,
+            "lookY": 0.3354129685396508,
+            "browY": 5.33318743199682e-21,
+            "browTilt": -1.5999562295990448e-21,
+            "mouthOpen": 2.860709329000168e-07,
+            "mouthWide": 0.5000004086681061,
+            "mouthRound": 2.4634773121123157e-13,
+            "smile": 0.24999999999999994,
+            "blush": 0.44999999807146135,
+            "squash": 0.0006071468866129759,
+            "wobble": 0,
+            "reveal": 1
+          },
+          "anchor": [
+            0,
+            0.7095,
+            -2.64
+          ],
+          "size": 0.301,
+          "facePos": [
+            -0.0021564741940016,
+            0.7095,
+            -2.622114279851014
+          ],
+          "faceDir": [
+            -0.1197026824513852,
+            0,
+            0.9928097843061091
+          ],
+          "pokes": 0,
+          "pets": 0,
+          "flicks": 0,
+          "lines": 1,
+          "voiceMode": "silent",
+          "bubble": true,
+          "bubbleInfo": {
+            "content": {
+              "speaker": "Couch",
+              "tag": "puppet line (you)",
+              "text": "Hello. This mouth speaks a typed puppet line.",
+              "shown": 999
+            },
+            "corners": [
+              [
+                -0.4619044079859428,
+                0.8663417062013804,
+                -2.6620148602265994
+              ],
+              [
+                0.4538999786598926,
+                0.8663417062013804,
+                -2.5515966880700165
+              ],
+              [
+                0.45759145959793956,
+                1.3265280091446816,
+                -2.582213699475429
+              ],
+              [
+                -0.45821292704789585,
+                1.3265280091446816,
+                -2.692631871632012
+              ]
+            ]
+          },
+          "faceSource": "built-in",
+          "hasPersona": false,
+          "anchorErrorCm": 0
+        }
+      ],
+      "max": 0.8338881127379082
+    },
+    "shot": "silent-browser.jpg",
+    "at": "2026-10-26T21:38:05.173Z"
+  },
+  {
+    "id": "S16",
+    "ok": false,
+    "detail": {
+      "s": [
+        {
+          "id": "local-x9cpne8v",
+          "name": "Couch",
+          "label": "couch",
+          "targetId": "den-couch",
+          "awake": true,
+          "speaking": false,
+          "expression": "surprised",
+          "mouth": "O",
+          "params": {
+            "eyeOpen": 1.2183903985516822,
+            "eyeSmile": 0,
+            "pupil": 0.8587073756656524,
+            "lookX": -0.00027639333374272643,
+            "lookY": 0.22432708498514967,
+            "browY": 0.4036932123838503,
+            "browTilt": -0.12110796371515509,
+            "mouthOpen": 0.535406246991836,
+            "mouthWide": 0.30878348321720145,
+            "mouthRound": 0.7648660671311943,
+            "smile": 0.14907669690403744,
+            "blush": 0.24065911350846758,
+            "squash": 0.12246187073305266,
+            "wobble": 0,
+            "reveal": 0.22779096896232195
+          },
+          "anchor": [
+            0,
+            0.7095,
+            -2.64
+          ],
+          "size": 0.301,
+          "facePos": [
+            -0.0010520971579907519,
+            0.7095,
+            -2.6274607131842456
+          ],
+          "faceDir": [
+            -0.08361027921635014,
+            0,
+            0.9964985304602128
+          ],
+          "pokes": 0,
+          "pets": 0,
+          "flicks": 0,
+          "lines": 0,
+          "voiceMode": "",
+          "bubble": true,
+          "bubbleInfo": {
+            "content": {
+              "speaker": "Couch",
+              "tag": "",
+              "text": "",
+              "shown": 0,
+              "glyph": "!"
+            },
+            "corners": [
+              [
+                -0.6019686980535767,
+                0.8652287069935031,
+                -2.6416633960305678
+              ],
+              [
+                0.5938295384986788,
+                0.8652287069935031,
+                -2.5413310609709474
+              ],
+              [
+                0.5998645037375953,
+                1.4608712930064973,
+                -2.6132580303379234
+              ],
+              [
+                -0.5959337328146602,
+                1.4608712930064973,
+                -2.7135903653975437
+              ]
+            ]
+          },
+          "sourceChip": {
+            "visible": false,
+            "text": "Built-in face \u00b7 not generated"
+          },
+          "faceSource": "built-in",
+          "hasPersona": false,
+          "anchorErrorCm": 0
+        }
+      ],
+      "failureBody": "Yadori\n\u5bbf\u308a \u00b7 wake up your room\nBrowser diorama, not your room\nMuse Spark \u00b7 Setup required: MODEL_API_KEY\nMuse Image \u00b7 Setup required: MODEL_API_KEY\nVoice in \u00b7 Setup required: MODEL_API_KEY\nSAM 3.1 \u00b7 Setup required: MODEL_API_KEY\nMMS-TTS \u00b7 Setup required: fetch-models\nVoice out \u00b7 Browser voice, not a Meta model\nBINDER\n1 / 6\nforget\nCouch\ncouch \u00b7 2.0 \u00d7 0.9 m\nBuilt-in face, not generatedDrawn from the label\nNo persona \u00b7 Setup required for Muse Spark\nvoice browser\n0 memories\n0 lines\nfirst woke 2026-10-27\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nTap, rub or swipe its face \u00b7 wake a second one and they gossip\nSpeaker\nCouch\nSay\nPuppet mode: you are the voice. Setup required for Muse Spark (MODEL_API_KEY). Lines are yours, spoken by Browser voice, not a Meta model.\nEnter mixed reality (emulated)\nGateway: Gateway offline: start it with pnpm gateway. Waking with the built-in face.",
+      "events": [
+        {
+          "at": "2026-10-26T21:52:02.768Z",
+          "group": "offline-wake-failure",
+          "kind": "response",
+          "url": "https://localhost:8091/api/wake",
+          "status": 502,
+          "method": "POST"
+        },
+        {
+          "at": "2026-10-26T21:52:02.769Z",
+          "group": "offline-wake-failure",
+          "kind": "console",
+          "level": "error",
+          "text": "Failed to load resource: the server responded with a status of 502 ()"
+        }
+      ],
+      "zeroToleranceFailure": "UI recovered, but Chrome emitted a console error for the intentionally failed 502 /api/wake request. Expected negative HTTP is recorded; console-error rule still fails this row."
+    },
+    "shot": "offline-wake-failure.jpg",
+    "at": "2026-10-26T21:52:03.988Z"
+  },
+  {
+    "id": "S13",
+    "ok": true,
+    "detail": {
+      "status": {
+        "status": 200,
+        "body": {
+          "gateway": "offline",
+          "error": "Gateway offline: start it with pnpm gateway"
+        }
+      },
+      "body": "Yadori\n\u5bbf\u308a \u00b7 wake up your room\nBrowser diorama, not your room\nGateway offline \u00b7 Meta models unavailable\nVoice out \u00b7 Browser voice, not a Meta model\nBINDER\n0 / 6\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nClick a piece of furniture to wake it\nThen poke it, pet it, flick it \u00b7 drag the room to look around\nEnter mixed reality (emulated)"
+    },
+    "shot": "offline-status.jpg",
+    "at": "2026-10-26T21:52:06.499Z"
+  },
+  {
+    "id": "S14",
+    "ok": true,
+    "detail": {
+      "s": [
+        {
+          "id": "local-vcsr47kj",
+          "name": "Couch",
+          "label": "couch",
+          "targetId": "den-couch",
+          "awake": true,
+          "speaking": false,
+          "expression": "neutral",
+          "mouth": "rest",
+          "params": {
+            "eyeOpen": 1,
+            "eyeSmile": 0,
+            "pupil": 0.999999999999349,
+            "lookX": -8.826480075120658e-06,
+            "lookY": 0.3356335074999881,
+            "browY": 1.8602017046359918e-12,
+            "browTilt": -5.580605113907964e-13,
+            "mouthOpen": 0.004108559402960957,
+            "mouthWide": 0.4985326576353987,
+            "mouthRound": 0.005869370352207824,
+            "smile": 0.24999999999953493,
+            "blush": 0.44999496192651,
+            "squash": 0.003353334060963888,
+            "wobble": 0,
+            "reveal": 1
+          },
+          "anchor": [
+            0,
+            0.7095,
+            -2.64
+          ],
+          "size": 0.301,
+          "facePos": [
+            -0.0021488616334937563,
+            0.7095,
+            -2.622145418808583
+          ],
+          "faceDir": [
+            -0.11949121469239074,
+            0,
+            0.9928352580420063
+          ],
+          "pokes": 0,
+          "pets": 0,
+          "flicks": 0,
+          "lines": 1,
+          "voiceMode": "browser",
+          "bubble": true,
+          "bubbleInfo": {
+            "content": {
+              "speaker": "Couch",
+              "tag": "puppet line (you)",
+              "text": "Hello couch.",
+              "shown": 999
+            },
+            "corners": [
+              [
+                -0.4628726650835807,
+                0.8663273032293708,
+                -2.6619751548902535
+              ],
+              [
+                0.4548687830369478,
+                0.8663273032293708,
+                -2.551521744295486
+              ],
+              [
+                0.4585749418165932,
+                1.3274675510071774,
+                -2.5823156827269127
+              ],
+              [
+                -0.4591665063039353,
+                1.3274675510071774,
+                -2.6927690933216804
+              ]
+            ]
+          },
+          "sourceChip": {
+            "visible": true,
+            "text": "Built-in face \u00b7 not generated"
+          },
+          "faceSource": "built-in",
+          "hasPersona": false,
+          "anchorErrorCm": 0
+        }
+      ],
+      "body": "Yadori\n\u5bbf\u308a \u00b7 wake up your room\nBrowser diorama, not your room\nGateway offline \u00b7 Meta models unavailable\nVoice out \u00b7 Browser voice, not a Meta model\nBINDER\n1 / 6\nforget\nCouch\ncouch \u00b7 2.0 \u00d7 0.9 m\nBuilt-in face, not generatedDrawn from the label\nNo persona \u00b7 Setup required for Muse Spark\nvoice browser\n0 memories\n1 lines\nfirst woke 2026-10-27\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nTap, rub or swipe its face \u00b7 wake a second one and they gossip\nSpeaker\nCouch\nSay\nPuppet mode: you are the voice. Setup required for Muse Spark (MODEL_API_KEY). Lines are yours, spoken by Browser voice, not a Meta model.\nEnter mixed reality (emulated)"
+    },
+    "shot": "offline-status.jpg",
+    "at": "2026-10-26T21:52:11.196Z"
+  },
+  {
+    "id": "S15",
+    "ok": true,
+    "detail": {
+      "body": "Yadori\n\u5bbf\u308a \u00b7 wake up your room\nBrowser diorama, not your room\nMuse Spark \u00b7 Setup required: MODEL_API_KEY\nMuse Image \u00b7 Setup required: MODEL_API_KEY\nVoice in \u00b7 Setup required: MODEL_API_KEY\nSAM 3.1 \u00b7 Setup required: MODEL_API_KEY\nMMS-TTS \u00b7 Setup required: fetch-models\nVoice out \u00b7 Browser voice, not a Meta model\nBINDER\n1 / 6\nforget\nCouch\ncouch \u00b7 2.0 \u00d7 0.9 m\nBuilt-in face, not generatedDrawn from the label\nNo persona \u00b7 Setup required for Muse Spark\nvoice browser\n0 memories\n1 lines\nfirst woke 2026-10-27\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nTap, rub or swipe its face \u00b7 wake a second one and they gossip\nSpeaker\nCouch\nSay\nPuppet mode: you are the voice. Setup required for Muse Spark (MODEL_API_KEY). Lines are yours, spoken by Browser voice, not a Meta model.\nEnter mixed reality (emulated)",
+      "spirits": [
+        {
+          "id": "local-vcsr47kj",
+          "name": "Couch",
+          "label": "couch",
+          "targetId": "den-couch",
+          "awake": true,
+          "speaking": false,
+          "expression": "neutral",
+          "mouth": "rest",
+          "params": {
+            "eyeOpen": 1,
+            "eyeSmile": 0,
+            "pupil": 0.9999999999999998,
+            "lookX": -1.3158979384745188e-71,
+            "lookY": 0.3354030480966545,
+            "browY": 5.863880705258134e-84,
+            "browTilt": -1.7591642115774332e-84,
+            "mouthOpen": 2.569447912340926e-203,
+            "mouthWide": 0.49999999999999994,
+            "mouthRound": 3.670639735029145e-203,
+            "smile": 0.24999999999999994,
+            "blush": 0.4499999999999997,
+            "squash": -1.8300036600627804e-38,
+            "wobble": 0,
+            "reveal": 1
+          },
+          "anchor": [
+            0,
+            0.7095,
+            -2.64
+          ],
+          "size": 0.301,
+          "facePos": [
+            -0.0021568175247951263,
+            0.7095,
+            -2.622112876820282
+          ],
+          "faceDir": [
+            -0.1197122109635782,
+            0,
+            0.9928086354107784
+          ],
+          "pokes": 0,
+          "pets": 0,
+          "flicks": 0,
+          "lines": 1,
+          "voiceMode": "browser",
+          "bubble": false,
+          "bubbleInfo": {
+            "content": null,
+            "corners": [
+              [
+                -0.46186485099852465,
+                0.8663422950099847,
+                -2.662016477784784
+              ],
+              [
+                0.45386039819995666,
+                0.8663422950099847,
+                -2.551599746449945
+              ],
+              [
+                0.4575512787700848,
+                1.32648962471982,
+                -2.5822095325664445
+              ],
+              [
+                -0.4581739704283965,
+                1.32648962471982,
+                -2.6926262639012837
+              ]
+            ]
+          },
+          "sourceChip": {
+            "visible": false,
+            "text": "Built-in face \u00b7 not generated"
+          },
+          "faceSource": "built-in",
+          "hasPersona": false,
+          "anchorErrorCm": 0
+        }
+      ]
+    },
+    "shot": "offline-status.jpg",
+    "at": "2026-10-26T21:52:27.632Z"
+  },
+  {
+    "id": "P11",
+    "ok": true,
+    "detail": {
+      "body": "Yadori\nGateway offline\nGateway offline \u00b7 Meta models unavailable\nVoice out \u00b7 Browser voice, not a Meta model\nClick a piece of furniture to wake it\nThen poke it, pet it, flick it \u00b7 drag the room to look around",
+      "spirits": [
+        {
+          "id": "local-g6aeid78",
+          "name": "Couch",
+          "label": "couch",
+          "targetId": "den-couch",
+          "awake": true,
+          "speaking": false,
+          "expression": "neutral",
+          "mouth": "rest",
+          "params": {
+            "eyeOpen": 1,
+            "eyeSmile": 0,
+            "pupil": 0.9999999997339185,
+            "lookX": -1.0405075620581689e-05,
+            "lookY": 0.33454159018898644,
+            "browY": 7.602327245406067e-10,
+            "browTilt": -2.280698173621822e-10,
+            "mouthOpen": 0.0016353795660521589,
+            "mouthWide": 0.4994159359846948,
+            "mouthRound": 0.0023362564305894765,
+            "smile": 0.24999999980994184,
+            "blush": 0.44994420622138276,
+            "squash": 0.002907371110045685,
+            "wobble": 0,
+            "reveal": 1
+          },
+          "anchor": [
+            0,
+            0.7095,
+            -2.64
+          ],
+          "size": 0.301,
+          "facePos": [
+            -0.002147230340220933,
+            0.7095,
+            -2.622152099057052
+          ],
+          "faceDir": [
+            -0.11944585062154249,
+            0,
+            0.9928407167160783
+          ],
+          "pokes": 0,
+          "pets": 0,
+          "flicks": 0,
+          "lines": 1,
+          "voiceMode": "browser",
+          "bubble": true,
+          "bubbleInfo": {
+            "content": {
+              "speaker": "Couch",
+              "tag": "puppet line (you)",
+              "text": "Hello couch.",
+              "shown": 999
+            },
+            "corners": [
+              [
+                -0.6025349149895818,
+                0.8656231712095495,
+                -2.654892130166315
+              ],
+              [
+                0.5888739450697122,
+                0.8656231712095495,
+                -2.511557109420464
+              ],
+              [
+                0.59824045430914,
+                1.4604768287904508,
+                -2.5894120679477894
+              ],
+              [
+                -0.5931684057501541,
+                1.4604768287904508,
+                -2.7327470886936402
+              ]
+            ]
+          },
+          "sourceChip": {
+            "visible": true,
+            "text": "Built-in face \u00b7 not generated"
+          },
+          "faceSource": "built-in",
+          "hasPersona": false,
+          "anchorErrorCm": 0
+        }
+      ],
+      "events": [
+        {
+          "at": "2026-10-26T21:52:04.127Z",
+          "group": "offline-status",
+          "kind": "console",
+          "level": "debug",
+          "text": "[vite] connecting..."
+        },
+        {
+          "at": "2026-10-26T21:52:04.347Z",
+          "group": "offline-status",
+          "kind": "console",
+          "level": "debug",
+          "text": "[vite] connected."
+        },
+        {
+          "at": "2026-10-26T21:52:04.380Z",
+          "group": "offline-status",
+          "kind": "console",
+          "level": "log",
+          "text": "[IWSDK Dev] Configuration: {device: metaQuest3, activation: always, verbose: false, sem: Object, ai: Object}"
+        },
+        {
+          "at": "2026-10-26T21:52:04.514Z",
+          "group": "offline-status",
+          "kind": "console",
+          "level": "log",
+          "text": "                                                 \n\u2584\u2584\u2584\u2584\u2584\u2584  \u2584\u2584      \u2584\u2584   \u2584\u2584\u2584\u2584    \u2584\u2584\u2584\u2584\u2584     \u2584\u2584   \u2584\u2584\u2584 \n\u2580\u2580\u2588\u2588\u2580\u2580  \u2588\u2588      \u2588\u2588 \u2584\u2588\u2580\u2580\u2580\u2580\u2588   \u2588\u2588\u2580\u2580\u2580\u2588\u2588   \u2588\u2588  \u2588\u2588\u2580  \n  \u2588\u2588    \u2580\u2588\u2584 \u2588\u2588 \u2584\u2588\u2580 \u2588\u2588\u2584       \u2588\u2588    \u2588\u2588  \u2588\u2588\u2584\u2588\u2588    \n  \u2588\u2588     \u2588\u2588 \u2588\u2588 \u2588\u2588   \u2580\u2588\u2588\u2588\u2588\u2584   \u2588\u2588    \u2588\u2588  \u2588\u2588\u2588\u2588\u2588    \n  \u2588\u2588     \u2588\u2588\u2588\u2580\u2580\u2588\u2588\u2588       \u2580\u2588\u2588  \u2588\u2588    \u2588\u2588  \u2588\u2588  \u2588\u2588\u2584  \n\u2584\u2584\u2588\u2588\u2584\u2584   \u2588\u2588\u2588  \u2588\u2588\u2588  \u2588\u2584\u2584\u2584\u2584\u2584\u2588\u2580  \u2588\u2588\u2584\u2584\u2584\u2588\u2588   \u2588\u2588   \u2588\u2588\u2584 \n\u2580\u2580\u2580\u2580\u2580\u2580   \u2580\u2580\u2580  \u2580\u2580\u2580   \u2580\u2580\u2580\u2580\u2580    \u2580\u2580\u2580\u2580\u2580     \u2580\u2580    \u2580\u2580                                                \n===============================================\nImmersive Web SDK v1.1.0-rc.2\nThree.js r185\nEliCS v3.4.2"
+        },
+        {
+          "at": "2026-10-26T21:52:04.684Z",
+          "group": "offline-status",
+          "kind": "response",
+          "url": "https://localhost:8091/api/status",
+          "status": 200,
+          "method": "GET"
+        },
+        {
+          "at": "2026-10-26T21:52:06.489Z",
+          "group": "offline-status",
+          "kind": "response",
+          "url": "https://localhost:8091/api/status",
+          "status": 200,
+          "method": "GET"
+        },
+        {
+          "at": "2026-10-26T21:52:06.490Z",
+          "group": "offline-status",
+          "kind": "response",
+          "url": "https://localhost:8091/api/status",
+          "status": 200,
+          "method": "GET"
+        },
+        {
+          "at": "2026-10-26T21:52:19.631Z",
+          "group": "offline-status",
+          "kind": "response",
+          "url": "https://localhost:8091/api/status",
+          "status": 200,
+          "method": "GET"
+        },
+        {
+          "at": "2026-10-26T21:52:28.634Z",
+          "group": "mobile-offline",
+          "kind": "console",
+          "level": "debug",
+          "text": "[vite] connecting..."
+        },
+        {
+          "at": "2026-10-26T21:52:28.741Z",
+          "group": "mobile-offline",
+          "kind": "console",
+          "level": "log",
+          "text": "[IWSDK Dev] Configuration: {device: metaQuest3, activation: always, verbose: false, sem: Object, ai: Object}"
+        },
+        {
+          "at": "2026-10-26T21:52:28.752Z",
+          "group": "mobile-offline",
+          "kind": "console",
+          "level": "debug",
+          "text": "[vite] connected."
+        },
+        {
+          "at": "2026-10-26T21:52:29.002Z",
+          "group": "mobile-offline",
+          "kind": "console",
+          "level": "log",
+          "text": "                                                 \n\u2584\u2584\u2584\u2584\u2584\u2584  \u2584\u2584      \u2584\u2584   \u2584\u2584\u2584\u2584    \u2584\u2584\u2584\u2584\u2584     \u2584\u2584   \u2584\u2584\u2584 \n\u2580\u2580\u2588\u2588\u2580\u2580  \u2588\u2588      \u2588\u2588 \u2584\u2588\u2580\u2580\u2580\u2580\u2588   \u2588\u2588\u2580\u2580\u2580\u2588\u2588   \u2588\u2588  \u2588\u2588\u2580  \n  \u2588\u2588    \u2580\u2588\u2584 \u2588\u2588 \u2584\u2588\u2580 \u2588\u2588\u2584       \u2588\u2588    \u2588\u2588  \u2588\u2588\u2584\u2588\u2588    \n  \u2588\u2588     \u2588\u2588 \u2588\u2588 \u2588\u2588   \u2580\u2588\u2588\u2588\u2588\u2584   \u2588\u2588    \u2588\u2588  \u2588\u2588\u2588\u2588\u2588    \n  \u2588\u2588     \u2588\u2588\u2588\u2580\u2580\u2588\u2588\u2588       \u2580\u2588\u2588  \u2588\u2588    \u2588\u2588  \u2588\u2588  \u2588\u2588\u2584  \n\u2584\u2584\u2588\u2588\u2584\u2584   \u2588\u2588\u2588  \u2588\u2588\u2588  \u2588\u2584\u2584\u2584\u2584\u2584\u2588\u2580  \u2588\u2588\u2584\u2584\u2584\u2588\u2588   \u2588\u2588   \u2588\u2588\u2584 \n\u2580\u2580\u2580\u2580\u2580\u2580   \u2580\u2580\u2580  \u2580\u2580\u2580   \u2580\u2580\u2580\u2580\u2580    \u2580\u2580\u2580\u2580\u2580     \u2580\u2580    \u2580\u2580                                                \n===============================================\nImmersive Web SDK v1.1.0-rc.2\nThree.js r185\nEliCS v3.4.2"
+        },
+        {
+          "at": "2026-10-26T21:52:29.106Z",
+          "group": "mobile-offline",
+          "kind": "response",
+          "url": "https://localhost:8091/api/status",
+          "status": 200,
+          "method": "GET"
+        }
+      ]
+    },
+    "shot": "mobile-offline.jpg",
+    "at": "2026-10-26T21:52:35.025Z"
+  }
+]

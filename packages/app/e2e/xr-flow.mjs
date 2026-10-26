@@ -1,3 +1,4 @@
+import { captureManaged } from './audit-network.mjs';
 // Emulated Quest 3 (IWER, synthetic room yadori_den), hands only, from a cold load:
 // pinch to wake, poke / pet / flick with the fingertip and palm, a puppet line, a second
 // spirit, gossip, a reply, frame time, console errors, reload + re-match, and the bare
@@ -14,6 +15,7 @@ const check = (name, ok, detail = '') => {
 const face = async (label) => (await state()).spirits.find((s) => s.label === label);
 const actions = { pinch: 0, poke: 0, pet: 0, flick: 0 };
 const t0 = Date.now();
+let performanceResult = null;
 
 async function main() {
   page('page-reset.mjs', { room: 'den' });
@@ -134,7 +136,8 @@ async function main() {
   // frame time with two spirits, one talking
   page('page-say.mjs', { speaker: 'Couch', to: 'Lamp', text: 'I am not glowing. You are the one who glows. That is literally your whole job, and you know it.' });
   const perf = page('page-perf.mjs', { frames: 600 });
-  check('emulator frame time recorded (600 XR frames)', perf.frames === 600 && perf.xrFrames > 0, `p50 ${perf.cpuMs.p50.toFixed(2)} p95 ${perf.cpuMs.p95.toFixed(2)} ms, draw calls p95 ${perf.drawCalls.p95}, tris max ${perf.triangles.max}`);
+  performanceResult = perf;
+  check('emulator frame time recorded (600 XR frames)', perf.frames === 600 && perf.xrFrames === 600, `p50 ${perf.cpuMs.p50.toFixed(2)} p95 ${perf.cpuMs.p95.toFixed(2)} ms, draw calls p95 ${perf.drawCalls.p95}, tris max ${perf.triangles.max}`);
   check('draw calls within budget (≤ 100)', perf.drawCalls.max <= 100, `max ${perf.drawCalls.max}`);
 
   // reload: re-match by label + size + position after the session restarts
@@ -181,13 +184,20 @@ async function main() {
   page('page-reset.mjs', { room: 'den' });
 }
 
+let capture;
 try {
+  capture = await captureManaged('quest');
   await main();
 } catch (e) {
   check('flow completed', false, e instanceof Error ? e.message : String(e));
+} finally {
+  if (capture) {
+    const network = await capture.stop();
+    check('independent console, page and network capture is clean', network.responses > 0 && network.errors.length === 0, `${network.responses} responses; ${network.errors.length} errors`);
+  }
 }
 const fail = results.filter((r) => !r.ok).length;
-const summary = { profile: 'metaQuest3', input: 'hands only', actions, seconds: Math.round((Date.now() - t0) / 1000), pass: results.length - fail, fail, results, at: new Date().toISOString() };
+const summary = { profile: 'metaQuest3', input: 'hands only', actions, seconds: Math.round((Date.now() - t0) / 1000), pass: results.length - fail, fail, results, perf: performanceResult, at: new Date().toISOString() };
 mkdirSync(join(APP, 'e2e', 'results'), { recursive: true });
 writeFileSync(join(APP, 'e2e', 'results', 'xr-quest3.json'), JSON.stringify(summary, null, 2));
 console.log(`\n${summary.pass} passed, ${fail} failed`);

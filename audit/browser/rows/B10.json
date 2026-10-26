@@ -1,0 +1,96 @@
+{
+  "id": "B10",
+  "ok": true,
+  "detail": {
+    "id": "sp_blblm7kf2oyi",
+    "name": "Couch",
+    "label": "couch",
+    "targetId": "den-couch",
+    "awake": true,
+    "speaking": false,
+    "expression": "surprised",
+    "mouth": "O",
+    "params": {
+      "eyeOpen": 0.6862138876996021,
+      "eyeSmile": 0,
+      "pupil": 0.7588459037068186,
+      "lookX": 0.0377048696848917,
+      "lookY": 0.0007077594620976726,
+      "browY": 0.6890117036948037,
+      "browTilt": -0.2067035111084411,
+      "mouthOpen": 0.6734061407166637,
+      "mouthWide": 0.2594978068869058,
+      "mouthRound": 0.9620087724523767,
+      "smile": 0.07774707407629904,
+      "blush": 0.3566886817346328,
+      "squash": -0.19259034550265017,
+      "wobble": 0,
+      "reveal": 1
+    },
+    "anchor": [
+      0,
+      0.7095,
+      -2.64
+    ],
+    "size": 0.301,
+    "facePos": [
+      -0.0021568175247951263,
+      0.7095,
+      -2.622112876820282
+    ],
+    "faceDir": [
+      -0.1197122109635782,
+      0,
+      0.9928086354107784
+    ],
+    "pokes": 1,
+    "pets": 0,
+    "flicks": 0,
+    "lines": 0,
+    "voiceMode": "",
+    "bubble": true,
+    "bubbleInfo": {
+      "content": {
+        "speaker": "Couch",
+        "tag": "",
+        "text": "",
+        "shown": 0,
+        "glyph": "!"
+      },
+      "corners": [
+        [
+          -0.46186089687908616,
+          0.8663423539219561,
+          -2.6620166406746164
+        ],
+        [
+          0.4538564408969471,
+          0.8663423539219561,
+          -2.55160004757408
+        ],
+        [
+          0.4575472618294959,
+          1.3264857876907854,
+          -2.582209112965948
+        ],
+        [
+          -0.45817007594653736,
+          1.3264857876907854,
+          -2.6926257060664844
+        ]
+      ]
+    },
+    "sourceChip": {
+      "visible": false,
+      "text": "Built-in face \u00b7 not generated"
+    },
+    "faceSource": "built-in",
+    "hasPersona": false,
+    "anchorErrorCm": 0
+  },
+  "at": "2026-10-26T21:48:42.557Z",
+  "shot": "desktop-awake.jpg",
+  "source": "extra-results.json",
+  "status": "PASS",
+  "screenshot": "desktop-awake.jpg"
+}

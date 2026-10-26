@@ -1,0 +1,87 @@
+{
+  "id": "N03",
+  "ok": true,
+  "detail": {
+    "spirits": [
+      {
+        "id": "sp_xs9t0x17zv8c",
+        "name": "Coat Rack",
+        "label": "coat rack",
+        "targetId": "den-thing",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 0.9999935728242997,
+          "eyeSmile": 0,
+          "pupil": 0.9999885693918027,
+          "lookX": 6.190312165893979e-05,
+          "lookY": 0.3495596670219295,
+          "browY": 3.2658880563807056e-05,
+          "browTilt": -9.797664169142126e-06,
+          "mouthOpen": 1.926550821465733e-13,
+          "mouthWide": 0.4999999999999312,
+          "mouthRound": 2.7522154592367595e-13,
+          "smile": 0.24999183527985905,
+          "blush": 0.44602059753540974,
+          "squash": -3.4888964331397316e-05,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          0.2,
+          0.45375000000000004,
+          -2.14
+        ],
+        "size": 0.1925,
+        "facePos": [
+          0.19858307504549497,
+          0.45375000000000004,
+          -2.128408134294066
+        ],
+        "faceDir": [
+          -0.12133135715314457,
+          0,
+          0.9926120600573903
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": false
+      }
+    ],
+    "saved": [
+      {
+        "spiritId": "sp_xs9t0x17zv8c",
+        "label": "coat rack",
+        "name": "Coat Rack",
+        "dims": [
+          0.7,
+          0.55,
+          0.5
+        ],
+        "position": [
+          0.2,
+          0.275,
+          -2.4
+        ],
+        "persona": null,
+        "sheet": null,
+        "faceSource": "built-in",
+        "source": "label",
+        "firstWoke": "2026-10-27",
+        "lines": 0,
+        "memories": 0,
+        "room": "diorama:bare"
+      }
+    ]
+  },
+  "at": "2026-10-26T21:33:15.816Z",
+  "shot": "bare.jpg",
+  "source": "extra-results.json",
+  "status": "PASS",
+  "screenshot": "bare.jpg"
+}

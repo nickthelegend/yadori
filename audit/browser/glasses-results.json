@@ -1,0 +1,58 @@
+{
+  "profile": "metaVRGlasses",
+  "pass": 10,
+  "fail": 0,
+  "results": [
+    {
+      "name": "glasses profile active with gaze",
+      "ok": true,
+      "detail": "Meta VR Glasses"
+    },
+    {
+      "name": "gaze hovers the couch (outline + chip)",
+      "ok": true,
+      "detail": "[null,null,null,\"couch\"]"
+    },
+    {
+      "name": "gaze + pinch wakes the couch",
+      "ok": true,
+      "detail": "couch"
+    },
+    {
+      "name": "inside the glasses view: face top-left",
+      "ok": true,
+      "detail": "h -3.1\u00b0, v 2.6\u00b0"
+    },
+    {
+      "name": "inside the glasses view: face bottom-right",
+      "ok": true,
+      "detail": "h 3.0\u00b0, v -3.3\u00b0"
+    },
+    {
+      "name": "inside the glasses view: bubble top (est.)",
+      "ok": true,
+      "detail": "h 0.0\u00b0, v 10.9\u00b0"
+    },
+    {
+      "name": "actual speech bubble corners fit the glasses view",
+      "ok": true,
+      "detail": "[{\"h\":-9.390233469627299,\"v\":2.5202469484033685},{\"h\":9.390233469627299,\"v\":2.5202469484033685},{\"h\":9.58694639890725,\"v\":11.997101947083594},{\"h\":-9.58694639890725,\"v\":11.997101947083594}]"
+    },
+    {
+      "name": "with gaze disconnected, the hand ray wakes the lamp",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no console errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "independent console, page and network capture is clean",
+      "ok": true,
+      "detail": "389 responses; 0 errors"
+    }
+  ],
+  "at": "2026-10-26T22:03:32.701Z"
+}

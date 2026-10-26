@@ -76,6 +76,10 @@ export class Overlay {
     this.stageEl = this.root.querySelector('#y-stage')!;
     this.xrBtn = this.root.querySelector('#y-xr')!;
     this.toastEl = this.root.querySelector('#y-toast')!;
+    const header = this.root.querySelector<HTMLElement>('.y-top')!;
+    new ResizeObserver(() => {
+      this.root.style.setProperty('--y-header-bottom', `${header.getBoundingClientRect().bottom + 12}px`);
+    }).observe(header);
     this.xrBtn.addEventListener('click', () => this.h.onEnterXR());
     this.statusEl.addEventListener('click', (e) => {
       if ((e.target as HTMLElement).closest('.summary')) this.statusEl.classList.toggle('open');

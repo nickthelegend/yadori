@@ -1,0 +1,10 @@
+{
+  "id": "S05",
+  "ok": true,
+  "detail": "Setup required: run scripts/fetch-models.sh (MMS-TTS weights, CC-BY-NC-4.0)",
+  "at": "2026-10-26T21:48:52.065Z",
+  "shot": "desktop-awake.jpg",
+  "source": "extra-results.json",
+  "status": "PASS",
+  "screenshot": "desktop-awake.jpg"
+}

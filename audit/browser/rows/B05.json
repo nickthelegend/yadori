@@ -1,0 +1,95 @@
+{
+  "id": "B05",
+  "ok": true,
+  "detail": {
+    "waking": "den-couch",
+    "hint": "Waking the couch\u2026",
+    "wakeMs": 1178,
+    "c": {
+      "id": "sp_blblm7kf2oyi",
+      "name": "Couch",
+      "label": "couch",
+      "targetId": "den-couch",
+      "awake": true,
+      "speaking": false,
+      "expression": "neutral",
+      "mouth": "rest",
+      "params": {
+        "eyeOpen": 1,
+        "eyeSmile": 0,
+        "pupil": 0.9999984729268728,
+        "lookX": -8.861822647296425e-05,
+        "lookY": 0.33775811056989546,
+        "browY": 4.363066077633286e-06,
+        "browTilt": -1.3089198232899858e-06,
+        "mouthOpen": 6.869467166023448e-16,
+        "mouthWide": 0.4999999999999998,
+        "mouthRound": 9.813524522890633e-16,
+        "smile": 0.2499989092334806,
+        "blush": 0.4482202461571849,
+        "squash": 1.2611341010294503e-05,
+        "wobble": 0,
+        "reveal": 1
+      },
+      "anchor": [
+        0,
+        0.7095,
+        -2.64
+      ],
+      "size": 0.301,
+      "facePos": [
+        -0.002076008501584089,
+        0.7095,
+        -2.6224463830453737
+      ],
+      "faceDir": [
+        -0.11744818611832897,
+        0,
+        0.9930790117495759
+      ],
+      "pokes": 0,
+      "pets": 0,
+      "flicks": 0,
+      "lines": 0,
+      "voiceMode": "",
+      "bubble": false,
+      "bubbleInfo": {
+        "content": null,
+        "corners": [
+          [
+            -0.5286346302067305,
+            0.8653773647964692,
+            -2.6589973001341733
+          ],
+          [
+            0.5205923437655707,
+            0.8653773647964692,
+            -2.5461965817314502
+          ],
+          [
+            0.5251954057617355,
+            1.39125370714694,
+            -2.5890124155100973
+          ],
+          [
+            -0.5240315682105657,
+            1.39125370714694,
+            -2.7018131339128204
+          ]
+        ]
+      },
+      "sourceChip": {
+        "visible": true,
+        "text": "Built-in face \u00b7 not generated"
+      },
+      "faceSource": "built-in",
+      "hasPersona": false,
+      "anchorErrorCm": 0
+    }
+  },
+  "at": "2026-10-26T21:48:31.320Z",
+  "shot": "desktop-awake.jpg",
+  "source": "extra-results.json",
+  "status": "PASS",
+  "screenshot": "desktop-awake.jpg"
+}

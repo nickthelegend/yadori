@@ -1,0 +1,446 @@
+[
+  {
+    "id": "P01",
+    "ok": true,
+    "detail": {
+      "targets": [
+        {
+          "id": "den-couch",
+          "label": "couch",
+          "center": [
+            0,
+            0.43,
+            -3.1
+          ],
+          "dims": [
+            2,
+            0.86,
+            0.9
+          ]
+        },
+        {
+          "id": "den-lamp",
+          "label": "lamp",
+          "center": [
+            -1.62,
+            0.85,
+            -3.15
+          ],
+          "dims": [
+            0.44,
+            1.7,
+            0.44
+          ]
+        },
+        {
+          "id": "den-plant",
+          "label": "plant",
+          "center": [
+            1.65,
+            0.75,
+            -3.05
+          ],
+          "dims": [
+            0.78,
+            1.5,
+            0.78
+          ]
+        },
+        {
+          "id": "den-table",
+          "label": "table",
+          "center": [
+            0,
+            0.225,
+            -1.85
+          ],
+          "dims": [
+            1.1,
+            0.45,
+            0.6
+          ]
+        },
+        {
+          "id": "den-screen",
+          "label": "screen",
+          "center": [
+            2.32,
+            1,
+            -1.7
+          ],
+          "dims": [
+            1.2,
+            0.72,
+            0.06
+          ]
+        }
+      ],
+      "iwer": false,
+      "xrHidden": true
+    },
+    "at": "2026-10-26T22:15:36.457Z",
+    "shot": "mobile.jpg"
+  },
+  {
+    "id": "P02",
+    "ok": true,
+    "detail": "Yadori\nBrowser diorama, not your room\nSetup required (5)\nClick a piece of furniture to wake it\nThen poke it, pet it, flick it · drag the room to look around",
+    "at": "2026-10-26T22:15:36.476Z",
+    "shot": "mobile.jpg"
+  },
+  {
+    "id": "P04",
+    "ok": true,
+    "detail": [
+      {
+        "id": "sp_ckccimwnvowx",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "den-couch",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 0,
+          "pupil": 0.9999999536580868,
+          "lookX": -0.000023534288440097716,
+          "lookY": 0.3348961497038146,
+          "browY": 1.3240546606562573e-7,
+          "browTilt": -3.972163981968771e-8,
+          "mouthOpen": 3.8629336801035705e-20,
+          "mouthWide": 0.49999999999999994,
+          "mouthRound": 5.518476685862241e-20,
+          "smile": 0.2499999668986335,
+          "blush": 0.4495604907114561,
+          "squash": -9.359550536777159e-7,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095,
+          -2.64
+        ],
+        "size": 0.301,
+        "facePos": [
+          -0.00213510420484092,
+          0.7095,
+          -2.6222018396213813
+        ],
+        "faceDir": [
+          -0.11910809755259075,
+          0,
+          0.9928812925508278
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": false,
+        "bubbleInfo": {
+          "content": null,
+          "corners": [
+            [
+              -0.6028924433477408,
+              0.8660803505244292,
+              -2.649063622465354
+            ],
+            [
+              0.5892952460632047,
+              0.8660803505244292,
+              -2.5123576854436176
+            ],
+            [
+              0.5989860249600226,
+              1.460019649475571,
+              -2.596869211082426
+            ],
+            [
+              -0.5932016644509229,
+              1.460019649475571,
+              -2.7335751481041624
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": true,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "at": "2026-10-26T22:15:40.025Z",
+    "shot": "mobile.jpg"
+  },
+  {
+    "id": "P05",
+    "ok": true,
+    "detail": {
+      "left": 12,
+      "right": 363,
+      "bottom": 800
+    },
+    "at": "2026-10-26T22:15:40.029Z",
+    "shot": "mobile.jpg"
+  },
+  {
+    "id": "P06",
+    "ok": true,
+    "detail": {
+      "status": "Setup required (5)\nMuse Spark · Setup required: MODEL_API_KEY\nMuse Image · Setup required: MODEL_API_KEY\nVoice in · Setup required: MODEL_API_KEY\nSAM 3.1 · Setup required: MODEL_API_KEY\nMMS-TTS · Setup required: fetch-models\nVoice out · Browser voice, not a Meta model",
+      "visible": true
+    },
+    "at": "2026-10-26T22:15:40.192Z",
+    "shot": "mobile.jpg"
+  },
+  {
+    "id": "P07",
+    "ok": true,
+    "detail": {
+      "max": 0.6999886523668787,
+      "spirits": [
+        {
+          "id": "sp_ckccimwnvowx",
+          "name": "Couch",
+          "label": "couch",
+          "targetId": "den-couch",
+          "awake": true,
+          "speaking": false,
+          "expression": "neutral",
+          "mouth": "rest",
+          "params": {
+            "eyeOpen": 1,
+            "eyeSmile": 0,
+            "pupil": 0.9999999999999997,
+            "lookX": -5.401003553763372e-7,
+            "lookY": 0.33427575055223124,
+            "browY": 5.865775885101683e-18,
+            "browTilt": -1.7597327655305028e-18,
+            "mouthOpen": 4.9034353152768575e-12,
+            "mouthWide": 0.49999999999824873,
+            "mouthRound": 7.004907485183983e-12,
+            "smile": 0.24999999999999992,
+            "blush": 0.44999996826519173,
+            "squash": 0.000017276560282690633,
+            "wobble": 0,
+            "reveal": 1
+          },
+          "anchor": [
+            0,
+            0.7095,
+            -2.64
+          ],
+          "size": 0.301,
+          "facePos": [
+            -0.0021563316205267624,
+            0.7095,
+            -2.62211486251572
+          ],
+          "faceDir": [
+            -0.11969872536496956,
+            0,
+            0.9928102614024502
+          ],
+          "pokes": 0,
+          "pets": 0,
+          "flicks": 0,
+          "lines": 1,
+          "voiceMode": "browser",
+          "bubble": true,
+          "bubbleInfo": {
+            "content": {
+              "speaker": "Couch",
+              "tag": "puppet line (you)",
+              "text": "Hello couch.",
+              "shown": 999
+            },
+            "corners": [
+              [
+                -0.6025173838370799,
+                0.8656030858441555,
+                -2.6551593815861905
+              ],
+              [
+                0.5888549298458603,
+                0.8656030858441555,
+                -2.511520911148227
+              ],
+              [
+                0.5982047205960264,
+                1.4604969141558448,
+                -2.5890703434452496
+              ],
+              [
+                -0.5931675930869138,
+                1.4604969141558448,
+                -2.732708813883213
+              ]
+            ]
+          },
+          "sourceChip": {
+            "visible": true,
+            "text": "Built-in face · not generated"
+          },
+          "faceSource": "built-in",
+          "hasPersona": false,
+          "anchorErrorCm": 0
+        }
+      ]
+    },
+    "at": "2026-10-26T22:15:42.413Z",
+    "shot": "mobile.jpg"
+  },
+  {
+    "id": "P03",
+    "ok": true,
+    "detail": [
+      375,
+      375,
+      375,
+      375
+    ],
+    "at": "2026-10-26T22:15:45.982Z",
+    "shot": "mobile.jpg"
+  },
+  {
+    "id": "P08",
+    "ok": true,
+    "detail": {
+      "scroll": 203,
+      "width": 351,
+      "total": 554,
+      "text": "forget\nCouch\ncouch · 2.0 × 0.9 m\nBuilt-in face, not generated\nforget\nLamp\nlamp · 0.4 × 1.7 m\nBuilt-in face, not generated\n\n4\nopen",
+      "remainder": {
+        "x": 289,
+        "y": 496,
+        "width": 72,
+        "height": 120,
+        "top": 496,
+        "right": 361,
+        "bottom": 616,
+        "left": 289
+      },
+      "sleeves": [
+        "none"
+      ]
+    },
+    "at": "2026-10-26T22:15:45.996Z",
+    "shot": "mobile.jpg"
+  },
+  {
+    "id": "P10",
+    "ok": true,
+    "detail": "0s",
+    "at": "2026-10-26T22:15:45.999Z",
+    "shot": "mobile.jpg"
+  },
+  {
+    "id": "P09",
+    "ok": true,
+    "detail": {
+      "naming": {
+        "x": 12,
+        "y": 670.625,
+        "width": 351,
+        "height": 129.375
+      },
+      "spirits": [
+        {
+          "id": "sp_urlxeqiwhobh",
+          "name": "Coat Rack",
+          "label": "coat rack",
+          "targetId": "den-thing",
+          "awake": true,
+          "speaking": false,
+          "expression": "neutral",
+          "mouth": "rest",
+          "params": {
+            "eyeOpen": 1,
+            "eyeSmile": 0,
+            "pupil": 0.9999941215547308,
+            "lookX": 0.000024956580547307296,
+            "lookY": 0.33994714076060917,
+            "browY": 0.000016795557912134742,
+            "browTilt": -0.0000050386673736404194,
+            "mouthOpen": 2.993120108686679e-14,
+            "mouthWide": 0.4999999999999893,
+            "mouthRound": 4.275885869552397e-14,
+            "smile": 0.24999580111052197,
+            "blush": 0.4469500945012744,
+            "squash": -0.000010992440598303082,
+            "wobble": 0,
+            "reveal": 1
+          },
+          "anchor": [
+            0.2,
+            0.45375000000000004,
+            -2.14
+          ],
+          "size": 0.1925,
+          "facePos": [
+            0.19860549669570493,
+            0.45375000000000004,
+            -2.1284988564232634
+          ],
+          "faceDir": [
+            -0.12036754553720111,
+            0,
+            0.9927293961505068
+          ],
+          "pokes": 0,
+          "pets": 0,
+          "flicks": 0,
+          "lines": 0,
+          "voiceMode": "",
+          "bubble": false,
+          "bubbleInfo": {
+            "content": null,
+            "corners": [
+              [
+                -0.402831182591586,
+                0.5515245875526641,
+                -2.154044674360536
+              ],
+              [
+                0.7881029669854174,
+                0.5515245875526641,
+                -2.006817464337051
+              ],
+              [
+                0.7999335427381311,
+                1.1437254124473362,
+                -2.1025160561314413
+              ],
+              [
+                -0.3910006068388723,
+                1.1437254124473362,
+                -2.2497432661549266
+              ]
+            ]
+          },
+          "sourceChip": {
+            "visible": true,
+            "text": "Built-in face · not generated"
+          },
+          "faceSource": "built-in",
+          "hasPersona": false,
+          "anchorErrorCm": 0
+        }
+      ]
+    },
+    "at": "2026-10-26T22:15:54.879Z",
+    "shot": "mobile-bare.jpg"
+  },
+  {
+    "id": "P12",
+    "ok": true,
+    "detail": [],
+    "at": "2026-10-26T22:15:54.880Z",
+    "shot": "mobile-bare.jpg"
+  }
+]

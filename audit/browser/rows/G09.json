@@ -1,0 +1,15 @@
+{
+  "id": "G09",
+  "ok": true,
+  "detail": {
+    "startedAt": "2026-10-26T22:03:11.513Z",
+    "endedAt": "2026-10-26T22:03:32.697Z",
+    "responses": 389,
+    "errors": []
+  },
+  "at": "2026-10-26T22:03:32.697Z",
+  "shot": "glasses-bubble.jpg",
+  "source": "glasses-network.json",
+  "status": "PASS",
+  "screenshot": "glasses-bubble.jpg"
+}

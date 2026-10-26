@@ -1,0 +1,10 @@
+{
+  "id": "S06",
+  "ok": true,
+  "detail": "Yadori\n\u5bbf\u308a \u00b7 wake up your room\nBrowser diorama, not your room\nMuse Spark \u00b7 Setup required: MODEL_API_KEY\nMuse Image \u00b7 Setup required: MODEL_API_KEY\nVoice in \u00b7 Setup required: MODEL_API_KEY\nSAM 3.1 \u00b7 Setup required: MODEL_API_KEY\nMMS-TTS \u00b7 Setup required: fetch-models\nVoice out \u00b7 Browser voice, not a Meta model\nBINDER\n1 / 6\nforget\nCouch\ncouch \u00b7 2.0 \u00d7 0.9 m\nBuilt-in face, not generatedDrawn from the label\nNo persona \u00b7 Setup required for Muse Spark\nvoice browser\n0 memories\n0 lines\nfirst woke 2026-10-27\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nTap, rub or swipe its face \u00b7 wake a second one and they gossip\nSpeaker\nCouch\nSay\nPuppet mode: you are the voice. Setup required for Muse Spark (MODEL_API_KEY). Lines are yours, spoken by Browser voice, not a Meta model.\nEnter mixed reality (emulated)",
+  "at": "2026-10-26T21:48:52.074Z",
+  "shot": "desktop-awake.jpg",
+  "source": "extra-results.json",
+  "status": "PASS",
+  "screenshot": "desktop-awake.jpg"
+}

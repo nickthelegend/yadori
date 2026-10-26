@@ -1,0 +1,10 @@
+{
+  "id": "G04",
+  "ok": true,
+  "detail": "h -3.1\u00b0, v 2.6\u00b0",
+  "at": "2026-10-26T22:03:32.701Z",
+  "shot": "glasses-face.jpg",
+  "source": "glasses-results.json",
+  "status": "PASS",
+  "screenshot": "glasses-face.jpg"
+}

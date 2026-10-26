@@ -1,0 +1,1 @@
+export default async function({frame}){return frame.evaluate(async()=>{const sem=window.IWER_DEVICE.sem;sem.addEnvironment('yadori_audit_capacity',new URL('/e2e/fixtures/yadori_audit_capacity.glts',location.href).href);await sem.loadDefaultEnvironment('yadori_audit_capacity');return {room:'Audit-only synthetic seven bounded furniture boxes'};});}

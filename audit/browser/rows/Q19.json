@@ -1,0 +1,10 @@
+{
+  "id": "Q19",
+  "ok": true,
+  "detail": "look 0.13,-0.76 expected 0.13,-0.76",
+  "at": "2026-10-26T22:01:34.584Z",
+  "shot": "xr-capture-23.jpg",
+  "source": "quest-results.json",
+  "status": "PASS",
+  "screenshot": "xr-capture-23.jpg"
+}

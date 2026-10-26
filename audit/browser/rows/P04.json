@@ -1,0 +1,92 @@
+{
+  "id": "P04",
+  "ok": true,
+  "detail": [
+    {
+      "id": "sp_ckccimwnvowx",
+      "name": "Couch",
+      "label": "couch",
+      "targetId": "den-couch",
+      "awake": true,
+      "speaking": false,
+      "expression": "neutral",
+      "mouth": "rest",
+      "params": {
+        "eyeOpen": 1,
+        "eyeSmile": 0,
+        "pupil": 0.9999999536580868,
+        "lookX": -2.3534288440097716e-05,
+        "lookY": 0.3348961497038146,
+        "browY": 1.3240546606562573e-07,
+        "browTilt": -3.972163981968771e-08,
+        "mouthOpen": 3.8629336801035705e-20,
+        "mouthWide": 0.49999999999999994,
+        "mouthRound": 5.518476685862241e-20,
+        "smile": 0.2499999668986335,
+        "blush": 0.4495604907114561,
+        "squash": -9.359550536777159e-07,
+        "wobble": 0,
+        "reveal": 1
+      },
+      "anchor": [
+        0,
+        0.7095,
+        -2.64
+      ],
+      "size": 0.301,
+      "facePos": [
+        -0.00213510420484092,
+        0.7095,
+        -2.6222018396213813
+      ],
+      "faceDir": [
+        -0.11910809755259075,
+        0,
+        0.9928812925508278
+      ],
+      "pokes": 0,
+      "pets": 0,
+      "flicks": 0,
+      "lines": 0,
+      "voiceMode": "",
+      "bubble": false,
+      "bubbleInfo": {
+        "content": null,
+        "corners": [
+          [
+            -0.6028924433477408,
+            0.8660803505244292,
+            -2.649063622465354
+          ],
+          [
+            0.5892952460632047,
+            0.8660803505244292,
+            -2.5123576854436176
+          ],
+          [
+            0.5989860249600226,
+            1.460019649475571,
+            -2.596869211082426
+          ],
+          [
+            -0.5932016644509229,
+            1.460019649475571,
+            -2.7335751481041624
+          ]
+        ]
+      },
+      "sourceChip": {
+        "visible": true,
+        "text": "Built-in face \u00b7 not generated"
+      },
+      "faceSource": "built-in",
+      "hasPersona": false,
+      "anchorErrorCm": 0
+    }
+  ],
+  "at": "2026-10-26T22:15:40.025Z",
+  "shot": "mobile.jpg",
+  "source": "mobile-results.json",
+  "status": "PASS",
+  "screenshot": "mobile.jpg"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "B06",
+  "ok": true,
+  "detail": {
+    "wakeRequests": 1
+  },
+  "at": "2026-10-26T21:48:31.324Z",
+  "shot": "desktop-awake.jpg",
+  "source": "extra-results.json",
+  "status": "PASS",
+  "screenshot": "desktop-awake.jpg"
+}

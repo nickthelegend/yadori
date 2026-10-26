@@ -1,0 +1,95 @@
+{
+  "id": "Q31",
+  "ok": true,
+  "detail": {
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "waking": null,
+    "particles": 0,
+    "voiceMode": "browser",
+    "targets": [
+      {
+        "id": "mesh-23",
+        "label": "couch",
+        "center": [
+          0,
+          0.4300000071525574,
+          -3.0999999046325684
+        ],
+        "dims": [
+          2,
+          0.8600000143051147,
+          0.8999999761581421
+        ]
+      },
+      {
+        "id": "mesh-24",
+        "label": "lamp",
+        "center": [
+          -1.6200000047683716,
+          0.8500000238418579,
+          -3.1500000953674316
+        ],
+        "dims": [
+          0.4399999976158142,
+          1.7000000476837158,
+          0.4399999976158142
+        ]
+      },
+      {
+        "id": "mesh-25",
+        "label": "plant",
+        "center": [
+          1.649999976158142,
+          0.75,
+          -3.049999952316284
+        ],
+        "dims": [
+          0.7799999713897705,
+          1.5,
+          0.7799999713897705
+        ]
+      },
+      {
+        "id": "mesh-26",
+        "label": "table",
+        "center": [
+          0,
+          0.22499999403953552,
+          -1.850000023841858
+        ],
+        "dims": [
+          1.100000023841858,
+          0.44999998807907104,
+          0.6000000238418579
+        ]
+      },
+      {
+        "id": "mesh-27",
+        "label": "screen",
+        "center": [
+          2.319999933242798,
+          1,
+          -1.7000000476837158
+        ],
+        "dims": [
+          1.2000000476837158,
+          0.7200000286102295,
+          0.05999999865889549
+        ]
+      }
+    ],
+    "spirits": []
+  },
+  "at": "2026-10-26T21:34:56.626Z",
+  "shot": "xr-extra.jpg",
+  "source": "xr-extra-results.json",
+  "status": "PASS",
+  "screenshot": "xr-extra.jpg",
+  "networkCaptureReview": "../supplemental-network-review.json",
+  "networkErrorsInObservationWindow": []
+}

@@ -1,0 +1,100 @@
+{
+  "id": "P09",
+  "ok": true,
+  "detail": {
+    "naming": {
+      "x": 12,
+      "y": 670.625,
+      "width": 351,
+      "height": 129.375
+    },
+    "spirits": [
+      {
+        "id": "sp_urlxeqiwhobh",
+        "name": "Coat Rack",
+        "label": "coat rack",
+        "targetId": "den-thing",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 0,
+          "pupil": 0.9999941215547308,
+          "lookX": 2.4956580547307296e-05,
+          "lookY": 0.33994714076060917,
+          "browY": 1.6795557912134742e-05,
+          "browTilt": -5.0386673736404194e-06,
+          "mouthOpen": 2.993120108686679e-14,
+          "mouthWide": 0.4999999999999893,
+          "mouthRound": 4.275885869552397e-14,
+          "smile": 0.24999580111052197,
+          "blush": 0.4469500945012744,
+          "squash": -1.0992440598303082e-05,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          0.2,
+          0.45375000000000004,
+          -2.14
+        ],
+        "size": 0.1925,
+        "facePos": [
+          0.19860549669570493,
+          0.45375000000000004,
+          -2.1284988564232634
+        ],
+        "faceDir": [
+          -0.12036754553720111,
+          0,
+          0.9927293961505068
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": false,
+        "bubbleInfo": {
+          "content": null,
+          "corners": [
+            [
+              -0.402831182591586,
+              0.5515245875526641,
+              -2.154044674360536
+            ],
+            [
+              0.7881029669854174,
+              0.5515245875526641,
+              -2.006817464337051
+            ],
+            [
+              0.7999335427381311,
+              1.1437254124473362,
+              -2.1025160561314413
+            ],
+            [
+              -0.3910006068388723,
+              1.1437254124473362,
+              -2.2497432661549266
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": true,
+          "text": "Built-in face \u00b7 not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ]
+  },
+  "at": "2026-10-26T22:15:54.879Z",
+  "shot": "mobile-bare.jpg",
+  "source": "mobile-results.json",
+  "status": "PASS",
+  "screenshot": "mobile-bare.jpg"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "L08",
+  "ok": true,
+  "detail": {
+    "sw": 1280,
+    "w": 1280
+  },
+  "at": "2026-10-26T21:34:46.325Z",
+  "shot": "index-1280.jpg",
+  "source": "extra-results.json",
+  "status": "PASS",
+  "screenshot": "index-1280.jpg"
+}

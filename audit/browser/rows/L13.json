@@ -1,0 +1,27 @@
+{
+  "id": "L13",
+  "ok": true,
+  "detail": {
+    "skip": {
+      "text": "Skip to content",
+      "width": 142.59375
+    },
+    "main": "main",
+    "cta": {
+      "href": "#try",
+      "outline": "3px"
+    },
+    "hash": "#try",
+    "evidence": {
+      "href": "evidence.html",
+      "outline": "3px"
+    },
+    "h1": "Evidence",
+    "events": []
+  },
+  "at": "2026-10-26T21:54:00.502Z",
+  "shot": "keyboard.jpg",
+  "source": "keyboard.json",
+  "status": "PASS",
+  "screenshot": "keyboard.jpg"
+}

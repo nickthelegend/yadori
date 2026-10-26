@@ -1,0 +1,186 @@
+{
+  "id": "Q01",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/xr-extra-results.json",
+      "detail": {
+        "status": {
+          "deviceName": "Meta Quest 3",
+          "isRuntimeInstalled": true,
+          "sessionActive": true,
+          "sessionOffered": false,
+          "sessionMode": "immersive-ar",
+          "enabledFeatures": [
+            "local-floor",
+            "bounded-floor",
+            "hand-tracking",
+            "anchors",
+            "plane-detection",
+            "mesh-detection",
+            "viewer",
+            "local"
+          ],
+          "visibilityState": "visible",
+          "runtimeKind": "emulated",
+          "browser": {
+            "lifecycle": {
+              "state": "running",
+              "policy": "eager",
+              "sessionId": "e02a0350-1a53-486f-b4a4-c54db2ae8cb6",
+              "browserEpoch": 1,
+              "revision": 23,
+              "stateEnteredAt": "2026-10-26T22:39:27.849Z",
+              "lastObservedAt": "2026-10-26T22:40:55.553Z",
+              "failures": 0,
+              "cleanupConfirmed": true,
+              "attemptLimit": 3,
+              "historyTruncated": false,
+              "retryEligible": false,
+              "nextAction": "Use runtime_list_targets to inspect endpoint readiness.",
+              "history": [
+                {
+                  "revision": 1,
+                  "state": "launching",
+                  "at": "2026-10-26T22:39:27.333Z",
+                  "reason": "launch"
+                },
+                {
+                  "revision": 2,
+                  "state": "launching",
+                  "at": "2026-10-26T22:39:27.334Z",
+                  "reason": "prepared"
+                },
+                {
+                  "revision": 3,
+                  "state": "running",
+                  "at": "2026-10-26T22:39:27.849Z",
+                  "reason": "running"
+                }
+              ],
+              "attemptId": "bde62a17-eeb5-455e-9a9f-866777add461"
+            },
+            "status": "connected",
+            "clients": [
+              {
+                "commandReady": true,
+                "sessionId": "e02a0350-1a53-486f-b4a4-c54db2ae8cb6",
+                "browserEpoch": 1,
+                "deviceClass": "managed",
+                "pageId": "tab-mvpu9yi3-qda2kp",
+                "role": "app",
+                "tabGeneration": 6
+              },
+              {
+                "commandReady": true,
+                "sessionId": "e02a0350-1a53-486f-b4a4-c54db2ae8cb6",
+                "browserEpoch": 1,
+                "deviceClass": "managed",
+                "pageId": "tab-mvpu9wyh-9pbn8j",
+                "role": "editor",
+                "sceneSessionId": "scene-wwgdzahr2d",
+                "tabGeneration": 1
+              }
+            ],
+            "lastBridgeConnectedAt": "2026-10-26T22:40:55.541Z",
+            "lastCommandReadyAt": "2026-10-26T22:40:55.553Z",
+            "connected": true,
+            "commandReady": true,
+            "connectedClientCount": 2,
+            "lastTransitionAt": "2026-10-26T22:39:27.849Z",
+            "audioMuted": false
+          },
+          "browserConnected": true,
+          "browserCommandReady": true
+        },
+        "device": {
+          "headset": {
+            "position": {
+              "x": 0,
+              "y": 1.600000023841858,
+              "z": 0
+            },
+            "orientation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            }
+          },
+          "inputMode": "hand",
+          "controllers": {
+            "left": {
+              "connected": true,
+              "position": {
+                "x": -0.25,
+                "y": 1.5,
+                "z": -0.4000000059604645
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              }
+            },
+            "right": {
+              "connected": true,
+              "position": {
+                "x": 0.25,
+                "y": 1.5,
+                "z": -0.4000000059604645
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              }
+            }
+          },
+          "hands": {
+            "left": {
+              "connected": true,
+              "position": {
+                "x": -0.25,
+                "y": 1.5,
+                "z": -0.4000000059604645
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "poseId": "default",
+              "pinchValue": 0
+            },
+            "right": {
+              "connected": true,
+              "position": {
+                "x": 0.25,
+                "y": 1.5,
+                "z": -0.4000000059604645
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "poseId": "default",
+              "pinchValue": 0
+            }
+          },
+          "stereoEnabled": false,
+          "fov": 90
+        }
+      },
+      "at": "2026-10-26T22:41:00.396Z",
+      "shot": "xr-extra.jpg",
+      "capture": "audit/browser/xr-details-network.json"
+    }
+  ]
+}

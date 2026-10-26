@@ -1,0 +1,21 @@
+{
+  "id": "I11",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/server/results.json",
+      "detail": {
+        "count": 30,
+        "lengths": [
+          200
+        ],
+        "firstPrefix": "5:",
+        "deleted": true
+      },
+      "at": "2026-10-26T22:39:26.009Z",
+      "capture": "audit/server/network.json"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "M07",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/server/results.json",
+      "detail": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"setup_required\":\"MODEL_API_KEY\",\"step\":\"spark\",\"message\":\"Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)\"}"
+          }
+        ],
+        "isError": true,
+        "body": {
+          "setup_required": "MODEL_API_KEY",
+          "step": "spark",
+          "message": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        }
+      },
+      "at": "2026-10-26T22:39:25.859Z",
+      "capture": "audit/server/network.json"
+    }
+  ]
+}

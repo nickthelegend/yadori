@@ -1,8 +1,0 @@
-UTC: 2026-10-26T21:24:04.603408+00:00
-Frozen install failed due to pre-existing manifest/lock mismatch; no manifest or lockfile edited.
-Reused installed dependency files through local links; no dependency source files copied or edited.
-root: reused 237 dependency entries; @yadori/room and @yadori/rig resolve to this worktree
-packages/room: reused 3 dependency entries; @yadori/room and @yadori/rig resolve to this worktree
-packages/rig: reused 3 dependency entries; @yadori/room and @yadori/rig resolve to this worktree
-packages/server: reused 0 dependency entries; @yadori/room and @yadori/rig resolve to this worktree
-packages/app: reused 10 dependency entries; @yadori/room and @yadori/rig resolve to this worktree

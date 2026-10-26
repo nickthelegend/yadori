@@ -1,0 +1,46 @@
+{
+  "id": "Q03",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/xr-extra-results.json",
+      "detail": {
+        "hov": {
+          "targets": [
+            null,
+            "couch",
+            null,
+            null
+          ],
+          "faces": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "gaze": false
+        },
+        "away": {
+          "targets": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "faces": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "gaze": false
+        }
+      },
+      "at": "2026-10-26T22:41:01.746Z",
+      "shot": "xr-extra.jpg",
+      "capture": "audit/browser/xr-details-network.json"
+    }
+  ]
+}

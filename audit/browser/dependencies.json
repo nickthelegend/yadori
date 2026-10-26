@@ -1,0 +1,30 @@
+{
+  "at": "2026-10-26T22:48:14.057Z",
+  "browserVersion": "156.0.8078.4",
+  "devices": {
+    "devices": [
+      {
+        "kind": "audiooutput",
+        "label": ""
+      }
+    ],
+    "micDisabled": true,
+    "modelReady": false
+  },
+  "dependencies": {
+    "I08": "needs MODEL_API_KEY",
+    "I09": "needs a real microphone input",
+    "I01": "needs MODEL_API_KEY",
+    "I02": "needs MODEL_API_KEY",
+    "I03": "needs MODEL_API_KEY",
+    "I04": "needs MODEL_API_KEY",
+    "I05": "needs MODEL_API_KEY",
+    "A39": "needs MODEL_API_KEY",
+    "I06": "needs MMS-TTS weights from scripts/fetch-models.sh",
+    "I07": "needs MMS-TTS weights from scripts/fetch-models.sh",
+    "H01": "needs a Quest headset",
+    "H02": "needs a Quest headset",
+    "H03": "needs a Quest headset",
+    "H04": "needs Meta VR Glasses hardware"
+  }
+}

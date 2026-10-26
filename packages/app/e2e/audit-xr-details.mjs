@@ -1,0 +1,21 @@
+// Checklist observations beyond the main hands-only suite, from cold real IWER loads.
+import{writeFileSync}from'node:fs';import{join}from'node:path';
+import{APP,cli,xr,page,state,sleep,until,enterXR,pinchAt,P}from'./cli.mjs';
+import{captureManaged}from'./audit-network.mjs';
+const dir=join(APP,'../../audit/browser'),results=[];let shot='xr-extra.jpg';
+const check=(id,ok,detail)=>{results.push({id,ok:!!ok,detail,at:new Date().toISOString(),shot});writeFileSync(join(dir,'xr-extra-results.json'),JSON.stringify(results,null,2));console.log(id,ok?'PASS':'FAIL');};
+const cold=async(room='den')=>{if(xr('status').sessionActive)xr('exit');page('page-reset.mjs',{room});await sleep(4);await enterXR();xr('set-input-mode',{mode:'hand'});};
+const capture=await captureManaged('xr-details');
+try{
+await cold();let s=await state(),st=xr('status'),dev=xr('get-device-state');check('Q01',st.deviceName==='Meta Quest 3'&&st.sessionActive&&st.sessionMode==='immersive-ar'&&dev.inputMode==='hand',{status:st,device:dev});check('Q02',s.targets.map(t=>t.label).sort().join(',')==='couch,lamp,plant,screen,table',s.targets);
+const t=s.targets.find(t=>t.label==='couch');xr('look-at',{device:'hand-right',target:P(t.center)});await sleep(.3);const hov=page('page-hover.mjs');xr('look-at',{device:'hand-right',target:{x:0,y:5,z:-3}});await sleep(.3);const away=page('page-hover.mjs');check('Q03',hov.targets[1]==='couch'&&away.targets.every(t=>t===null),{hov,away});
+const before=(await state()).spirits.length;xr('select',{device:'hand-right',duration:.2});await sleep(1.3);check('Q31',before===0&&(await state()).spirits.length===0,await state());
+const start=Date.now();await pinchAt(t.center);await until(async()=>(await state()).spirits.length===1,'couch');await sleep(1.8);s=await state();let c=s.spirits[0];check('Q04',c.awake&&c.params.reveal>.99,{pinches:1,wallMs:Date.now()-start,c});
+const ents=cli('ecs','find','--input-json',JSON.stringify({withComponents:['Spirit']})).entities;const e=cli('ecs','query','--input-json',JSON.stringify({entityIndex:ents[0].entityIndex}));const comp=e.components.find(x=>x.componentId==='Spirit')?.values;check('Q05',ents.length===1&&comp?.hasPersona===false&&comp?.state==='awake'&&c.faceSource==='built-in'&&c.anchor.every(Number.isFinite),e);check('Q06',e.components.some(x=>x.componentId==='XRAnchor'),e);
+check('Q07',Math.hypot(c.anchor[0]-t.center[0],c.anchor[2]-(t.center[2]+t.dims[2]/2+.01))<=.01&&c.anchorErrorCm<=1,{target:t,c});
+const heads=[];for(const x of[-1,0,1]){xr('set-transform',{device:'headset',position:{x,y:1.6,z:0},orientation:{x:0,y:0,z:0,w:1}});await sleep(.4);const f=(await state()).spirits[0];heads.push({x,face:f,turnDegrees:Math.abs(Math.atan2(f.faceDir[0],f.faceDir[2])*180/Math.PI)});}check('Q08',heads.every(h=>h.face.anchorErrorCm<=1&&h.turnDegrees<=40.01),heads);xr('set-transform',{device:'headset',position:{x:0,y:1.6,z:0},orientation:{x:0,y:0,z:0,w:1}});await sleep(.4);
+c=(await state()).spirits[0];await pinchAt(c.facePos);await sleep(.2);const selected=page('audit-probe.mjs',{shot:'xr-extra'});check('Q32',selected.spirits.length===1&&selected.spirits[0].pokes===c.pokes+1&&selected.body.includes('Couch'),{before:c,after:selected});
+await cold('bare');shot='xr-bare.jpg';s=await state();check('Q24',s.targets.length===1&&s.targets[0].label==='other',s.targets);let other=s.targets[0];await pinchAt(other.center);const named=page('audit-probe.mjs',{shot:'xr-bare'});const cancelled=page('audit-name-cancel.mjs');await pinchAt(other.center);const reopened=page('audit-probe.mjs');check('Q26',cancelled.cancelled&&reopened.body.includes('Tell me what this is')&&reopened.spirits.length===0,{cancelled,reopened});page('page-dialog.mjs',{answer:'coat rack'});await until(async()=>(await state()).spirits.length===1,'coat rack');await sleep(1.5);s=page('audit-probe.mjs',{shot:'xr-bare'});check('Q25',named.body.includes('Tell me what this is')&&s.spirits.length===1&&s.spirits[0].awake&&s.spirits[0].label==='coat rack',s);
+xr('exit');
+}catch(e){check('XR_DETAILS',false,String(e.stack??e));}finally{const network=await capture.stop();check('Q27',network.responses>0&&network.errors.length===0,network);}
+process.exitCode=results.some(x=>!x.ok)?1:0;

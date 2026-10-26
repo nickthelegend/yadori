@@ -1,0 +1,26 @@
+{
+  "id": "M08",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/server/results.json",
+      "detail": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"setup_required\":\"mms-tts\",\"message\":\"Setup required: run scripts/fetch-models.sh (MMS-TTS weights, CC-BY-NC-4.0)\"}"
+          }
+        ],
+        "isError": true,
+        "body": {
+          "setup_required": "mms-tts",
+          "message": "Setup required: run scripts/fetch-models.sh (MMS-TTS weights, CC-BY-NC-4.0)"
+        }
+      },
+      "at": "2026-10-26T22:39:25.862Z",
+      "capture": "audit/server/network.json"
+    }
+  ]
+}

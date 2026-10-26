@@ -1,0 +1,103 @@
+[
+  {
+    "id": "S19",
+    "ok": true,
+    "detail": {
+      "capability": {
+        "storage": false,
+        "voices": 180
+      },
+      "s": [
+        {
+          "id": "sp_lf1d3hzxrbb3",
+          "name": "Couch",
+          "label": "couch",
+          "targetId": "den-couch",
+          "awake": true,
+          "speaking": false,
+          "expression": "neutral",
+          "mouth": "rest",
+          "params": {
+            "eyeOpen": 1,
+            "eyeSmile": 0,
+            "pupil": 0.9999999999999998,
+            "lookX": -5.720382336457226e-7,
+            "lookY": 0.33541740043013335,
+            "browY": 5.3944231461902327e-20,
+            "browTilt": -1.618326943857069e-20,
+            "mouthOpen": 0.00483901834314797,
+            "mouthWide": 0.5069128505052207,
+            "mouthRound": 2.5392389223753254e-9,
+            "smile": 0.24999999999999994,
+            "blush": 0.44999999513348027,
+            "squash": -0.0032078645642779724,
+            "wobble": 0,
+            "reveal": 1
+          },
+          "anchor": [
+            0,
+            0.7095,
+            -2.64
+          ],
+          "size": 0.301,
+          "facePos": [
+            -0.0021563208970165754,
+            0.7095,
+            -2.6221149063410314
+          ],
+          "faceDir": [
+            -0.11969842773169183,
+            0,
+            0.9928102972867279
+          ],
+          "pokes": 0,
+          "pets": 0,
+          "flicks": 0,
+          "lines": 1,
+          "voiceMode": "browser",
+          "bubble": true,
+          "bubbleInfo": {
+            "content": {
+              "speaker": "Couch",
+              "tag": "puppet line (you)",
+              "text": "Hello. This mouth speaks a typed puppet line.",
+              "shown": 999
+            },
+            "corners": [
+              [
+                -0.4619238546386558,
+                0.8663414167138809,
+                -2.662014065552228
+              ],
+              [
+                0.45391943687956615,
+                0.8663414167138809,
+                -2.5515951845807625
+              ],
+              [
+                0.4576112128446227,
+                1.3265468794290496,
+                -2.5822157471298346
+              ],
+              [
+                -0.4582320786735993,
+                1.3265468794290496,
+                -2.6926346281013003
+              ]
+            ]
+          },
+          "sourceChip": {
+            "visible": true,
+            "text": "Built-in face · not generated"
+          },
+          "faceSource": "built-in",
+          "hasPersona": false,
+          "anchorErrorCm": 0
+        }
+      ],
+      "max": 0.7722472593120787
+    },
+    "shot": "storage-denied.jpg",
+    "at": "2026-10-26T22:49:15.228Z"
+  }
+]

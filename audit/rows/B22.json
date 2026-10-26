@@ -1,0 +1,178 @@
+{
+  "id": "B22",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": [
+        {
+          "id": "sp_h0gaxl58kjqs",
+          "name": "Couch",
+          "label": "couch",
+          "targetId": "den-couch",
+          "awake": true,
+          "speaking": false,
+          "expression": "neutral",
+          "mouth": "rest",
+          "params": {
+            "eyeOpen": 1,
+            "eyeSmile": 1.5147757057872295e-68,
+            "pupil": 1.0000000000000004,
+            "lookX": -0.00010874554881589729,
+            "lookY": 0.5131535916115784,
+            "browY": -6.048825148591566e-61,
+            "browTilt": 1.0081375324876466e-60,
+            "mouthOpen": 6.633555689764222e-56,
+            "mouthWide": 0.5000000000000001,
+            "mouthRound": 4.692669917130005e-87,
+            "smile": 0.24999999999999994,
+            "blush": 0.4499999999999997,
+            "squash": 2.4314229750701575e-12,
+            "wobble": -1.3669600278840157e-18,
+            "reveal": 1
+          },
+          "anchor": [
+            0,
+            0.7095,
+            -2.64
+          ],
+          "size": 0.301,
+          "facePos": [
+            -0.021520124095911294,
+            0.7095,
+            -2.5873154393077895
+          ],
+          "faceDir": [
+            -0.3781413198529639,
+            0,
+            0.9257478826440051
+          ],
+          "pokes": 1,
+          "pets": 1,
+          "flicks": 1,
+          "lines": 2,
+          "voiceMode": "browser",
+          "bubble": false,
+          "bubbleInfo": {
+            "content": null,
+            "corners": [
+              [
+                -0.5044082113494698,
+                0.8689043356976435,
+                -2.732947353986754
+              ],
+              [
+                0.43078289189049723,
+                0.8689043356976435,
+                -2.361624436517193
+              ],
+              [
+                0.46341699589950747,
+                1.3641775482539433,
+                -2.443814687362499
+              ],
+              [
+                -0.47177410734045955,
+                1.3641775482539433,
+                -2.81513760483206
+              ]
+            ]
+          },
+          "sourceChip": {
+            "visible": false,
+            "text": "Built-in face · not generated"
+          },
+          "faceSource": "built-in",
+          "hasPersona": false,
+          "anchorErrorCm": 0
+        },
+        {
+          "id": "sp_wjiw2rridknu",
+          "name": "Lamp",
+          "label": "lamp",
+          "targetId": "den-lamp",
+          "awake": true,
+          "speaking": false,
+          "expression": "neutral",
+          "mouth": "rest",
+          "params": {
+            "eyeOpen": 1,
+            "eyeSmile": 0,
+            "pupil": 0.9999999993805306,
+            "lookX": -0.00011273510106997906,
+            "lookY": 0.1324870736596846,
+            "browY": 1.7699122735909024e-9,
+            "browTilt": -5.309736820772712e-10,
+            "mouthOpen": 2.18660996007411e-25,
+            "mouthWide": 0.49999999999999994,
+            "mouthRound": 3.123728514391584e-25,
+            "smile": 0.24999999955752195,
+            "blush": 0.4499217250949026,
+            "squash": -1.9114034819535753e-7,
+            "wobble": 0,
+            "reveal": 1
+          },
+          "anchor": [
+            -1.62,
+            1.4166666666666665,
+            -2.92
+          ],
+          "size": 0.154,
+          "facePos": [
+            -1.6183638612983517,
+            1.4166666666666665,
+            -2.9088956886671933
+          ],
+          "faceDir": [
+            0.14576883949206226,
+            0,
+            0.9893186773902216
+          ],
+          "pokes": 0,
+          "pets": 0,
+          "flicks": 0,
+          "lines": 0,
+          "voiceMode": "",
+          "bubble": false,
+          "bubbleInfo": {
+            "content": null,
+            "corners": [
+              [
+                -2.1162892032250147,
+                1.4915613736915354,
+                -2.814408966263147
+              ],
+              [
+                -1.1227034769952633,
+                1.4915613736915354,
+                -3.0207402990403343
+              ],
+              [
+                -1.1173442426454052,
+                1.9982679597936333,
+                -2.994932978931133
+              ],
+              [
+                -2.1109299688751566,
+                1.9982679597936333,
+                -2.788601646153946
+              ]
+            ]
+          },
+          "sourceChip": {
+            "visible": true,
+            "text": "Built-in face · not generated"
+          },
+          "faceSource": "built-in",
+          "hasPersona": false,
+          "anchorErrorCm": 0
+        }
+      ],
+      "at": "2026-10-26T22:46:06.605Z",
+      "shot": "desktop-gossip.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

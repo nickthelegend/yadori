@@ -1,0 +1,28 @@
+
+> app@0.1.0 e2e:xr /Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4/packages/app
+> node e2e/xr-flow.mjs
+
+PASS  emulated room is labelled honestly  (Emulated room (IWER), not your room)
+PASS  mesh detection reports the 5 labelled pieces  (couch,lamp,plant,screen,table)
+PASS  couch woke from a pinch  (3944 ms wall clock incl. CLI round trips)
+PASS  ECS: a Spirit component with an anchored face  (entity 28)
+PASS  face sits on the couch front, 1 cm proud (±1 cm)  (0.00 cm)
+PASS  fingertip poke -> surprised  (pokes 1 pets 0 flicks 0 expr neutral)
+PASS  palm stroke -> pet (happy, hearts)  (pets 2 expr happy)
+PASS  fast fingertip swipe -> flick (wobble)  (flicks 1 expr neutral)
+PASS  puppet line: speaking + mouth moves  (max mouthOpen 0.80)
+PASS  voice mode is labelled  (browser)
+PASS  lamp woke from a pinch
+PASS  gossip: whispers fly between them  (43 particles)
+PASS  gossip: the couch looks at the lamp  (look -0.64,0.77 expected -0.64,0.77)
+PASS  gossip: the lamp looks back at the couch  (look 0.13,-0.76 expected 0.13,-0.76)
+PASS  the lamp replies
+PASS  emulator frame time recorded (600 XR frames)  (p50 1.00 p95 2.00 ms, draw calls p95 22, tris max 18584)
+PASS  draw calls within budget (≤ 100)  (max 26)
+PASS  after reload both spirits are re-found in the emulated room  (Couch:3 lines, Lamp:1 lines)
+PASS  no console errors
+PASS  bare room reports one unlabelled mesh  (other)
+PASS  "Tell me what this is" -> it wakes with the name you gave  (coat rack)
+PASS  independent console, page and network capture is clean  (1530 responses; 0 errors)
+
+22 passed, 0 failed

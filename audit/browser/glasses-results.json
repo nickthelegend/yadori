@@ -21,17 +21,17 @@
     {
       "name": "inside the glasses view: face top-left",
       "ok": true,
-      "detail": "h -3.1\u00b0, v 2.6\u00b0"
+      "detail": "h -3.1°, v 2.6°"
     },
     {
       "name": "inside the glasses view: face bottom-right",
       "ok": true,
-      "detail": "h 3.0\u00b0, v -3.3\u00b0"
+      "detail": "h 3.0°, v -3.3°"
     },
     {
       "name": "inside the glasses view: bubble top (est.)",
       "ok": true,
-      "detail": "h 0.0\u00b0, v 10.9\u00b0"
+      "detail": "h 0.0°, v 10.9°"
     },
     {
       "name": "actual speech bubble corners fit the glasses view",
@@ -54,5 +54,5 @@
       "detail": "389 responses; 0 errors"
     }
   ],
-  "at": "2026-10-26T22:03:32.701Z"
+  "at": "2026-10-26T22:51:08.360Z"
 }

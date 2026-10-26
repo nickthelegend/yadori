@@ -1,0 +1,66 @@
+{
+  "id": "A25",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/server/results.json",
+      "detail": [
+        {
+          "at": "2026-10-26T22:39:25.383Z",
+          "method": "POST",
+          "path": "/api/say",
+          "status": 400,
+          "headers": {
+            "cache-control": "no-store",
+            "connection": "keep-alive",
+            "content-type": "application/json",
+            "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+            "keep-alive": "timeout=5",
+            "transfer-encoding": "chunked"
+          },
+          "body": {
+            "error": "text required"
+          }
+        },
+        {
+          "at": "2026-10-26T22:39:25.385Z",
+          "method": "POST",
+          "path": "/api/say",
+          "status": 400,
+          "headers": {
+            "cache-control": "no-store",
+            "connection": "keep-alive",
+            "content-type": "application/json",
+            "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+            "keep-alive": "timeout=5",
+            "transfer-encoding": "chunked"
+          },
+          "body": {
+            "error": "text required"
+          }
+        },
+        {
+          "at": "2026-10-26T22:39:25.387Z",
+          "method": "POST",
+          "path": "/api/say",
+          "status": 400,
+          "headers": {
+            "cache-control": "no-store",
+            "connection": "keep-alive",
+            "content-type": "application/json",
+            "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+            "keep-alive": "timeout=5",
+            "transfer-encoding": "chunked"
+          },
+          "body": {
+            "error": "text required"
+          }
+        }
+      ],
+      "at": "2026-10-26T22:39:25.388Z",
+      "capture": "audit/server/network.json"
+    }
+  ]
+}

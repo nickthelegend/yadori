@@ -1,0 +1,17 @@
+{
+  "id": "B25",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": {
+        "particles": 24
+      },
+      "at": "2026-10-26T22:46:23.420Z",
+      "shot": "desktop-gossip.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

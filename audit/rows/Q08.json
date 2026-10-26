@@ -1,0 +1,271 @@
+{
+  "id": "Q08",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/xr-extra-results.json",
+      "detail": [
+        {
+          "x": -1,
+          "face": {
+            "id": "sp_cjskj4xh8nbt",
+            "name": "Couch",
+            "label": "couch",
+            "targetId": "mesh-23",
+            "awake": true,
+            "speaking": false,
+            "expression": "neutral",
+            "mouth": "rest",
+            "params": {
+              "eyeOpen": 1,
+              "eyeSmile": 0,
+              "pupil": 0.9999999999975184,
+              "lookX": -7.631295722215017e-7,
+              "lookY": 0.5184546807927554,
+              "browY": 7.089975501161304e-12,
+              "browTilt": -2.126992650348389e-12,
+              "mouthOpen": 4.239511418749524e-32,
+              "mouthWide": 0.49999999999999994,
+              "mouthRound": 6.056444883927891e-32,
+              "smile": 0.24999999999822753,
+              "blush": 0.4499913962849099,
+              "squash": 3.6279938673606334e-9,
+              "wobble": 0,
+              "reveal": 1
+            },
+            "anchor": [
+              0,
+              0.7095000118017196,
+              -2.6399999165534975
+            ],
+            "size": 0.30100000500679014,
+            "facePos": [
+              -0.018884261546847265,
+              0.7095000118017196,
+              -2.5901454676456463
+            ],
+            "faceDir": [
+              -0.3542270724014767,
+              0,
+              0.9351594415808884
+            ],
+            "pokes": 0,
+            "pets": 0,
+            "flicks": 0,
+            "lines": 0,
+            "voiceMode": "",
+            "bubble": false,
+            "bubbleInfo": {
+              "content": null,
+              "corners": [
+                [
+                  -0.44578279427279,
+                  0.8701955743977827,
+                  -2.59764514560513
+                ],
+                [
+                  0.44578279427279,
+                  0.8701955743977827,
+                  -2.59764514560513
+                ],
+                [
+                  0.44578279427279,
+                  1.307855937215004,
+                  -2.682354687501865
+                ],
+                [
+                  -0.44578279427279,
+                  1.307855937215004,
+                  -2.682354687501865
+                ]
+              ]
+            },
+            "sourceChip": {
+              "visible": true,
+              "text": "Built-in face · not generated"
+            },
+            "faceSource": "built-in",
+            "hasPersona": false,
+            "anchorErrorCm": 0
+          },
+          "turnDegrees": 20.74608087560468
+        },
+        {
+          "x": 0,
+          "face": {
+            "id": "sp_cjskj4xh8nbt",
+            "name": "Couch",
+            "label": "couch",
+            "targetId": "mesh-23",
+            "awake": true,
+            "speaking": false,
+            "expression": "neutral",
+            "mouth": "rest",
+            "params": {
+              "eyeOpen": 1,
+              "eyeSmile": 0,
+              "pupil": 0.999999999999999,
+              "lookX": 8.58314982136171e-7,
+              "lookY": 0.5422096933153604,
+              "browY": 2.844641827358212e-15,
+              "browTilt": -8.533925482074627e-16,
+              "mouthOpen": 1.3085424291961505e-41,
+              "mouthWide": 0.49999999999999994,
+              "mouthRound": 1.8693463274230712e-41,
+              "smile": 0.24999999999999928,
+              "blush": 0.4499996232622296,
+              "squash": -3.627034953034628e-10,
+              "wobble": 0,
+              "reveal": 1
+            },
+            "anchor": [
+              0,
+              0.7095000118017196,
+              -2.6399999165534975
+            ],
+            "size": 0.30100000500679014,
+            "facePos": [
+              0,
+              0.7095000118017196,
+              -2.6399999165534975
+            ],
+            "faceDir": [
+              0,
+              0,
+              1
+            ],
+            "pokes": 0,
+            "pets": 0,
+            "flicks": 0,
+            "lines": 0,
+            "voiceMode": "",
+            "bubble": false,
+            "bubbleInfo": {
+              "content": null,
+              "corners": [
+                [
+                  -0.44578279427279,
+                  0.8701955743977827,
+                  -2.59764514560513
+                ],
+                [
+                  0.44578279427279,
+                  0.8701955743977827,
+                  -2.59764514560513
+                ],
+                [
+                  0.44578279427279,
+                  1.307855937215004,
+                  -2.682354687501865
+                ],
+                [
+                  -0.44578279427279,
+                  1.307855937215004,
+                  -2.682354687501865
+                ]
+              ]
+            },
+            "sourceChip": {
+              "visible": true,
+              "text": "Built-in face · not generated"
+            },
+            "faceSource": "built-in",
+            "hasPersona": false,
+            "anchorErrorCm": 0
+          },
+          "turnDegrees": 0
+        },
+        {
+          "x": 1,
+          "face": {
+            "id": "sp_cjskj4xh8nbt",
+            "name": "Couch",
+            "label": "couch",
+            "targetId": "mesh-23",
+            "awake": true,
+            "speaking": false,
+            "expression": "neutral",
+            "mouth": "rest",
+            "params": {
+              "eyeOpen": 1,
+              "eyeSmile": 0,
+              "pupil": 0.9999999999999998,
+              "lookX": 7.819099060602668e-7,
+              "lookY": 0.5184546784444598,
+              "browY": 1.314153120263862e-18,
+              "browTilt": -3.942459360791581e-19,
+              "mouthOpen": 5.994034941144852e-51,
+              "mouthWide": 0.49999999999999994,
+              "mouthRound": 8.562907058778349e-51,
+              "smile": 0.24999999999999994,
+              "blush": 0.4499999825463399,
+              "squash": 9.944325865009865e-12,
+              "wobble": 0,
+              "reveal": 1
+            },
+            "anchor": [
+              0,
+              0.7095000118017196,
+              -2.6399999165534975
+            ],
+            "size": 0.30100000500679014,
+            "facePos": [
+              0.018884261546847265,
+              0.7095000118017196,
+              -2.5901454676456463
+            ],
+            "faceDir": [
+              0.3542270724014767,
+              0,
+              0.9351594415808884
+            ],
+            "pokes": 0,
+            "pets": 0,
+            "flicks": 0,
+            "lines": 0,
+            "voiceMode": "",
+            "bubble": false,
+            "bubbleInfo": {
+              "content": null,
+              "corners": [
+                [
+                  -0.44578279427279,
+                  0.8701955743977827,
+                  -2.59764514560513
+                ],
+                [
+                  0.44578279427279,
+                  0.8701955743977827,
+                  -2.59764514560513
+                ],
+                [
+                  0.44578279427279,
+                  1.307855937215004,
+                  -2.682354687501865
+                ],
+                [
+                  -0.44578279427279,
+                  1.307855937215004,
+                  -2.682354687501865
+                ]
+              ]
+            },
+            "sourceChip": {
+              "visible": true,
+              "text": "Built-in face · not generated"
+            },
+            "faceSource": "built-in",
+            "hasPersona": false,
+            "anchorErrorCm": 0
+          },
+          "turnDegrees": 20.74608087560468
+        }
+      ],
+      "at": "2026-10-26T22:41:10.967Z",
+      "shot": "xr-extra.jpg",
+      "capture": "audit/browser/xr-details-network.json"
+    }
+  ]
+}

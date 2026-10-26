@@ -1,0 +1,124 @@
+{
+  "id": "N03",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": {
+        "spirits": [
+          {
+            "id": "sp_iat6zdawsz0q",
+            "name": "Coat Rack",
+            "label": "coat rack",
+            "targetId": "den-thing",
+            "awake": true,
+            "speaking": false,
+            "expression": "neutral",
+            "mouth": "rest",
+            "params": {
+              "eyeOpen": 1,
+              "eyeSmile": 0,
+              "pupil": 0.9999885343885956,
+              "lookX": 0.00006088537227879539,
+              "lookY": 0.34920262910632205,
+              "browY": 0.000032758889727005925,
+              "browTilt": -0.000009827666918101772,
+              "mouthOpen": 1.9428020078329028e-13,
+              "mouthWide": 0.4999999999999306,
+              "mouthRound": 2.7754314397612873e-13,
+              "smile": 0.24999181027756823,
+              "blush": 0.4460136800539784,
+              "squash": -0.000029717714334005898,
+              "wobble": 0,
+              "reveal": 1
+            },
+            "anchor": [
+              0.2,
+              0.45375000000000004,
+              -2.14
+            ],
+            "size": 0.1925,
+            "facePos": [
+              0.19858398128170357,
+              0.45375000000000004,
+              -2.128411786478259
+            ],
+            "faceDir": [
+              -0.12129255042044247,
+              0,
+              0.9926168028058484
+            ],
+            "pokes": 0,
+            "pets": 0,
+            "flicks": 0,
+            "lines": 0,
+            "voiceMode": "",
+            "bubble": false,
+            "bubbleInfo": {
+              "content": null,
+              "corners": [
+                [
+                  -0.312597202454057,
+                  0.5513890006918646,
+                  -2.1609323317443088
+                ],
+                [
+                  0.7014965612266807,
+                  0.5513890006918646,
+                  -2.0318554044170796
+                ],
+                [
+                  0.7095282359963201,
+                  1.0585531962991763,
+                  -2.094956312259073
+                ],
+                [
+                  -0.3045655276844176,
+                  1.0585531962991763,
+                  -2.2240332395863023
+                ]
+              ]
+            },
+            "sourceChip": {
+              "visible": true,
+              "text": "Built-in face · not generated"
+            },
+            "faceSource": "built-in",
+            "hasPersona": false,
+            "anchorErrorCm": 0
+          }
+        ],
+        "saved": [
+          {
+            "spiritId": "sp_iat6zdawsz0q",
+            "label": "coat rack",
+            "name": "Coat Rack",
+            "dims": [
+              0.7,
+              0.55,
+              0.5
+            ],
+            "position": [
+              0.2,
+              0.275,
+              -2.4
+            ],
+            "persona": null,
+            "sheet": null,
+            "faceSource": "built-in",
+            "source": "label",
+            "firstWoke": "2026-10-27",
+            "lines": 0,
+            "memories": 0,
+            "room": "diorama:bare"
+          }
+        ]
+      },
+      "at": "2026-10-26T22:47:26.944Z",
+      "shot": "bare.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

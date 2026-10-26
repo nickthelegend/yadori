@@ -1,0 +1,183 @@
+{
+  "id": "B27",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": [
+        {
+          "id": "sp_h0gaxl58kjqs",
+          "name": "Couch",
+          "label": "couch",
+          "targetId": "den-couch",
+          "awake": true,
+          "speaking": true,
+          "expression": "neutral",
+          "mouth": "rest",
+          "params": {
+            "eyeOpen": 1,
+            "eyeSmile": 1.396514050505631e-141,
+            "pupil": 1.0000000000000004,
+            "lookX": -0.6899448641879697,
+            "lookY": 0.7238619235506206,
+            "browY": -5.576580926659299e-134,
+            "browTilt": 9.29430161562703e-134,
+            "mouthOpen": 2.6717530881904133e-7,
+            "mouthWide": 0.4999865490400944,
+            "mouthRound": 1.4878924714237205e-291,
+            "smile": 0.24999999999999994,
+            "blush": 0.4499999999999997,
+            "squash": 0.00022235425500259927,
+            "wobble": -1.317365655118954e-37,
+            "reveal": 1
+          },
+          "anchor": [
+            0,
+            0.7095,
+            -2.64
+          ],
+          "size": 0.301,
+          "facePos": [
+            -0.02180949646153796,
+            0.7095,
+            -2.587021937733099
+          ],
+          "faceDir": [
+            -0.3806751866763616,
+            0,
+            0.9247088202504166
+          ],
+          "pokes": 1,
+          "pets": 1,
+          "flicks": 1,
+          "lines": 2,
+          "voiceMode": "browser",
+          "bubble": true,
+          "bubbleInfo": {
+            "content": {
+              "speaker": "Couch → Lamp",
+              "tag": "puppet line (you)",
+              "text": "Lamp, they keep putting their feet on me.",
+              "shown": 2
+            },
+            "corners": [
+              [
+                -0.5074056995758227,
+                0.8690870986815274,
+                -2.737481504008318
+              ],
+              [
+                0.42897537904108135,
+                0.8690870986815274,
+                -2.3520011948595716
+              ],
+              [
+                0.46378670665274685,
+                1.3670717642742698,
+                -2.4365623714578803
+              ],
+              [
+                -0.47259437196415727,
+                1.3670717642742698,
+                -2.8220426806066268
+              ]
+            ]
+          },
+          "sourceChip": {
+            "visible": false,
+            "text": "Built-in face · not generated"
+          },
+          "faceSource": "built-in",
+          "hasPersona": false,
+          "anchorErrorCm": 0
+        },
+        {
+          "id": "sp_wjiw2rridknu",
+          "name": "Lamp",
+          "label": "lamp",
+          "targetId": "den-lamp",
+          "awake": true,
+          "speaking": false,
+          "expression": "neutral",
+          "mouth": "rest",
+          "params": {
+            "eyeOpen": 1,
+            "eyeSmile": 0,
+            "pupil": 0.9999999999999998,
+            "lookX": 0.7327988799741179,
+            "lookY": -0.6804410484580788,
+            "browY": 1.631731581638696e-82,
+            "browTilt": -4.8951947449161016e-83,
+            "mouthOpen": 6.9330265179277175e-230,
+            "mouthWide": 0.49999999999999994,
+            "mouthRound": 9.904323597039599e-230,
+            "smile": 0.24999999999999994,
+            "blush": 0.4499999999999997,
+            "squash": 2.53233307858899e-44,
+            "wobble": 0,
+            "reveal": 1
+          },
+          "anchor": [
+            -1.62,
+            1.4166666666666665,
+            -2.92
+          ],
+          "size": 0.154,
+          "facePos": [
+            -1.6184273813840004,
+            1.4166666666666665,
+            -2.9091087877570683
+          ],
+          "faceDir": [
+            0.14291122555490787,
+            0,
+            0.9897355109373384
+          ],
+          "pokes": 0,
+          "pets": 0,
+          "flicks": 0,
+          "lines": 0,
+          "voiceMode": "",
+          "bubble": false,
+          "bubbleInfo": {
+            "content": null,
+            "corners": [
+              [
+                -2.1162892032250147,
+                1.4915613736915354,
+                -2.814408966263147
+              ],
+              [
+                -1.1227034769952633,
+                1.4915613736915354,
+                -3.0207402990403343
+              ],
+              [
+                -1.1173442426454052,
+                1.9982679597936333,
+                -2.994932978931133
+              ],
+              [
+                -2.1109299688751566,
+                1.9982679597936333,
+                -2.788601646153946
+              ]
+            ]
+          },
+          "sourceChip": {
+            "visible": false,
+            "text": "Built-in face · not generated"
+          },
+          "faceSource": "built-in",
+          "hasPersona": false,
+          "anchorErrorCm": 0
+        }
+      ],
+      "at": "2026-10-26T22:46:23.425Z",
+      "shot": "desktop-gossip.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

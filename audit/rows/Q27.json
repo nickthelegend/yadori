@@ -1,0 +1,20 @@
+{
+  "id": "Q27",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/xr-extra-results.json",
+      "detail": {
+        "startedAt": "2026-10-26T22:40:53.785Z",
+        "endedAt": "2026-10-26T22:41:25.895Z",
+        "responses": 775,
+        "errors": []
+      },
+      "at": "2026-10-26T22:41:25.902Z",
+      "shot": "xr-bare.jpg",
+      "capture": "audit/browser/xr-details-network.json"
+    }
+  ]
+}

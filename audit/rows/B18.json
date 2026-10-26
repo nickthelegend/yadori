@@ -1,0 +1,100 @@
+{
+  "id": "B18",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": {
+        "id": "sp_h0gaxl58kjqs",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "den-couch",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 4.6415806290945995e-42,
+          "pupil": 1.0000000000000004,
+          "lookX": 2.156085491230931e-32,
+          "lookY": 0.3354030480966545,
+          "browY": -1.8534829632676062e-34,
+          "browTilt": 3.089138295775635e-34,
+          "mouthOpen": 1.79476105968864e-8,
+          "mouthWide": 0.5000000256385926,
+          "mouthRound": 6.80940549341838e-13,
+          "smile": 0.24999999999999994,
+          "blush": 0.44999999999998236,
+          "squash": -0.00016500543210274266,
+          "wobble": -4.240487262577212e-12,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095,
+          -2.64
+        ],
+        "size": 0.301,
+        "facePos": [
+          -0.0021568175247951263,
+          0.7095,
+          -2.622112876820282
+        ],
+        "faceDir": [
+          -0.1197122109635782,
+          0,
+          0.9928086354107784
+        ],
+        "pokes": 1,
+        "pets": 1,
+        "flicks": 1,
+        "lines": 1,
+        "voiceMode": "browser",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "puppet line (you)",
+            "text": "Hello. I have been holding this room together for years.",
+            "shown": 999
+          },
+          "corners": [
+            [
+              -0.46186089687908616,
+              0.8663423539219561,
+              -2.6620166406746164
+            ],
+            [
+              0.4538564408969471,
+              0.8663423539219561,
+              -2.55160004757408
+            ],
+            [
+              0.4575472618294959,
+              1.3264857876907854,
+              -2.582209112965948
+            ],
+            [
+              -0.45817007594653736,
+              1.3264857876907854,
+              -2.6926257060664844
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      },
+      "at": "2026-10-26T22:46:00.497Z",
+      "shot": "desktop-speech.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

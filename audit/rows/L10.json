@@ -1,0 +1,36 @@
+{
+  "id": "L10",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": [
+        {
+          "id": "how",
+          "hash": "#how",
+          "heading": true
+        },
+        {
+          "id": "proof",
+          "hash": "#proof",
+          "heading": true
+        },
+        {
+          "id": "honest",
+          "hash": "#honest",
+          "heading": true
+        },
+        {
+          "id": "try",
+          "hash": "#try",
+          "heading": true
+        }
+      ],
+      "at": "2026-10-26T22:45:22.769Z",
+      "shot": "index-1280.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

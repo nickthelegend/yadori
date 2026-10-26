@@ -7,7 +7,7 @@
       "text": "Built-in face · not generated"
     },
     "shot": "inputs.jpg",
-    "at": "2026-10-26T21:47:21.924Z"
+    "at": "2026-10-26T22:48:13.910Z"
   },
   {
     "id": "S07",
@@ -18,7 +18,7 @@
       "title": "Setup required: MODEL_API_KEY (Muse Voice Transcribe)"
     },
     "shot": "inputs.jpg",
-    "at": "2026-10-26T21:47:22.257Z"
+    "at": "2026-10-26T22:48:14.371Z"
   },
   {
     "id": "B20",
@@ -34,7 +34,7 @@
       }
     },
     "shot": "inputs.jpg",
-    "at": "2026-10-26T21:47:22.579Z"
+    "at": "2026-10-26T22:48:14.660Z"
   },
   {
     "id": "B21",
@@ -46,7 +46,7 @@
       "shown": 0
     },
     "shot": "inputs.jpg",
-    "at": "2026-10-26T21:47:36.766Z"
+    "at": "2026-10-26T22:48:28.314Z"
   },
   {
     "id": "N08",
@@ -54,7 +54,7 @@
     "detail": {
       "name": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
       "saved": {
-        "spiritId": "sp_srisfgn3dpvb",
+        "spiritId": "sp_dvuvpacfwgkv",
         "label": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
         "name": "Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
         "dims": [
@@ -78,6 +78,6 @@
       }
     },
     "shot": "inputs-name.jpg",
-    "at": "2026-10-26T21:47:40.973Z"
+    "at": "2026-10-26T22:48:32.163Z"
   }
 ]

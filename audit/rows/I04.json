@@ -1,0 +1,12 @@
+{
+  "id": "I04",
+  "status": "UNTESTED",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "at": "2026-10-26T22:48:14.057Z",
+      "source": "audit/browser/dependencies.json",
+      "dependency": "needs MODEL_API_KEY"
+    }
+  ]
+}

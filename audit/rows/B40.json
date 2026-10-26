@@ -1,0 +1,37 @@
+{
+  "id": "B40",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": {
+        "measurement": "Laptop CPU submit time only; excludes GPU/hardware",
+        "perf": {
+          "frames": 600,
+          "cpuMs": {
+            "p50": 1.5,
+            "p95": 2.9000000059604645,
+            "max": 3.4000000059604645,
+            "mean": 1.7051666670540968
+          },
+          "drawCalls": {
+            "p50": 106,
+            "p95": 107,
+            "max": 107
+          },
+          "triangles": {
+            "p50": 27834,
+            "max": 27846
+          },
+          "xrFrames": 0,
+          "gl": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)"
+        }
+      },
+      "at": "2026-10-26T22:46:43.657Z",
+      "shot": "desktop-gossip.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

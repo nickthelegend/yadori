@@ -1,0 +1,15 @@
+{
+  "id": "B03",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": "Yadori\n宿り · wake up your room\nBrowser diorama, not your room\nMuse Spark · Setup required: MODEL_API_KEY\nMuse Image · Setup required: MODEL_API_KEY\nVoice in · Setup required: MODEL_API_KEY\nSAM 3.1 · Setup required: MODEL_API_KEY\nMMS-TTS · Setup required: fetch-models\nVoice out · Browser voice, not a Meta model\nBINDER\n0 / 6\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nClick a piece of furniture to wake it\nThen poke it, pet it, flick it · drag the room to look around\nEnter mixed reality (emulated)",
+      "at": "2026-10-26T22:45:31.840Z",
+      "shot": "desktop-cold.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

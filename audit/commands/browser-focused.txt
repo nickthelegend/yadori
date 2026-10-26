@@ -1,0 +1,2 @@
+B09 PASS {"min":0.02291666654249088,"max":1,"finite":true}
+B37 PASS {"after":{"speaking":false,"spirits":[]},"errors":[]}

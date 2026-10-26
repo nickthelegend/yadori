@@ -1,0 +1,14 @@
+{
+  "id": "A47",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/server/results.json",
+      "detail": "Fresh server contract suite separately runs inert test constant non-disclosure assertion; empty actual MODEL_API_KEY throughout audit.",
+      "at": "2026-10-26T22:39:25.505Z",
+      "capture": "audit/server/network.json"
+    }
+  ]
+}

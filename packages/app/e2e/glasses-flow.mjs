@@ -68,7 +68,7 @@ async function main() {
     check(`inside the glasses view: ${name}`, Math.abs(hAng) <= 37 && vAng <= 25 && vAng >= -43, `h ${hAng.toFixed(1)}°, v ${vAng.toFixed(1)}°`);
   }
   mkdirSync(join(APP, '../../e2e/shots'), { recursive: true });
-  cli('browser', 'screenshot', '--output-file', join(APP, '../../e2e/shots/glasses-fov.png'));
+  page('audit-probe.mjs', { shot: 'glasses-fov' });
   {
     const { auditGlassesBubble } = await import('./audit-glasses-bubble.mjs');
     const bubble = await auditGlassesBubble();

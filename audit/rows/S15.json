@@ -1,0 +1,100 @@
+{
+  "id": "S15",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/offline-results.json",
+      "detail": {
+        "body": "Yadori\n宿り · wake up your room\nBrowser diorama, not your room\nMuse Spark · Setup required: MODEL_API_KEY\nMuse Image · Setup required: MODEL_API_KEY\nVoice in · Setup required: MODEL_API_KEY\nSAM 3.1 · Setup required: MODEL_API_KEY\nMMS-TTS · Setup required: fetch-models\nVoice out · Browser voice, not a Meta model\nBINDER\n1 / 6\nforget\nCouch\ncouch · 2.0 × 0.9 m\nBuilt-in face, not generatedDrawn from the label\nNo persona · Setup required for Muse Spark\nvoice browser\n0 memories\n1 lines\nfirst woke 2026-10-27\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nTap, rub or swipe its face · wake a second one and they gossip\nSpeaker\nCouch\nSay\nPuppet mode: you are the voice. Setup required for Muse Spark (MODEL_API_KEY). Lines are yours, spoken by Browser voice, not a Meta model.\nEnter mixed reality (emulated)",
+        "spirits": [
+          {
+            "id": "local-dpxots6r",
+            "name": "Couch",
+            "label": "couch",
+            "targetId": "den-couch",
+            "awake": true,
+            "speaking": false,
+            "expression": "neutral",
+            "mouth": "rest",
+            "params": {
+              "eyeOpen": 1,
+              "eyeSmile": 0,
+              "pupil": 0.9999999999999998,
+              "lookX": -7.027519647239939e-69,
+              "lookY": 0.3354030480966545,
+              "browY": 1.9129330946794663e-82,
+              "browTilt": -5.738799284038382e-83,
+              "mouthOpen": 2.4159455809586622e-203,
+              "mouthWide": 0.49999999999999994,
+              "mouthRound": 3.4513507412669654e-203,
+              "smile": 0.24999999999999994,
+              "blush": 0.4499999999999997,
+              "squash": 1.934476878810837e-38,
+              "wobble": 0,
+              "reveal": 1
+            },
+            "anchor": [
+              0,
+              0.7095,
+              -2.64
+            ],
+            "size": 0.301,
+            "facePos": [
+              -0.0021568175247951263,
+              0.7095,
+              -2.622112876820282
+            ],
+            "faceDir": [
+              -0.1197122109635782,
+              0,
+              0.9928086354107784
+            ],
+            "pokes": 0,
+            "pets": 0,
+            "flicks": 0,
+            "lines": 1,
+            "voiceMode": "browser",
+            "bubble": false,
+            "bubbleInfo": {
+              "content": null,
+              "corners": [
+                [
+                  -0.4618678284803739,
+                  0.8663422507100129,
+                  -2.6620163574403883
+                ],
+                [
+                  0.4538633768206858,
+                  0.8663422507100129,
+                  -2.551599512665126
+                ],
+                [
+                  0.4575543028240642,
+                  1.3264925139082717,
+                  -2.5822098432232035
+                ],
+                [
+                  -0.4581769024769955,
+                  1.3264925139082717,
+                  -2.692626687998466
+                ]
+              ]
+            },
+            "sourceChip": {
+              "visible": false,
+              "text": "Built-in face · not generated"
+            },
+            "faceSource": "built-in",
+            "hasPersona": false,
+            "anchorErrorCm": 0
+          }
+        ]
+      },
+      "at": "2026-10-26T22:49:55.742Z",
+      "shot": "offline-status.jpg",
+      "capture": "audit/browser/recovery-events.jsonl"
+    }
+  ]
+}

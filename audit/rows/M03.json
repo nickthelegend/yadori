@@ -1,0 +1,60 @@
+{
+  "id": "M03",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/server/results.json",
+      "detail": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"gateway\":\"yadori\",\"spark\":{\"ready\":false,\"model\":\"muse-spark-1.3\",\"setup\":\"Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)\"},\"wonder\":{\"ready\":false,\"model\":\"muse-wonder-1.0\",\"setup\":\"Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)\"},\"image\":{\"ready\":false,\"model\":\"muse-image-1.0\",\"setup\":\"Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)\"},\"transcribe\":{\"ready\":false,\"model\":\"muse-voice-transcribe-1.0\",\"setup\":\"Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)\"},\"sam3\":{\"ready\":false,\"model\":\"sam-3.1\",\"setup\":\"Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)\"},\"tts\":{\"ready\":false,\"setup\":\"Setup required: run scripts/fetch-models.sh (MMS-TTS weights, CC-BY-NC-4.0)\",\"model\":\"facebook/mms-tts-eng\",\"license\":\"CC-BY-NC-4.0\"},\"budget\":{\"cap_usd\":3,\"spent_usd\":0}}"
+          }
+        ],
+        "isError": false,
+        "body": {
+          "gateway": "yadori",
+          "spark": {
+            "ready": false,
+            "model": "muse-spark-1.3",
+            "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+          },
+          "wonder": {
+            "ready": false,
+            "model": "muse-wonder-1.0",
+            "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+          },
+          "image": {
+            "ready": false,
+            "model": "muse-image-1.0",
+            "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+          },
+          "transcribe": {
+            "ready": false,
+            "model": "muse-voice-transcribe-1.0",
+            "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+          },
+          "sam3": {
+            "ready": false,
+            "model": "sam-3.1",
+            "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+          },
+          "tts": {
+            "ready": false,
+            "setup": "Setup required: run scripts/fetch-models.sh (MMS-TTS weights, CC-BY-NC-4.0)",
+            "model": "facebook/mms-tts-eng",
+            "license": "CC-BY-NC-4.0"
+          },
+          "budget": {
+            "cap_usd": 3,
+            "spent_usd": 0
+          }
+        }
+      },
+      "at": "2026-10-26T22:39:25.844Z",
+      "capture": "audit/server/network.json"
+    }
+  ]
+}

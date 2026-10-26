@@ -1,0 +1,23 @@
+{
+  "id": "R01",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/quest-results.json",
+      "detail": {
+        "command": [
+          "pnpm",
+          "--filter",
+          "app",
+          "e2e:xr"
+        ],
+        "pass": 22,
+        "fail": 0,
+        "at": "2026-10-26T22:40:53.539Z"
+      },
+      "at": "2026-10-26T22:40:53.539Z"
+    }
+  ]
+}

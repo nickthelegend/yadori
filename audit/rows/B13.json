@@ -1,0 +1,31 @@
+{
+  "id": "B13",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": {
+        "eyeOpen": 1,
+        "eyeSmile": 2.4041175550337887e-20,
+        "pupil": 1.00000000000008,
+        "lookX": 0.9999187106308501,
+        "lookY": 0.012750377654707335,
+        "browY": -9.60015840728137e-13,
+        "browTilt": 1.6000264134698492e-12,
+        "mouthOpen": 1.591869147852561e-95,
+        "mouthWide": 0.49999999999999994,
+        "mouthRound": 2.2740987826465138e-95,
+        "smile": 0.24999999999831998,
+        "blush": 0.4499914335148535,
+        "squash": 4.018291718425819e-15,
+        "wobble": 0.000004748576927654558,
+        "reveal": 1
+      },
+      "at": "2026-10-26T22:45:55.510Z",
+      "shot": "desktop-awake.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

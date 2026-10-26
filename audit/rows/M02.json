@@ -1,0 +1,122 @@
+{
+  "id": "M02",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/server/results.json",
+      "detail": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "result": {
+          "tools": [
+            {
+              "name": "status",
+              "description": "Which Meta models and voices are ready, and the daily budget.",
+              "inputSchema": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": false
+              }
+            },
+            {
+              "name": "wake",
+              "description": "Wake a piece of furniture by label (e.g. \"couch\") with its size in metres. Returns the spirit id and persona (or Setup required).",
+              "inputSchema": {
+                "type": "object",
+                "required": [
+                  "label"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "label": {
+                    "type": "string"
+                  },
+                  "dims": {
+                    "type": "array",
+                    "items": {
+                      "type": "number"
+                    },
+                    "minItems": 3,
+                    "maxItems": 3
+                  },
+                  "description": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            {
+              "name": "chat",
+              "description": "Say something to a woken spirit; Muse Spark answers in its persona (needs MODEL_API_KEY).",
+              "inputSchema": {
+                "type": "object",
+                "required": [
+                  "spirit_id",
+                  "text"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "spirit_id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            {
+              "name": "say",
+              "description": "Puppet mode: the spirit speaks your line with MMS-TTS (returns the audio length, not the audio).",
+              "inputSchema": {
+                "type": "object",
+                "required": [
+                  "spirit_id",
+                  "text"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "spirit_id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            {
+              "name": "list_spirits",
+              "description": "All spirits the gateway stores.",
+              "inputSchema": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": false
+              }
+            },
+            {
+              "name": "forget",
+              "description": "Delete a spirit: persona, memories, sheet and crop.",
+              "inputSchema": {
+                "type": "object",
+                "required": [
+                  "spirit_id"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "spirit_id": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "at": "2026-10-26T22:39:25.828Z",
+      "capture": "audit/server/network.json"
+    }
+  ]
+}

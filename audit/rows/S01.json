@@ -1,0 +1,15 @@
+{
+  "id": "S01",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": "Muse Spark · Setup required: MODEL_API_KEY",
+      "at": "2026-10-26T22:45:56.382Z",
+      "shot": "desktop-awake.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

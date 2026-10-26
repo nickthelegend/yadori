@@ -7,7 +7,7 @@
     "pet": 1,
     "flick": 1
   },
-  "seconds": 79,
+  "seconds": 82,
   "pass": 22,
   "fail": 0,
   "results": [
@@ -24,7 +24,7 @@
     {
       "name": "couch woke from a pinch",
       "ok": true,
-      "detail": "3957 ms wall clock incl. CLI round trips"
+      "detail": "3944 ms wall clock incl. CLI round trips"
     },
     {
       "name": "ECS: a Spirit component with an anchored face",
@@ -54,7 +54,7 @@
     {
       "name": "puppet line: speaking + mouth moves",
       "ok": true,
-      "detail": "max mouthOpen 0.35"
+      "detail": "max mouthOpen 0.80"
     },
     {
       "name": "voice mode is labelled",
@@ -69,7 +69,7 @@
     {
       "name": "gossip: whispers fly between them",
       "ok": true,
-      "detail": "46 particles"
+      "detail": "43 particles"
     },
     {
       "name": "gossip: the couch looks at the lamp",
@@ -89,7 +89,7 @@
     {
       "name": "emulator frame time recorded (600 XR frames)",
       "ok": true,
-      "detail": "p50 0.90 p95 1.90 ms, draw calls p95 26, tris max 18584"
+      "detail": "p50 1.00 p95 2.00 ms, draw calls p95 22, tris max 18584"
     },
     {
       "name": "draw calls within budget (≤ 100)",
@@ -119,20 +119,20 @@
     {
       "name": "independent console, page and network capture is clean",
       "ok": true,
-      "detail": "1531 responses; 0 errors"
+      "detail": "1530 responses; 0 errors"
     }
   ],
   "perf": {
     "frames": 600,
     "cpuMs": {
-      "p50": 0.9000000059604645,
-      "p95": 1.9000000059604645,
-      "max": 2.2999999970197678,
-      "mean": 1.0536666666467984
+      "p50": 1,
+      "p95": 2,
+      "max": 2.2999999821186066,
+      "mean": 1.1124999994039535
     },
     "drawCalls": {
       "p50": 22,
-      "p95": 26,
+      "p95": 22,
       "max": 26
     },
     "triangles": {
@@ -142,5 +142,5 @@
     "xrFrames": 600,
     "gl": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)"
   },
-  "at": "2026-10-26T22:01:34.584Z"
+  "at": "2026-10-26T22:40:53.539Z"
 }

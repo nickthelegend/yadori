@@ -1,0 +1,18 @@
+{
+  "id": "P06",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/mobile-results.json",
+      "detail": {
+        "status": "Setup required (5)\nMuse Spark · Setup required: MODEL_API_KEY\nMuse Image · Setup required: MODEL_API_KEY\nVoice in · Setup required: MODEL_API_KEY\nSAM 3.1 · Setup required: MODEL_API_KEY\nMMS-TTS · Setup required: fetch-models\nVoice out · Browser voice, not a Meta model",
+        "visible": true
+      },
+      "at": "2026-10-26T22:48:39.386Z",
+      "shot": "mobile.jpg",
+      "capture": "audit/browser/mobile-events.jsonl"
+    }
+  ]
+}

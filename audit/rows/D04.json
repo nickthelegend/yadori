@@ -1,0 +1,14 @@
+{
+  "id": "D04",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/doc-review.json",
+      "detail": "Current results only in TESTING.md; submission links that table; evidence page Oct 25 metrics clearly historical and not counted. No inconsistent current CPU claim remains.",
+      "at": "2026-10-26T22:51:43.623Z",
+      "capture": null
+    }
+  ]
+}

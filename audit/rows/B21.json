@@ -1,0 +1,30 @@
+{
+  "id": "B21",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": {
+        "stage": "<div class=\"y-hint\">Tap, rub or swipe its face · wake a second one and they gossip</div>\n      <form class=\"y-compose\" id=\"y-compose\" autocomplete=\"off\">\n        <div class=\"y-speakers\"><span>Speaker</span><button type=\"button\" data-speaker=\"sp_h0gaxl58kjqs\" aria-pressed=\"true\">Couch</button></div>\n        <div class=\"y-line\">\n          <input id=\"y-text\" maxlength=\"240\" placeholder=\"Say something as Couch…\" aria-label=\"Say something as Couch…\">\n          <button class=\"y-mic\" type=\"button\" id=\"y-mic\" disabled=\"\" title=\"Setup required: MODEL_API_KEY (Muse Voice Transcribe)\" aria-label=\"Talk with your voice\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M12 14a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v5a3 3 0 0 0 3 3Z\"></path><path fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" d=\"M8 11.2a4 4 0 0 0 8 0M12 15.2V18M9.5 18h5\"></path></svg></button>\n          <button class=\"y-send\" type=\"submit\" id=\"y-send\">Say</button>\n        </div>\n        <div class=\"y-note\"><b>Puppet mode: you are the voice.</b> Setup required for Muse Spark (MODEL_API_KEY). Lines are yours, spoken by Browser voice, not a Meta model.</div>\n      </form>"
+      },
+      "at": "2026-10-26T22:46:01.287Z",
+      "shot": "desktop-speech.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    },
+    {
+      "ok": true,
+      "source": "audit/browser/inputs-results.json",
+      "detail": {
+        "speaker": "Couch",
+        "tag": "puppet line (you)",
+        "text": "<b>hello</b> & friends",
+        "shown": 0
+      },
+      "at": "2026-10-26T22:48:28.314Z",
+      "shot": "inputs.jpg",
+      "capture": "audit/browser/inputs-events.json"
+    }
+  ]
+}

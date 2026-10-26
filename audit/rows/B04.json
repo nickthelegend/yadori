@@ -1,0 +1,46 @@
+{
+  "id": "B04",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": {
+        "hov": {
+          "targets": [
+            null,
+            null,
+            "couch",
+            null
+          ],
+          "faces": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "gaze": false
+        },
+        "away": {
+          "targets": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "faces": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "gaze": false
+        }
+      },
+      "at": "2026-10-26T22:45:32.513Z",
+      "shot": "desktop-cold.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

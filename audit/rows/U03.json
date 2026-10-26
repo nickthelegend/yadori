@@ -1,0 +1,22 @@
+{
+  "id": "U03",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/commands/room.txt",
+      "detail": {
+        "command": [
+          "pnpm",
+          "--filter",
+          "@yadori/room",
+          "test"
+        ],
+        "unitSource": "Current package tests exercised; logs include every named test file and counts.",
+        "exitCode": 0
+      },
+      "at": "2026-10-26T22:39:16.946Z"
+    }
+  ]
+}

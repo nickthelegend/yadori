@@ -1,0 +1,101 @@
+{
+  "id": "Q26",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/xr-extra-results.json",
+      "detail": {
+        "cancelled": {
+          "cancelled": true,
+          "reopened": false
+        },
+        "reopened": {
+          "mode": {
+            "xr": true,
+            "emulator": true,
+            "room": "iwer:yadori_bare",
+            "label": "Emulated room (IWER), not your room"
+          },
+          "status": {
+            "online": true,
+            "gateway": "yadori",
+            "spark": {
+              "ready": false,
+              "model": "muse-spark-1.3",
+              "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+            },
+            "wonder": {
+              "ready": false,
+              "model": "muse-wonder-1.0",
+              "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+            },
+            "image": {
+              "ready": false,
+              "model": "muse-image-1.0",
+              "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+            },
+            "transcribe": {
+              "ready": false,
+              "model": "muse-voice-transcribe-1.0",
+              "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+            },
+            "sam3": {
+              "ready": false,
+              "model": "sam-3.1",
+              "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+            },
+            "tts": {
+              "ready": false,
+              "setup": "Setup required: run scripts/fetch-models.sh (MMS-TTS weights, CC-BY-NC-4.0)",
+              "model": "facebook/mms-tts-eng",
+              "license": "CC-BY-NC-4.0"
+            },
+            "budget": {
+              "cap_usd": 3,
+              "spent_usd": 0
+            }
+          },
+          "hover": {
+            "targets": [
+              null,
+              "other",
+              null,
+              null
+            ],
+            "faces": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "gaze": false
+          },
+          "spirits": [],
+          "targets": [
+            {
+              "id": "mesh-23",
+              "label": "other",
+              "center": [
+                0.20000000298023224,
+                0.2750000059604645,
+                -2.4000000953674316
+              ],
+              "dims": [
+                0.699999988079071,
+                0.550000011920929,
+                0.5
+              ]
+            }
+          ],
+          "saved": [],
+          "body": "Yadori\nEmulated room (IWER), not your room\nSetup required (5)\nTell me what this is\nWake it\nThe headset's room scan did not label this one. Its name becomes the label Muse Spark sees.\nTell me what this is: it needs a name before it can wake."
+        }
+      },
+      "at": "2026-10-26T22:41:21.326Z",
+      "shot": "xr-bare.jpg",
+      "capture": "audit/browser/xr-details-network.json"
+    }
+  ]
+}

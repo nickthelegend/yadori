@@ -1,0 +1,42 @@
+{
+  "id": "B15",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/camera-results.json",
+      "detail": {
+        "before": {
+          "denVisible": true,
+          "camera": [
+            -0.36623409390449524,
+            1.7241450548171997,
+            1.8312816619873047
+          ],
+          "orbit": {
+            "yaw": -0.12,
+            "pitch": 0.2,
+            "dist": 4.4
+          }
+        },
+        "after": {
+          "denVisible": true,
+          "camera": [
+            -2.644469738006592,
+            2.38970685005188,
+            0.5798913240432739
+          ],
+          "orbit": {
+            "yaw": -0.745,
+            "pitch": 0.3575000000000001,
+            "dist": 4.4
+          }
+        }
+      },
+      "at": "2026-10-26T22:49:03.920Z",
+      "shot": "browser-camera.jpg",
+      "capture": "audit/browser/recovery-events.jsonl"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "L11",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": [
+        {
+          "href": "evidence.html",
+          "h1": "Evidence",
+          "hash": ""
+        },
+        {
+          "href": "evidence.html",
+          "h1": "Evidence",
+          "hash": ""
+        },
+        {
+          "href": "evidence.html",
+          "h1": "Evidence",
+          "hash": ""
+        },
+        {
+          "href": "evidence.html#try",
+          "h1": "Evidence",
+          "hash": "#try"
+        },
+        {
+          "href": "evidence.html",
+          "h1": "Evidence",
+          "hash": ""
+        }
+      ],
+      "at": "2026-10-26T22:45:24.328Z",
+      "shot": "index-1280.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

@@ -73,7 +73,7 @@
     },
     "spirits": [
       {
-        "id": "sp_rak2xfkkgwx3",
+        "id": "sp_cobafh8ggtol",
         "name": "Table",
         "label": "table",
         "targetId": "mesh-18",
@@ -84,17 +84,17 @@
         "params": {
           "eyeOpen": 1,
           "eyeSmile": 0,
-          "pupil": 0.9999999999999998,
-          "lookX": 0.9665013635172855,
-          "lookY": 0.0000012563155564068962,
-          "browY": 2.944171392326892e-79,
-          "browTilt": -8.832514176980672e-80,
-          "mouthOpen": 9.092324601950586e-221,
-          "mouthWide": 0.49999999999999994,
-          "mouthRound": 1.2989035145643615e-220,
-          "smile": 0.24999999999999994,
-          "blush": 0.4499999999999997,
-          "squash": 1.5984714218299915e-41,
+          "pupil": 0.9999999999999999,
+          "lookX": 5.598471720639602e-17,
+          "lookY": 0.37190111416286636,
+          "browY": 1.0787823033962642e-79,
+          "browTilt": -3.2363469101887916e-80,
+          "mouthOpen": 5.467468433769872e-222,
+          "mouthWide": 0.5,
+          "mouthRound": 7.810669191099808e-222,
+          "smile": 0.24999999999999997,
+          "blush": 0.44999999999999973,
+          "squash": -1.072316779429319e-41,
           "wobble": 0,
           "reveal": 1
         },
@@ -154,7 +154,7 @@
         "anchorErrorCm": 0
       },
       {
-        "id": "sp_gh5huq2xoxg2",
+        "id": "sp_fhtxgaviwb7i",
         "name": "Table 2",
         "label": "table",
         "targetId": "mesh-19",
@@ -165,17 +165,17 @@
         "params": {
           "eyeOpen": 1,
           "eyeSmile": 0,
-          "pupil": 0.9999999999999998,
+          "pupil": 0.9999999999999999,
           "lookX": -0.15582492465751105,
           "lookY": 0.3685910813357822,
-          "browY": 1.343500604736162e-66,
-          "browTilt": -4.0305018142084856e-67,
-          "mouthOpen": 2.5384845262758034e-185,
-          "mouthWide": 0.49999999999999994,
-          "mouthRound": 3.6264064661082964e-185,
-          "smile": 0.24999999999999994,
-          "blush": 0.4499999999999997,
-          "squash": 3.1582911042454854e-35,
+          "browY": 3.560157258020286e-67,
+          "browTilt": -1.0680471774060862e-67,
+          "mouthOpen": 6.161605922761072e-187,
+          "mouthWide": 0.5,
+          "mouthRound": 8.802294175372962e-187,
+          "smile": 0.24999999999999997,
+          "blush": 0.44999999999999973,
+          "squash": -1.1486202100502205e-35,
           "wobble": 0,
           "reveal": 1
         },
@@ -235,7 +235,7 @@
         "anchorErrorCm": 0
       },
       {
-        "id": "sp_mhlyhtimn4cf",
+        "id": "sp_x2lqhhufxq4x",
         "name": "Table 3",
         "label": "table",
         "targetId": "mesh-20",
@@ -246,17 +246,17 @@
         "params": {
           "eyeOpen": 1,
           "eyeSmile": 0,
-          "pupil": 0.9999999999999998,
-          "lookX": -4.1033755037070524e-53,
-          "lookY": 0.3716450610713805,
-          "browY": 3.8083654900492334e-54,
-          "browTilt": -1.1425096470147705e-54,
-          "mouthOpen": 1.869159762062649e-150,
-          "mouthWide": 0.49999999999999994,
-          "mouthRound": 2.670228231518079e-150,
-          "smile": 0.24999999999999994,
-          "blush": 0.4499999999999997,
-          "squash": 4.346171736690991e-29,
+          "pupil": 0.9999999999999999,
+          "lookX": 2.0557402928744424e-11,
+          "lookY": 0.3716450610637405,
+          "browY": 1.663965536583605e-54,
+          "browTilt": -4.99189660975082e-55,
+          "mouthOpen": 1.8398316960042135e-151,
+          "mouthWide": 0.5,
+          "mouthRound": 2.6283309942917347e-151,
+          "smile": 0.24999999999999997,
+          "blush": 0.44999999999999973,
+          "squash": -8.677539397540792e-31,
           "wobble": 0,
           "reveal": 1
         },
@@ -316,7 +316,7 @@
         "anchorErrorCm": 0
       },
       {
-        "id": "sp_nzsi5fvvtrxq",
+        "id": "sp_8aezgjuxahcz",
         "name": "Table 4",
         "label": "table",
         "targetId": "mesh-21",
@@ -327,17 +327,17 @@
         "params": {
           "eyeOpen": 1,
           "eyeSmile": 0,
-          "pupil": 0.9999999999999998,
-          "lookX": -1.9225303940289057e-24,
-          "lookY": 0.36908060713909246,
-          "browY": 2.0785036217791905e-41,
-          "browTilt": -6.235510865337572e-42,
-          "mouthOpen": 8.614189194656252e-115,
-          "mouthWide": 0.49999999999999994,
-          "mouthRound": 1.2305984563794635e-114,
-          "smile": 0.24999999999999994,
-          "blush": 0.4499999999999996,
-          "squash": 7.520339801833232e-23,
+          "pupil": 0.9999999999999999,
+          "lookX": -0.9999999992597254,
+          "lookY": 2.732209762722198e-10,
+          "browY": 7.631138455098456e-42,
+          "browTilt": -2.2893415365295324e-42,
+          "mouthOpen": 5.209041383509274e-116,
+          "mouthWide": 0.5,
+          "mouthRound": 7.44148769072752e-116,
+          "smile": 0.24999999999999997,
+          "blush": 0.44999999999999973,
+          "squash": 1.3818387162729255e-23,
           "wobble": 0,
           "reveal": 1
         },
@@ -397,7 +397,7 @@
         "anchorErrorCm": 0
       },
       {
-        "id": "sp_g1tjw9ssxsek",
+        "id": "sp_cppdojfxiape",
         "name": "Table 5",
         "label": "table",
         "targetId": "mesh-22",
@@ -408,17 +408,17 @@
         "params": {
           "eyeOpen": 1,
           "eyeSmile": 0,
-          "pupil": 0.9999999999999998,
-          "lookX": -1.72373879697969e-7,
-          "lookY": 0.3716449970094795,
-          "browY": 5.92142244246211e-29,
-          "browTilt": -1.776426732738634e-29,
-          "mouthOpen": 6.4323020768923134e-80,
-          "mouthWide": 0.49999999999999994,
-          "mouthRound": 9.189002966989018e-80,
-          "smile": 0.24999999999999994,
-          "blush": 0.4499999999987317,
-          "squash": 9.301434844058202e-17,
+          "pupil": 0.9999999999999999,
+          "lookX": -0.00004690720975288102,
+          "lookY": 0.37162700838433504,
+          "browY": 3.0000576530196434e-29,
+          "browTilt": -9.000172959058919e-30,
+          "mouthOpen": 9.582299443107223e-81,
+          "mouthWide": 0.5,
+          "mouthRound": 1.3688999204438873e-80,
+          "smile": 0.24999999999999997,
+          "blush": 0.44999999999903334,
+          "squash": 3.696570254714312e-17,
           "wobble": 0,
           "reveal": 1
         },
@@ -478,7 +478,7 @@
         "anchorErrorCm": 0
       },
       {
-        "id": "sp_rarlnvt09zht",
+        "id": "sp_szrmfrdptfib",
         "name": "Table 6",
         "label": "table",
         "targetId": "mesh-23",
@@ -489,17 +489,17 @@
         "params": {
           "eyeOpen": 1,
           "eyeSmile": 0,
-          "pupil": 0.9999999999999997,
-          "lookX": -0.6131121950411927,
-          "lookY": 2.4723487079599154e-11,
-          "browY": 2.309482038340409e-16,
-          "browTilt": -6.928446115021231e-17,
-          "mouthOpen": 1.1570447758750643e-44,
-          "mouthWide": 0.49999999999999994,
-          "mouthRound": 1.6529211083929505e-44,
-          "smile": 0.24999999999999992,
-          "blush": 0.44999986201302766,
-          "squash": 1.1392846468154971e-10,
+          "pupil": 0.9999999999999998,
+          "lookX": -0.9998624035855358,
+          "lookY": 0.000043879319534754116,
+          "browY": 1.9387148345078482e-16,
+          "browTilt": -5.81614450352355e-17,
+          "mouthOpen": 7.088361689565146e-45,
+          "mouthWide": 0.5,
+          "mouthRound": 1.0126230985093071e-44,
+          "smile": 0.24999999999999994,
+          "blush": 0.4499998713392566,
+          "squash": 1.0267788503788602e-10,
           "wobble": 0,
           "reveal": 1
         },
@@ -661,7 +661,7 @@
     ],
     "saved": [
       {
-        "spiritId": "sp_rak2xfkkgwx3",
+        "spiritId": "sp_cobafh8ggtol",
         "label": "table",
         "name": "Table",
         "dims": [
@@ -684,7 +684,7 @@
         "room": "iwer:yadori_den"
       },
       {
-        "spiritId": "sp_gh5huq2xoxg2",
+        "spiritId": "sp_fhtxgaviwb7i",
         "label": "table",
         "name": "Table 2",
         "dims": [
@@ -707,7 +707,7 @@
         "room": "iwer:yadori_den"
       },
       {
-        "spiritId": "sp_mhlyhtimn4cf",
+        "spiritId": "sp_x2lqhhufxq4x",
         "label": "table",
         "name": "Table 3",
         "dims": [
@@ -730,7 +730,7 @@
         "room": "iwer:yadori_den"
       },
       {
-        "spiritId": "sp_nzsi5fvvtrxq",
+        "spiritId": "sp_8aezgjuxahcz",
         "label": "table",
         "name": "Table 4",
         "dims": [
@@ -753,7 +753,7 @@
         "room": "iwer:yadori_den"
       },
       {
-        "spiritId": "sp_g1tjw9ssxsek",
+        "spiritId": "sp_cppdojfxiape",
         "label": "table",
         "name": "Table 5",
         "dims": [
@@ -776,7 +776,7 @@
         "room": "iwer:yadori_den"
       },
       {
-        "spiritId": "sp_rarlnvt09zht",
+        "spiritId": "sp_szrmfrdptfib",
         "label": "table",
         "name": "Table 6",
         "dims": [
@@ -799,8 +799,8 @@
         "room": "iwer:yadori_den"
       }
     ],
-    "body": "Yadori\nSetup required (5)\nforget\nTable\ntable · 0.6 × 1.2 m\nforget\nTable 2\ntable · 0.6 × 1.2 m\nforget\nTable 3\ntable · 0.6 × 1.2 m\nforget\nTable 4\ntable · 0.6 × 1.2 m\nforget\nTable 5\ntable · 0.6 × 1.2 m\nforget\nTable 6\ntable · 0.6 × 1.2 m\nSpeaker\nTable\nTable 2\nTable 3\nTable 4\nTable 5\nTable 6\nto \nyou\nTable\nTable 2\nTable 3\nTable 4\nTable 5\nSay\nPuppet mode: you are the voice. Setup required for Muse Spark (MODEL_API_KEY). Lines are yours, spoken by Browser voice, not a Meta model.\nAt most 6 spirits (persistent anchors are limited); forget one first."
+    "body": "Yadori\nEmulated room (IWER), not your room\nSetup required (5)\nforget\nTable\ntable · 0.6 × 1.2 m\nforget\nTable 2\ntable · 0.6 × 1.2 m\nforget\nTable 3\ntable · 0.6 × 1.2 m\nforget\nTable 4\ntable · 0.6 × 1.2 m\nforget\nTable 5\ntable · 0.6 × 1.2 m\nforget\nTable 6\ntable · 0.6 × 1.2 m\nSpeaker\nTable\nTable 2\nTable 3\nTable 4\nTable 5\nTable 6\nto \nyou\nTable\nTable 2\nTable 3\nTable 4\nTable 5\nSay\nPuppet mode: you are the voice. Setup required for Muse Spark (MODEL_API_KEY). Lines are yours, spoken by Browser voice, not a Meta model.\nAt most 6 spirits (persistent anchors are limited); forget one first."
   },
   "shot": "xr-capacity.jpg",
-  "at": "2026-10-26T22:02:57.082Z"
+  "at": "2026-10-26T22:42:59.321Z"
 }

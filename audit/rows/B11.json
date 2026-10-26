@@ -1,0 +1,101 @@
+{
+  "id": "B11",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": {
+        "id": "sp_h0gaxl58kjqs",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "den-couch",
+        "awake": true,
+        "speaking": false,
+        "expression": "happy",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 0.5428806760709237,
+          "pupil": 0.9999999536917538,
+          "lookX": 0.9581330351313195,
+          "lookY": -0.2036032367022132,
+          "browY": 0.22353923422083155,
+          "browTilt": -0.09580251194059247,
+          "mouthOpen": 3.8521325945205323e-20,
+          "mouthWide": 0.49999999999999994,
+          "mouthRound": 5.503046563600754e-20,
+          "smile": 0.7290123281617318,
+          "blush": 0.600088938059832,
+          "squash": 0.06282477814401537,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095,
+          -2.64
+        ],
+        "size": 0.301,
+        "facePos": [
+          -0.0021568175247951263,
+          0.7095,
+          -2.622112876820282
+        ],
+        "faceDir": [
+          -0.1197122109635782,
+          0,
+          0.9928086354107784
+        ],
+        "pokes": 1,
+        "pets": 1,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "",
+            "text": "",
+            "shown": 0,
+            "glyph": "♥"
+          },
+          "corners": [
+            [
+              -0.46186089687908616,
+              0.8663423539219561,
+              -2.6620166406746164
+            ],
+            [
+              0.4538564408969471,
+              0.8663423539219561,
+              -2.55160004757408
+            ],
+            [
+              0.4575472618294959,
+              1.3264857876907854,
+              -2.582209112965948
+            ],
+            [
+              -0.45817007594653736,
+              1.3264857876907854,
+              -2.6926257060664844
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      },
+      "at": "2026-10-26T22:45:49.301Z",
+      "shot": "desktop-awake.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "L13",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": {
+        "skip": {
+          "text": "Skip to content",
+          "rect": {
+            "x": 16,
+            "y": 16,
+            "width": 142.59375,
+            "height": 42.09375,
+            "top": 16,
+            "right": 158.59375,
+            "bottom": 58.09375,
+            "left": 16
+          }
+        },
+        "main": "main",
+        "focus": {
+          "tag": "A",
+          "outline": "3px"
+        }
+      },
+      "at": "2026-10-26T22:45:24.353Z",
+      "shot": "index-1280.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    },
+    {
+      "ok": true,
+      "source": "audit/browser/keyboard.json",
+      "detail": {
+        "skip": {
+          "text": "Skip to content",
+          "width": 142.59375
+        },
+        "main": "main",
+        "cta": {
+          "href": "#try",
+          "outline": "3px"
+        },
+        "hash": "#try",
+        "evidence": {
+          "href": "evidence.html",
+          "outline": "3px"
+        },
+        "h1": "Evidence",
+        "events": []
+      },
+      "at": "2026-10-26T22:48:56.216Z",
+      "shot": "keyboard.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "L08",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": {
+        "sw": 1280,
+        "w": 1280
+      },
+      "at": "2026-10-26T22:45:18.404Z",
+      "shot": "index-1280.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

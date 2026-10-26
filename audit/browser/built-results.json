@@ -48,7 +48,7 @@
         }
       }
     },
-    "at": "2026-10-26T21:43:51.913Z",
+    "at": "2026-10-26T22:48:59.067Z",
     "shot": "built-app.jpg"
   },
   {
@@ -63,13 +63,13 @@
       },
       {
         "kind": "response",
-        "url": "http://127.0.0.1:8440/assets/index-CMd4cvWs.css",
+        "url": "http://127.0.0.1:8440/assets/index-d8fG6OHi.css",
         "status": 200,
         "type": "text/css"
       },
       {
         "kind": "response",
-        "url": "http://127.0.0.1:8440/assets/index-BUzO3yMX.js",
+        "url": "http://127.0.0.1:8440/assets/index-CsYVkFOB.js",
         "status": 200,
         "type": "text/javascript"
       },
@@ -99,15 +99,15 @@
       },
       {
         "kind": "response",
-        "url": "http://127.0.0.1:8440/api/status",
+        "url": "http://127.0.0.1:8440/assets/index-CMmj0avE-iBFrHAGa.js",
         "status": 200,
-        "type": "application/json"
+        "type": "text/javascript"
       },
       {
         "kind": "response",
-        "url": "http://127.0.0.1:8440/assets/index-CMmj0avE-m5FMlMXo.js",
+        "url": "http://127.0.0.1:8440/api/status",
         "status": 200,
-        "type": "text/javascript"
+        "type": "application/json"
       },
       {
         "kind": "response",
@@ -117,21 +117,9 @@
       },
       {
         "kind": "response",
-        "url": "https://cdn.fontshare.com/wf/LAFFD4SDUCDVQEXFPDC7C53EQ4ZELWQI/PXCT3G6LO6ICM5I3NTYENYPWJAECAWDD/GHM6WVH6MILNYOOCXHXB5GTSGNTMGXZR.woff2",
-        "status": 200,
-        "type": "font/woff2"
-      },
-      {
-        "kind": "response",
-        "url": "blob:http://127.0.0.1:8440/913ce2a0-1ef9-4e1b-b475-9ebca6c2a6f0",
+        "url": "blob:http://127.0.0.1:8440/1f57c184-ebb9-4857-8fc3-5535050b8a4b",
         "status": 200,
         "type": "text/plain"
-      },
-      {
-        "kind": "response",
-        "url": "https://cdn.fontshare.com/wf/P2LQKHE6KA6ZP4AAGN72KDWMHH6ZH3TA/ZC32TK2P7FPS5GFTL46EU6KQJA24ZYDB/7AHDUZ4A7LFLVFUIFSARGIWCRQJHISQP.woff2",
-        "status": 200,
-        "type": "font/woff2"
       },
       {
         "kind": "response",
@@ -141,37 +129,49 @@
       },
       {
         "kind": "response",
-        "url": "blob:http://127.0.0.1:8440/d8df9e48-b6cb-4586-9d83-1c5c66b20b62",
+        "url": "https://cdn.fontshare.com/wf/LAFFD4SDUCDVQEXFPDC7C53EQ4ZELWQI/PXCT3G6LO6ICM5I3NTYENYPWJAECAWDD/GHM6WVH6MILNYOOCXHXB5GTSGNTMGXZR.woff2",
+        "status": 200,
+        "type": "font/woff2"
+      },
+      {
+        "kind": "response",
+        "url": "https://cdn.fontshare.com/wf/P2LQKHE6KA6ZP4AAGN72KDWMHH6ZH3TA/ZC32TK2P7FPS5GFTL46EU6KQJA24ZYDB/7AHDUZ4A7LFLVFUIFSARGIWCRQJHISQP.woff2",
+        "status": 200,
+        "type": "font/woff2"
+      },
+      {
+        "kind": "response",
+        "url": "blob:http://127.0.0.1:8440/039fd743-1cad-45f4-81d0-020d0742da43",
         "status": 200,
         "type": "text/javascript"
       },
       {
         "kind": "response",
-        "url": "blob:http://127.0.0.1:8440/4b111238-2015-4c14-86ca-f6e41a3b120b",
+        "url": "blob:http://127.0.0.1:8440/b0cc37e5-bdec-495a-a85d-262fd8addd4b",
         "status": 200,
         "type": "text/javascript"
       },
       {
         "kind": "response",
-        "url": "blob:http://127.0.0.1:8440/08d067e4-921a-4ae5-b3e9-74ee6c255553",
+        "url": "blob:http://127.0.0.1:8440/ec969d78-3186-41b6-b294-9205b7c1df2a",
         "status": 200,
         "type": "text/javascript"
       },
       {
         "kind": "response",
-        "url": "blob:http://127.0.0.1:8440/8b01ba05-81e2-41fa-8355-3ea8c43c86aa",
+        "url": "blob:http://127.0.0.1:8440/bb97ddf1-8abb-40ac-8e5d-370d53c87f6c",
         "status": 200,
         "type": "text/javascript"
       },
       {
         "kind": "response",
-        "url": "blob:http://127.0.0.1:8440/41164ce0-3c20-4b62-8ad1-0a9436c37fff",
+        "url": "blob:http://127.0.0.1:8440/13465e8d-eeb4-48f3-9703-c5f49eb89003",
         "status": 200,
         "type": "text/javascript"
       },
       {
         "kind": "response",
-        "url": "blob:http://127.0.0.1:8440/d5d40732-5c32-4061-8625-11ffc02eccef",
+        "url": "blob:http://127.0.0.1:8440/b354d18e-ef5e-4e97-90c0-f5a2ff4079b7",
         "status": 200,
         "type": "text/javascript"
       },
@@ -182,7 +182,7 @@
         "type": "application/json"
       }
     ],
-    "at": "2026-10-26T21:43:51.913Z",
+    "at": "2026-10-26T22:48:59.067Z",
     "shot": "built-app.jpg"
   }
 ]

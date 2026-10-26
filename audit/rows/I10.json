@@ -1,0 +1,27 @@
+{
+  "id": "I10",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/server/results.json",
+      "detail": {
+        "files": [
+          "sp_60nshnioqrnq",
+          "sp_qvy79bjaerlu",
+          "sp_tdnlliyxv1zo",
+          "sp_60nshnioqrnq/memory.json",
+          "sp_60nshnioqrnq/meta.json",
+          "sp_qvy79bjaerlu/memory.json",
+          "sp_qvy79bjaerlu/meta.json",
+          "sp_tdnlliyxv1zo/memory.json",
+          "sp_tdnlliyxv1zo/meta.json"
+        ],
+        "runDirectoryExists": false
+      },
+      "at": "2026-10-26T22:39:26.004Z",
+      "capture": "audit/server/network.json"
+    }
+  ]
+}

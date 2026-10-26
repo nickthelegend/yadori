@@ -1,0 +1,22 @@
+{
+  "id": "U13",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/commands/rig.txt",
+      "detail": {
+        "command": [
+          "pnpm",
+          "--filter",
+          "@yadori/rig",
+          "test"
+        ],
+        "unitSource": "Current package tests exercised; logs include every named test file and counts.",
+        "exitCode": 0
+      },
+      "at": "2026-10-26T22:39:17.479Z"
+    }
+  ]
+}

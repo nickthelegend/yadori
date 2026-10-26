@@ -41,7 +41,7 @@
     {
       "name": "flick -> grumpy + wobble",
       "ok": true,
-      "detail": "flicks 1 expr grumpy wobble -0.24"
+      "detail": "flicks 1 expr grumpy wobble 0.24"
     },
     {
       "name": "puppet line moves the mouth",
@@ -81,7 +81,7 @@
     {
       "name": "compose switches to \"reply as Lamp\"",
       "ok": true,
-      "detail": "Reply as Lamp (you are the voice)\u2026"
+      "detail": "Reply as Lamp (you are the voice)…"
     },
     {
       "name": "lamp replied",
@@ -107,10 +107,10 @@
   "perf": {
     "frames": 600,
     "cpuMs": {
-      "p50": 2.2999999970197678,
-      "p95": 3.1000000089406967,
-      "max": 3.4000000059604645,
-      "mean": 1.8560000002880892
+      "p50": 2.300000011920929,
+      "p95": 3.2000000178813934,
+      "max": 4.199999988079071,
+      "mean": 1.88199999983112
     },
     "drawCalls": {
       "p50": 103,
@@ -124,5 +124,5 @@
     "xrFrames": 0,
     "gl": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)"
   },
-  "at": "2026-10-26T22:16:43.231Z"
+  "at": "2026-10-26T22:45:04.398Z"
 }

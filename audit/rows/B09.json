@@ -1,0 +1,31 @@
+{
+  "id": "B09",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": {
+        "min": 0.009374999751649571,
+        "max": 1,
+        "finite": true
+      },
+      "at": "2026-10-26T22:45:46.743Z",
+      "shot": "desktop-awake.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    },
+    {
+      "ok": true,
+      "source": "audit/browser/focused-results.json",
+      "detail": {
+        "min": 0.02291666654249088,
+        "max": 1,
+        "finite": true
+      },
+      "at": "2026-10-26T22:48:07.954Z",
+      "shot": "focused.jpg",
+      "capture": "audit/browser/focused-events.jsonl"
+    }
+  ]
+}

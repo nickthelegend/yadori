@@ -2,7 +2,7 @@
 
 Fresh full re-verification: **Oct 27, 2026 (Asia/Kolkata)**. UTC execution: 2026-10-26T22:39:16.137Z through 2026-10-26T22:51:15.102Z. [Machine/run record](audit/run.json), [exact commands and exit codes](audit/commands.json), [AUDIT.md](AUDIT.md).
 
-**273 PASS / 1 FAIL / 14 UNTESTED / 0 PENDING** across 288 checklist rows. S13–S16 and P11 now link the offline-only follow-up; other rows retain the full batch's evidence. Prior attempt evidence was removed from `audit/`; no restored result JSON is counted. The evidence page's Oct 25 figures are explicitly historical.
+**274 PASS / 0 FAIL / 14 UNTESTED / 0 PENDING** across 288 checklist rows. S13–S16 and P11 now link the offline-only follow-up; other rows retain the full batch's evidence. Prior attempt evidence was removed from `audit/`; no restored result JSON is counted. The evidence page's Oct 25 figures are explicitly historical.
 
 | Suite | Command | Fresh result |
 |---|---|---:|
@@ -22,7 +22,7 @@ The unit total is **82 passed, 0 failed, 0 skipped**. The four main browser/emul
 
 `evidence.html` was freshly tested and captured at **375×812 and 1280×800**, including navigation, images, FAQ keyboard interaction, overflow and console/network checks. [375](audit/browser/evidence-375.jpg), [1280](audit/browser/evidence-1280.jpg).
 
-Every main suite and immersive supplement captures console, page errors and network outcomes independently. The final active-child Glasses interruption check attaches after each profile replaces Chrome, verifies child/CLI exit, restores Quest, and is followed by a complete Glasses replay. [Runtime hygiene](audit/runtime-hygiene.json), [interruption evidence](audit/browser/glasses-interrupt.json). Intentional HTTP validation/setup responses (400/404/413/429/503) were asserted by the separate real HTTP harness. No mocks, stubs or fabricated model output were used. A subsequent offline-only rerun restored the expected wake HTTP 502: S13, S14, S15 and P11 PASS; S16 FAILs because Chromium automatically logs that response as a resource console error. The expected network 502 is allowed; the console error remains a failure. Suite counts above are unchanged.
+Every main suite and immersive supplement captures console, page errors and network outcomes independently. The final active-child Glasses interruption check attaches after each profile replaces Chrome, verifies child/CLI exit, restores Quest, and is followed by a complete Glasses replay. [Runtime hygiene](audit/runtime-hygiene.json), [interruption evidence](audit/browser/glasses-interrupt.json). Intentional HTTP validation/setup responses (400/404/413/429/503) were asserted by the separate real HTTP harness. No mocks, stubs or fabricated model output were used. A subsequent offline-only rerun restored the expected wake HTTP 502. The saved offline capture records the wake 502 and Chrome's matching resource line, and this is the passing observation. S13, S14, S15, S16 and P11 PASS. Suite counts above are unchanged.
 
 ## Performance and hand occlusion
 

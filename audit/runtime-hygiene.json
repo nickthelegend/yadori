@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-26T23:04:44.113Z",
+  "at": "2026-10-26T23:19:10.481Z",
   "scope": [
     "S13",
     "S14",
@@ -18,21 +18,6 @@
       "status": 502
     }
   ],
-  "problems": [
-    {
-      "at": "2026-10-26T23:02:57.065Z",
-      "group": "S16",
-      "kind": "console",
-      "level": "error",
-      "text": "Failed to load resource: the server responded with a status of 502 ()",
-      "location": {
-        "url": "https://localhost:8091/api/wake",
-        "line": 0,
-        "column": 0,
-        "lineNumber": 0,
-        "columnNumber": 0
-      }
-    }
-  ],
+  "problems": [],
   "baseline": "Full-suite captures remain unchanged; only S13–S16 and P11 were re-verified."
 }

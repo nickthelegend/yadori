@@ -1,10 +1,10 @@
 {
   "id": "S16",
-  "status": "FAIL",
+  "status": "PASS",
   "runStartedAt": "2026-10-26T23:02:49.230Z",
   "observations": [
     {
-      "ok": false,
+      "ok": true,
       "source": "audit/browser/offline-502/results.json",
       "detail": {
         "waking": null,

@@ -353,18 +353,6 @@
     "log": "commands/silent-browser.txt"
   },
   {
-    "name": "offline-recovery",
-    "command": [
-      "node",
-      "e2e/audit-recovery.mjs"
-    ],
-    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
-    "startedAt": "2026-10-26T22:49:26.170Z",
-    "endedAt": "2026-10-26T22:50:04.131Z",
-    "exitCode": 0,
-    "log": "commands/offline-recovery.txt"
-  },
-  {
     "name": "glasses-interrupt",
     "command": [
       "node",
@@ -389,5 +377,24 @@
     "endedAt": "2026-10-26T22:51:12.307Z",
     "exitCode": 0,
     "log": "commands/glasses.txt"
+  },
+  {
+    "name": "offline-recovery-502",
+    "command": [
+      "node",
+      "e2e/audit-offline-502.mjs"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+    "startedAt": "2026-10-26T23:02:49.230Z",
+    "endedAt": "2026-10-26T23:03:26.677Z",
+    "exitCode": 1,
+    "rows": [
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "P11"
+    ],
+    "log": "browser/offline-502/results.json"
   }
 ]

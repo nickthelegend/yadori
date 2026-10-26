@@ -1,5 +1,8 @@
+import {isRuntimeFailure,isExpectedS16Response} from './offline-hygiene.mjs';
+import {reportOffline502} from './report-offline-502.mjs';
 // Build the checklist only from fresh assertions produced by audit-final.mjs.
 import{readFileSync,writeFileSync,readdirSync,mkdirSync,existsSync,statSync,renameSync,rmSync}from'node:fs';import{join,resolve}from'node:path';import{createHash}from'node:crypto';import{execFileSync}from'node:child_process';import sharp from'sharp';
+if(process.argv.includes('--offline-only'))process.exit(reportOffline502()?0:1);
 const run=JSON.parse(readFileSync('audit/run.json')),start=run.startedAt,byId=new Map();
 const files=dir=>readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?files(join(dir,e.name)):[join(dir,e.name)]);
 for(const p of files('audit/commands'))if(p.endsWith('.log'))renameSync(p,p.slice(0,-4)+'.txt');
@@ -26,7 +29,7 @@ const directFiles={
 'audit/browser/camera-results.json':'audit/browser/recovery-events.jsonl',
 'audit/browser/storage-denied-results.json':'audit/browser/recovery-events.jsonl',
 'audit/browser/silent-results.json':'audit/browser/recovery-events.jsonl',
-'audit/browser/offline-results.json':'audit/browser/recovery-events.jsonl',
+[existsSync('audit/browser/offline-502/results.json')?'audit/browser/offline-502/results.json':'audit/browser/offline-results.json']:existsSync('audit/browser/offline-502/results.json')?'audit/browser/offline-502/events.jsonl':'audit/browser/recovery-events.jsonl',
 };
 for(const[source,capture]of Object.entries(directFiles)){if(!existsSync(source))continue;const data=JSON.parse(readFileSync(source));for(const r of Array.isArray(data)?data:[data])if(r.id)add(r.id,r.ok,source,r.detail??r,r.at,r.shot,capture);}
 const read=p=>JSON.parse(readFileSync(p)),quest=read('audit/browser/quest-results.json'),glasses=read('audit/browser/glasses-results.json'),browser=read('audit/browser/browser-results.json'),responsive=read('audit/browser/responsive-results.json');
@@ -50,8 +53,10 @@ const ready=read('audit/browser/readiness.json');add('R05',ready.status.data.sta
 add('R10',cleanup.alive.length===0&&cleanup.slotReleased&&cleanup.configDevice==='metaQuest3'&&!cleanup.error,'audit/cleanup.json',cleanup,cleanup.at);
 // Fail the whole report if a captured unexpected runtime error survived.
 const problems=[];
-for(const p of files('audit/browser').filter(p=>p.endsWith('-network.json'))){const j=read(p);if(j.errors?.length)problems.push({source:p,errors:j.errors});}
-for(const p of files('audit/browser').filter(p=>/events\.jsonl?$/.test(p))){let es;if(p.endsWith('.jsonl'))es=readFileSync(p,'utf8').trim().split('\n').filter(Boolean).map(l=>JSON.parse(l));else es=read(p);for(const e of es){const kind=e.kind??e.type;if(kind==='pageerror'||kind==='requestfailed'||kind==='runner-error'||kind==='console'&&e.level==='error'||kind==='response'&&e.status>=400)problems.push({source:p,event:e});}}
+const offline502Results=existsSync('audit/browser/offline-502/results.json')?read('audit/browser/offline-502/results.json'):[];
+const s16Proof=offline502Results.find(r=>r.id==='S16');
+for(const p of files('audit/browser').filter(p=>p.endsWith('-network.json'))){const j=read(p);const errors=(j.errors??[]).filter(e=>!isExpectedS16Response(e,s16Proof,p));if(errors.length)problems.push({source:p,errors});}
+for(const p of files('audit/browser').filter(p=>/events\.jsonl?$/.test(p))){let es;if(p.endsWith('.jsonl'))es=readFileSync(p,'utf8').trim().split('\n').filter(Boolean).map(l=>JSON.parse(l));else es=read(p);for(const e of es){if(isRuntimeFailure(e,s16Proof,p))problems.push({source:p,event:e});}}
 writeFileSync('audit/runtime-hygiene.json',JSON.stringify({at:new Date().toISOString(),problems},null,2));
 if(problems.length)throw Error('Runtime hygiene failed: '+JSON.stringify(problems).slice(0,600));
 // Every screenshot retained is a current JPEG/WebP <=200KB. Package-runner PNGs
@@ -69,7 +74,6 @@ else if(!observations.length){status='FAIL';fail++;missing.push(id);}
 else{status=observations.every(x=>x.ok)?'PASS':'FAIL';if(status==='PASS')pass++;else fail++;}
 const evidence={id,status,runStartedAt:start,observations};writeFileSync('audit/rows/'+id+'.json',JSON.stringify(evidence,null,2));cells[3]=status;cells[4]=(dependency?dependency+'; ':'')+`[This run](audit/rows/${id}.json)`;
 const shots=observations.map(o=>o.shot).filter(x=>x&&existsSync('audit/browser/'+x));if(shots[0])cells[4]+=` · [UI](audit/browser/${shots[0]})`;
-if(id==='S16'){cells[2]=cells[2].replace('Record expected 502 separately.','The reachable proxy reports its offline dependency explicitly in JSON; no browser resource error.');cells[5]='Proxy returns an explicit offline error envelope; client treats it as failure, labels the local wake and recovers without a console error.';}
 if(id==='Q35'){cells[2]=cells[2].replace('Current docs say depth occlusion is unbuilt: missing implementation is a gap to record, never an inferred pass or hardware proof.','Measure the actual skinned hand depth surface in Chrome; this is emulator evidence, never physical-headset proof.');cells[5]='Replaced the four-pixel outline sample with a frozen rendered-layer comparison against the actual hand surface; original materials restored. IWSDK already writes hand depth.';}
 if(['A16','A17','A18','A57'].includes(id))cells[5]='Validate request root, finite positive dimensions and room context before persistence; null say text returns controlled 400.';
 if(id==='A52')cells[5]='Require the resolved static path to begin with dist plus a path separator; sibling-prefix escape rejected.';

@@ -1,0 +1,5 @@
+961c038128d5b92800f71f57edcedfbc7517cd1c3c7c183fd040d274f6e8a23c  packages/app/vite.config.ts
+ab40a3076038892df14932ebd22fb897489fc2bd8034933010ee6bd4b51afb2d  e2e/audit-report.mjs
+87bdc1ea5e03d8037bf683773cee2ba740f9a62fcaaaf24ed47eff12bb50dbad  e2e/offline-hygiene.mjs
+ee83cc1e588c5109163944579f9ddf148b9c8d73002a71d6c3e193ff9060335d  e2e/report-offline-502.mjs
+e0a1cb575a6263283603f74d4594f384fc2bca8e005c1a9f7d6ee6c8221306c3  e2e/audit-offline-502.mjs

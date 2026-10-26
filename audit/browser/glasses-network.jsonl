@@ -1,0 +1,18 @@
+{"at":"2026-10-26T22:50:47.085Z","kind":"capture-start","suite":"glasses"}
+{"at":"2026-10-26T22:50:47.368Z","kind":"response","url":"https://localhost:8091/?room=den","status":200,"method":"GET"}
+{"at":"2026-10-26T22:50:47.504Z","kind":"console","level":"log","text":"[IWSDK Dev] Configuration: {device: metaVRGlasses, activation: always, verbose: false, sem: Object, ai: Object}"}
+{"at":"2026-10-26T22:50:47.582Z","kind":"console","level":"log","text":"                                                 \n▄▄▄▄▄▄  ▄▄      ▄▄   ▄▄▄▄    ▄▄▄▄▄     ▄▄   ▄▄▄ \n▀▀██▀▀  ██      ██ ▄█▀▀▀▀█   ██▀▀▀██   ██  ██▀  \n  ██    ▀█▄ ██ ▄█▀ ██▄       ██    ██  ██▄██    \n  ██     ██ ██ ██   ▀████▄   ██    ██  █████    \n  ██     ███▀▀███       ▀██  ██    ██  ██  ██▄  \n▄▄██▄▄   ███  ███  █▄▄▄▄▄█▀  ██▄▄▄██   ██   ██▄ \n▀▀▀▀▀▀   ▀▀▀  ▀▀▀   ▀▀▀▀▀    ▀▀▀▀▀     ▀▀    ▀▀                                                \n===============================================\nImmersive Web SDK v1.1.0-rc.2\nThree.js r185\nEliCS v3.4.2"}
+{"at":"2026-10-26T22:50:48.708Z","kind":"response","url":"https://localhost:8091/api/status","status":200,"method":"GET"}
+{"at":"2026-10-26T22:50:54.868Z","kind":"console","level":"info","text":"[iwsdk][gaze] 'gaze-tracking' granted for this session. {enabledFeatures: Array(10)}"}
+{"at":"2026-10-26T22:50:54.868Z","kind":"console","level":"info","text":"[iwsdk][gaze] gaze XRInputSource appeared. {profiles: Array(1), handedness: none}"}
+{"at":"2026-10-26T22:50:54.868Z","kind":"console","level":"info","text":"[iwsdk][gaze] emulated gaze pose is valid (synthetic, not eye tracking)."}
+{"at":"2026-10-26T22:50:54.868Z","kind":"console","level":"info","text":"[iwsdk][gaze] no ray-interactable targets are available, so the gaze cone has nothing to hit."}
+{"at":"2026-10-26T22:50:56.731Z","kind":"response","url":"https://localhost:8091/api/wake","status":200,"method":"POST"}
+{"at":"2026-10-26T22:50:56.877Z","kind":"console","level":"info","text":"[iwsdk][gaze] emulated gaze still points where the head does; aim it (for example with xr look-at on \"gaze\") to test targeting."}
+{"at":"2026-10-26T22:51:03.669Z","kind":"response","url":"https://localhost:8091/api/status","status":200,"method":"GET"}
+{"at":"2026-10-26T22:51:05.618Z","kind":"console","level":"warning","text":"[iwsdk][gaze] the gaze XRInputSource disappeared; ordinary hand/controller far targeting is now active."}
+{"at":"2026-10-26T22:51:06.779Z","kind":"response","url":"https://localhost:8091/api/wake","status":200,"method":"POST"}
+{"at":"2026-10-26T22:51:08.203Z","kind":"console","level":"info","text":"[iwsdk][gaze] gaze XRInputSource appeared. {profiles: Array(1), handedness: none}"}
+{"at":"2026-10-26T22:51:08.204Z","kind":"console","level":"info","text":"[iwsdk][gaze] emulated gaze pose is valid (synthetic, not eye tracking)."}
+{"at":"2026-10-26T22:51:08.204Z","kind":"console","level":"warning","text":"THREE.WebGLRenderer: Can't change size while VR device is presenting."}
+{"at":"2026-10-26T22:51:08.355Z","kind":"capture-end","responses":389,"errorCount":0}

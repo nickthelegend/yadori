@@ -1,0 +1,18 @@
+
+> yadori@ e2e:responsive /Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4
+> node e2e/responsive.mjs
+
+PASS  landing 375px: no horizontal scroll  (375 <= 375)
+PASS  landing 375px: hero + images load
+PASS  landing respects reduced motion (card does not flip)  (none)
+PASS  landing 375px: no console errors
+PASS  landing 1280px: no horizontal scroll  (1280 <= 1280)
+PASS  landing 1280px: hero + images load
+PASS  landing 1280px: no console errors
+PASS  app 375px: no horizontal scroll  (375 <= 375)
+PASS  app on a phone: diorama only (no emulator panel, no XR button)  ({"iwer":false,"xrButton":false})
+PASS  app 375px: tapping the couch wakes it
+PASS  app 375px: compose strip fits the screen
+PASS  app 375px: no console errors
+
+12 passed, 0 failed

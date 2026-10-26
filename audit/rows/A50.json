@@ -1,0 +1,142 @@
+{
+  "id": "A50",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/built-results.json",
+      "detail": [
+        {
+          "kind": "response",
+          "url": "http://127.0.0.1:8440/",
+          "status": 200,
+          "type": "text/html"
+        },
+        {
+          "kind": "response",
+          "url": "http://127.0.0.1:8440/assets/index-d8fG6OHi.css",
+          "status": 200,
+          "type": "text/css"
+        },
+        {
+          "kind": "response",
+          "url": "http://127.0.0.1:8440/assets/index-CsYVkFOB.js",
+          "status": 200,
+          "type": "text/javascript"
+        },
+        {
+          "kind": "response",
+          "url": "https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap",
+          "status": 200,
+          "type": "text/css; charset=utf-8"
+        },
+        {
+          "kind": "response",
+          "url": "https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;600&display=swap",
+          "status": 200,
+          "type": "text/css; charset=utf-8"
+        },
+        {
+          "kind": "response",
+          "url": "http://127.0.0.1:8440/assets/sunlit_living_room-1m7CU_6o-CeTIwFrh.js",
+          "status": 200,
+          "type": "text/javascript"
+        },
+        {
+          "kind": "response",
+          "url": "http://127.0.0.1:8440/scenes/main.iwsdk.scene.json",
+          "status": 200,
+          "type": "application/json"
+        },
+        {
+          "kind": "response",
+          "url": "http://127.0.0.1:8440/assets/index-CMmj0avE-iBFrHAGa.js",
+          "status": 200,
+          "type": "text/javascript"
+        },
+        {
+          "kind": "response",
+          "url": "http://127.0.0.1:8440/api/status",
+          "status": 200,
+          "type": "application/json"
+        },
+        {
+          "kind": "response",
+          "url": "https://fonts.gstatic.com/s/atkinsonhyperlegiblemono/v8/tss4AoFBci4C4gvhPXrt3wjT1MqSzhA4t7IIcncBiwKthFyDHi0j.woff2",
+          "status": 200,
+          "type": "font/woff2"
+        },
+        {
+          "kind": "response",
+          "url": "blob:http://127.0.0.1:8440/1f57c184-ebb9-4857-8fc3-5535050b8a4b",
+          "status": 200,
+          "type": "text/plain"
+        },
+        {
+          "kind": "response",
+          "url": "http://127.0.0.1:8440/rooms/yadori_den.glts",
+          "status": 200,
+          "type": "text/plain"
+        },
+        {
+          "kind": "response",
+          "url": "https://cdn.fontshare.com/wf/LAFFD4SDUCDVQEXFPDC7C53EQ4ZELWQI/PXCT3G6LO6ICM5I3NTYENYPWJAECAWDD/GHM6WVH6MILNYOOCXHXB5GTSGNTMGXZR.woff2",
+          "status": 200,
+          "type": "font/woff2"
+        },
+        {
+          "kind": "response",
+          "url": "https://cdn.fontshare.com/wf/P2LQKHE6KA6ZP4AAGN72KDWMHH6ZH3TA/ZC32TK2P7FPS5GFTL46EU6KQJA24ZYDB/7AHDUZ4A7LFLVFUIFSARGIWCRQJHISQP.woff2",
+          "status": 200,
+          "type": "font/woff2"
+        },
+        {
+          "kind": "response",
+          "url": "blob:http://127.0.0.1:8440/039fd743-1cad-45f4-81d0-020d0742da43",
+          "status": 200,
+          "type": "text/javascript"
+        },
+        {
+          "kind": "response",
+          "url": "blob:http://127.0.0.1:8440/b0cc37e5-bdec-495a-a85d-262fd8addd4b",
+          "status": 200,
+          "type": "text/javascript"
+        },
+        {
+          "kind": "response",
+          "url": "blob:http://127.0.0.1:8440/ec969d78-3186-41b6-b294-9205b7c1df2a",
+          "status": 200,
+          "type": "text/javascript"
+        },
+        {
+          "kind": "response",
+          "url": "blob:http://127.0.0.1:8440/bb97ddf1-8abb-40ac-8e5d-370d53c87f6c",
+          "status": 200,
+          "type": "text/javascript"
+        },
+        {
+          "kind": "response",
+          "url": "blob:http://127.0.0.1:8440/13465e8d-eeb4-48f3-9703-c5f49eb89003",
+          "status": 200,
+          "type": "text/javascript"
+        },
+        {
+          "kind": "response",
+          "url": "blob:http://127.0.0.1:8440/b354d18e-ef5e-4e97-90c0-f5a2ff4079b7",
+          "status": 200,
+          "type": "text/javascript"
+        },
+        {
+          "kind": "response",
+          "url": "http://127.0.0.1:8440/api/status",
+          "status": 200,
+          "type": "application/json"
+        }
+      ],
+      "at": "2026-10-26T22:48:59.067Z",
+      "shot": "built-app.jpg",
+      "capture": "audit/browser/built-events.json"
+    }
+  ]
+}

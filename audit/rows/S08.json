@@ -1,0 +1,26 @@
+{
+  "id": "S08",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": "Yadori\n宿り · wake up your room\nBrowser diorama, not your room\nMuse Spark · Setup required: MODEL_API_KEY\nMuse Image · Setup required: MODEL_API_KEY\nVoice in · Setup required: MODEL_API_KEY\nSAM 3.1 · Setup required: MODEL_API_KEY\nMMS-TTS · Setup required: fetch-models\nVoice out · Browser voice, not a Meta model\nBINDER\n1 / 6\nforget\nCouch\ncouch · 2.0 × 0.9 m\nBuilt-in face, not generatedDrawn from the label\nNo persona · Setup required for Muse Spark\nvoice browser\n0 memories\n0 lines\nfirst woke 2026-10-27\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nTap, rub or swipe its face · wake a second one and they gossip\nSpeaker\nCouch\nSay\nPuppet mode: you are the voice. Setup required for Muse Spark (MODEL_API_KEY). Lines are yours, spoken by Browser voice, not a Meta model.\nEnter mixed reality (emulated)",
+      "at": "2026-10-26T22:45:56.400Z",
+      "shot": "desktop-awake.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    },
+    {
+      "ok": true,
+      "source": "audit/browser/inputs-results.json",
+      "detail": {
+        "visible": true,
+        "text": "Built-in face · not generated"
+      },
+      "at": "2026-10-26T22:48:13.910Z",
+      "shot": "inputs.jpg",
+      "capture": "audit/browser/inputs-events.json"
+    }
+  ]
+}

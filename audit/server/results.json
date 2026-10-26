@@ -1,0 +1,2426 @@
+[
+  {
+    "id": "A01",
+    "ok": true,
+    "detail": {
+      "at": "2026-10-26T22:39:25.324Z",
+      "method": "GET",
+      "path": "/api/status",
+      "status": 200,
+      "headers": {
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-type": "application/json",
+        "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+        "keep-alive": "timeout=5",
+        "transfer-encoding": "chunked"
+      },
+      "body": {
+        "gateway": "yadori",
+        "spark": {
+          "ready": false,
+          "model": "muse-spark-1.3",
+          "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        },
+        "wonder": {
+          "ready": false,
+          "model": "muse-wonder-1.0",
+          "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        },
+        "image": {
+          "ready": false,
+          "model": "muse-image-1.0",
+          "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        },
+        "transcribe": {
+          "ready": false,
+          "model": "muse-voice-transcribe-1.0",
+          "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        },
+        "sam3": {
+          "ready": false,
+          "model": "sam-3.1",
+          "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        },
+        "tts": {
+          "ready": false,
+          "setup": "Setup required: run scripts/fetch-models.sh (MMS-TTS weights, CC-BY-NC-4.0)",
+          "model": "facebook/mms-tts-eng",
+          "license": "CC-BY-NC-4.0"
+        },
+        "budget": {
+          "cap_usd": 3,
+          "spent_usd": 0
+        }
+      }
+    },
+    "at": "2026-10-26T22:39:25.324Z"
+  },
+  {
+    "id": "A02",
+    "ok": true,
+    "detail": {
+      "ready": false,
+      "model": "muse-spark-1.3",
+      "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+    },
+    "at": "2026-10-26T22:39:25.324Z"
+  },
+  {
+    "id": "A03",
+    "ok": true,
+    "detail": {
+      "ready": false,
+      "model": "muse-wonder-1.0",
+      "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+    },
+    "at": "2026-10-26T22:39:25.325Z"
+  },
+  {
+    "id": "A04",
+    "ok": true,
+    "detail": {
+      "ready": false,
+      "model": "muse-image-1.0",
+      "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+    },
+    "at": "2026-10-26T22:39:25.325Z"
+  },
+  {
+    "id": "A05",
+    "ok": true,
+    "detail": {
+      "ready": false,
+      "model": "muse-voice-transcribe-1.0",
+      "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+    },
+    "at": "2026-10-26T22:39:25.325Z"
+  },
+  {
+    "id": "A06",
+    "ok": true,
+    "detail": {
+      "ready": false,
+      "model": "sam-3.1",
+      "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+    },
+    "at": "2026-10-26T22:39:25.325Z"
+  },
+  {
+    "id": "A07",
+    "ok": true,
+    "detail": {
+      "ready": false,
+      "setup": "Setup required: run scripts/fetch-models.sh (MMS-TTS weights, CC-BY-NC-4.0)",
+      "model": "facebook/mms-tts-eng",
+      "license": "CC-BY-NC-4.0"
+    },
+    "at": "2026-10-26T22:39:25.325Z"
+  },
+  {
+    "id": "A33",
+    "ok": true,
+    "detail": {
+      "at": "2026-10-26T22:39:25.327Z",
+      "method": "GET",
+      "path": "/api/spirits",
+      "status": 200,
+      "headers": {
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-type": "application/json",
+        "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+        "keep-alive": "timeout=5",
+        "transfer-encoding": "chunked"
+      },
+      "body": {
+        "spirits": []
+      }
+    },
+    "at": "2026-10-26T22:39:25.327Z"
+  },
+  {
+    "id": "A08",
+    "ok": true,
+    "detail": {
+      "at": "2026-10-26T22:39:25.331Z",
+      "method": "POST",
+      "path": "/api/wake",
+      "status": 200,
+      "headers": {
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-type": "application/json",
+        "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+        "keep-alive": "timeout=5",
+        "transfer-encoding": "chunked"
+      },
+      "body": {
+        "spirit_id": "sp_6xckssjgwtr5",
+        "face": "built-in",
+        "persona": null,
+        "sheet": null,
+        "source": "label",
+        "setup": {
+          "spark": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)",
+          "image": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        }
+      }
+    },
+    "at": "2026-10-26T22:39:25.331Z"
+  },
+  {
+    "id": "A09",
+    "ok": true,
+    "detail": {
+      "spirit_id": "sp_6xckssjgwtr5",
+      "face": "built-in",
+      "persona": null,
+      "sheet": null,
+      "source": "label",
+      "setup": {
+        "spark": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)",
+        "image": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+      }
+    },
+    "at": "2026-10-26T22:39:25.331Z"
+  },
+  {
+    "id": "A10",
+    "ok": true,
+    "detail": {
+      "spirit_id": "sp_6xckssjgwtr5",
+      "label": "couch",
+      "dims": [
+        2,
+        0.86,
+        0.9
+      ],
+      "face": "built-in",
+      "source": "label",
+      "created": "2026-10-26T22:39:25.330Z"
+    },
+    "at": "2026-10-26T22:39:25.331Z"
+  },
+  {
+    "id": "A11",
+    "ok": true,
+    "detail": [
+      {
+        "at": "2026-10-26T22:39:25.334Z",
+        "method": "POST",
+        "path": "/api/wake",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "body is not JSON"
+        }
+      }
+    ],
+    "at": "2026-10-26T22:39:25.334Z"
+  },
+  {
+    "id": "A12",
+    "ok": true,
+    "detail": [
+      {
+        "at": "2026-10-26T22:39:25.336Z",
+        "method": "POST",
+        "path": "/api/wake",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "mesh {label, dims[3], room_context} required"
+        }
+      }
+    ],
+    "at": "2026-10-26T22:39:25.336Z"
+  },
+  {
+    "id": "A13",
+    "ok": true,
+    "detail": [
+      {
+        "at": "2026-10-26T22:39:25.338Z",
+        "method": "POST",
+        "path": "/api/wake",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "mesh {label, dims[3], room_context} required"
+        }
+      }
+    ],
+    "at": "2026-10-26T22:39:25.338Z"
+  },
+  {
+    "id": "A14",
+    "ok": true,
+    "detail": [
+      {
+        "at": "2026-10-26T22:39:25.340Z",
+        "method": "POST",
+        "path": "/api/wake",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "mesh {label, dims[3], room_context} required"
+        }
+      }
+    ],
+    "at": "2026-10-26T22:39:25.340Z"
+  },
+  {
+    "id": "A15",
+    "ok": true,
+    "detail": [
+      {
+        "at": "2026-10-26T22:39:25.342Z",
+        "method": "POST",
+        "path": "/api/wake",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "mesh {label, dims[3], room_context} required"
+        }
+      },
+      {
+        "at": "2026-10-26T22:39:25.344Z",
+        "method": "POST",
+        "path": "/api/wake",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "mesh {label, dims[3], room_context} required"
+        }
+      }
+    ],
+    "at": "2026-10-26T22:39:25.344Z"
+  },
+  {
+    "id": "A16",
+    "ok": true,
+    "detail": [
+      {
+        "at": "2026-10-26T22:39:25.346Z",
+        "method": "POST",
+        "path": "/api/wake",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "dims must be three finite positive numbers"
+        }
+      },
+      {
+        "at": "2026-10-26T22:39:25.348Z",
+        "method": "POST",
+        "path": "/api/wake",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "dims must be three finite positive numbers"
+        }
+      },
+      {
+        "at": "2026-10-26T22:39:25.350Z",
+        "method": "POST",
+        "path": "/api/wake",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "dims must be three finite positive numbers"
+        }
+      },
+      {
+        "at": "2026-10-26T22:39:25.350Z",
+        "method": "POST",
+        "path": "/api/wake",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "dims must be three finite positive numbers"
+        }
+      },
+      {
+        "at": "2026-10-26T22:39:25.352Z",
+        "method": "POST",
+        "path": "/api/wake",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "dims must be three finite positive numbers"
+        }
+      }
+    ],
+    "at": "2026-10-26T22:39:25.352Z"
+  },
+  {
+    "id": "A17",
+    "ok": true,
+    "detail": [
+      {
+        "at": "2026-10-26T22:39:25.354Z",
+        "method": "POST",
+        "path": "/api/wake",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "mesh {label, dims[3], room_context} required"
+        }
+      },
+      {
+        "at": "2026-10-26T22:39:25.356Z",
+        "method": "POST",
+        "path": "/api/wake",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "mesh {label, dims[3], room_context} required"
+        }
+      },
+      {
+        "at": "2026-10-26T22:39:25.357Z",
+        "method": "POST",
+        "path": "/api/wake",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "mesh {label, dims[3], room_context} required"
+        }
+      },
+      {
+        "at": "2026-10-26T22:39:25.359Z",
+        "method": "POST",
+        "path": "/api/wake",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "mesh {label, dims[3], room_context} required"
+        }
+      }
+    ],
+    "at": "2026-10-26T22:39:25.359Z"
+  },
+  {
+    "id": "A18",
+    "ok": true,
+    "detail": [
+      {
+        "at": "2026-10-26T22:39:25.361Z",
+        "method": "POST",
+        "path": "/api/wake",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "mesh {label, dims[3], room_context} required"
+        }
+      },
+      {
+        "at": "2026-10-26T22:39:25.362Z",
+        "method": "POST",
+        "path": "/api/wake",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "mesh {label, dims[3], room_context} required"
+        }
+      },
+      {
+        "at": "2026-10-26T22:39:25.364Z",
+        "method": "POST",
+        "path": "/api/wake",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "valid room_context required"
+        }
+      },
+      {
+        "at": "2026-10-26T22:39:25.364Z",
+        "method": "POST",
+        "path": "/api/wake",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "valid room_context required"
+        }
+      },
+      {
+        "at": "2026-10-26T22:39:25.366Z",
+        "method": "POST",
+        "path": "/api/wake",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "valid room_context required"
+        }
+      },
+      {
+        "at": "2026-10-26T22:39:25.367Z",
+        "method": "POST",
+        "path": "/api/wake",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "valid room_context required"
+        }
+      }
+    ],
+    "at": "2026-10-26T22:39:25.368Z"
+  },
+  {
+    "id": "A19",
+    "ok": true,
+    "detail": "Source inspected; real A08 wake source=label; app wake request has no crop field.",
+    "at": "2026-10-26T22:39:25.368Z"
+  },
+  {
+    "id": "A20",
+    "ok": true,
+    "detail": {
+      "at": "2026-10-26T22:39:25.370Z",
+      "method": "POST",
+      "path": "/api/chat",
+      "status": 503,
+      "headers": {
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-type": "application/json",
+        "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+        "keep-alive": "timeout=5",
+        "transfer-encoding": "chunked"
+      },
+      "body": {
+        "setup_required": "MODEL_API_KEY",
+        "step": "spark",
+        "message": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+      }
+    },
+    "at": "2026-10-26T22:39:25.370Z"
+  },
+  {
+    "id": "A21",
+    "ok": true,
+    "detail": [
+      {
+        "at": "2026-10-26T22:39:25.372Z",
+        "method": "POST",
+        "path": "/api/chat",
+        "status": 503,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "setup_required": "MODEL_API_KEY",
+          "step": "spark",
+          "message": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        }
+      },
+      {
+        "at": "2026-10-26T22:39:25.374Z",
+        "method": "POST",
+        "path": "/api/chat",
+        "status": 503,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "setup_required": "MODEL_API_KEY",
+          "step": "spark",
+          "message": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        }
+      }
+    ],
+    "at": "2026-10-26T22:39:25.374Z"
+  },
+  {
+    "id": "A22",
+    "ok": true,
+    "detail": {
+      "at": "2026-10-26T22:39:25.376Z",
+      "method": "POST",
+      "path": "/api/chat",
+      "status": 400,
+      "headers": {
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-type": "application/json",
+        "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+        "keep-alive": "timeout=5",
+        "transfer-encoding": "chunked"
+      },
+      "body": {
+        "error": "body is not JSON"
+      }
+    },
+    "at": "2026-10-26T22:39:25.376Z"
+  },
+  {
+    "id": "A23",
+    "ok": true,
+    "detail": {
+      "at": "2026-10-26T22:39:25.378Z",
+      "method": "POST",
+      "path": "/api/say",
+      "status": 503,
+      "headers": {
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-type": "application/json",
+        "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+        "keep-alive": "timeout=5",
+        "transfer-encoding": "chunked"
+      },
+      "body": {
+        "setup_required": "mms-tts",
+        "message": "Setup required: run scripts/fetch-models.sh (MMS-TTS weights, CC-BY-NC-4.0)"
+      }
+    },
+    "at": "2026-10-26T22:39:25.378Z"
+  },
+  {
+    "id": "A24",
+    "ok": true,
+    "detail": [
+      {
+        "at": "2026-10-26T22:39:25.378Z",
+        "method": "POST",
+        "path": "/api/say",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "text required"
+        }
+      },
+      {
+        "at": "2026-10-26T22:39:25.380Z",
+        "method": "POST",
+        "path": "/api/say",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "text required"
+        }
+      }
+    ],
+    "at": "2026-10-26T22:39:25.382Z"
+  },
+  {
+    "id": "A25",
+    "ok": true,
+    "detail": [
+      {
+        "at": "2026-10-26T22:39:25.383Z",
+        "method": "POST",
+        "path": "/api/say",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "text required"
+        }
+      },
+      {
+        "at": "2026-10-26T22:39:25.385Z",
+        "method": "POST",
+        "path": "/api/say",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "text required"
+        }
+      },
+      {
+        "at": "2026-10-26T22:39:25.387Z",
+        "method": "POST",
+        "path": "/api/say",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "text required"
+        }
+      }
+    ],
+    "at": "2026-10-26T22:39:25.388Z"
+  },
+  {
+    "id": "A57",
+    "ok": true,
+    "detail": [
+      {
+        "at": "2026-10-26T22:39:25.390Z",
+        "method": "POST",
+        "path": "/api/say",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "text required"
+        }
+      }
+    ],
+    "at": "2026-10-26T22:39:25.392Z"
+  },
+  {
+    "id": "A26",
+    "ok": true,
+    "detail": {
+      "at": "2026-10-26T22:39:25.394Z",
+      "method": "POST",
+      "path": "/api/say",
+      "status": 400,
+      "headers": {
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-type": "application/json",
+        "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+        "keep-alive": "timeout=5",
+        "transfer-encoding": "chunked"
+      },
+      "body": {
+        "error": "body is not JSON"
+      }
+    },
+    "at": "2026-10-26T22:39:25.394Z"
+  },
+  {
+    "id": "A27",
+    "ok": true,
+    "detail": {
+      "wavBytes": 32044,
+      "at": "2026-10-26T22:39:25.397Z",
+      "method": "POST",
+      "path": "/api/transcribe",
+      "status": 503,
+      "headers": {
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-type": "application/json",
+        "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+        "keep-alive": "timeout=5",
+        "transfer-encoding": "chunked"
+      },
+      "body": {
+        "setup_required": "MODEL_API_KEY",
+        "step": "transcribe",
+        "message": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+      }
+    },
+    "at": "2026-10-26T22:39:25.397Z"
+  },
+  {
+    "id": "A28",
+    "ok": true,
+    "detail": [
+      {
+        "at": "2026-10-26T22:39:25.399Z",
+        "method": "POST",
+        "path": "/api/transcribe",
+        "status": 503,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "setup_required": "MODEL_API_KEY",
+          "step": "transcribe",
+          "message": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        }
+      },
+      {
+        "at": "2026-10-26T22:39:25.400Z",
+        "method": "POST",
+        "path": "/api/transcribe",
+        "status": 503,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "setup_required": "MODEL_API_KEY",
+          "step": "transcribe",
+          "message": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        }
+      }
+    ],
+    "at": "2026-10-26T22:39:25.400Z"
+  },
+  {
+    "id": "A29",
+    "ok": true,
+    "detail": {
+      "at": "2026-10-26T22:39:25.402Z",
+      "method": "POST",
+      "path": "/api/cut",
+      "status": 503,
+      "headers": {
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-type": "application/json",
+        "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+        "keep-alive": "timeout=5",
+        "transfer-encoding": "chunked"
+      },
+      "body": {
+        "setup_required": "MODEL_API_KEY",
+        "step": "sam3",
+        "message": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+      },
+      "note": "Existing contract setup guard input only; no frame image or segmentation claimed."
+    },
+    "at": "2026-10-26T22:39:25.402Z"
+  },
+  {
+    "id": "A30",
+    "ok": true,
+    "detail": [
+      {
+        "at": "2026-10-26T22:39:25.404Z",
+        "method": "POST",
+        "path": "/api/cut",
+        "status": 503,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "setup_required": "MODEL_API_KEY",
+          "step": "sam3",
+          "message": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        }
+      },
+      {
+        "at": "2026-10-26T22:39:25.405Z",
+        "method": "POST",
+        "path": "/api/cut",
+        "status": 503,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "setup_required": "MODEL_API_KEY",
+          "step": "sam3",
+          "message": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        }
+      }
+    ],
+    "at": "2026-10-26T22:39:25.405Z"
+  },
+  {
+    "id": "A31",
+    "ok": true,
+    "detail": {
+      "at": "2026-10-26T22:39:25.407Z",
+      "method": "POST",
+      "path": "/api/cut",
+      "status": 400,
+      "headers": {
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-type": "application/json",
+        "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+        "keep-alive": "timeout=5",
+        "transfer-encoding": "chunked"
+      },
+      "body": {
+        "error": "body is not JSON"
+      }
+    },
+    "at": "2026-10-26T22:39:25.407Z"
+  },
+  {
+    "id": "A32",
+    "ok": true,
+    "detail": {
+      "at": "2026-10-26T22:39:25.416Z",
+      "method": "POST",
+      "path": "/api/wake",
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-type": "application/json",
+        "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+        "keep-alive": "timeout=5",
+        "transfer-encoding": "chunked"
+      },
+      "body": {
+        "error": "body too large"
+      }
+    },
+    "at": "2026-10-26T22:39:25.418Z"
+  },
+  {
+    "id": "A53",
+    "ok": true,
+    "detail": {
+      "at": "2026-10-26T22:39:25.425Z",
+      "method": "POST",
+      "path": "/api/chat",
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-type": "application/json",
+        "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+        "keep-alive": "timeout=5",
+        "transfer-encoding": "chunked"
+      },
+      "body": {
+        "error": "body too large"
+      }
+    },
+    "at": "2026-10-26T22:39:25.427Z"
+  },
+  {
+    "id": "A54",
+    "ok": true,
+    "detail": {
+      "at": "2026-10-26T22:39:25.435Z",
+      "method": "POST",
+      "path": "/api/say",
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-type": "application/json",
+        "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+        "keep-alive": "timeout=5",
+        "transfer-encoding": "chunked"
+      },
+      "body": {
+        "error": "body too large"
+      }
+    },
+    "at": "2026-10-26T22:39:25.437Z"
+  },
+  {
+    "id": "A55",
+    "ok": true,
+    "detail": {
+      "at": "2026-10-26T22:39:25.445Z",
+      "method": "POST",
+      "path": "/api/cut",
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-type": "application/json",
+        "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+        "keep-alive": "timeout=5",
+        "transfer-encoding": "chunked"
+      },
+      "body": {
+        "error": "body too large"
+      }
+    },
+    "at": "2026-10-26T22:39:25.447Z"
+  },
+  {
+    "id": "A56",
+    "ok": true,
+    "detail": {
+      "at": "2026-10-26T22:39:25.455Z",
+      "method": "POST",
+      "path": "/api/transcribe",
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-type": "application/json",
+        "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+        "keep-alive": "timeout=5",
+        "transfer-encoding": "chunked"
+      },
+      "body": {
+        "error": "body too large"
+      }
+    },
+    "at": "2026-10-26T22:39:25.456Z"
+  },
+  {
+    "id": "A34",
+    "ok": true,
+    "detail": {
+      "at": "2026-10-26T22:39:25.460Z",
+      "method": "GET",
+      "path": "/api/spirits",
+      "status": 200,
+      "headers": {
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-type": "application/json",
+        "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+        "keep-alive": "timeout=5",
+        "transfer-encoding": "chunked"
+      },
+      "body": {
+        "spirits": [
+          {
+            "spirit_id": "sp_6xckssjgwtr5",
+            "label": "couch",
+            "dims": [
+              2,
+              0.86,
+              0.9
+            ],
+            "face": "built-in",
+            "source": "label",
+            "created": "2026-10-26T22:39:25.330Z"
+          },
+          {
+            "spirit_id": "sp_tdnlliyxv1zo",
+            "label": "lamp",
+            "dims": [
+              0.44,
+              1.7,
+              0.44
+            ],
+            "face": "built-in",
+            "source": "label",
+            "created": "2026-10-26T22:39:25.458Z"
+          }
+        ]
+      }
+    },
+    "at": "2026-10-26T22:39:25.460Z"
+  },
+  {
+    "id": "A38",
+    "ok": true,
+    "detail": {
+      "at": "2026-10-26T22:39:25.462Z",
+      "method": "GET",
+      "path": "/api/spirits/sp_6xckssjgwtr5/sheet/neutral.png",
+      "status": 404,
+      "headers": {
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-type": "application/json",
+        "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+        "keep-alive": "timeout=5",
+        "transfer-encoding": "chunked"
+      },
+      "body": {
+        "error": "not found"
+      }
+    },
+    "at": "2026-10-26T22:39:25.462Z"
+  },
+  {
+    "id": "A40",
+    "ok": true,
+    "detail": {
+      "at": "2026-10-26T22:39:25.464Z",
+      "method": "GET",
+      "path": "/api/spirits/sp_aaaaaaaaaaaa/sheet/..%2F..%2Fmeta.json",
+      "status": 404,
+      "headers": {
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-type": "application/json",
+        "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+        "keep-alive": "timeout=5",
+        "transfer-encoding": "chunked"
+      },
+      "body": {
+        "error": "no such endpoint"
+      }
+    },
+    "at": "2026-10-26T22:39:25.464Z"
+  },
+  {
+    "id": "A41",
+    "ok": true,
+    "detail": [
+      {
+        "at": "2026-10-26T22:39:25.466Z",
+        "method": "GET",
+        "path": "/api/spirits/sp_6xckssjgwtr5/sheet/Neutral.png",
+        "status": 404,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "no such endpoint"
+        }
+      },
+      {
+        "at": "2026-10-26T22:39:25.467Z",
+        "method": "GET",
+        "path": "/api/spirits/sp_6xckssjgwtr5/sheet/meta.json",
+        "status": 404,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "no such endpoint"
+        }
+      },
+      {
+        "at": "2026-10-26T22:39:25.469Z",
+        "method": "GET",
+        "path": "/api/spirits/sp_6xckssjgwtr5/sheet/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png",
+        "status": 404,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "no such endpoint"
+        }
+      },
+      {
+        "at": "2026-10-26T22:39:25.471Z",
+        "method": "GET",
+        "path": "/api/spirits/sp_6xckssjgwtr5/sheet/..%2Fneutral.png",
+        "status": 404,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "no such endpoint"
+        }
+      }
+    ],
+    "at": "2026-10-26T22:39:25.471Z"
+  },
+  {
+    "id": "A35",
+    "ok": true,
+    "detail": {
+      "at": "2026-10-26T22:39:25.473Z",
+      "method": "DELETE",
+      "path": "/api/spirits/sp_6xckssjgwtr5",
+      "status": 200,
+      "headers": {
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-type": "application/json",
+        "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+        "keep-alive": "timeout=5",
+        "transfer-encoding": "chunked"
+      },
+      "body": {
+        "forgotten": "sp_6xckssjgwtr5"
+      }
+    },
+    "at": "2026-10-26T22:39:25.473Z"
+  },
+  {
+    "id": "A36",
+    "ok": true,
+    "detail": [
+      {
+        "at": "2026-10-26T22:39:25.476Z",
+        "method": "DELETE",
+        "path": "/api/spirits/sp_6xckssjgwtr5",
+        "status": 404,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "forgotten": "sp_6xckssjgwtr5"
+        }
+      },
+      {
+        "at": "2026-10-26T22:39:25.477Z",
+        "method": "DELETE",
+        "path": "/api/spirits/sp_aaaaaaaaaaaa",
+        "status": 404,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "forgotten": "sp_aaaaaaaaaaaa"
+        }
+      }
+    ],
+    "at": "2026-10-26T22:39:25.477Z"
+  },
+  {
+    "id": "A37",
+    "ok": true,
+    "detail": [
+      {
+        "at": "2026-10-26T22:39:25.479Z",
+        "method": "DELETE",
+        "path": "/api/spirits/not-an-id",
+        "status": 404,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "forgotten": "not-an-id"
+        }
+      },
+      {
+        "at": "2026-10-26T22:39:25.481Z",
+        "method": "DELETE",
+        "path": "/api/spirits/..%2F..%2Fcanary",
+        "status": 404,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "forgotten": "..%2F..%2Fcanary"
+        }
+      }
+    ],
+    "at": "2026-10-26T22:39:25.481Z"
+  },
+  {
+    "id": "A42",
+    "ok": true,
+    "detail": [
+      {
+        "at": "2026-10-26T22:39:25.482Z",
+        "method": "DELETE",
+        "path": "/api/spirits/../../package.json",
+        "status": 404,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "not found"
+        }
+      }
+    ],
+    "at": "2026-10-26T22:39:25.483Z"
+  },
+  {
+    "id": "A43",
+    "ok": true,
+    "detail": {
+      "at": "2026-10-26T22:39:25.485Z",
+      "method": "GET",
+      "path": "/api/nope",
+      "status": 404,
+      "headers": {
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-type": "application/json",
+        "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+        "keep-alive": "timeout=5",
+        "transfer-encoding": "chunked"
+      },
+      "body": {
+        "error": "no such endpoint"
+      }
+    },
+    "at": "2026-10-26T22:39:25.485Z"
+  },
+  {
+    "id": "A44",
+    "ok": true,
+    "detail": [
+      {
+        "at": "2026-10-26T22:39:25.487Z",
+        "method": "PUT",
+        "path": "/api/wake",
+        "status": 404,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "no such endpoint"
+        }
+      },
+      {
+        "at": "2026-10-26T22:39:25.489Z",
+        "method": "GET",
+        "path": "/api/wake",
+        "status": 404,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "no such endpoint"
+        }
+      },
+      {
+        "at": "2026-10-26T22:39:25.490Z",
+        "method": "POST",
+        "path": "/api/status",
+        "status": 404,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "no such endpoint"
+        }
+      }
+    ],
+    "at": "2026-10-26T22:39:25.490Z"
+  },
+  {
+    "id": "A45",
+    "ok": true,
+    "detail": [
+      {
+        "status": 200,
+        "body": {
+          "spirits": []
+        }
+      },
+      {
+        "status": 200,
+        "body": {
+          "spirits": []
+        }
+      },
+      {
+        "status": 200,
+        "body": {
+          "spirits": []
+        }
+      },
+      {
+        "status": 429,
+        "body": {
+          "error": "slow down (rate limit)"
+        }
+      },
+      {
+        "status": 429,
+        "body": {
+          "error": "slow down (rate limit)"
+        }
+      }
+    ],
+    "at": "2026-10-26T22:39:25.498Z"
+  },
+  {
+    "id": "A46",
+    "ok": true,
+    "detail": [
+      200,
+      200,
+      200
+    ],
+    "at": "2026-10-26T22:39:25.505Z"
+  },
+  {
+    "id": "A47",
+    "ok": true,
+    "detail": "Fresh server contract suite separately runs inert test constant non-disclosure assertion; empty actual MODEL_API_KEY throughout audit.",
+    "at": "2026-10-26T22:39:25.505Z"
+  },
+  {
+    "id": "A48",
+    "ok": true,
+    "detail": {
+      "before": [
+        "sp_tdnlliyxv1zo"
+      ],
+      "after": [
+        "sp_60nshnioqrnq",
+        "sp_tdnlliyxv1zo"
+      ],
+      "wake": {
+        "at": "2026-10-26T22:39:25.625Z",
+        "method": "POST",
+        "path": "/api/wake",
+        "status": 200,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "spirit_id": "sp_60nshnioqrnq",
+          "face": "built-in",
+          "persona": null,
+          "sheet": null,
+          "source": "label",
+          "setup": {
+            "spark": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)",
+            "image": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+          }
+        }
+      }
+    },
+    "at": "2026-10-26T22:39:25.626Z"
+  },
+  {
+    "id": "A51",
+    "ok": true,
+    "detail": {
+      "at": "2026-10-26T22:39:25.628Z",
+      "method": "GET",
+      "path": "/definitely-missing-file",
+      "status": 404,
+      "headers": {
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-type": "application/json",
+        "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+        "keep-alive": "timeout=5",
+        "transfer-encoding": "chunked"
+      },
+      "body": {
+        "error": "not found"
+      }
+    },
+    "at": "2026-10-26T22:39:25.628Z"
+  },
+  {
+    "id": "A52",
+    "ok": true,
+    "detail": [
+      {
+        "path": "/%2e%2e%2fdist-audit-canary/canary.txt",
+        "status": 403,
+        "body": "{\"error\":\"forbidden\"}"
+      },
+      {
+        "path": "/%2e%2e%2fpackage.json",
+        "status": 403,
+        "body": "{\"error\":\"forbidden\"}"
+      },
+      {
+        "path": "/..%2f..%2fpackage.json",
+        "status": 403,
+        "body": "{\"error\":\"forbidden\"}"
+      }
+    ],
+    "at": "2026-10-26T22:39:25.632Z"
+  },
+  {
+    "id": "M01",
+    "ok": true,
+    "detail": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+        "protocolVersion": "2025-06-18",
+        "capabilities": {
+          "tools": {}
+        },
+        "serverInfo": {
+          "name": "yadori",
+          "version": "0.1.0"
+        }
+      }
+    },
+    "at": "2026-10-26T22:39:25.827Z"
+  },
+  {
+    "id": "M02",
+    "ok": true,
+    "detail": {
+      "jsonrpc": "2.0",
+      "id": 2,
+      "result": {
+        "tools": [
+          {
+            "name": "status",
+            "description": "Which Meta models and voices are ready, and the daily budget.",
+            "inputSchema": {
+              "type": "object",
+              "properties": {},
+              "additionalProperties": false
+            }
+          },
+          {
+            "name": "wake",
+            "description": "Wake a piece of furniture by label (e.g. \"couch\") with its size in metres. Returns the spirit id and persona (or Setup required).",
+            "inputSchema": {
+              "type": "object",
+              "required": [
+                "label"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "label": {
+                  "type": "string"
+                },
+                "dims": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  },
+                  "minItems": 3,
+                  "maxItems": 3
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          {
+            "name": "chat",
+            "description": "Say something to a woken spirit; Muse Spark answers in its persona (needs MODEL_API_KEY).",
+            "inputSchema": {
+              "type": "object",
+              "required": [
+                "spirit_id",
+                "text"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "spirit_id": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          {
+            "name": "say",
+            "description": "Puppet mode: the spirit speaks your line with MMS-TTS (returns the audio length, not the audio).",
+            "inputSchema": {
+              "type": "object",
+              "required": [
+                "spirit_id",
+                "text"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "spirit_id": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          {
+            "name": "list_spirits",
+            "description": "All spirits the gateway stores.",
+            "inputSchema": {
+              "type": "object",
+              "properties": {},
+              "additionalProperties": false
+            }
+          },
+          {
+            "name": "forget",
+            "description": "Delete a spirit: persona, memories, sheet and crop.",
+            "inputSchema": {
+              "type": "object",
+              "required": [
+                "spirit_id"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "spirit_id": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "at": "2026-10-26T22:39:25.828Z"
+  },
+  {
+    "id": "M03",
+    "ok": true,
+    "detail": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"gateway\":\"yadori\",\"spark\":{\"ready\":false,\"model\":\"muse-spark-1.3\",\"setup\":\"Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)\"},\"wonder\":{\"ready\":false,\"model\":\"muse-wonder-1.0\",\"setup\":\"Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)\"},\"image\":{\"ready\":false,\"model\":\"muse-image-1.0\",\"setup\":\"Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)\"},\"transcribe\":{\"ready\":false,\"model\":\"muse-voice-transcribe-1.0\",\"setup\":\"Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)\"},\"sam3\":{\"ready\":false,\"model\":\"sam-3.1\",\"setup\":\"Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)\"},\"tts\":{\"ready\":false,\"setup\":\"Setup required: run scripts/fetch-models.sh (MMS-TTS weights, CC-BY-NC-4.0)\",\"model\":\"facebook/mms-tts-eng\",\"license\":\"CC-BY-NC-4.0\"},\"budget\":{\"cap_usd\":3,\"spent_usd\":0}}"
+        }
+      ],
+      "isError": false,
+      "body": {
+        "gateway": "yadori",
+        "spark": {
+          "ready": false,
+          "model": "muse-spark-1.3",
+          "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        },
+        "wonder": {
+          "ready": false,
+          "model": "muse-wonder-1.0",
+          "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        },
+        "image": {
+          "ready": false,
+          "model": "muse-image-1.0",
+          "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        },
+        "transcribe": {
+          "ready": false,
+          "model": "muse-voice-transcribe-1.0",
+          "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        },
+        "sam3": {
+          "ready": false,
+          "model": "sam-3.1",
+          "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        },
+        "tts": {
+          "ready": false,
+          "setup": "Setup required: run scripts/fetch-models.sh (MMS-TTS weights, CC-BY-NC-4.0)",
+          "model": "facebook/mms-tts-eng",
+          "license": "CC-BY-NC-4.0"
+        },
+        "budget": {
+          "cap_usd": 3,
+          "spent_usd": 0
+        }
+      }
+    },
+    "at": "2026-10-26T22:39:25.844Z"
+  },
+  {
+    "id": "M04",
+    "ok": true,
+    "detail": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"spirit_id\":\"sp_tifrxsbwb9f3\",\"face\":\"built-in\",\"persona\":null,\"sheet\":null,\"source\":\"label\",\"setup\":{\"spark\":\"Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)\",\"image\":\"Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)\"}}"
+        }
+      ],
+      "isError": false,
+      "body": {
+        "spirit_id": "sp_tifrxsbwb9f3",
+        "face": "built-in",
+        "persona": null,
+        "sheet": null,
+        "source": "label",
+        "setup": {
+          "spark": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)",
+          "image": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        }
+      }
+    },
+    "at": "2026-10-26T22:39:25.848Z"
+  },
+  {
+    "id": "M05",
+    "ok": true,
+    "detail": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"spirit_id\":\"sp_qvy79bjaerlu\",\"face\":\"built-in\",\"persona\":null,\"sheet\":null,\"source\":\"label\",\"setup\":{\"spark\":\"Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)\",\"image\":\"Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)\"}}"
+        }
+      ],
+      "isError": false,
+      "body": {
+        "spirit_id": "sp_qvy79bjaerlu",
+        "face": "built-in",
+        "persona": null,
+        "sheet": null,
+        "source": "label",
+        "setup": {
+          "spark": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)",
+          "image": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        }
+      }
+    },
+    "at": "2026-10-26T22:39:25.851Z"
+  },
+  {
+    "id": "M06",
+    "ok": true,
+    "detail": [
+      {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"error\":\"mesh {label, dims[3], room_context} required\"}"
+          }
+        ],
+        "isError": true,
+        "body": {
+          "error": "mesh {label, dims[3], room_context} required"
+        }
+      },
+      {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"error\":\"mesh {label, dims[3], room_context} required\"}"
+          }
+        ],
+        "isError": true,
+        "body": {
+          "error": "mesh {label, dims[3], room_context} required"
+        }
+      }
+    ],
+    "at": "2026-10-26T22:39:25.856Z"
+  },
+  {
+    "id": "M07",
+    "ok": true,
+    "detail": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"setup_required\":\"MODEL_API_KEY\",\"step\":\"spark\",\"message\":\"Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)\"}"
+        }
+      ],
+      "isError": true,
+      "body": {
+        "setup_required": "MODEL_API_KEY",
+        "step": "spark",
+        "message": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+      }
+    },
+    "at": "2026-10-26T22:39:25.859Z"
+  },
+  {
+    "id": "M08",
+    "ok": true,
+    "detail": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"setup_required\":\"mms-tts\",\"message\":\"Setup required: run scripts/fetch-models.sh (MMS-TTS weights, CC-BY-NC-4.0)\"}"
+        }
+      ],
+      "isError": true,
+      "body": {
+        "setup_required": "mms-tts",
+        "message": "Setup required: run scripts/fetch-models.sh (MMS-TTS weights, CC-BY-NC-4.0)"
+      }
+    },
+    "at": "2026-10-26T22:39:25.862Z"
+  },
+  {
+    "id": "M09",
+    "ok": true,
+    "detail": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"spirits\":[{\"spirit_id\":\"sp_60nshnioqrnq\",\"label\":\"plant\",\"dims\":[2,0.86,0.9],\"face\":\"built-in\",\"source\":\"label\",\"created\":\"2026-10-26T22:39:25.625Z\"},{\"spirit_id\":\"sp_qvy79bjaerlu\",\"label\":\"lamp\",\"dims\":[1,1,1],\"face\":\"built-in\",\"source\":\"label\",\"created\":\"2026-10-26T22:39:25.851Z\"},{\"spirit_id\":\"sp_tdnlliyxv1zo\",\"label\":\"lamp\",\"dims\":[0.44,1.7,0.44],\"face\":\"built-in\",\"source\":\"label\",\"created\":\"2026-10-26T22:39:25.458Z\"},{\"spirit_id\":\"sp_tifrxsbwb9f3\",\"label\":\"plant\",\"dims\":[0.8,1.5,0.8],\"face\":\"built-in\",\"source\":\"label\",\"created\":\"2026-10-26T22:39:25.848Z\"}]}"
+        }
+      ],
+      "isError": false,
+      "body": {
+        "spirits": [
+          {
+            "spirit_id": "sp_60nshnioqrnq",
+            "label": "plant",
+            "dims": [
+              2,
+              0.86,
+              0.9
+            ],
+            "face": "built-in",
+            "source": "label",
+            "created": "2026-10-26T22:39:25.625Z"
+          },
+          {
+            "spirit_id": "sp_qvy79bjaerlu",
+            "label": "lamp",
+            "dims": [
+              1,
+              1,
+              1
+            ],
+            "face": "built-in",
+            "source": "label",
+            "created": "2026-10-26T22:39:25.851Z"
+          },
+          {
+            "spirit_id": "sp_tdnlliyxv1zo",
+            "label": "lamp",
+            "dims": [
+              0.44,
+              1.7,
+              0.44
+            ],
+            "face": "built-in",
+            "source": "label",
+            "created": "2026-10-26T22:39:25.458Z"
+          },
+          {
+            "spirit_id": "sp_tifrxsbwb9f3",
+            "label": "plant",
+            "dims": [
+              0.8,
+              1.5,
+              0.8
+            ],
+            "face": "built-in",
+            "source": "label",
+            "created": "2026-10-26T22:39:25.848Z"
+          }
+        ]
+      }
+    },
+    "at": "2026-10-26T22:39:25.864Z"
+  },
+  {
+    "id": "M10",
+    "ok": true,
+    "detail": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"forgotten\":\"sp_tifrxsbwb9f3\"}"
+        }
+      ],
+      "isError": false,
+      "body": {
+        "forgotten": "sp_tifrxsbwb9f3"
+      }
+    },
+    "at": "2026-10-26T22:39:25.866Z"
+  },
+  {
+    "id": "M11",
+    "ok": true,
+    "detail": [
+      {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"forgotten\":\"sp_tifrxsbwb9f3\"}"
+          }
+        ],
+        "isError": true,
+        "body": {
+          "forgotten": "sp_tifrxsbwb9f3"
+        }
+      },
+      {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"forgotten\":\"..%2F..%2Fcanary\"}"
+          }
+        ],
+        "isError": true,
+        "body": {
+          "forgotten": "..%2F..%2Fcanary"
+        }
+      }
+    ],
+    "at": "2026-10-26T22:39:25.871Z"
+  },
+  {
+    "id": "M12",
+    "ok": true,
+    "detail": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"error\":\"unknown tool nonexistent\"}"
+        }
+      ],
+      "isError": true,
+      "body": {
+        "error": "unknown tool nonexistent"
+      }
+    },
+    "at": "2026-10-26T22:39:25.873Z"
+  },
+  {
+    "id": "M13",
+    "ok": true,
+    "detail": {
+      "jsonrpc": "2.0",
+      "id": 16,
+      "error": {
+        "code": -32601,
+        "message": "method not found: nope/nope"
+      }
+    },
+    "at": "2026-10-26T22:39:25.873Z"
+  },
+  {
+    "id": "M14",
+    "ok": true,
+    "detail": {
+      "jsonrpc": "2.0",
+      "id": null,
+      "error": {
+        "code": -32700,
+        "message": "parse error"
+      }
+    },
+    "at": "2026-10-26T22:39:25.874Z"
+  },
+  {
+    "id": "M15",
+    "ok": true,
+    "detail": {
+      "jsonrpc": "2.0",
+      "id": 18,
+      "result": {}
+    },
+    "at": "2026-10-26T22:39:25.996Z"
+  },
+  {
+    "id": "M16",
+    "ok": true,
+    "detail": {
+      "offline": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"error\":\"gateway offline at http://127.0.0.1:53278: fetch failed\"}"
+          }
+        ],
+        "isError": true,
+        "body": {
+          "error": "gateway offline at http://127.0.0.1:53278: fetch failed"
+        }
+      },
+      "online": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"gateway\":\"yadori\",\"spark\":{\"ready\":false,\"model\":\"muse-spark-1.3\",\"setup\":\"Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)\"},\"wonder\":{\"ready\":false,\"model\":\"muse-wonder-1.0\",\"setup\":\"Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)\"},\"image\":{\"ready\":false,\"model\":\"muse-image-1.0\",\"setup\":\"Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)\"},\"transcribe\":{\"ready\":false,\"model\":\"muse-voice-transcribe-1.0\",\"setup\":\"Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)\"},\"sam3\":{\"ready\":false,\"model\":\"sam-3.1\",\"setup\":\"Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)\"},\"tts\":{\"ready\":false,\"setup\":\"Setup required: run scripts/fetch-models.sh (MMS-TTS weights, CC-BY-NC-4.0)\",\"model\":\"facebook/mms-tts-eng\",\"license\":\"CC-BY-NC-4.0\"},\"budget\":{\"cap_usd\":3,\"spent_usd\":0}}"
+          }
+        ],
+        "isError": false,
+        "body": {
+          "gateway": "yadori",
+          "spark": {
+            "ready": false,
+            "model": "muse-spark-1.3",
+            "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+          },
+          "wonder": {
+            "ready": false,
+            "model": "muse-wonder-1.0",
+            "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+          },
+          "image": {
+            "ready": false,
+            "model": "muse-image-1.0",
+            "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+          },
+          "transcribe": {
+            "ready": false,
+            "model": "muse-voice-transcribe-1.0",
+            "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+          },
+          "sam3": {
+            "ready": false,
+            "model": "sam-3.1",
+            "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+          },
+          "tts": {
+            "ready": false,
+            "setup": "Setup required: run scripts/fetch-models.sh (MMS-TTS weights, CC-BY-NC-4.0)",
+            "model": "facebook/mms-tts-eng",
+            "license": "CC-BY-NC-4.0"
+          },
+          "budget": {
+            "cap_usd": 3,
+            "spent_usd": 0
+          }
+        }
+      }
+    },
+    "at": "2026-10-26T22:39:26.003Z"
+  },
+  {
+    "id": "I10",
+    "ok": true,
+    "detail": {
+      "files": [
+        "sp_60nshnioqrnq",
+        "sp_qvy79bjaerlu",
+        "sp_tdnlliyxv1zo",
+        "sp_60nshnioqrnq/memory.json",
+        "sp_60nshnioqrnq/meta.json",
+        "sp_qvy79bjaerlu/memory.json",
+        "sp_qvy79bjaerlu/meta.json",
+        "sp_tdnlliyxv1zo/memory.json",
+        "sp_tdnlliyxv1zo/meta.json"
+      ],
+      "runDirectoryExists": false
+    },
+    "at": "2026-10-26T22:39:26.004Z"
+  },
+  {
+    "id": "I11",
+    "ok": true,
+    "detail": {
+      "count": 30,
+      "lengths": [
+        200
+      ],
+      "firstPrefix": "5:",
+      "deleted": true
+    },
+    "at": "2026-10-26T22:39:26.009Z"
+  },
+  {
+    "id": "I12",
+    "ok": true,
+    "detail": {
+      "at": "2026-10-26T22:39:26.011Z",
+      "method": "GET",
+      "path": "/api/spirits",
+      "status": 200,
+      "headers": {
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-type": "application/json",
+        "date": "Mon, 26 Oct 2026 22:39:26 GMT",
+        "keep-alive": "timeout=5",
+        "transfer-encoding": "chunked"
+      },
+      "body": {
+        "spirits": [
+          {
+            "spirit_id": "sp_60nshnioqrnq",
+            "label": "plant",
+            "dims": [
+              2,
+              0.86,
+              0.9
+            ],
+            "face": "built-in",
+            "source": "label",
+            "created": "2026-10-26T22:39:25.625Z"
+          },
+          {
+            "spirit_id": "sp_qvy79bjaerlu",
+            "label": "lamp",
+            "dims": [
+              1,
+              1,
+              1
+            ],
+            "face": "built-in",
+            "source": "label",
+            "created": "2026-10-26T22:39:25.851Z"
+          },
+          {
+            "spirit_id": "sp_tdnlliyxv1zo",
+            "label": "lamp",
+            "dims": [
+              0.44,
+              1.7,
+              0.44
+            ],
+            "face": "built-in",
+            "source": "label",
+            "created": "2026-10-26T22:39:25.458Z"
+          }
+        ]
+      }
+    },
+    "at": "2026-10-26T22:39:26.012Z"
+  },
+  {
+    "id": "I13",
+    "ok": true,
+    "detail": {
+      "noSuccessfulModelRuns": true,
+      "interface": "export interface RunEntry {\n  kind: string;\n  model: string;\n  ok: boolean;\n  latency_ms: number;\n  request_id?: string | null;\n  cost_usd?: number;\n  error?: string;\n}\n\n",
+      "serializedTimestamp": "t",
+      "source": "packages/server/src/runlog.ts"
+    },
+    "at": "2026-10-26T22:39:26.013Z"
+  },
+  {
+    "id": "I14",
+    "ok": true,
+    "detail": {
+      "utcDay": "2026-10-26",
+      "spentBefore": 0,
+      "noKeyWakeCost": 0,
+      "boundaryAccepted": true,
+      "overCapRejected": true,
+      "dayReset": "Source reviewed; no synthetic clock or model run injected."
+    },
+    "at": "2026-10-26T22:39:26.014Z"
+  },
+  {
+    "id": "C01",
+    "ok": true,
+    "detail": {
+      "chainCalls": "no chain calls in repo",
+      "dependencies": [
+        "playwright",
+        "@yadori/room",
+        "@types/node",
+        "typescript",
+        "vitest",
+        "@iwsdk/core",
+        "@pmndrs/uikit",
+        "@pmndrs/uikit-horizon",
+        "@pmndrs/uikit-lucide",
+        "three",
+        "@yadori/room",
+        "@yadori/rig",
+        "@iwsdk/reference",
+        "@iwsdk/cli",
+        "@iwsdk/vite-plugin-dev",
+        "@meta-quest/metavr",
+        "@types/three",
+        "typescript",
+        "vite",
+        "esbuild"
+      ],
+      "observedHTTP": [
+        "/api/status",
+        "/api/spirits",
+        "/api/wake",
+        "/api/wake",
+        "/api/wake",
+        "/api/wake",
+        "/api/wake",
+        "/api/wake",
+        "/api/wake",
+        "/api/wake",
+        "/api/wake",
+        "/api/wake",
+        "/api/wake",
+        "/api/wake",
+        "/api/wake",
+        "/api/wake",
+        "/api/wake",
+        "/api/wake",
+        "/api/wake",
+        "/api/wake",
+        "/api/wake",
+        "/api/wake",
+        "/api/wake",
+        "/api/wake",
+        "/api/chat",
+        "/api/chat",
+        "/api/chat",
+        "/api/chat",
+        "/api/say",
+        "/api/say",
+        "/api/say",
+        "/api/status",
+        "/api/say",
+        "/api/say",
+        "/api/say",
+        "/api/status",
+        "/api/say",
+        "/api/status",
+        "/api/say",
+        "/api/transcribe",
+        "/api/transcribe",
+        "/api/transcribe",
+        "/api/cut",
+        "/api/cut",
+        "/api/cut",
+        "/api/cut",
+        "/api/wake",
+        "/api/status",
+        "/api/chat",
+        "/api/status",
+        "/api/say",
+        "/api/status",
+        "/api/cut",
+        "/api/status",
+        "/api/transcribe",
+        "/api/status",
+        "/api/wake",
+        "/api/spirits",
+        "/api/spirits/sp_6xckssjgwtr5/sheet/neutral.png",
+        "/api/spirits/sp_aaaaaaaaaaaa/sheet/..%2F..%2Fmeta.json",
+        "/api/spirits/sp_6xckssjgwtr5/sheet/Neutral.png",
+        "/api/spirits/sp_6xckssjgwtr5/sheet/meta.json",
+        "/api/spirits/sp_6xckssjgwtr5/sheet/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png",
+        "/api/spirits/sp_6xckssjgwtr5/sheet/..%2Fneutral.png",
+        "/api/spirits/sp_6xckssjgwtr5",
+        "/api/spirits/sp_6xckssjgwtr5",
+        "/api/spirits/sp_aaaaaaaaaaaa",
+        "/api/spirits/not-an-id",
+        "/api/spirits/..%2F..%2Fcanary",
+        "/api/spirits/../../package.json",
+        "/api/nope",
+        "/api/wake",
+        "/api/wake",
+        "/api/status",
+        "/api/status",
+        "/api/wake",
+        "/definitely-missing-file",
+        "/api/spirits"
+      ]
+    },
+    "at": "2026-10-26T22:39:26.015Z"
+  }
+]

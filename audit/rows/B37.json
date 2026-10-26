@@ -1,0 +1,119 @@
+{
+  "id": "B37",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": {
+        "spirits": [
+          {
+            "id": "sp_wjiw2rridknu",
+            "name": "Lamp",
+            "label": "lamp",
+            "targetId": "den-lamp",
+            "awake": true,
+            "speaking": false,
+            "expression": "neutral",
+            "mouth": "rest",
+            "params": {
+              "eyeOpen": 1,
+              "eyeSmile": 0,
+              "pupil": 1,
+              "lookX": -0.0006490956569404498,
+              "lookY": 0.32194577942844893,
+              "browY": 0,
+              "browTilt": 0,
+              "mouthOpen": 7.332184601962125e-7,
+              "mouthWide": 0.5000010474549431,
+              "mouthRound": 0,
+              "smile": 0.25,
+              "blush": 0.44999999352319114,
+              "squash": -0.00009414569136984529,
+              "wobble": 0,
+              "reveal": 1
+            },
+            "anchor": [
+              -1.62,
+              1.4166666666666665,
+              -2.92
+            ],
+            "size": 0.154,
+            "facePos": [
+              -1.6208194812118344,
+              1.4166666666666665,
+              -2.91209882895675
+            ],
+            "faceDir": [
+              -0.1031630415444645,
+              0,
+              0.9946644594330769
+            ],
+            "pokes": 0,
+            "pets": 0,
+            "flicks": 0,
+            "lines": 4,
+            "voiceMode": "browser",
+            "bubble": true,
+            "bubbleInfo": {
+              "content": {
+                "speaker": "Lamp",
+                "tag": "puppet line (you)",
+                "text": "I am still here.",
+                "shown": 999
+              },
+              "corners": [
+                [
+                  -2.0856149433676805,
+                  1.492963793748345,
+                  -2.9397493784647204
+                ],
+                [
+                  -1.160242705484046,
+                  1.492963793748345,
+                  -2.843773078401386
+                ],
+                [
+                  -1.1560240190559883,
+                  1.9563308598088052,
+                  -2.88444827944878
+                ],
+                [
+                  -2.0813962569396227,
+                  1.9563308598088052,
+                  -2.9804245795121145
+                ]
+              ]
+            },
+            "sourceChip": {
+              "visible": true,
+              "text": "Built-in face · not generated"
+            },
+            "faceSource": "built-in",
+            "hasPersona": false,
+            "anchorErrorCm": 0
+          }
+        ],
+        "errors": []
+      },
+      "at": "2026-10-26T22:46:53.651Z",
+      "shot": "desktop-forget.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    },
+    {
+      "ok": true,
+      "source": "audit/browser/focused-results.json",
+      "detail": {
+        "after": {
+          "speaking": false,
+          "spirits": []
+        },
+        "errors": []
+      },
+      "at": "2026-10-26T22:48:08.329Z",
+      "shot": "focused.jpg",
+      "capture": "audit/browser/focused-events.jsonl"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "B07",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": [
+        0,
+        0.7095,
+        -2.64
+      ],
+      "at": "2026-10-26T22:45:35.700Z",
+      "shot": "desktop-awake.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

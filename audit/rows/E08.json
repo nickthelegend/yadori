@@ -1,0 +1,15 @@
+{
+  "id": "E08",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": [],
+      "at": "2026-10-26T22:45:27.784Z",
+      "shot": "evidence-1280.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

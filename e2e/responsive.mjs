@@ -7,6 +7,15 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { chromium } from 'playwright';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
+const network = { responses: 0, errors: [], cases: {} };
+function capture(page, label) {
+  network.cases[label] = { responses: 0, errors: [] };
+  const error = (kind, detail) => { const entry = { at: new Date().toISOString(), label, kind, detail }; network.errors.push(entry); network.cases[label].errors.push(entry); };
+  page.on('response', (r) => { network.responses++; network.cases[label].responses++; if (r.status() >= 400) error('http', `${r.status()} ${r.url()}`); });
+  page.on('requestfailed', (r) => error('requestfailed', { url: r.url(), error: r.failure() }));
+  page.on('pageerror', (e) => error('pageerror', String(e)));
+  page.on('console', (m) => { if (m.type() === 'error') error('console', m.text()); });
+}
 const results = [];
 const check = (name, ok, detail = '') => {
   results.push({ name, ok: !!ok, detail: String(detail) });
@@ -19,7 +28,10 @@ try {
   for (const [w, h] of [[375, 812], [1280, 800]]) {
     const ctx = await browser.newContext({ viewport: { width: w, height: h }, deviceScaleFactor: 2, reducedMotion: w === 375 ? 'reduce' : 'no-preference' });
     const page = await ctx.newPage();
+    capture(page, `landing-${w}`);
     const errors = [];
+    page.on('requestfailed', (r) => errors.push(`${r.url()}: ${r.failure()?.errorText}`));
+    page.on('response', (r) => { if (r.status() >= 400) errors.push(`${r.status()} ${r.url()}`); });
     page.on('pageerror', (e) => errors.push(String(e)));
     page.on('console', (m) => m.type() === 'error' && errors.push(m.text()));
     await page.goto(pathToFileURL(join(root, 'packages/landing/index.html')).href, { waitUntil: 'networkidle', timeout: 30000 }).catch(() => page.waitForLoadState('load'));
@@ -31,13 +43,16 @@ try {
       check('landing respects reduced motion (card does not flip)', anim === 'none', anim);
     }
     check(`landing ${w}px: no console errors`, errors.length === 0, errors.slice(0, 2).join(' | '));
-    await page.screenshot({ path: join(root, `e2e/shots/landing-${w}.png`), fullPage: w === 375 });
+    await page.screenshot({ path: join(root, `audit/browser/landing-responsive-${w}.jpg`), type: 'jpeg', quality: 55, fullPage: w === 375 });
     await ctx.close();
   }
   // the app in a phone-sized browser (browser diorama)
   const ctx = await browser.newContext({ viewport: { width: 375, height: 812 }, deviceScaleFactor: 2, ignoreHTTPSErrors: true, hasTouch: true, isMobile: true, userAgent: 'Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36' });
   const page = await ctx.newPage();
+  capture(page, 'app-375');
   const errors = [];
+  page.on('requestfailed', (r) => errors.push(`${r.url()}: ${r.failure()?.errorText}`));
+  page.on('response', (r) => { if (r.status() >= 400) errors.push(`${r.status()} ${r.url()}`); });
   page.on('pageerror', (e) => errors.push(String(e)));
   page.on('console', (m) => m.type() === 'error' && errors.push(m.text()));
   await page.goto('https://localhost:8091/', { waitUntil: 'load', timeout: 30000 });
@@ -61,7 +76,7 @@ try {
     return r ? r.left >= 0 && r.right <= innerWidth && r.bottom <= innerHeight : false;
   });
   check('app 375px: compose strip fits the screen', visible);
-  await page.screenshot({ path: join(root, 'e2e/shots/app-375.png') });
+  await page.screenshot({ path: join(root, 'audit/browser/app-responsive-375.jpg'), type: 'jpeg', quality: 55 });
   check('app 375px: no console errors', errors.length === 0, errors.slice(0, 2).join(' | '));
   await ctx.close();
 } catch (e) {
@@ -69,6 +84,8 @@ try {
 } finally {
   await browser?.close();
 }
+mkdirSync(join(root, 'audit/browser'), { recursive: true });
+writeFileSync(join(root, 'audit/browser/responsive-network.json'), JSON.stringify({ ...network, at: new Date().toISOString() }, null, 2));
 const fail = results.filter((r) => !r.ok).length;
 mkdirSync(join(root, 'e2e/results'), { recursive: true });
 writeFileSync(join(root, 'e2e/results/responsive.json'), JSON.stringify({ pass: results.length - fail, fail, results, at: new Date().toISOString() }, null, 2));

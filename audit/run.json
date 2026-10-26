@@ -1,0 +1,18 @@
+{
+  "startedAt": "2026-10-26T22:39:16.137Z",
+  "localTimezone": "Asia/Kolkata",
+  "root": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+  "node": "v26.5.0",
+  "pnpm": "10.29.2",
+  "os": "ProductName:\t\tmacOS\nProductVersion:\t\t26.5.1\nBuildVersion:\t\t25F80",
+  "platform": "darwin",
+  "arch": "arm64",
+  "cpu": "Apple M4",
+  "logicalCPUs": 10,
+  "totalMemoryGiB": 16,
+  "envFile": "/tmp/yadori-audit-no-env",
+  "envFileExists": false,
+  "MODEL_API_KEY": "empty",
+  "heavySlot": "yadori-audit-final",
+  "dataDirectory": "/var/folders/tp/gcpvr1451r350sq27v4csrq40000gn/T/yadori-final-1793054356137/data"
+}

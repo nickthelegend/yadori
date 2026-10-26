@@ -1,0 +1,14 @@
+{
+  "id": "A19",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/server/results.json",
+      "detail": "Source inspected; real A08 wake source=label; app wake request has no crop field.",
+      "at": "2026-10-26T22:39:25.368Z",
+      "capture": "audit/server/network.json"
+    }
+  ]
+}

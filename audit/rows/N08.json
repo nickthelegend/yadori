@@ -1,0 +1,50 @@
+{
+  "id": "N08",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": {
+        "max": "32"
+      },
+      "at": "2026-10-26T22:47:23.918Z",
+      "shot": "bare.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    },
+    {
+      "ok": true,
+      "source": "audit/browser/inputs-results.json",
+      "detail": {
+        "name": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "saved": {
+          "spiritId": "sp_dvuvpacfwgkv",
+          "label": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "name": "Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "dims": [
+            0.7,
+            0.55,
+            0.5
+          ],
+          "position": [
+            0.2,
+            0.275,
+            -2.4
+          ],
+          "persona": null,
+          "sheet": null,
+          "faceSource": "built-in",
+          "source": "label",
+          "firstWoke": "2026-10-27",
+          "lines": 0,
+          "memories": 0,
+          "room": "diorama:bare"
+        }
+      },
+      "at": "2026-10-26T22:48:32.163Z",
+      "shot": "inputs-name.jpg",
+      "capture": "audit/browser/inputs-events.json"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "B24",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": {
+        "value": "a half-typed line",
+        "focused": "y-text",
+        "start": 2,
+        "end": 8
+      },
+      "at": "2026-10-26T22:46:22.626Z",
+      "shot": "desktop-gossip.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

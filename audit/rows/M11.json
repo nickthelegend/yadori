@@ -1,0 +1,39 @@
+{
+  "id": "M11",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/server/results.json",
+      "detail": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"forgotten\":\"sp_tifrxsbwb9f3\"}"
+            }
+          ],
+          "isError": true,
+          "body": {
+            "forgotten": "sp_tifrxsbwb9f3"
+          }
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"forgotten\":\"..%2F..%2Fcanary\"}"
+            }
+          ],
+          "isError": true,
+          "body": {
+            "forgotten": "..%2F..%2Fcanary"
+          }
+        }
+      ],
+      "at": "2026-10-26T22:39:25.871Z",
+      "capture": "audit/server/network.json"
+    }
+  ]
+}

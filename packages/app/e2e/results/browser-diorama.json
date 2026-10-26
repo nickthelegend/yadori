@@ -1,6 +1,6 @@
 {
   "mode": "browser diorama (no headset), real mouse + keyboard",
-  "pass": 18,
+  "pass": 20,
   "fail": 0,
   "results": [
     {
@@ -21,7 +21,7 @@
     {
       "name": "couch is awake with the built-in face",
       "ok": true,
-      "detail": "wake 1369 ms"
+      "detail": "wake 1374 ms"
     },
     {
       "name": "face anchored on the couch front, 1 cm proud",
@@ -46,7 +46,7 @@
     {
       "name": "puppet line moves the mouth",
       "ok": true,
-      "detail": "max mouthOpen 0.80"
+      "detail": "max mouthOpen 0.72"
     },
     {
       "name": "line counted with a labelled voice mode",
@@ -76,7 +76,7 @@
     {
       "name": "gossip: the couch looks at the lamp",
       "ok": true,
-      "detail": "couch lookX -0.69"
+      "detail": "couch lookX -0.68"
     },
     {
       "name": "compose switches to \"reply as Lamp\"",
@@ -92,27 +92,37 @@
       "name": "reload re-matches both spirits",
       "ok": true,
       "detail": "Couch:2,Lamp:1"
+    },
+    {
+      "name": "no console errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "independent console, page and network capture is clean",
+      "ok": true,
+      "detail": "763 responses; 0 errors"
     }
   ],
   "perf": {
     "frames": 600,
     "cpuMs": {
-      "p50": 1.599999999627471,
-      "p95": 2.8999999994412065,
-      "max": 3.2999999998137355,
-      "mean": 1.7071666666865348
+      "p50": 2.300000011920929,
+      "p95": 3.2000000178813934,
+      "max": 4.199999988079071,
+      "mean": 1.88199999983112
     },
     "drawCalls": {
-      "p50": 102,
-      "p95": 103,
-      "max": 106
+      "p50": 103,
+      "p95": 104,
+      "max": 107
     },
     "triangles": {
-      "p50": 26848,
-      "max": 27834
+      "p50": 26944,
+      "max": 27846
     },
     "xrFrames": 0,
     "gl": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)"
   },
-  "at": "2026-10-25T11:20:54.969Z"
+  "at": "2026-10-26T22:45:04.398Z"
 }

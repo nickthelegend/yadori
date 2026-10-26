@@ -1,0 +1,21 @@
+{
+  "id": "R04",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/responsive-results.json",
+      "detail": {
+        "command": [
+          "pnpm",
+          "e2e:responsive"
+        ],
+        "pass": 12,
+        "fail": 0,
+        "at": "2026-10-26T22:45:15.270Z"
+      },
+      "at": "2026-10-26T22:45:15.270Z"
+    }
+  ]
+}

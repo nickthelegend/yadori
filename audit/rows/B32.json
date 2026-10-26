@@ -1,0 +1,100 @@
+{
+  "id": "B32",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": {
+        "spirits": [
+          {
+            "id": "sp_wjiw2rridknu",
+            "name": "Lamp",
+            "label": "lamp",
+            "targetId": "den-lamp",
+            "awake": true,
+            "speaking": false,
+            "expression": "neutral",
+            "mouth": "rest",
+            "params": {
+              "eyeOpen": 1,
+              "eyeSmile": 0,
+              "pupil": 1,
+              "lookX": -0.005473798388396697,
+              "lookY": 0.22698068671530816,
+              "browY": 0,
+              "browTilt": 0,
+              "mouthOpen": 0,
+              "mouthWide": 0.5,
+              "mouthRound": 0,
+              "smile": 0.25,
+              "blush": 0.4497910546685937,
+              "squash": 0.8735276409131042,
+              "wobble": 0,
+              "reveal": 1
+            },
+            "anchor": [
+              -1.62,
+              1.4166666666666665,
+              -2.92
+            ],
+            "size": 0.154,
+            "facePos": [
+              -1.619785106828385,
+              1.4166666666666665,
+              -2.915937907541776
+            ],
+            "faceDir": [
+              0.05282821604584261,
+              0,
+              0.9986036148489619
+            ],
+            "pokes": 0,
+            "pets": 0,
+            "flicks": 0,
+            "lines": 3,
+            "voiceMode": "",
+            "bubble": false,
+            "bubbleInfo": {
+              "content": null,
+              "corners": [
+                [
+                  -0.5,
+                  -0.5,
+                  0
+                ],
+                [
+                  0.5,
+                  -0.5,
+                  0
+                ],
+                [
+                  0.5,
+                  0.5,
+                  0
+                ],
+                [
+                  -0.5,
+                  0.5,
+                  0
+                ]
+              ]
+            },
+            "sourceChip": {
+              "visible": true,
+              "text": "Built-in face · not generated"
+            },
+            "faceSource": "built-in",
+            "hasPersona": false,
+            "anchorErrorCm": 0
+          }
+        ],
+        "body": "Yadori\n宿り · wake up your room\nBrowser diorama, not your room\nMuse Spark · Setup required: MODEL_API_KEY\nMuse Image · Setup required: MODEL_API_KEY\nVoice in · Setup required: MODEL_API_KEY\nSAM 3.1 · Setup required: MODEL_API_KEY\nMMS-TTS · Setup required: fetch-models\nVoice out · Browser voice, not a Meta model\nBINDER\n2 / 6\nforget\nLamp\nlamp · 0.4 × 1.7 m\nBuilt-in face, not generatedDrawn from the label\nNo persona · Setup required for Muse Spark\nvoice browser\n0 memories\n3 lines\nfirst woke 2026-10-27\nforget\nCouch\ncouch · 2.0 × 0.9 m\nBuilt-in face, not generatedDrawn from the label\nNo persona · Setup required for Muse Spark\nvoice browser\n0 memories\n3 lines\nfirst woke 2026-10-27\nasleep · not found in this room\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nTap, rub or swipe its face · wake a second one and they gossip\nSpeaker\nLamp\nSay\nPuppet mode: you are the voice. Setup required for Muse Spark (MODEL_API_KEY). Lines are yours, spoken by Browser voice, not a Meta model.\nEnter mixed reality (emulated)"
+      },
+      "at": "2026-10-26T22:46:45.847Z",
+      "shot": "desktop-gossip.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

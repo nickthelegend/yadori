@@ -1,0 +1,100 @@
+{
+  "id": "B29",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": {
+        "id": "sp_wjiw2rridknu",
+        "name": "Lamp",
+        "label": "lamp",
+        "targetId": "den-lamp",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 0,
+          "pupil": 0.9999999999999998,
+          "lookX": 0.00016116508482455483,
+          "lookY": 0.13478765032438467,
+          "browY": 3.344588380331993e-102,
+          "browTilt": -1.0033765140996008e-102,
+          "mouthOpen": 0.000016935963948718183,
+          "mouthWide": 0.5000235916362261,
+          "mouthRound": 1.814583832394778e-9,
+          "smile": 0.24999999999999994,
+          "blush": 0.4499999999999997,
+          "squash": -0.0010318131796799945,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          -1.62,
+          1.4166666666666665,
+          -2.92
+        ],
+        "size": 0.154,
+        "facePos": [
+          -1.6184273813840004,
+          1.4166666666666665,
+          -2.9091087877570683
+        ],
+        "faceDir": [
+          0.14291122555490787,
+          0,
+          0.9897355109373384
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 1,
+        "voiceMode": "browser",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Lamp → Couch",
+            "tag": "puppet line (you)",
+            "text": "Then stop being so comfortable.",
+            "shown": 999
+          },
+          "corners": [
+            [
+              -2.1184445044119755,
+              1.491345073019056,
+              -2.8427309048445215
+            ],
+            [
+              -1.1200570278353854,
+              1.491345073019056,
+              -2.986891416697941
+            ],
+            [
+              -1.1184102583560251,
+              1.9955842737551888,
+              -2.975486670669615
+            ],
+            [
+              -2.1167977349326157,
+              1.9955842737551888,
+              -2.8313261588161955
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      },
+      "at": "2026-10-26T22:46:27.947Z",
+      "shot": "desktop-gossip.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

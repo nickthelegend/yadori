@@ -1,0 +1,22 @@
+{
+  "id": "U24",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/commands/server.txt",
+      "detail": {
+        "command": [
+          "pnpm",
+          "--filter",
+          "@yadori/server",
+          "test"
+        ],
+        "unitSource": "Current package tests exercised; logs include every named test file and counts.",
+        "exitCode": 0
+      },
+      "at": "2026-10-26T22:39:18.195Z"
+    }
+  ]
+}

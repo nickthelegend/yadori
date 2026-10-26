@@ -1,0 +1,33 @@
+{
+  "id": "P08",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/mobile-results.json",
+      "detail": {
+        "scroll": 203,
+        "width": 351,
+        "total": 554,
+        "text": "forget\nCouch\ncouch · 2.0 × 0.9 m\nBuilt-in face, not generated\nforget\nLamp\nlamp · 0.4 × 1.7 m\nBuilt-in face, not generated\n\n4\nopen",
+        "remainder": {
+          "x": 289,
+          "y": 496,
+          "width": 72,
+          "height": 120,
+          "top": 496,
+          "right": 361,
+          "bottom": 616,
+          "left": 289
+        },
+        "sleeves": [
+          "none"
+        ]
+      },
+      "at": "2026-10-26T22:48:45.248Z",
+      "shot": "mobile.jpg",
+      "capture": "audit/browser/mobile-events.jsonl"
+    }
+  ]
+}

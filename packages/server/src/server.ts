@@ -12,7 +12,7 @@
  */
 import { createReadStream, existsSync, statSync } from 'node:fs';
 import { type IncomingMessage, type ServerResponse, createServer } from 'node:http';
-import { extname, resolve } from 'node:path';
+import { extname, resolve, sep } from 'node:path';
 import type { RoomContext } from '@yadori/room';
 import { type Config, ROOT, SETUP_KEY } from './config.ts';
 import { SHEET_IMAGES, generateSheet } from './image.ts';
@@ -110,9 +110,20 @@ export function makeServer(cfg: Config) {
   }
 
   async function wake(body: { mesh?: { id?: string; label?: string; dims?: number[]; room_context?: RoomContext }; description?: string; crop_jpeg?: string }) {
-    const m = body.mesh;
+    const m = body?.mesh;
     if (!m || typeof m.label !== 'string' || !m.label.trim() || !Array.isArray(m.dims) || m.dims.length !== 3 || !m.room_context)
       throw new HttpError(400, { error: 'mesh {label, dims[3], room_context} required' });
+    const positive = (x: unknown) => typeof x === 'number' && Number.isFinite(x) && x > 0;
+    const finite = (x: unknown) => typeof x === 'number' && Number.isFinite(x);
+    const c = m.room_context;
+    if (!m.dims.every(positive)) throw new HttpError(400, { error: 'dims must be three finite positive numbers' });
+    if (!c.self || typeof c.self.id !== 'string' || typeof c.self.label !== 'string'
+      || !Array.isArray(c.self.dims_m) || c.self.dims_m.length !== 3 || !c.self.dims_m.every(positive)
+      || !finite(c.self.height_of_top_m) || !c.viewer || !finite(c.viewer.distance_m) || !finite(c.viewer.eye_height_m)
+      || !Array.isArray(c.neighbours) || !c.room || !Number.isInteger(c.room.object_count)
+      || !Array.isArray(c.room.labels) || !c.room.labels.every((x) => typeof x === 'string')
+      || typeof c.local_time !== 'string' || !['label', 'camera'].includes(c.source))
+      throw new HttpError(400, { error: 'valid room_context required' });
     const label = m.label.trim().toLowerCase().slice(0, 32);
     const dims = m.dims.map((x) => Number(x)) as [number, number, number];
     const id = store.newId();
@@ -189,7 +200,7 @@ export function makeServer(cfg: Config) {
     if (req.method === 'POST' && path === '/api/chat') return chat(req, res);
     if (req.method === 'POST' && path === '/api/say') {
       const b = await readJson<{ spirit_id?: string; text?: string; voice?: Persona['voice'] }>(req);
-      if (typeof b.text !== 'string' || !b.text.trim()) throw new HttpError(400, { error: 'text required' });
+      if (typeof b?.text !== 'string' || !b.text.trim()) throw new HttpError(400, { error: 'text required' });
       const st = await ttsStatus(cfg.modelsDir);
       if (!st.ready) throw new HttpError(503, { setup_required: 'mms-tts', message: st.setup });
       const out = await speak(cfg.modelsDir, b.text.slice(0, 400), b.voice);
@@ -232,7 +243,7 @@ export function makeServer(cfg: Config) {
     if (req.method === 'GET' && existsSync(staticRoot)) {
       const rel = decodeURIComponent(path === '/' ? '/index.html' : path);
       const file = resolve(staticRoot, `.${rel}`);
-      if (!file.startsWith(staticRoot)) throw new HttpError(403, { error: 'forbidden' });
+      if (!file.startsWith(`${staticRoot}${sep}`)) throw new HttpError(403, { error: 'forbidden' });
       if (existsSync(file) && statSync(file).isFile()) {
         const types: Record<string, string> = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.png': 'image/png', '.svg': 'image/svg+xml', '.glts': 'text/plain', '.wasm': 'application/wasm' };
         res.writeHead(200, { 'content-type': types[extname(file)] ?? 'application/octet-stream' });

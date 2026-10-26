@@ -35,7 +35,7 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px s
 .y-pill.offline i { background: #ff5b5b; }
 .y-status-toggle { display: none; }
 
-.y-rail { position: absolute; top: 70px; right: 14px; bottom: 120px; width: 300px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; padding-right: 2px; scrollbar-width: thin; }
+.y-rail { position: absolute; top: max(70px, var(--y-header-bottom, 70px)); right: 14px; bottom: 120px; width: 300px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; padding-right: 2px; scrollbar-width: thin; }
 .y-rail h2 { margin: 0; font-size: 13px; font-family: var(--mono); font-weight: 600; color: var(--cream); letter-spacing: 0.04em; text-transform: uppercase; display: flex; justify-content: space-between; }
 .y-card { background: var(--cream); border-radius: 20px; padding: 12px; border: 2px solid var(--ink); box-shadow: 4px 4px 0 var(--ink); position: relative; transition: transform 160ms ease; }
 .y-card.active { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--pink); }
@@ -108,7 +108,9 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px s
   .y-status .y-pill:not(.summary) { display: none; }
   .y-status.open .y-pill:not(.summary) { display: inline-flex; }
   .y-status-toggle { display: inline-flex; }
-  .y-mode { display: none; }
+  .y-top { flex-wrap: wrap; }
+  .y-mode { display: block; order: 2; font-size: 10px; }
+  .y-status { order: 1; }
   .y-brand span { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {

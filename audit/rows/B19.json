@@ -1,0 +1,17 @@
+{
+  "id": "B19",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": {
+        "newEvents": []
+      },
+      "at": "2026-10-26T22:46:01.032Z",
+      "shot": "desktop-speech.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "B38",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": {
+        "mid": null,
+        "spirits": [
+          {
+            "id": "sp_rzgzeqaszfue",
+            "name": "Couch",
+            "label": "couch",
+            "targetId": "den-couch",
+            "awake": true,
+            "speaking": false,
+            "expression": "neutral",
+            "mouth": "rest",
+            "params": {
+              "eyeOpen": 1,
+              "eyeSmile": 0,
+              "pupil": 0.999999999487212,
+              "lookX": -0.000025380104948324707,
+              "lookY": 0.3360699055145684,
+              "browY": 1.4651090056320158e-9,
+              "browTilt": -4.3953270168960477e-10,
+              "mouthOpen": 1.2880795405892479e-25,
+              "mouthWide": 0.49999999999999994,
+              "mouthRound": 1.8401136294132111e-25,
+              "smile": 0.24999999963372274,
+              "blush": 0.44992742476376196,
+              "squash": -1.2738593780583952e-7,
+              "wobble": 0,
+              "reveal": 1
+            },
+            "anchor": [
+              0,
+              0.7095,
+              -2.64
+            ],
+            "size": 0.301,
+            "facePos": [
+              -0.002133825256506744,
+              0.7095,
+              -2.6222070943666034
+            ],
+            "faceDir": [
+              -0.11907241875019392,
+              0,
+              0.9928855720036315
+            ],
+            "pokes": 0,
+            "pets": 0,
+            "flicks": 0,
+            "lines": 0,
+            "voiceMode": "",
+            "bubble": false,
+            "bubbleInfo": {
+              "content": null,
+              "corners": [
+                [
+                  -0.5268010978372283,
+                  0.8654031889814404,
+                  -2.65908694109669
+                ],
+                [
+                  0.5187615053622149,
+                  0.8654031889814404,
+                  -2.546350608345456
+                ],
+                [
+                  0.5233419090328445,
+                  1.3894757834207319,
+                  -2.5888311349751043
+                ],
+                [
+                  -0.5222206941665987,
+                  1.3894757834207319,
+                  -2.7015674677263384
+                ]
+              ]
+            },
+            "sourceChip": {
+              "visible": true,
+              "text": "Built-in face · not generated"
+            },
+            "faceSource": "built-in",
+            "hasPersona": false,
+            "anchorErrorCm": 0
+          }
+        ]
+      },
+      "at": "2026-10-26T22:47:03.645Z",
+      "shot": "desktop-forget.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

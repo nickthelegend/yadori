@@ -39,6 +39,15 @@ export interface VoiceTarget {
 export class Voice {
   readonly listener: AudioListener;
   ttsReady = false;
+  private speechCancellation: { id: string; stop: () => void } | null = null;
+
+  cancel(id: string): void {
+    if (this.speechCancellation?.id === id) {
+      const stop = this.speechCancellation.stop;
+      this.speechCancellation = null;
+      stop();
+    }
+  }
   private analyserData = new Float32Array(1024);
   private freqData = new Uint8Array(512);
   private active: { target: VoiceTarget; analyser: AnalyserNode; started: number; duration: number; onWord?: (n: number) => void; words: number[] } | null = null;
@@ -110,7 +119,7 @@ export class Voice {
     a.play();
     return new Promise((resolve) => {
       const src = a.source as AudioBufferSourceNode | null;
-      if (src) src.onended = () => {
+      const finish = () => {
         target.rig.setEnvelopeShape(null);
         onWord?.(words.length);
         try {
@@ -119,8 +128,12 @@ export class Voice {
           /* already disconnected */
         }
         if (this.active?.target === target) this.active = null;
+        if (src) src.onended = null;
+        if (this.speechCancellation?.id === target.id) this.speechCancellation = null;
         resolve();
       };
+      if (src) src.onended = finish;
+      this.speechCancellation = { id: target.id, stop: () => { if (a.isPlaying) a.stop(); finish(); } };
     });
   }
 
@@ -131,12 +144,13 @@ export class Voice {
       u.pitch = Math.max(0.1, Math.min(2, Math.pow(2, (v?.pitch_semitones ?? 0) / 12)));
       u.rate = Math.max(0.5, Math.min(1.6, v?.rate ?? 1));
       const words = text.split(/\s+/).filter(Boolean);
+      const wordTimers: ReturnType<typeof setTimeout>[] = [];
       let boundaries = 0;
       const tl = lineTimeline(text, 165 * u.rate);
       const fallback = setTimeout(() => {
         if (boundaries === 0) {
           target.rig.speak(tl.keys, tl.duration);
-          tl.words.forEach((w, i) => setTimeout(() => onWord?.(i + 1), w.t * 1000));
+          tl.words.forEach((w, i) => wordTimers.push(setTimeout(() => onWord?.(i + 1), w.t * 1000)));
         }
       }, 450);
       u.onboundary = (e) => {
@@ -156,11 +170,24 @@ export class Voice {
         target.rig.speak(keys, dur);
         onWord?.(idx + 1);
       };
-      u.onend = u.onerror = () => {
+      let finished = false;
+      const finish = (complete: boolean) => {
+        if (finished) return;
+        finished = true;
         clearTimeout(fallback);
-        onWord?.(words.length);
+        wordTimers.forEach(clearTimeout);
+        u.onboundary = u.onend = u.onerror = null;
+        if (this.speechCancellation?.id === target.id) this.speechCancellation = null;
+        if (complete) onWord?.(words.length);
         resolve();
       };
+      u.onend = () => finish(true);
+      u.onerror = () => finish(false);
+      this.speechCancellation = { id: target.id, stop: () => {
+        finish(false);
+        speechSynthesis.cancel();
+        target.rig.speak([], 0);
+      } };
       speechSynthesis.speak(u);
     });
   }
@@ -169,13 +196,17 @@ export class Voice {
     const tl = lineTimeline(text, 165 * (target.voice?.rate ?? 1));
     target.rig.speak(tl.keys, tl.duration);
     const timers = tl.words.map((w, i) => setTimeout(() => onWord?.(i + 1), w.t * 1000));
-    return new Promise((resolve) =>
-      setTimeout(() => {
+    return new Promise((resolve) => {
+      const finish = (complete: boolean) => {
         timers.forEach(clearTimeout);
-        onWord?.(tl.words.length);
+        clearTimeout(end);
+        if (this.speechCancellation?.id === target.id) this.speechCancellation = null;
+        if (complete) onWord?.(tl.words.length);
         resolve();
-      }, tl.duration * 1000 + 100),
-    );
+      };
+      const end = setTimeout(() => finish(true), tl.duration * 1000 + 100);
+      this.speechCancellation = { id: target.id, stop: () => { finish(false); target.rig.speak([], 0); } };
+    });
   }
 
   /** Per frame: drive the speaking face's mouth from the audio envelope. */

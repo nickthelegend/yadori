@@ -1,0 +1,400 @@
+[
+  {
+    "name": "room",
+    "command": [
+      "pnpm",
+      "--filter",
+      "@yadori/room",
+      "test"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+    "startedAt": "2026-10-26T22:39:16.287Z",
+    "endedAt": "2026-10-26T22:39:16.946Z",
+    "exitCode": 0,
+    "log": "commands/room.txt"
+  },
+  {
+    "name": "rig",
+    "command": [
+      "pnpm",
+      "--filter",
+      "@yadori/rig",
+      "test"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+    "startedAt": "2026-10-26T22:39:16.947Z",
+    "endedAt": "2026-10-26T22:39:17.479Z",
+    "exitCode": 0,
+    "log": "commands/rig.txt"
+  },
+  {
+    "name": "server",
+    "command": [
+      "pnpm",
+      "--filter",
+      "@yadori/server",
+      "test"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+    "startedAt": "2026-10-26T22:39:17.479Z",
+    "endedAt": "2026-10-26T22:39:18.195Z",
+    "exitCode": 0,
+    "log": "commands/server.txt"
+  },
+  {
+    "name": "typecheck",
+    "command": [
+      "pnpm",
+      "typecheck"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+    "startedAt": "2026-10-26T22:39:18.195Z",
+    "endedAt": "2026-10-26T22:39:20.116Z",
+    "exitCode": 0,
+    "log": "commands/typecheck.txt"
+  },
+  {
+    "name": "app-build",
+    "command": [
+      "pnpm",
+      "--filter",
+      "app",
+      "build"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+    "startedAt": "2026-10-26T22:39:20.116Z",
+    "endedAt": "2026-10-26T22:39:25.237Z",
+    "exitCode": 0,
+    "log": "commands/app-build.txt"
+  },
+  {
+    "name": "http-mcp-store",
+    "command": [
+      "node",
+      "e2e/audit-server.mjs"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+    "startedAt": "2026-10-26T22:39:25.237Z",
+    "endedAt": "2026-10-26T22:39:26.027Z",
+    "exitCode": 0,
+    "log": "commands/http-mcp-store.txt"
+  },
+  {
+    "name": "rooms",
+    "command": [
+      "pnpm",
+      "--filter",
+      "app",
+      "rooms"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+    "startedAt": "2026-10-26T22:39:26.028Z",
+    "endedAt": "2026-10-26T22:39:26.260Z",
+    "exitCode": 0,
+    "log": "commands/rooms.txt"
+  },
+  {
+    "name": "fetch-decline",
+    "command": [
+      "node",
+      "--input-type=module",
+      "-e",
+      "import{spawnSync}from'node:child_process';const r=spawnSync('bash',['scripts/fetch-models.sh'],{input:'N\\n',encoding:'utf8'});process.stdout.write(r.stdout);process.stderr.write(r.stderr);if(r.status!==1||!r.stdout.includes('Not downloaded. The app keeps its labelled fallback voice.'))process.exit(1);"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+    "startedAt": "2026-10-26T22:39:26.260Z",
+    "endedAt": "2026-10-26T22:39:26.293Z",
+    "exitCode": 0,
+    "log": "commands/fetch-decline.txt"
+  },
+  {
+    "name": "slot-acquire",
+    "command": [
+      "/Volumes/Extreme SSD/Projects/grokbot/tools/heavy-slot.sh",
+      "acquire",
+      "yadori-audit-final"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+    "startedAt": "2026-10-26T22:39:26.293Z",
+    "endedAt": "2026-10-26T22:39:26.304Z",
+    "exitCode": 0,
+    "log": "commands/slot-acquire.txt"
+  },
+  {
+    "name": "quest",
+    "command": [
+      "pnpm",
+      "--filter",
+      "app",
+      "e2e:xr"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+    "startedAt": "2026-10-26T22:39:30.725Z",
+    "endedAt": "2026-10-26T22:40:53.553Z",
+    "exitCode": 0,
+    "log": "commands/quest.txt"
+  },
+  {
+    "name": "xr-details",
+    "command": [
+      "node",
+      "packages/app/e2e/audit-xr-details.mjs"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+    "startedAt": "2026-10-26T22:40:53.554Z",
+    "endedAt": "2026-10-26T22:41:25.910Z",
+    "exitCode": 0,
+    "log": "commands/xr-details.txt"
+  },
+  {
+    "name": "xr-fixes",
+    "command": [
+      "node",
+      "e2e/audit-xr-fixes.mjs"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4/packages/app",
+    "startedAt": "2026-10-26T22:41:25.910Z",
+    "endedAt": "2026-10-26T22:41:57.115Z",
+    "exitCode": 0,
+    "log": "commands/xr-fixes.txt"
+  },
+  {
+    "name": "xr-furniture",
+    "command": [
+      "node",
+      "e2e/audit-furniture.mjs"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4/packages/app",
+    "startedAt": "2026-10-26T22:41:57.116Z",
+    "endedAt": "2026-10-26T22:42:30.414Z",
+    "exitCode": 0,
+    "log": "commands/xr-furniture.txt"
+  },
+  {
+    "name": "xr-capacity",
+    "command": [
+      "node",
+      "e2e/audit-capacity.mjs"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4/packages/app",
+    "startedAt": "2026-10-26T22:42:30.415Z",
+    "endedAt": "2026-10-26T22:42:59.579Z",
+    "exitCode": 0,
+    "log": "commands/xr-capacity.txt"
+  },
+  {
+    "name": "xr-persistence",
+    "command": [
+      "node",
+      "e2e/audit-persistence.mjs"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4/packages/app",
+    "startedAt": "2026-10-26T22:42:59.580Z",
+    "endedAt": "2026-10-26T22:43:22.518Z",
+    "exitCode": 0,
+    "log": "commands/xr-persistence.txt"
+  },
+  {
+    "name": "xr-mode-label",
+    "command": [
+      "node",
+      "e2e/audit-mode-label.mjs"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4/packages/app",
+    "startedAt": "2026-10-26T22:43:22.518Z",
+    "endedAt": "2026-10-26T22:43:35.435Z",
+    "exitCode": 0,
+    "log": "commands/xr-mode-label.txt"
+  },
+  {
+    "name": "xr-occlusion",
+    "command": [
+      "node",
+      "e2e/audit-occlusion.mjs"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+    "startedAt": "2026-10-26T22:43:35.435Z",
+    "endedAt": "2026-10-26T22:43:51.310Z",
+    "exitCode": 0,
+    "log": "commands/xr-occlusion.txt"
+  },
+  {
+    "name": "browser",
+    "command": [
+      "pnpm",
+      "--filter",
+      "app",
+      "e2e:browser"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+    "startedAt": "2026-10-26T22:44:27.011Z",
+    "endedAt": "2026-10-26T22:45:04.591Z",
+    "exitCode": 0,
+    "log": "commands/browser.txt"
+  },
+  {
+    "name": "responsive",
+    "command": [
+      "pnpm",
+      "e2e:responsive"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+    "startedAt": "2026-10-26T22:45:04.591Z",
+    "endedAt": "2026-10-26T22:45:15.282Z",
+    "exitCode": 0,
+    "log": "commands/responsive.txt"
+  },
+  {
+    "name": "browser-checklist",
+    "command": [
+      "node",
+      "e2e/audit-browser.mjs"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+    "startedAt": "2026-10-26T22:45:15.282Z",
+    "endedAt": "2026-10-26T22:47:50.768Z",
+    "exitCode": 0,
+    "log": "commands/browser-checklist.txt"
+  },
+  {
+    "name": "browser-focused",
+    "command": [
+      "node",
+      "e2e/audit-focused.mjs"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+    "startedAt": "2026-10-26T22:47:50.770Z",
+    "endedAt": "2026-10-26T22:48:08.430Z",
+    "exitCode": 0,
+    "log": "commands/browser-focused.txt"
+  },
+  {
+    "name": "browser-inputs",
+    "command": [
+      "node",
+      "e2e/audit-inputs.mjs"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+    "startedAt": "2026-10-26T22:48:08.430Z",
+    "endedAt": "2026-10-26T22:48:32.241Z",
+    "exitCode": 0,
+    "log": "commands/browser-inputs.txt"
+  },
+  {
+    "name": "browser-mobile",
+    "command": [
+      "node",
+      "e2e/audit-mobile.mjs"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+    "startedAt": "2026-10-26T22:48:32.242Z",
+    "endedAt": "2026-10-26T22:48:54.175Z",
+    "exitCode": 0,
+    "log": "commands/browser-mobile.txt"
+  },
+  {
+    "name": "landing-keyboard",
+    "command": [
+      "node",
+      "e2e/audit-keyboard.mjs"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+    "startedAt": "2026-10-26T22:48:54.176Z",
+    "endedAt": "2026-10-26T22:48:56.270Z",
+    "exitCode": 0,
+    "log": "commands/landing-keyboard.txt"
+  },
+  {
+    "name": "built-browser",
+    "command": [
+      "node",
+      "e2e/audit-built.mjs"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+    "startedAt": "2026-10-26T22:48:56.271Z",
+    "endedAt": "2026-10-26T22:48:59.145Z",
+    "exitCode": 0,
+    "log": "commands/built-browser.txt"
+  },
+  {
+    "name": "browser-camera",
+    "command": [
+      "node",
+      "e2e/audit-recovery.mjs"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+    "startedAt": "2026-10-26T22:48:59.145Z",
+    "endedAt": "2026-10-26T22:49:04.679Z",
+    "exitCode": 0,
+    "log": "commands/browser-camera.txt"
+  },
+  {
+    "name": "storage-denied",
+    "command": [
+      "node",
+      "e2e/audit-recovery.mjs"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+    "startedAt": "2026-10-26T22:49:04.679Z",
+    "endedAt": "2026-10-26T22:49:15.322Z",
+    "exitCode": 0,
+    "log": "commands/storage-denied.txt"
+  },
+  {
+    "name": "silent-browser",
+    "command": [
+      "node",
+      "e2e/audit-recovery.mjs"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+    "startedAt": "2026-10-26T22:49:15.322Z",
+    "endedAt": "2026-10-26T22:49:26.170Z",
+    "exitCode": 0,
+    "log": "commands/silent-browser.txt"
+  },
+  {
+    "name": "glasses-interrupt",
+    "command": [
+      "node",
+      "e2e/audit-glasses-interrupt.mjs"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+    "startedAt": "2026-10-26T22:50:25.182Z",
+    "endedAt": "2026-10-26T22:50:42.429Z",
+    "exitCode": 0,
+    "log": "commands/glasses-interrupt.txt"
+  },
+  {
+    "name": "glasses",
+    "command": [
+      "pnpm",
+      "--filter",
+      "app",
+      "e2e:glasses"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+    "startedAt": "2026-10-26T22:50:42.430Z",
+    "endedAt": "2026-10-26T22:51:12.307Z",
+    "exitCode": 0,
+    "log": "commands/glasses.txt"
+  },
+  {
+    "name": "offline-recovery-502",
+    "command": [
+      "node",
+      "e2e/audit-offline-502.mjs"
+    ],
+    "cwd": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4",
+    "startedAt": "2026-10-26T23:02:49.230Z",
+    "endedAt": "2026-10-26T23:03:26.677Z",
+    "exitCode": 1,
+    "rows": [
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "P11"
+    ],
+    "log": "browser/offline-502/results.json"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "id": "L06",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": "Skip to content\nYadori\n宿り\nHow\nProof\nLive\nEvidence\nPinch the couch.\nIt wakes up.\n\nA face blooms on the real couch and flinches when you poke it.\n\nTry it without a headset\nSee the evidence\nCouch\n#001\n\nBuilt-in face, not generated\n\nThree moves.\n\nPoint, pinch, and the room starts talking.\n\nPinch\n\nThe room scan already named the couch.\n\nBloom\n\nA face sits on it and flinches when poked.\n\nGossip\n\nWake the lamp and the two of them talk.\n\nMeasured, not mocked.\n\nEmulator and unit tests. No Quest run yet.\n",
+      "at": "2026-10-26T22:45:18.403Z",
+      "shot": "index-1280.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

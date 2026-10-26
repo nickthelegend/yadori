@@ -1,0 +1,2 @@
+import{args}from'./page-args.mjs';import{join}from'node:path';
+export default async function({frame,page,workspaceRoot}){const a=args(workspaceRoot);if(a.shot)await page.screenshot({path:join(workspaceRoot,'../../audit/browser',a.shot+'.jpg'),type:'jpeg',quality:60});return frame.evaluate(()=>({mode:window.__yadori.mode(),status:window.__yadori.status(),hover:window.__yadori.hover(),spirits:window.__yadori.spirits(),targets:window.__yadori.targets(),saved:JSON.parse(localStorage.getItem('yadori.spirits.v1')??'[]'),body:document.body.innerText}));}

@@ -1,0 +1,251 @@
+{
+  "at": "2026-10-26T22:39:30.709Z",
+  "status": {
+    "ok": true,
+    "data": {
+      "workspaceRoot": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4/packages/app",
+      "runtimeUrls": {
+        "local": "https://localhost:8091/",
+        "network": [
+          "https://192.168.0.6:8091/"
+        ]
+      },
+      "state": {
+        "workspaceRoot": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4/packages/app",
+        "running": true,
+        "starting": false,
+        "browserConnected": true,
+        "browserCommandReady": true,
+        "session": {
+          "schemaVersion": 2,
+          "sessionId": "e02a0350-1a53-486f-b4a4-c54db2ae8cb6",
+          "workspaceRoot": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4/packages/app",
+          "pid": 53391,
+          "processStart": "Mon Oct 26 22:39:26 2026",
+          "port": 8091,
+          "localUrl": "https://localhost:8091/",
+          "networkUrls": [
+            "https://192.168.0.6:8091/"
+          ],
+          "aiMode": "agent",
+          "browser": {
+            "lifecycle": {
+              "state": "running",
+              "policy": "eager",
+              "sessionId": "e02a0350-1a53-486f-b4a4-c54db2ae8cb6",
+              "browserEpoch": 1,
+              "revision": 8,
+              "stateEnteredAt": "2026-10-26T22:39:27.849Z",
+              "lastObservedAt": "2026-10-26T22:39:30.216Z",
+              "failures": 0,
+              "cleanupConfirmed": true,
+              "attemptLimit": 3,
+              "historyTruncated": false,
+              "retryEligible": false,
+              "nextAction": "Use runtime_list_targets to inspect endpoint readiness.",
+              "history": [
+                {
+                  "revision": 1,
+                  "state": "launching",
+                  "at": "2026-10-26T22:39:27.333Z",
+                  "reason": "launch"
+                },
+                {
+                  "revision": 2,
+                  "state": "launching",
+                  "at": "2026-10-26T22:39:27.334Z",
+                  "reason": "prepared"
+                },
+                {
+                  "revision": 3,
+                  "state": "running",
+                  "at": "2026-10-26T22:39:27.849Z",
+                  "reason": "running"
+                }
+              ],
+              "attemptId": "bde62a17-eeb5-455e-9a9f-866777add461"
+            },
+            "status": "connected",
+            "clients": [
+              {
+                "commandReady": true,
+                "sessionId": "e02a0350-1a53-486f-b4a4-c54db2ae8cb6",
+                "browserEpoch": 1,
+                "deviceClass": "managed",
+                "pageId": "tab-mvpu9yi3-qda2kp",
+                "role": "app",
+                "tabGeneration": 1
+              },
+              {
+                "commandReady": true,
+                "sessionId": "e02a0350-1a53-486f-b4a4-c54db2ae8cb6",
+                "browserEpoch": 1,
+                "deviceClass": "managed",
+                "pageId": "tab-mvpu9wyh-9pbn8j",
+                "role": "editor",
+                "sceneSessionId": "scene-wwgdzahr2d",
+                "tabGeneration": 1
+              }
+            ],
+            "lastBridgeConnectedAt": "2026-10-26T22:39:30.165Z",
+            "lastCommandReadyAt": "2026-10-26T22:39:30.216Z",
+            "connected": true,
+            "commandReady": true,
+            "connectedClientCount": 2,
+            "lastTransitionAt": "2026-10-26T22:39:27.849Z",
+            "audioMuted": false
+          },
+          "browserAutomation": {
+            "configured": true,
+            "enabled": true,
+            "endpoint": "http://127.0.0.1:53301",
+            "targetId": "FAC00D99FE91D36BA89CC1AF1BE73BAA",
+            "protocol": "cdp"
+          },
+          "registeredAt": "2026-10-26T22:39:27.331Z",
+          "updatedAt": "2026-10-26T22:39:30.236Z"
+        },
+        "launch": {
+          "schemaVersion": 2,
+          "claimId": "3a45a599-46dd-485e-9129-caabef1f4bcc",
+          "workspaceRoot": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4/packages/app",
+          "pid": 53391,
+          "processStart": "Mon Oct 26 22:39:26 2026",
+          "launcherPid": 53282,
+          "processGroupId": 53282,
+          "command": "npm",
+          "args": [
+            "run",
+            "dev:runtime"
+          ],
+          "logPath": null,
+          "scriptName": "dev:runtime",
+          "port": 8091,
+          "openBrowser": true,
+          "createdAt": "2026-10-26T22:39:26.510Z"
+        }
+      },
+      "adapters": [
+        {
+          "tool": "claude",
+          "file": ".mcp.json",
+          "exists": false,
+          "status": "missing",
+          "support": {
+            "instruction": {
+              "file": "CLAUDE.md",
+              "status": "configured"
+            },
+            "permissions": {
+              "file": ".claude/settings.json",
+              "status": "configured"
+            }
+          }
+        },
+        {
+          "tool": "cursor",
+          "file": ".cursor/mcp.json",
+          "exists": false,
+          "status": "missing",
+          "support": {
+            "instruction": {
+              "file": "AGENTS.md",
+              "status": "configured"
+            },
+            "permissions": {
+              "file": ".cursor/permissions.json",
+              "status": "missing"
+            }
+          }
+        },
+        {
+          "tool": "copilot",
+          "file": ".vscode/mcp.json",
+          "exists": false,
+          "status": "missing",
+          "support": {
+            "instruction": {
+              "file": "AGENTS.md",
+              "status": "configured"
+            },
+            "permissions": {
+              "file": null,
+              "status": "manual",
+              "note": "VS Code stores MCP tool approvals interactively; approve the IWSDK server once for the workspace."
+            }
+          }
+        },
+        {
+          "tool": "codex",
+          "file": ".codex/config.toml",
+          "exists": false,
+          "status": "missing",
+          "support": {
+            "instruction": {
+              "file": "AGENTS.md",
+              "status": "configured"
+            },
+            "permissions": {
+              "file": ".codex/config.toml",
+              "status": "missing"
+            }
+          }
+        },
+        {
+          "tool": "opencode",
+          "file": "opencode.json",
+          "exists": false,
+          "status": "missing",
+          "support": {
+            "instruction": {
+              "file": "AGENTS.md",
+              "status": "configured"
+            },
+            "permissions": {
+              "file": "opencode.json",
+              "status": "missing"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "gateway": {
+    "gateway": "yadori",
+    "spark": {
+      "ready": false,
+      "model": "muse-spark-1.3",
+      "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+    },
+    "wonder": {
+      "ready": false,
+      "model": "muse-wonder-1.0",
+      "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+    },
+    "image": {
+      "ready": false,
+      "model": "muse-image-1.0",
+      "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+    },
+    "transcribe": {
+      "ready": false,
+      "model": "muse-voice-transcribe-1.0",
+      "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+    },
+    "sam3": {
+      "ready": false,
+      "model": "sam-3.1",
+      "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+    },
+    "tts": {
+      "ready": false,
+      "setup": "Setup required: run scripts/fetch-models.sh (MMS-TTS weights, CC-BY-NC-4.0)",
+      "model": "facebook/mms-tts-eng",
+      "license": "CC-BY-NC-4.0"
+    },
+    "budget": {
+      "cap_usd": 3,
+      "spent_usd": 0
+    }
+  }
+}

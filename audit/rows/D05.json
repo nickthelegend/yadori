@@ -1,0 +1,21 @@
+{
+  "id": "D05",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/doc-review.json",
+      "detail": {
+        "assets": [
+          "packages/landing/assets/favicon.svg",
+          "packages/landing/assets/card-couch.jpg",
+          "packages/landing/assets/card-lamp.jpg"
+        ],
+        "provenance": "ASSETS.md; own procedural face/den and emulator crops; Fontshare/ITF, SIL OFL 1.1; no tracked weights."
+      },
+      "at": "2026-10-26T22:51:43.637Z",
+      "capture": null
+    }
+  ]
+}

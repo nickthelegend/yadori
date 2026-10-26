@@ -1,0 +1,34 @@
+{
+  "id": "E09",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": {
+        "nav": [
+          {
+            "id": "numbers",
+            "hash": "#numbers",
+            "heading": true
+          },
+          {
+            "id": "live",
+            "hash": "#live",
+            "heading": true
+          },
+          {
+            "id": "try",
+            "hash": "#try",
+            "heading": true
+          }
+        ],
+        "home": "Pinch the couch.\nIt wakes up."
+      },
+      "at": "2026-10-26T22:45:27.731Z",
+      "shot": "evidence-1280.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

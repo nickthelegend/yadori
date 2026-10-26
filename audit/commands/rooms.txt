@@ -1,0 +1,6 @@
+
+> app@0.1.0 rooms /Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4/packages/app
+> node scripts/build-rooms.mjs
+
+public/rooms/yadori_den.glts
+public/rooms/yadori_bare.glts

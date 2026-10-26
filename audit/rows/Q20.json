@@ -1,0 +1,375 @@
+{
+  "id": "Q20",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/quest-results.json",
+      "detail": {
+        "assertion": {
+          "name": "the lamp replies",
+          "ok": true,
+          "detail": ""
+        },
+        "observations": {
+          "stage": "reply",
+          "at": "2026-10-26T22:40:19.711Z",
+          "mode": {
+            "xr": true,
+            "emulator": true,
+            "room": "iwer:yadori_den",
+            "label": "Emulated room (IWER), not your room"
+          },
+          "status": {
+            "online": true,
+            "gateway": "yadori",
+            "spark": {
+              "ready": false,
+              "model": "muse-spark-1.3",
+              "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+            },
+            "wonder": {
+              "ready": false,
+              "model": "muse-wonder-1.0",
+              "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+            },
+            "image": {
+              "ready": false,
+              "model": "muse-image-1.0",
+              "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+            },
+            "transcribe": {
+              "ready": false,
+              "model": "muse-voice-transcribe-1.0",
+              "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+            },
+            "sam3": {
+              "ready": false,
+              "model": "sam-3.1",
+              "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+            },
+            "tts": {
+              "ready": false,
+              "setup": "Setup required: run scripts/fetch-models.sh (MMS-TTS weights, CC-BY-NC-4.0)",
+              "model": "facebook/mms-tts-eng",
+              "license": "CC-BY-NC-4.0"
+            },
+            "budget": {
+              "cap_usd": 3,
+              "spent_usd": 0
+            }
+          },
+          "hover": {
+            "targets": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "faces": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "gaze": false
+          },
+          "spirits": [
+            {
+              "id": "sp_rkysulofhqp0",
+              "name": "Couch",
+              "label": "couch",
+              "targetId": "mesh-23",
+              "awake": true,
+              "speaking": false,
+              "expression": "neutral",
+              "mouth": "rest",
+              "params": {
+                "eyeOpen": 1,
+                "eyeSmile": 1.3184099045818158e-111,
+                "pupil": 1.0000000000000002,
+                "lookX": 0.6541327928138132,
+                "lookY": 0.6412234483515236,
+                "browY": -8.332572889255422e-94,
+                "browTilt": 1.3887621482092345e-93,
+                "mouthOpen": 1.1425669913007263e-53,
+                "mouthWide": 0.5000000000000001,
+                "mouthRound": 9.0643691167561e-66,
+                "smile": 0.24999999999999997,
+                "blush": 0.44999999999999973,
+                "squash": 4.5755431562162586e-12,
+                "wobble": -3.361417471246995e-27,
+                "reveal": 1
+              },
+              "anchor": [
+                0,
+                0.7095000118017196,
+                -2.6399999165534975
+              ],
+              "size": 0.30100000500679014,
+              "facePos": [
+                -0.029110135679449773,
+                0.7095000118017196,
+                -2.5805551901822255
+              ],
+              "faceDir": [
+                -0.4397986189354342,
+                0,
+                0.8980964173085677
+              ],
+              "pokes": 1,
+              "pets": 2,
+              "flicks": 1,
+              "lines": 2,
+              "voiceMode": "browser",
+              "bubble": false,
+              "bubbleInfo": {
+                "content": null,
+                "corners": [
+                  [
+                    -0.2626887722764629,
+                    0.9520642744782675,
+                    -2.581064203405015
+                  ],
+                  [
+                    0.11451172299313532,
+                    0.9520642744782675,
+                    -2.396348783452132
+                  ],
+                  [
+                    0.20446850091756338,
+                    0.9996357546326409,
+                    -2.580046176959436
+                  ],
+                  [
+                    -0.17273199435203487,
+                    0.9996357546326409,
+                    -2.7647615969123187
+                  ]
+                ]
+              },
+              "sourceChip": {
+                "visible": false,
+                "text": "Built-in face · not generated"
+              },
+              "faceSource": "built-in",
+              "hasPersona": false,
+              "anchorErrorCm": 0
+            },
+            {
+              "id": "sp_trk2yxo7swjl",
+              "name": "Lamp",
+              "label": "lamp",
+              "targetId": "mesh-24",
+              "awake": true,
+              "speaking": false,
+              "expression": "neutral",
+              "mouth": "rest",
+              "params": {
+                "eyeOpen": 1,
+                "eyeSmile": 0,
+                "pupil": 0.9999999999999998,
+                "lookX": 3.239538722520553e-8,
+                "lookY": 0.2118007609539516,
+                "browY": 1.0568080756237314e-37,
+                "browTilt": -3.17042422687119e-38,
+                "mouthOpen": 6.080220680996161e-14,
+                "mouthWide": 0.4999999999989558,
+                "mouthRound": 3.759831869210532e-18,
+                "smile": 0.24999999999999994,
+                "blush": 0.4499999999999996,
+                "squash": -0.000009185981909662675,
+                "wobble": 0,
+                "reveal": 1
+              },
+              "anchor": [
+                -1.3900000059604645,
+                1.4166667064030964,
+                -3.1500000953674316
+              ],
+              "size": 0.15399999916553497,
+              "facePos": [
+                -1.3578202678351152,
+                1.4166667064030964,
+                -3.1326357157022824
+              ],
+              "faceDir": [
+                0.8800503250129083,
+                0,
+                0.47488043278774345
+              ],
+              "pokes": 0,
+              "pets": 0,
+              "flicks": 0,
+              "lines": 1,
+              "voiceMode": "browser",
+              "bubble": true,
+              "bubbleInfo": {
+                "content": {
+                  "speaker": "Lamp → Couch",
+                  "tag": "puppet line (you)",
+                  "text": "Then stop glowing at them.",
+                  "shown": 999
+                },
+                "corners": [
+                  [
+                    -1.468786211175864,
+                    1.4967344476594828,
+                    -2.929089323649826
+                  ],
+                  [
+                    -1.2486063564067464,
+                    1.4967344476594828,
+                    -3.337127514681095
+                  ],
+                  [
+                    -1.2468543244943664,
+                    1.7285525229609497,
+                    -3.336182107754739
+                  ],
+                  [
+                    -1.467034179263484,
+                    1.7285525229609497,
+                    -2.92814391672347
+                  ]
+                ]
+              },
+              "sourceChip": {
+                "visible": false,
+                "text": "Built-in face · not generated"
+              },
+              "faceSource": "built-in",
+              "hasPersona": false,
+              "anchorErrorCm": 0
+            }
+          ],
+          "targets": [
+            {
+              "id": "mesh-23",
+              "label": "couch",
+              "center": [
+                0,
+                0.4300000071525574,
+                -3.0999999046325684
+              ],
+              "dims": [
+                2,
+                0.8600000143051147,
+                0.8999999761581421
+              ]
+            },
+            {
+              "id": "mesh-24",
+              "label": "lamp",
+              "center": [
+                -1.6200000047683716,
+                0.8500000238418579,
+                -3.1500000953674316
+              ],
+              "dims": [
+                0.4399999976158142,
+                1.7000000476837158,
+                0.4399999976158142
+              ]
+            },
+            {
+              "id": "mesh-25",
+              "label": "plant",
+              "center": [
+                1.649999976158142,
+                0.75,
+                -3.049999952316284
+              ],
+              "dims": [
+                0.7799999713897705,
+                1.5,
+                0.7799999713897705
+              ]
+            },
+            {
+              "id": "mesh-26",
+              "label": "table",
+              "center": [
+                0,
+                0.22499999403953552,
+                -1.850000023841858
+              ],
+              "dims": [
+                1.100000023841858,
+                0.44999998807907104,
+                0.6000000238418579
+              ]
+            },
+            {
+              "id": "mesh-27",
+              "label": "screen",
+              "center": [
+                2.319999933242798,
+                1,
+                -1.7000000476837158
+              ],
+              "dims": [
+                1.2000000476837158,
+                0.7200000286102295,
+                0.05999999865889549
+              ]
+            }
+          ],
+          "saved": [
+            {
+              "spiritId": "sp_rkysulofhqp0",
+              "label": "couch",
+              "name": "Couch",
+              "dims": [
+                2,
+                0.8600000143051147,
+                0.8999999761581421
+              ],
+              "position": [
+                0,
+                0.4300000071525574,
+                -3.0999999046325684
+              ],
+              "persona": null,
+              "sheet": null,
+              "faceSource": "built-in",
+              "source": "label",
+              "firstWoke": "2026-10-27",
+              "lines": 2,
+              "memories": 0,
+              "room": "iwer:yadori_den"
+            },
+            {
+              "spiritId": "sp_trk2yxo7swjl",
+              "label": "lamp",
+              "name": "Lamp",
+              "dims": [
+                0.4399999976158142,
+                1.7000000476837158,
+                0.4399999976158142
+              ],
+              "position": [
+                -1.6200000047683716,
+                0.8500000238418579,
+                -3.1500000953674316
+              ],
+              "persona": null,
+              "sheet": null,
+              "faceSource": "built-in",
+              "source": "label",
+              "firstWoke": "2026-10-27",
+              "lines": 1,
+              "memories": 0,
+              "room": "iwer:yadori_den"
+            }
+          ],
+          "body": "Yadori\nEmulated room (IWER), not your room\nSetup required (5)\nforget\nCouch\ncouch · 2.0 × 0.9 m\nforget\nLamp\nlamp · 0.4 × 1.7 m\n\n4\nopen\n\nSpeaker\nCouch\nLamp\nto \nyou\nLamp\nSay\nPuppet mode: you are the voice. Setup required for Muse Spark (MODEL_API_KEY). Lines are yours, spoken by Browser voice, not a Meta model."
+        }
+      },
+      "at": "2026-10-26T22:40:53.539Z",
+      "shot": "quest-reply.jpg",
+      "capture": "audit/browser/quest-network.json"
+    }
+  ]
+}

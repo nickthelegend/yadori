@@ -19,7 +19,7 @@ const gateway: ProxyOptions = {
       const r = res as ServerResponse;
       if (r.headersSent) return;
       const isStatus = (req.url ?? '').startsWith('/api/status');
-      r.writeHead(isStatus ? 200 : 502, { 'content-type': 'application/json' });
+      r.writeHead(isStatus ? 200 : 502, { 'content-type': 'application/json', 'cache-control': 'no-store' });
       r.end(JSON.stringify({ gateway: 'offline', error: 'Gateway offline: start it with pnpm gateway' }));
     });
   },

@@ -1,0 +1,15 @@
+{
+  "startedAt": "2026-10-26T23:02:49.230Z",
+  "rows": [
+    "S13",
+    "S14",
+    "S15",
+    "S16",
+    "P11"
+  ],
+  "browserVersion": "156.0.8078.4",
+  "envFile": "/tmp/yadori-audit-no-env",
+  "envFileExists": false,
+  "MODEL_API_KEY": "empty",
+  "slot": "yadori-audit-502"
+}

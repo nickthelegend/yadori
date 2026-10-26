@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-26T23:19:10.488Z",
+  "pass": 274,
+  "fail": 0,
+  "untested": 14,
+  "pending": 0,
+  "rows": 288,
+  "missing": [],
+  "offlineFollowup": "audit/browser/offline-502/run.json"
+}

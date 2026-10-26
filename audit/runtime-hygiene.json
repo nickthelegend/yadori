@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-26T23:19:10.481Z",
+  "scope": [
+    "S13",
+    "S14",
+    "S15",
+    "S16",
+    "P11"
+  ],
+  "expectedResponses": [
+    {
+      "at": "2026-10-26T23:02:57.064Z",
+      "group": "S16",
+      "kind": "response",
+      "requestId": 380,
+      "url": "https://localhost:8091/api/wake",
+      "method": "POST",
+      "status": 502
+    }
+  ],
+  "problems": [],
+  "baseline": "Full-suite captures remain unchanged; only S13–S16 and P11 were re-verified."
+}

@@ -1,116 +1,65 @@
 # Testing
 
-Evidence as of Oct 25, 2026: fresh unit, typecheck and build runs below; emulator/browser results restored
-from the last complete run, `74e90e1` (MacBook, Apple M4, Chromium via IWSDK agent mode). **Device: no.**
-Nothing here ran on a Quest or on Meta VR Glasses hardware; emulator numbers are a relative proxy (the M4 CPU
-is several times faster than a Quest 3, and GPU time is not measured). **Meta Model API: no key yet**, so every
-Meta test ran its "Setup required" branch (live when `MODEL_API_KEY` is set; never mocked, never skipped).
+Fresh full re-verification: **Oct 27, 2026 (Asia/Kolkata)**. UTC execution: 2026-10-26T22:39:16.137Z through 2026-10-26T22:51:15.102Z. [Machine/run record](audit/run.json), [exact commands and exit codes](audit/commands.json), [AUDIT.md](AUDIT.md).
 
-## Totals
+**274 PASS / 0 FAIL / 14 UNTESTED / 0 PENDING** across 288 checklist rows. S13–S16 and P11 now link the offline-only follow-up; other rows retain the full batch's evidence. Prior attempt evidence was removed from `audit/`; no restored result JSON is counted. The evidence page's Oct 25 figures are explicitly historical.
 
-| Suite | Command | Result |
-|---|---|---|
-| `@yadori/room` (Vitest): ray vs box, face placement on all 6 sides + clamps, turn limit, room context, re-match ±10% / 30 cm, poke/flick/pet classifiers incl. a near-miss sweep, pointer strokes | `pnpm --filter @yadori/room test` | **Passed: 36**, 0 skipped (fresh rerun) |
-| `@yadori/rig` (Vitest): mouth shapes from envelope and text, blink bounds + determinism, wake/sleep, reactions, springs settle, lip-sync ≤ 80 ms, gaze clamp, thinking look | `pnpm --filter @yadori/rig test` | **Passed: 14**, 0 skipped (fresh rerun) |
-| `@yadori/server` (Vitest): HTTP contract without key (status, wake → built-in face, 503 setup_required for chat/transcribe/cut, MMS-TTS setup message, forget deletes the folder, path tricks, rate limit, key never echoed), persona validation, turn budget (6 tools, 2 `ask_object` hops), SAM token parser, WAV checks, budget cap, Meta live-or-setup-required, MCP over stdio as a child process, the gateway as a real process | `pnpm --filter @yadori/server test` | **19 passed; 13 did not complete**: sandbox `listen EPERM` on `127.0.0.1`. Last complete run: **32 passed**, Oct 25 (`74e90e1`) |
-| Emulator e2e, Quest 3 profile, **hands only**, synthetic room `yadori_den` + `yadori_bare` | `pnpm --filter app e2e:xr` | **Restored-from-74e90e1: 21 / 21**, Oct 25; fresh retry not-run (runtime startup blocked) |
-| Emulator e2e, Meta VR Glasses profile (gaze + pinch, field of view, gaze-off fallback) | `pnpm --filter app e2e:glasses` (`bash e2e/run-glasses.sh`; server must already be up; switches to `metaVRGlasses` and restores `metaQuest3`) | **Restored-from-74e90e1: 8 / 8**, Oct 25; fresh retry not-run (runtime startup blocked) |
-| Browser diorama e2e (no headset), real mouse + keyboard | `pnpm --filter app e2e:browser` | **Restored-from-74e90e1: 18 / 18**, Oct 25; fresh retry not-run (runtime startup blocked) |
-| Responsive: landing 375 / 1280 px, app on a phone user agent at 375 px | `pnpm e2e:responsive` | **Restored-from-74e90e1: 12 / 12**, Oct 25; fresh retry not-run (Chromium MachPort permission denied) |
-| Production build | `pnpm --filter app build` | **Passed** (fresh rerun; largest chunk 4.09 MB; chunk-size and dependency annotation warnings) |
-| Typecheck | `pnpm typecheck` | **Passed** (fresh rerun: app, room, rig, server) |
+| Suite | Command | Fresh result |
+|---|---|---:|
+| Room geometry, placement, gestures, context and re-match | `pnpm --filter @yadori/room test` | 36 passed |
+| Face rig, blink, reactions, speech and gaze | `pnpm --filter @yadori/rig test` | 14 passed |
+| Real HTTP gateway, MCP child, process lifecycle, server units and no-key guards | `pnpm --filter @yadori/server test` | 32 passed |
+| All packages | `pnpm typecheck` | PASS |
+| App production build | `pnpm --filter app build` | PASS |
+| Quest 3 IWER, emulated hands, den + bare room | `pnpm --filter app e2e:xr` | 22/22 |
+| Meta VR Glasses IWER, gaze + pinch and actual bubble bounds | `pnpm --filter app e2e:glasses` | 10/10 |
+| Browser diorama, real mouse + keyboard | `pnpm --filter app e2e:browser` | 20/20 |
+| Responsive landing 375/1280 and phone app 375 | `pnpm e2e:responsive` | 12/12 |
+| Expanded HTTP/MCP/store/privacy/budget inventory | `node e2e/audit-server.mjs` | 76/76 |
+| Detailed desktop/landing/naming/storage checks | `node e2e/audit-browser.mjs` | 86/86 |
 
-Fresh unit rerun: **69 passed; 13 did not complete**, out of 82. Server breakdown: `units.test.ts` 17 passed,
-`live-meta.test.ts` 2 passed (no key, Setup required); `contract.test.ts` 9 and `mcp.test.ts` 3 were not-run
-because their loopback-listen setup failed; `process.test.ts` 1 timed out before the gateway became ready.
-Vitest reports **19 passed, 1 failed, 12 skipped**, two unhandled `listen EPERM` errors, plus setup/teardown
-errors in the two blocked suites; the server command exits 1. These are sandbox startup limits, not a new
-complete server pass or evidence of a product regression. The last complete server result remains **32 passed
-on Oct 25**, recorded in `74e90e1` (82 unit tests passed in that run). No product code was changed to avoid listening.
+The unit total is **82 passed, 0 failed, 0 skipped**. The four main browser/emulator commands contain **64 passing assertions**. Supplementary checks cover all checklist rows, including mobile, built-app serving, permission guards, storage denial, silent mouth animation, gateway stop/recovery, all furniture, capacity, tracking loss, wake interruption, persistence and two enter/exit cycles. These counts overlap the checklist; they are not added to its 288 rows. See [commands](audit/commands.json) for every supplementary runner.
 
-Dependency setup: frozen installation found an outdated lockfile; retrying without writing the lockfile failed
-with DNS `ENOTFOUND registry.npmjs.org`. The rerun used copied `node_modules` directories from the local
-`projects/yadori` checkout. No `.env` was read: the server test command used
-`YADORI_ENV_FILE=/private/tmp/yadori-verify2-no-env MODEL_API_KEY= pnpm --filter @yadori/server test`
-(the configured env-file path does not exist).
+`evidence.html` was freshly tested and captured at **375×812 and 1280×800**, including navigation, images, FAQ keyboard interaction, overflow and console/network checks. [375](audit/browser/evidence-375.jpg), [1280](audit/browser/evidence-1280.jpg).
 
-Emulator/browser/responsive evidence: **59 checks passed in the Oct 25 run**, not 59 fresh passes.
-The retry task restored all four JSON files in `995a2af` (merged by `50e5345`); each file on disk is
-byte-for-byte identical to `74e90e1`, including its original timestamp:
+Every main suite and immersive supplement captures console, page errors and network outcomes independently. The final active-child Glasses interruption check attaches after each profile replaces Chrome, verifies child/CLI exit, restores Quest, and is followed by a complete Glasses replay. [Runtime hygiene](audit/runtime-hygiene.json), [interruption evidence](audit/browser/glasses-interrupt.json). Intentional HTTP validation/setup responses (400/404/413/429/503) were asserted by the separate real HTTP harness. No mocks, stubs or fabricated model output were used. A subsequent offline-only rerun restored the expected wake HTTP 502. The saved offline capture records the wake 502 and Chrome's matching resource line, and this is the passing observation. S13, S14, S15, S16 and P11 PASS. Suite counts above are unchanged.
 
-| Result file | Status | Original UTC timestamp |
-|---|---|---|
-| `packages/app/e2e/results/xr-quest3.json` | restored-from-74e90e1, 21/21 | `2026-10-25T11:19:25.000Z` |
-| `packages/app/e2e/results/xr-glasses.json` | restored-from-74e90e1, 8/8 | `2026-10-25T11:20:06.192Z` |
-| `packages/app/e2e/results/browser-diorama.json` | restored-from-74e90e1, 18/18 | `2026-10-25T11:20:54.969Z` |
-| `e2e/results/responsive.json` | restored-from-74e90e1, 12/12 | `2026-10-25T11:22:54.625Z` |
+## Performance and hand occlusion
 
-A fresh rerun in this orchestra did not start in the sandbox: IWSDK runtime startup/birth-identity checks
-and Chromium MachPort permission restrictions blocked execution; loopback listening also hits `listen EPERM`.
-The app server was not launched again during this documentation task, and the restored result JSONs were
-left intact. `dev.emulator.device` remains `metaQuest3`. The detailed emulator findings and frame measurements
-below describe the original Oct 25 run; they do not verify the later UI edits.
+600-frame CPU-submit probes on this host, with two spirits. They exclude GPU/headset frame time; the physical 72 Hz / 13.9 ms gate remains UNTESTED.
 
-## Static landing-page check (separate from app emulator suites)
+| Scene | CPU p50 ms | CPU p95 ms | CPU max ms | Draw calls p95 / max | Triangles max |
+|---|---:|---:|---:|---:|---:|
+| Quest 3 IWER (600 XR frames) | 1.00 | 2.00 | 2.30 | 22 / 26 | 18,584 |
+| Browser diorama (600 non-XR frames) | 1.50 | 2.90 | 3.40 | 107 / 107 | 27,846 |
 
-The landing task checked `packages/landing` in headless Chromium at **375 px and 1280 px**, plus
-`evidence.html`: **23 checks passed**, **0 console errors**, **no horizontal scroll**. This was a static-page
-check without the app server. It is separate from the restored 12/12 responsive suite above and does not
-prove app or immersive interactions; it was not rerun during this documentation task.
+Renderer: `ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)`. [Quest raw result](audit/browser/quest-results.json), [browser probe](audit/rows/B40.json). Live read-only sampling captured brief hand reactions and typed speech during the Quest run: [samples](audit/browser/quest-live.json).
 
-## Emulator e2e: what is proven (Quest 3 profile, hands only)
+Emulator hand masking measured **0.00% leakage across 3,192 overlapping face/hand pixels**. It uses IWSDK's actual skinned hand depth surface and frozen render-layer comparison; the white mask image is labelled diagnostic and its material is restored. [Measurement](audit/browser/occlusion.json). Environment depth sensing is not integrated. Physical hand occlusion remains UNTESTED.
 
-From a cold load, the only inputs are emulated hands (`xr look-at`, `xr select` = pinch, `xr run-sequence` for
-fingertip and palm paths) and typed puppet lines:
+## Machine and execution
 
-| Check | Result |
+- Apple M4, 16 GB RAM, macOS 26.5.1 arm64; Node v26.5.0, pnpm 10.29.2; Chrome for Testing/Chromium 156.0.8078.4; IWSDK 1.1.0-rc.2. Managed IWER ran headless in agent mode.
+- All commands used `YADORI_ENV_FILE=/tmp/yadori-audit-no-env MODEL_API_KEY=`; the env-file path did not exist. No env file, credential, seed or wallet was opened. Real gateway data lived in audit-owned temporary directories and was removed.
+- Exhaustive replay used a 10,000/min local request bucket to keep independent cases isolated. Separate real gateways verified the 3/min bucket, 429 responses and status exemption. No rate-limit expectation was removed.
+- Gateway: `pnpm --filter @yadori/server start` on 127.0.0.1:8440. From `packages/app`: `pnpm exec iwsdk dev restart --foreground --ai-mode agent --allow-browser-automation` on HTTPS :8091. The shared slot was acquired as `yadori-audit-final` before either service/Chrome session, and released in cleanup.
+- A frozen dependency install found the existing lockfile missing the root Playwright dependency. `pnpm install --no-frozen-lockfile --lockfile=false` succeeded before verification; the tracked lockfile was unchanged. This run used Vite 7.3.7 and Vitest 3.2.7.
+- Build succeeded with a largest JS chunk of 4,087.59 kB (gzip 1,129.95 kB). Rollup reported dependency annotation and >500 kB chunk warnings. [Build output](audit/commands/app-build.txt).
+
+The full batch is reproducible with `YADORI_ENV_FILE=/tmp/yadori-audit-no-env MODEL_API_KEY= node e2e/audit-final.mjs`. The final bounded active-child profile check/replay is `node e2e/audit-followup.mjs`; it owns and releases its service slot as well.
+
+## Dependencies still UNTESTED
+
+| Rows | Exact missing dependency |
 |---|---|
-| Mesh detection reports the five labelled pieces | couch, lamp, plant, screen, table |
-| Pinch at the couch wakes it | yes (≈ 4 s wall clock including CLI round trips; the app holds the wake "breath" ≥ 1.15 s) |
-| ECS: a `Spirit` component with an anchored face | yes (`ecs find` + `ecs query`) |
-| Face placement vs the computed target on the true box | **0.00 cm** (target: ≤ 1 cm) |
-| Fingertip poke / palm stroke / fast swipe | poke 1, pet ≥ 1, flick 1 |
-| Puppet line moves the mouth; voice mode labelled | yes; `browser` (Web Speech, labelled; MMS-TTS weights not downloaded) |
-| Second spirit by pinch; gossip | whispers (37 particles); each face's gaze matches the direction to the other within 0.2 |
-| Reload → both spirits re-found (label + size + position) | yes |
-| Bare room: unlabelled box → "Tell me what this is" → wakes as "coat rack" | yes |
-| Console errors during the whole run | **0** |
-| Hand actions to the first "whoa" (a face on the couch) | **1** (one pinch) |
+| I01–I05, I08, A39: live Muse Spark/persona/tools, Muse Image/generated sheet, Muse Voice Transcribe and SAM 3.1, permission-failure path gated by the key | needs MODEL_API_KEY |
+| I06–I07: Meta MMS-TTS synthesis and real audio lip-sync | needs MMS-TTS weights from scripts/fetch-models.sh |
+| H01–H03: physical Quest loop, CPU/GPU frame time and real hand occlusion | needs a Quest headset |
+| H04: physical Glasses gaze, view and anchors | needs Meta VR Glasses hardware |
+| I09: actual microphone WAV capture and recorder cleanup | needs a real microphone input |
 
-## Frame time and draw calls (emulator, not a Quest)
+Chrome enumerated an audio output and no audio input. Live Meta calls and headset frame time were not run. Their missing-key/weights setup UI and HTTP 503 guards passed. The MMS download CLI was actually declined with N; no weights were downloaded. Phone clip capture/tracking/export, camera probe/crop picker, SAM sheet-part cutting and realtime voice streaming remain disclosed as unbuilt.
 
-Probe: CPU ms from `world.update` to the end of `renderer.render`, plus `renderer.info`, 600 frames.
+All owned gateway, dev-server, Chrome and child PIDs stopped; configuration is `metaQuest3`; the heavy slot was released. [Cleanup](audit/cleanup.json), [evidence limits](audit/packaging.json). The offline follow-up is committed in separate proxy, report and evidence commits as requested. No pushes or deployments were made.
 
-| Scene | CPU p50 | CPU p95 | max | Draw calls p95 | Triangles max |
-|---|---|---|---|---|---|
-| XR (Quest 3 profile), 2 spirits, one talking, whispers on | 0.70 ms | 1.00 ms | – | 26 | 18,584 |
-| Browser diorama (whole den rendered + shadow pass), 2 spirits | 1.6 ms | 2.9 ms | 3.3 ms | 103 | 27,834 |
-
-In XR the room is passthrough (IWER draws its synthetic room itself), so the app draws only faces, bubbles,
-outline, chip and particles: one draw call per face. Quest target: ≤ 13.9 ms p95 at 72 Hz, **unverified on hardware**.
-
-## Meta VR Glasses (emulator profile)
-
-Gaze hovers the couch, a pinch wakes it; the face corners sit at −3.1° / +3.0° horizontally and +2.6° / −3.3°
-vertically, the bubble top at +10.9° (limits: ±37°, +25°, −43°); with gaze disconnected the hand ray wakes the
-lamp; 0 console errors. Screenshot: `e2e/shots/glasses-fov.png`.
-
-## Recordings (test clips, not the demo video)
-
-`grokbot/videos/yadori/` (each captioned in a visible box; no edits to program output):
-
-| File | Length | What |
-|---|---|---|
-| `yadori-emu-wake-poke-pet-flick.mp4` | 27 s | emulator, hands only: hover outline + chip, pinch, the face blooms, lean in, poke, pet (hearts, blush), flick (grumpy wobble), a typed line |
-| `yadori-emu-two-spirits-gossip.mp4` | 20 s | emulator: pinch the lamp awake, couch → lamp gossip with whispers, both faces turn to each other, three typed lines |
-| `yadori-browser-diorama.mp4` | 31 s | no headset: click to wake, the eyes follow the cursor, tap / rub / swipe, a typed line, the lamp, gossip and reply |
-
-## Not tested yet
-
-- Anything on a Quest 3 / 3S (Space Setup labels, frame time, real hand tracking, anchors across sessions,
-  depth occlusion of the face by your real hand: not built yet). Checklist: [docs/QUEST.md](docs/QUEST.md).
-- Live Meta calls (persona, sheet, transcribe, SAM 3.1): wired, never called; the request shapes marked
-  UNVERIFIED in `packages/server/src` are checked on the first keyed run.
-- MMS-TTS voice and the audio-path lip-sync metric (needs the CC-BY-NC weights; the rig's own test shows the
-  mouth reaches a shape within 80 ms).
-- Voice e2e with recorded WAVs and the camera e2e (spec): not built.
+Offline 502 follow-up: 2026-10-26T23:02:49.230Z through 2026-10-26T23:03:26.677Z. [Fresh row results](audit/browser/offline-502/results.json), [console/network classification](audit/browser/offline-502/hygiene.json), [cleanup](audit/browser/offline-502/cleanup.json). No other suites were rerun. Zero owned PIDs remain; the yadori-audit-502 slot is released.

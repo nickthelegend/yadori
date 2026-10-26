@@ -73,7 +73,7 @@ async function call<T>(path: string, init?: RequestInit, timeoutMs = 60000): Pro
     } catch {
       body = { error: text.slice(0, 200) };
     }
-    if (!r.ok) return { ok: false, status: r.status, body };
+    if (!r.ok || body?.gateway === 'offline') return { ok: false, status: body?.gateway === 'offline' ? 0 : r.status, body };
     return { ok: true, data: body as T };
   } catch (e) {
     return { ok: false, status: 0, body: { error: e instanceof Error ? e.message : String(e) } };

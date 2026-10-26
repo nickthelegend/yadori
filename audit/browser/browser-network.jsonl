@@ -1,0 +1,13 @@
+{"at":"2026-10-26T22:44:27.461Z","kind":"capture-start","suite":"browser"}
+{"at":"2026-10-26T22:45:04.429Z","kind":"response","url":"https://localhost:8091/?room=den","status":200,"method":"GET"}
+{"at":"2026-10-26T22:45:04.498Z","kind":"console","level":"log","text":"[IWSDK Dev] Configuration: {device: metaQuest3, activation: always, verbose: false, sem: Object, ai: Object}"}
+{"at":"2026-10-26T22:45:04.502Z","kind":"console","level":"log","text":"                                                 \n▄▄▄▄▄▄  ▄▄      ▄▄   ▄▄▄▄    ▄▄▄▄▄     ▄▄   ▄▄▄ \n▀▀██▀▀  ██      ██ ▄█▀▀▀▀█   ██▀▀▀██   ██  ██▀  \n  ██    ▀█▄ ██ ▄█▀ ██▄       ██    ██  ██▄██    \n  ██     ██ ██ ██   ▀████▄   ██    ██  █████    \n  ██     ███▀▀███       ▀██  ██    ██  ██  ██▄  \n▄▄██▄▄   ███  ███  █▄▄▄▄▄█▀  ██▄▄▄██   ██   ██▄ \n▀▀▀▀▀▀   ▀▀▀  ▀▀▀   ▀▀▀▀▀    ▀▀▀▀▀     ▀▀    ▀▀                                                \n===============================================\nImmersive Web SDK v1.1.0-rc.2\nThree.js r185\nEliCS v3.4.2"}
+{"at":"2026-10-26T22:45:04.503Z","kind":"response","url":"https://localhost:8091/api/status","status":200,"method":"GET"}
+{"at":"2026-10-26T22:45:04.504Z","kind":"response","url":"https://localhost:8091/api/wake","status":200,"method":"POST"}
+{"at":"2026-10-26T22:45:04.504Z","kind":"response","url":"https://localhost:8091/api/status","status":200,"method":"GET"}
+{"at":"2026-10-26T22:45:04.504Z","kind":"response","url":"https://localhost:8091/api/wake","status":200,"method":"POST"}
+{"at":"2026-10-26T22:45:04.505Z","kind":"response","url":"https://localhost:8091/?room=den","status":200,"method":"GET"}
+{"at":"2026-10-26T22:45:04.554Z","kind":"console","level":"log","text":"[IWSDK Dev] Configuration: {device: metaQuest3, activation: always, verbose: false, sem: Object, ai: Object}"}
+{"at":"2026-10-26T22:45:04.555Z","kind":"console","level":"log","text":"                                                 \n▄▄▄▄▄▄  ▄▄      ▄▄   ▄▄▄▄    ▄▄▄▄▄     ▄▄   ▄▄▄ \n▀▀██▀▀  ██      ██ ▄█▀▀▀▀█   ██▀▀▀██   ██  ██▀  \n  ██    ▀█▄ ██ ▄█▀ ██▄       ██    ██  ██▄██    \n  ██     ██ ██ ██   ▀████▄   ██    ██  █████    \n  ██     ███▀▀███       ▀██  ██    ██  ██  ██▄  \n▄▄██▄▄   ███  ███  █▄▄▄▄▄█▀  ██▄▄▄██   ██   ██▄ \n▀▀▀▀▀▀   ▀▀▀  ▀▀▀   ▀▀▀▀▀    ▀▀▀▀▀     ▀▀    ▀▀                                                \n===============================================\nImmersive Web SDK v1.1.0-rc.2\nThree.js r185\nEliCS v3.4.2"}
+{"at":"2026-10-26T22:45:04.556Z","kind":"response","url":"https://localhost:8091/api/status","status":200,"method":"GET"}
+{"at":"2026-10-26T22:45:04.574Z","kind":"capture-end","responses":763,"errorCount":0}

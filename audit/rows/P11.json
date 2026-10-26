@@ -1,0 +1,104 @@
+{
+  "id": "P11",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T23:02:49.230Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/offline-502/results.json",
+      "detail": {
+        "body": "Yadori\nBrowser diorama, not your room\nGateway offline\nGateway offline · Meta models unavailable\nVoice out · Browser voice, not a Meta model\nClick a piece of furniture to wake it\nThen poke it, pet it, flick it · drag the room to look around",
+        "spirit": {
+          "id": "local-1di7lfvt",
+          "name": "Couch",
+          "label": "couch",
+          "targetId": "den-couch",
+          "awake": true,
+          "speaking": false,
+          "expression": "neutral",
+          "mouth": "rest",
+          "params": {
+            "eyeOpen": 1.0000058195107657,
+            "eyeSmile": 0,
+            "pupil": 0.9756970607468513,
+            "lookX": -0.00015720674937708557,
+            "lookY": 0.3389063891466451,
+            "browY": 0.06943696929471108,
+            "browTilt": -0.020831090788413314,
+            "mouthOpen": 0.010555796047210658,
+            "mouthWide": 0.4962300732991539,
+            "mouthRound": 0.01507970827177474,
+            "smile": 0.23264075767632222,
+            "blush": 0.3646746347218781,
+            "squash": -0.0019056780620084223,
+            "wobble": 0,
+            "reveal": 0.9951704404211108
+          },
+          "anchor": [
+            0,
+            0.7095,
+            -2.64
+          ],
+          "size": 0.301,
+          "facePos": [
+            -0.0019991629429267905,
+            0.7095,
+            -2.6227698702721627
+          ],
+          "faceDir": [
+            -0.11525395743241308,
+            0,
+            0.9933360585905293
+          ],
+          "pokes": 0,
+          "pets": 0,
+          "flicks": 0,
+          "lines": 1,
+          "voiceMode": "browser",
+          "bubble": true,
+          "bubbleInfo": {
+            "content": {
+              "speaker": "Couch",
+              "tag": "puppet line (you)",
+              "text": "Hello couch.",
+              "shown": 999
+            },
+            "corners": [
+              [
+                -0.6028106611964981,
+                0.8659668825757799,
+                -2.650467612198281
+              ],
+              [
+                0.5891926091121371,
+                0.8659668825757799,
+                -2.512162863279385
+              ],
+              [
+                0.5988123353106445,
+                1.4601331174242205,
+                -2.5950721283460445
+              ],
+              [
+                -0.5931909349979907,
+                1.4601331174242205,
+                -2.7333768772649405
+              ]
+            ]
+          },
+          "sourceChip": {
+            "visible": true,
+            "text": "Built-in face · not generated"
+          },
+          "faceSource": "built-in",
+          "hasPersona": false,
+          "anchorErrorCm": 0
+        },
+        "errors": []
+      },
+      "at": "2026-10-26T23:03:24.685Z",
+      "shot": "P11.jpg",
+      "capture": "audit/browser/offline-502/events.jsonl"
+    }
+  ]
+}

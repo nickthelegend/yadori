@@ -1,8 +1,10 @@
+import { captureManaged } from './audit-network.mjs';
 // Emulated Quest 3 (IWER, synthetic room yadori_den), hands only, from a cold load:
 // pinch to wake, poke / pet / flick with the fingertip and palm, a puppet line, a second
 // spirit, gossip, a reply, frame time, console errors, reload + re-match, and the bare
 // room's "Tell me what this is" path. Run: node e2e/xr-flow.mjs  (dev server must be up)
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { mkdirSync, writeFileSync, existsSync, unlinkSync } from 'node:fs';
+import { spawn } from 'node:child_process';
 import { join } from 'node:path';
 import { APP, cli, consoleErrors, enterXR, flickSteps, page, petSteps, pinchAt, pokeSteps, sleep, state, until, xr } from './cli.mjs';
 
@@ -14,6 +16,9 @@ const check = (name, ok, detail = '') => {
 const face = async (label) => (await state()).spirits.find((s) => s.label === label);
 const actions = { pinch: 0, poke: 0, pet: 0, flick: 0 };
 const t0 = Date.now();
+let performanceResult = null;
+const observations=[];
+async function observe(stage){const sample={stage,at:new Date().toISOString(),...page('audit-probe.mjs',{shot:'quest-'+stage})};observations.push(sample);writeFileSync(join(APP,'../../audit/browser/quest-observations.json'),JSON.stringify(observations,null,2));}
 
 async function main() {
   page('page-reset.mjs', { room: 'den' });
@@ -50,11 +55,13 @@ async function main() {
   const err = Math.hypot(c.anchor[0] - couch.center[0], c.anchor[2] - (couch.center[2] + couch.dims[2] / 2 + 0.01));
   check('face sits on the couch front, 1 cm proud (±1 cm)', err <= 0.01, `${(err * 100).toFixed(2)} cm`);
 
+  await observe('awake');
   // poke
   xr('run-sequence', { device: 'hand-right', steps: pokeSteps(c) });
   actions.poke++;
   c = await face('couch');
   check('fingertip poke -> surprised', c.pokes >= 1, `pokes ${c.pokes} pets ${c.pets} flicks ${c.flicks} expr ${c.expression}`);
+  await observe('poke');
   await sleep(1.2);
   // pet
   const pets0 = c.pets;
@@ -62,6 +69,7 @@ async function main() {
   actions.pet++;
   c = await face('couch');
   check('palm stroke -> pet (happy, hearts)', c.pets > pets0, `pets ${c.pets} expr ${c.expression}`);
+  await observe('pet');
   await sleep(1.5);
   // flick
   const fl0 = c.flicks;
@@ -71,6 +79,7 @@ async function main() {
   check('fast fingertip swipe -> flick (wobble)', c.flicks > fl0, `flicks ${c.flicks} expr ${c.expression}`);
   await sleep(1.5);
 
+  await observe('flick');
   // a puppet line typed in the emulator's page while in XR
   page('page-say.mjs', { speaker: 'Couch', text: 'Oh. Hello. You have very cold fingers.' });
   let maxOpen = 0;
@@ -81,6 +90,7 @@ async function main() {
     maxOpen = Math.max(maxOpen, f.params.mouthOpen);
     await sleep(0.25);
   }
+  await observe('speech');
   check('puppet line: speaking + mouth moves', speaking && maxOpen > 0.3, `max mouthOpen ${maxOpen.toFixed(2)}`);
   await until(async () => !(await face('couch')).speaking, 'line end', 20);
   c = await face('couch');
@@ -121,6 +131,7 @@ async function main() {
     if (m > 1) { x /= m; y /= m; }
     return [x, y];
   };
+  await observe('gossip');
   const ec = expectLook(cs, ls);
   const el = expectLook(ls, cs);
   check('gossip: the couch looks at the lamp', Math.hypot(cs.params.lookX - ec[0], cs.params.lookY - ec[1]) < 0.2, `look ${cs.params.lookX.toFixed(2)},${cs.params.lookY.toFixed(2)} expected ${ec.map((v) => v.toFixed(2))}`);
@@ -130,11 +141,14 @@ async function main() {
   page('page-say.mjs', { speaker: 'Lamp', text: 'Then stop glowing at them.' });
   await until(async () => (await face('lamp')).lines >= 1, 'lamp reply', 20);
   check('the lamp replies', true);
+  await observe('reply');
 
   // frame time with two spirits, one talking
   page('page-say.mjs', { speaker: 'Couch', to: 'Lamp', text: 'I am not glowing. You are the one who glows. That is literally your whole job, and you know it.' });
   const perf = page('page-perf.mjs', { frames: 600 });
-  check('emulator frame time recorded (600 XR frames)', perf.frames === 600 && perf.xrFrames > 0, `p50 ${perf.cpuMs.p50.toFixed(2)} p95 ${perf.cpuMs.p95.toFixed(2)} ms, draw calls p95 ${perf.drawCalls.p95}, tris max ${perf.triangles.max}`);
+  performanceResult = perf;
+  await observe('perf');
+  check('emulator frame time recorded (600 XR frames)', perf.frames === 600 && perf.xrFrames === 600, `p50 ${perf.cpuMs.p50.toFixed(2)} p95 ${perf.cpuMs.p95.toFixed(2)} ms, draw calls p95 ${perf.drawCalls.p95}, tris max ${perf.triangles.max}`);
   check('draw calls within budget (≤ 100)', perf.drawCalls.max <= 100, `max ${perf.drawCalls.max}`);
 
   // reload: re-match by label + size + position after the session restarts
@@ -153,6 +167,7 @@ async function main() {
   s = await state();
   check('after reload both spirits are re-found in the emulated room', s.spirits.length === 2, s.spirits.map((x) => `${x.name}:${x.lines} lines`).join(', '));
 
+  await observe('rematch');
   const errors = consoleErrors(t0);
   check('no console errors', errors.length === 0, errors.slice(0, 3).join(' | '));
 
@@ -181,13 +196,26 @@ async function main() {
   page('page-reset.mjs', { room: 'den' });
 }
 
+let capture, liveCapture, liveExited;
 try {
+  capture = await captureManaged('quest');
+  const readyPath=join(APP,'../../audit/browser/quest-live.ready');
+  if(existsSync(readyPath))unlinkSync(readyPath);
+  liveCapture=spawn(process.execPath,['e2e/audit-live-capture.mjs'],{cwd:APP,stdio:['ignore','inherit','inherit']});
+  liveExited=new Promise(resolve=>liveCapture.once('exit',resolve));
+  await until(()=>existsSync(readyPath),'live hand-reaction capture',10);
   await main();
 } catch (e) {
   check('flow completed', false, e instanceof Error ? e.message : String(e));
+} finally {
+  if(liveCapture){liveCapture.kill("SIGTERM");await liveExited;}
+  if (capture) {
+    const network = await capture.stop();
+    check('independent console, page and network capture is clean', network.responses > 0 && network.errors.length === 0, `${network.responses} responses; ${network.errors.length} errors`);
+  }
 }
 const fail = results.filter((r) => !r.ok).length;
-const summary = { profile: 'metaQuest3', input: 'hands only', actions, seconds: Math.round((Date.now() - t0) / 1000), pass: results.length - fail, fail, results, at: new Date().toISOString() };
+const summary = { profile: 'metaQuest3', input: 'hands only', actions, seconds: Math.round((Date.now() - t0) / 1000), pass: results.length - fail, fail, results, perf: performanceResult, at: new Date().toISOString() };
 mkdirSync(join(APP, 'e2e', 'results'), { recursive: true });
 writeFileSync(join(APP, 'e2e', 'results', 'xr-quest3.json'), JSON.stringify(summary, null, 2));
 console.log(`\n${summary.pass} passed, ${fail} failed`);

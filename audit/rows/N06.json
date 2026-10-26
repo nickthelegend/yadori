@@ -1,0 +1,15 @@
+{
+  "id": "N06",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": "Cancelled; next click reopens",
+      "at": "2026-10-26T22:47:07.892Z",
+      "shot": "bare.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

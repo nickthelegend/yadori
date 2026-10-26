@@ -1,0 +1,20 @@
+{
+  "id": "N07",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": {
+        "value": "a partial name",
+        "focused": true,
+        "start": 2,
+        "end": 6
+      },
+      "at": "2026-10-26T22:47:23.902Z",
+      "shot": "bare.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

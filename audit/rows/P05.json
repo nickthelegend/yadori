@@ -1,0 +1,19 @@
+{
+  "id": "P05",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/mobile-results.json",
+      "detail": {
+        "left": 12,
+        "right": 363,
+        "bottom": 800
+      },
+      "at": "2026-10-26T22:48:39.197Z",
+      "shot": "mobile.jpg",
+      "capture": "audit/browser/mobile-events.jsonl"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "B30",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": {
+        "concurrency": 1,
+        "seen": [
+          "lamp",
+          "lamp",
+          "lamp",
+          "lamp",
+          "lamp",
+          "lamp",
+          "lamp",
+          "lamp",
+          "lamp",
+          "lamp",
+          "lamp",
+          "lamp",
+          "lamp",
+          "lamp",
+          "lamp",
+          "lamp"
+        ],
+        "lines": 3
+      },
+      "at": "2026-10-26T22:46:31.314Z",
+      "shot": "desktop-gossip.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

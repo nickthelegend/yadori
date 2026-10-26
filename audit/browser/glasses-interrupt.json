@@ -1,0 +1,442 @@
+{
+  "id": "G11",
+  "ok": true,
+  "detail": {
+    "pid": 49447,
+    "ownedPIDs": [
+      49447,
+      52723,
+      55111
+    ],
+    "alive": [],
+    "code": 130,
+    "signal": null,
+    "stdout": "PASS  glasses profile active with gaze  (Meta VR Glasses)\n",
+    "stderr": "",
+    "network": {
+      "startedAt": "2026-10-26T22:50:25.372Z",
+      "endedAt": "2026-10-26T22:50:42.337Z",
+      "responses": 2,
+      "errors": [],
+      "phases": [
+        {
+          "startedAt": "2026-10-26T22:50:37.284Z",
+          "endedAt": "2026-10-26T22:50:37.687Z",
+          "responses": 1,
+          "errors": []
+        },
+        {
+          "startedAt": "2026-10-26T22:50:41.591Z",
+          "endedAt": "2026-10-26T22:50:42.228Z",
+          "responses": 1,
+          "errors": []
+        }
+      ]
+    },
+    "activeStatus": {
+      "status": 200,
+      "body": {
+        "gateway": "yadori",
+        "spark": {
+          "ready": false,
+          "model": "muse-spark-1.3",
+          "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        },
+        "wonder": {
+          "ready": false,
+          "model": "muse-wonder-1.0",
+          "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        },
+        "image": {
+          "ready": false,
+          "model": "muse-image-1.0",
+          "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        },
+        "transcribe": {
+          "ready": false,
+          "model": "muse-voice-transcribe-1.0",
+          "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        },
+        "sam3": {
+          "ready": false,
+          "model": "sam-3.1",
+          "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        },
+        "tts": {
+          "ready": false,
+          "setup": "Setup required: run scripts/fetch-models.sh (MMS-TTS weights, CC-BY-NC-4.0)",
+          "model": "facebook/mms-tts-eng",
+          "license": "CC-BY-NC-4.0"
+        },
+        "budget": {
+          "cap_usd": 3,
+          "spent_usd": 0
+        }
+      }
+    },
+    "restoredStatus": {
+      "status": 200,
+      "body": {
+        "gateway": "yadori",
+        "spark": {
+          "ready": false,
+          "model": "muse-spark-1.3",
+          "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        },
+        "wonder": {
+          "ready": false,
+          "model": "muse-wonder-1.0",
+          "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        },
+        "image": {
+          "ready": false,
+          "model": "muse-image-1.0",
+          "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        },
+        "transcribe": {
+          "ready": false,
+          "model": "muse-voice-transcribe-1.0",
+          "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        },
+        "sam3": {
+          "ready": false,
+          "model": "sam-3.1",
+          "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+        },
+        "tts": {
+          "ready": false,
+          "setup": "Setup required: run scripts/fetch-models.sh (MMS-TTS weights, CC-BY-NC-4.0)",
+          "model": "facebook/mms-tts-eng",
+          "license": "CC-BY-NC-4.0"
+        },
+        "budget": {
+          "cap_usd": 3,
+          "spent_usd": 0
+        }
+      }
+    },
+    "restoredLogs": [
+      {
+        "timestamp": 1793055038030,
+        "level": "info",
+        "message": "Frame navigated: https://localhost:8091/?__iwsdkManagedWorkspace=[redacted]",
+        "args": [
+          "Frame navigated: https://localhost:8091/?__iwsdkManagedWorkspace=[redacted]"
+        ],
+        "frameUrl": "https://localhost:8091/?__iwsdkManagedWorkspace=[redacted]",
+        "kind": "navigation",
+        "url": "https://localhost:8091/?__iwsdkManagedWorkspace=[redacted]"
+      },
+      {
+        "timestamp": 1793055038042,
+        "level": "info",
+        "message": "Frame navigated: https://localhost:8091/",
+        "args": [
+          "Frame navigated: https://localhost:8091/"
+        ],
+        "frameUrl": "https://localhost:8091/",
+        "kind": "navigation",
+        "url": "https://localhost:8091/"
+      },
+      {
+        "timestamp": 1793055038300,
+        "level": "log",
+        "message": "[IWSDK Dev] Configuration: {device: metaQuest3, activation: always, verbose: false, sem: Object, ai: Object}",
+        "args": [
+          "\"[IWSDK Dev] Configuration:\"",
+          "{\"device\":\"metaQuest3\",\"activation\":\"always\",\"verbose\":false,\"sem\":{\"defaultScene\":\"sunlit_living_room\"},\"ai\":{\"mode\":\"agent\",\"headless\":true,\"devUI\":false,\"viewport\":{\"width\":800,\"height\":800},\"screenshotSize\":{\"width\":800,\"height\":800}},\"workspace\":{\"enabled\":true,\"open\":true,\"headless\":true,\"devUI\":false,\"browserAutomation\":true,\"viewport\":{\"width\":800,\"height\":800},\"screenshotSize\":{\"width\":800,\"height\":800}},\"userAgentException\":\"/OculusBrowser|Quest|Pico|Wolvic|Android|iPhone|iPad|Mobile/\",\"iwer\":true,\"nativeXRControl\":false}"
+        ],
+        "columnNumber": 1084215,
+        "frameUrl": "https://localhost:8091/@id/__x00__virtual:iwsdk-dev-runtime/chunks/injection-template-0HSd4CcE.js",
+        "kind": "console",
+        "lineNumber": 983,
+        "url": "https://localhost:8091/@id/__x00__virtual:iwsdk-dev-runtime/chunks/injection-template-0HSd4CcE.js"
+      },
+      {
+        "timestamp": 1793055039877,
+        "level": "log",
+        "message": "                                                 \n▄▄▄▄▄▄  ▄▄      ▄▄   ▄▄▄▄    ▄▄▄▄▄     ▄▄   ▄▄▄ \n▀▀██▀▀  ██      ██ ▄█▀▀▀▀█   ██▀▀▀██   ██  ██▀  \n  ██    ▀█▄ ██ ▄█▀ ██▄       ██    ██  ██▄██    \n  ██     ██ ██ ██   ▀████▄   ██    ██  █████    \n  ██     ███▀▀███       ▀██  ██    ██  ██  ██▄  \n▄▄██▄▄   ███  ███  █▄▄▄▄▄█▀  ██▄▄▄██   ██   ██▄ \n▀▀▀▀▀▀   ▀▀▀  ▀▀▀   ▀▀▀▀▀    ▀▀▀▀▀     ▀▀    ▀▀                                                \n===============================================\nImmersive Web SDK v1.1.0-rc.2\nThree.js r185\nEliCS v3.4.2",
+        "args": [
+          "\"                                                 \\n▄▄▄▄▄▄  ▄▄      ▄▄   ▄▄▄▄    ▄▄▄▄▄     ▄▄   ▄▄▄ \\n▀▀██▀▀  ██      ██ ▄█▀▀▀▀█   ██▀▀▀██   ██  ██▀  \\n  ██    ▀█▄ ██ ▄█▀ ██▄       ██    ██  ██▄██    \\n  ██     ██ ██ ██   ▀████▄   ██    ██  █████    \\n  ██     ███▀▀███       ▀██  ██    ██  ██  ██▄  \\n▄▄██▄▄   ███  ███  █▄▄▄▄▄█▀  ██▄▄▄██   ██   ██▄ \\n▀▀▀▀▀▀   ▀▀▀  ▀▀▀   ▀▀▀▀▀    ▀▀▀▀▀     ▀▀    ▀▀                                                \\n===============================================\\nImmersive Web SDK v1.1.0-rc.2\\nThree.js r185\\nEliCS v3.4.2\""
+        ],
+        "columnNumber": 8,
+        "frameUrl": "https://localhost:8091/@fs/Volumes/Extreme%20SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4/node_modules/.pnpm/@iwsdk+core@1.1.0-rc.2_@opentelemetry+core@2.12.0_@opentelemetry+api@1.10.0__react@19.3.1/node_modules/@iwsdk/core/dist/index.js?v=d9892360",
+        "kind": "console",
+        "lineNumber": 122,
+        "url": "https://localhost:8091/@fs/Volumes/Extreme%20SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4/node_modules/.pnpm/@iwsdk+core@1.1.0-rc.2_@opentelemetry+core@2.12.0_@opentelemetry+api@1.10.0__react@19.3.1/node_modules/@iwsdk/core/dist/index.js?v=d9892360"
+      },
+      {
+        "timestamp": 1793055039888,
+        "level": "info",
+        "message": "Frame navigated: about:blank",
+        "args": [
+          "Frame navigated: about:blank"
+        ],
+        "frameUrl": "about:blank",
+        "kind": "navigation",
+        "url": "about:blank",
+        "repeatCount": 2
+      },
+      {
+        "timestamp": 1793055039918,
+        "level": "info",
+        "message": "Frame navigated: https://localhost:8091/",
+        "args": [
+          "Frame navigated: https://localhost:8091/"
+        ],
+        "frameUrl": "https://localhost:8091/",
+        "kind": "navigation",
+        "url": "https://localhost:8091/"
+      },
+      {
+        "timestamp": 1793055040085,
+        "level": "warn",
+        "message": "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+        "args": [
+          "\"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.\""
+        ],
+        "columnNumber": 14,
+        "frameUrl": "https://localhost:8091/node_modules/.vite/deps/chunk-YBME6QZ3.js?v=d9892360",
+        "kind": "console",
+        "lineNumber": 296,
+        "url": "https://localhost:8091/node_modules/.vite/deps/chunk-YBME6QZ3.js?v=d9892360"
+      },
+      {
+        "timestamp": 1793055040265,
+        "level": "log",
+        "message": "[IWSDK Dev] Configuration: {device: metaQuest3, activation: always, verbose: false, sem: Object, ai: Object}",
+        "args": [
+          "\"[IWSDK Dev] Configuration:\"",
+          "{\"device\":\"metaQuest3\",\"activation\":\"always\",\"verbose\":false,\"sem\":{\"defaultScene\":\"sunlit_living_room\"},\"ai\":{\"mode\":\"agent\",\"headless\":true,\"devUI\":false,\"viewport\":{\"width\":800,\"height\":800},\"screenshotSize\":{\"width\":800,\"height\":800}},\"workspace\":{\"enabled\":true,\"open\":true,\"headless\":true,\"devUI\":false,\"browserAutomation\":true,\"viewport\":{\"width\":800,\"height\":800},\"screenshotSize\":{\"width\":800,\"height\":800}},\"userAgentException\":\"/OculusBrowser|Quest|Pico|Wolvic|Android|iPhone|iPad|Mobile/\",\"iwer\":true,\"nativeXRControl\":false}"
+        ],
+        "columnNumber": 1084215,
+        "frameUrl": "https://localhost:8091/@id/__x00__virtual:iwsdk-dev-runtime/chunks/injection-template-0HSd4CcE.js",
+        "kind": "console",
+        "lineNumber": 983,
+        "url": "https://localhost:8091/@id/__x00__virtual:iwsdk-dev-runtime/chunks/injection-template-0HSd4CcE.js"
+      },
+      {
+        "timestamp": 1793055040374,
+        "level": "log",
+        "message": "                                                 \n▄▄▄▄▄▄  ▄▄      ▄▄   ▄▄▄▄    ▄▄▄▄▄     ▄▄   ▄▄▄ \n▀▀██▀▀  ██      ██ ▄█▀▀▀▀█   ██▀▀▀██   ██  ██▀  \n  ██    ▀█▄ ██ ▄█▀ ██▄       ██    ██  ██▄██    \n  ██     ██ ██ ██   ▀████▄   ██    ██  █████    \n  ██     ███▀▀███       ▀██  ██    ██  ██  ██▄  \n▄▄██▄▄   ███  ███  █▄▄▄▄▄█▀  ██▄▄▄██   ██   ██▄ \n▀▀▀▀▀▀   ▀▀▀  ▀▀▀   ▀▀▀▀▀    ▀▀▀▀▀     ▀▀    ▀▀                                                \n===============================================\nImmersive Web SDK v1.1.0-rc.2\nThree.js r185\nEliCS v3.4.2",
+        "args": [
+          "\"                                                 \\n▄▄▄▄▄▄  ▄▄      ▄▄   ▄▄▄▄    ▄▄▄▄▄     ▄▄   ▄▄▄ \\n▀▀██▀▀  ██      ██ ▄█▀▀▀▀█   ██▀▀▀██   ██  ██▀  \\n  ██    ▀█▄ ██ ▄█▀ ██▄       ██    ██  ██▄██    \\n  ██     ██ ██ ██   ▀████▄   ██    ██  █████    \\n  ██     ███▀▀███       ▀██  ██    ██  ██  ██▄  \\n▄▄██▄▄   ███  ███  █▄▄▄▄▄█▀  ██▄▄▄██   ██   ██▄ \\n▀▀▀▀▀▀   ▀▀▀  ▀▀▀   ▀▀▀▀▀    ▀▀▀▀▀     ▀▀    ▀▀                                                \\n===============================================\\nImmersive Web SDK v1.1.0-rc.2\\nThree.js r185\\nEliCS v3.4.2\""
+        ],
+        "columnNumber": 8,
+        "frameUrl": "https://localhost:8091/@fs/Volumes/Extreme%20SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4/node_modules/.pnpm/@iwsdk+core@1.1.0-rc.2_@opentelemetry+core@2.12.0_@opentelemetry+api@1.10.0__react@19.3.1/node_modules/@iwsdk/core/dist/index.js?v=d9892360",
+        "kind": "console",
+        "lineNumber": 122,
+        "url": "https://localhost:8091/@fs/Volumes/Extreme%20SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4/node_modules/.pnpm/@iwsdk+core@1.1.0-rc.2_@opentelemetry+core@2.12.0_@opentelemetry+api@1.10.0__react@19.3.1/node_modules/@iwsdk/core/dist/index.js?v=d9892360"
+      }
+    ],
+    "status": {
+      "workspaceRoot": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4/packages/app",
+      "runtimeUrls": {
+        "local": "https://localhost:8091/",
+        "network": [
+          "https://192.168.0.6:8091/"
+        ]
+      },
+      "state": {
+        "workspaceRoot": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4/packages/app",
+        "running": true,
+        "starting": false,
+        "browserConnected": true,
+        "browserCommandReady": true,
+        "session": {
+          "schemaVersion": 2,
+          "sessionId": "af421223-d1ea-4ced-9adc-b13cfc0143ef",
+          "workspaceRoot": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4/packages/app",
+          "pid": 48219,
+          "processStart": "Mon Oct 26 22:50:20 2026",
+          "port": 8091,
+          "localUrl": "https://localhost:8091/",
+          "networkUrls": [
+            "https://192.168.0.6:8091/"
+          ],
+          "aiMode": "agent",
+          "browser": {
+            "lifecycle": {
+              "state": "running",
+              "policy": "eager",
+              "sessionId": "af421223-d1ea-4ced-9adc-b13cfc0143ef",
+              "browserEpoch": 1,
+              "revision": 8,
+              "stateEnteredAt": "2026-10-26T22:50:38.113Z",
+              "lastObservedAt": "2026-10-26T22:50:40.450Z",
+              "failures": 0,
+              "cleanupConfirmed": true,
+              "attemptLimit": 3,
+              "historyTruncated": false,
+              "retryEligible": false,
+              "nextAction": "Use runtime_list_targets to inspect endpoint readiness.",
+              "history": [
+                {
+                  "revision": 1,
+                  "state": "launching",
+                  "at": "2026-10-26T22:50:37.706Z",
+                  "reason": "launch"
+                },
+                {
+                  "revision": 2,
+                  "state": "launching",
+                  "at": "2026-10-26T22:50:37.707Z",
+                  "reason": "prepared"
+                },
+                {
+                  "revision": 3,
+                  "state": "running",
+                  "at": "2026-10-26T22:50:38.113Z",
+                  "reason": "running"
+                }
+              ],
+              "attemptId": "14f3df8c-6e0e-4642-b60f-c759263ece10"
+            },
+            "status": "connected",
+            "clients": [
+              {
+                "commandReady": true,
+                "sessionId": "af421223-d1ea-4ced-9adc-b13cfc0143ef",
+                "browserEpoch": 1,
+                "deviceClass": "managed",
+                "pageId": "tab-mvpuobnz-q3wotr",
+                "role": "app",
+                "tabGeneration": 1
+              },
+              {
+                "commandReady": true,
+                "sessionId": "af421223-d1ea-4ced-9adc-b13cfc0143ef",
+                "browserEpoch": 1,
+                "deviceClass": "managed",
+                "pageId": "tab-mvpuoa58-q74dvs",
+                "role": "editor",
+                "sceneSessionId": "scene-5lrhslxb4y5",
+                "tabGeneration": 1
+              }
+            ],
+            "lastBridgeConnectedAt": "2026-10-26T22:50:40.404Z",
+            "lastCommandReadyAt": "2026-10-26T22:50:40.450Z",
+            "connected": true,
+            "commandReady": true,
+            "connectedClientCount": 2,
+            "lastTransitionAt": "2026-10-26T22:50:38.113Z",
+            "audioMuted": false
+          },
+          "browserAutomation": {
+            "configured": true,
+            "enabled": true,
+            "endpoint": "http://127.0.0.1:58847",
+            "targetId": "19101CBF1C57EDEF266E6DCF40392D5D",
+            "protocol": "cdp"
+          },
+          "registeredAt": "2026-10-26T22:50:37.706Z",
+          "updatedAt": "2026-10-26T22:50:40.455Z"
+        },
+        "launch": {
+          "schemaVersion": 2,
+          "claimId": "98a7dd0a-033d-4fec-8cb2-eaa4cbd9d2ce",
+          "workspaceRoot": "/Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4/packages/app",
+          "pid": 48219,
+          "processStart": "Mon Oct 26 22:50:20 2026",
+          "launcherPid": 48110,
+          "processGroupId": 48110,
+          "command": "npm",
+          "args": [
+            "run",
+            "dev:runtime"
+          ],
+          "logPath": null,
+          "scriptName": "dev:runtime",
+          "port": 8091,
+          "openBrowser": true,
+          "createdAt": "2026-10-26T22:50:20.437Z"
+        }
+      },
+      "adapters": [
+        {
+          "tool": "claude",
+          "file": ".mcp.json",
+          "exists": false,
+          "status": "missing",
+          "support": {
+            "instruction": {
+              "file": "CLAUDE.md",
+              "status": "configured"
+            },
+            "permissions": {
+              "file": ".claude/settings.json",
+              "status": "configured"
+            }
+          }
+        },
+        {
+          "tool": "cursor",
+          "file": ".cursor/mcp.json",
+          "exists": false,
+          "status": "missing",
+          "support": {
+            "instruction": {
+              "file": "AGENTS.md",
+              "status": "configured"
+            },
+            "permissions": {
+              "file": ".cursor/permissions.json",
+              "status": "missing"
+            }
+          }
+        },
+        {
+          "tool": "copilot",
+          "file": ".vscode/mcp.json",
+          "exists": false,
+          "status": "missing",
+          "support": {
+            "instruction": {
+              "file": "AGENTS.md",
+              "status": "configured"
+            },
+            "permissions": {
+              "file": null,
+              "status": "manual",
+              "note": "VS Code stores MCP tool approvals interactively; approve the IWSDK server once for the workspace."
+            }
+          }
+        },
+        {
+          "tool": "codex",
+          "file": ".codex/config.toml",
+          "exists": false,
+          "status": "missing",
+          "support": {
+            "instruction": {
+              "file": "AGENTS.md",
+              "status": "configured"
+            },
+            "permissions": {
+              "file": ".codex/config.toml",
+              "status": "missing"
+            }
+          }
+        },
+        {
+          "tool": "opencode",
+          "file": "opencode.json",
+          "exists": false,
+          "status": "missing",
+          "support": {
+            "instruction": {
+              "file": "AGENTS.md",
+              "status": "configured"
+            },
+            "permissions": {
+              "file": "opencode.json",
+              "status": "missing"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "at": "2026-10-26T22:50:42.422Z",
+  "startedAt": "2026-10-26T22:50:25.372Z"
+}

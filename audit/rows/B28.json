@@ -1,0 +1,15 @@
+{
+  "id": "B28",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": "Reply as Lamp (you are the voice)…",
+      "at": "2026-10-26T22:46:25.549Z",
+      "shot": "desktop-gossip.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

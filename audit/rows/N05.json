@@ -1,0 +1,15 @@
+{
+  "id": "N05",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": "Tell me what this is: it needs a name before it can wake.",
+      "at": "2026-10-26T22:47:07.859Z",
+      "shot": "bare.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

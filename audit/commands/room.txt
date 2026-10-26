@@ -1,0 +1,17 @@
+
+> @yadori/room@0.1.0 test /Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4/packages/room
+> vitest run
+
+
+ RUN  v3.2.7 /Volumes/Extreme SSD/Projects/grokbot/projects/.loom-worktrees/yadori-88a3a300e2e8/omvpr103i/t4/packages/room
+
+ ✓ test/geometry.test.ts (9 tests) 2ms
+ ✓ test/room.test.ts (8 tests) 3ms
+ ✓ test/placement.test.ts (9 tests) 2ms
+ ✓ test/gestures.test.ts (10 tests) 3ms
+
+ Test Files  4 passed (4)
+      Tests  36 passed (36)
+   Start at  04:09:16
+   Duration  218ms (transform 100ms, setup 0ms, collect 198ms, tests 10ms, environment 0ms, prepare 184ms)
+

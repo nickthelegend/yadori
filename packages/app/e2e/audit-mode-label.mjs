@@ -1,0 +1,4 @@
+import { captureManaged } from './audit-network.mjs';
+import{writeFileSync}from'node:fs';import{join}from'node:path';import{APP,xr,page,state,sleep,enterXR}from'./cli.mjs';
+const capture=await captureManaged('mode-label');let observations=[];
+try{for(let i=0;i<2;i++){if(xr('status').sessionActive)xr('exit');page('page-reset.mjs',{room:'den'});await sleep(4);await enterXR();observations.push(await page('audit-mode-visible.mjs',{shot:'mode-xr'}));xr('exit');await sleep(.5);observations.push(await page('audit-mode-visible.mjs',{shot:'mode-browser'}));}const ok=observations.every((o,i)=>o.visible&&o.text===(i%2===0?'Emulated room (IWER), not your room':'Browser diorama, not your room')&&o.scene.denVisible===(i%2!==0));writeFileSync(join(APP,'../../audit/browser/mode-label-results.json'),JSON.stringify(['S12','Q29'].map(id=>({id,ok,detail:observations,at:new Date().toISOString(),shot:'mode-xr.jpg'})),null,2));console.log('S12 / Q29',ok);}finally{await capture.stop();}

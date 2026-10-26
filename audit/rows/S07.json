@@ -1,0 +1,27 @@
+{
+  "id": "S07",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": "Setup required: MODEL_API_KEY (Muse Voice Transcribe)",
+      "at": "2026-10-26T22:45:56.400Z",
+      "shot": "desktop-awake.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    },
+    {
+      "ok": true,
+      "source": "audit/browser/inputs-results.json",
+      "detail": {
+        "permissionBefore": "prompt",
+        "permissionAfter": "prompt",
+        "title": "Setup required: MODEL_API_KEY (Muse Voice Transcribe)"
+      },
+      "at": "2026-10-26T22:48:14.371Z",
+      "shot": "inputs.jpg",
+      "capture": "audit/browser/inputs-events.json"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "A41",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/server/results.json",
+      "detail": [
+        {
+          "at": "2026-10-26T22:39:25.466Z",
+          "method": "GET",
+          "path": "/api/spirits/sp_6xckssjgwtr5/sheet/Neutral.png",
+          "status": 404,
+          "headers": {
+            "cache-control": "no-store",
+            "connection": "keep-alive",
+            "content-type": "application/json",
+            "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+            "keep-alive": "timeout=5",
+            "transfer-encoding": "chunked"
+          },
+          "body": {
+            "error": "no such endpoint"
+          }
+        },
+        {
+          "at": "2026-10-26T22:39:25.467Z",
+          "method": "GET",
+          "path": "/api/spirits/sp_6xckssjgwtr5/sheet/meta.json",
+          "status": 404,
+          "headers": {
+            "cache-control": "no-store",
+            "connection": "keep-alive",
+            "content-type": "application/json",
+            "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+            "keep-alive": "timeout=5",
+            "transfer-encoding": "chunked"
+          },
+          "body": {
+            "error": "no such endpoint"
+          }
+        },
+        {
+          "at": "2026-10-26T22:39:25.469Z",
+          "method": "GET",
+          "path": "/api/spirits/sp_6xckssjgwtr5/sheet/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png",
+          "status": 404,
+          "headers": {
+            "cache-control": "no-store",
+            "connection": "keep-alive",
+            "content-type": "application/json",
+            "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+            "keep-alive": "timeout=5",
+            "transfer-encoding": "chunked"
+          },
+          "body": {
+            "error": "no such endpoint"
+          }
+        },
+        {
+          "at": "2026-10-26T22:39:25.471Z",
+          "method": "GET",
+          "path": "/api/spirits/sp_6xckssjgwtr5/sheet/..%2Fneutral.png",
+          "status": 404,
+          "headers": {
+            "cache-control": "no-store",
+            "connection": "keep-alive",
+            "content-type": "application/json",
+            "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+            "keep-alive": "timeout=5",
+            "transfer-encoding": "chunked"
+          },
+          "body": {
+            "error": "no such endpoint"
+          }
+        }
+      ],
+      "at": "2026-10-26T22:39:25.471Z",
+      "capture": "audit/server/network.json"
+    }
+  ]
+}

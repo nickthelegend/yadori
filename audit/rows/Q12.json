@@ -1,0 +1,101 @@
+{
+  "id": "Q12",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/xr-fixes-results.json",
+      "detail": {
+        "before": {
+          "pokes": 0,
+          "flicks": 0
+        },
+        "missed": {
+          "id": "sp_hdrcpbvovazk",
+          "name": "Couch",
+          "label": "couch",
+          "targetId": "mesh-23",
+          "awake": true,
+          "speaking": false,
+          "expression": "neutral",
+          "mouth": "rest",
+          "params": {
+            "eyeOpen": 1,
+            "eyeSmile": 0,
+            "pupil": 0.9999999999999998,
+            "lookX": 0.00016298595789965232,
+            "lookY": 0.9995818910722755,
+            "browY": 5.90106929609965e-18,
+            "browTilt": -1.7703207888298943e-18,
+            "mouthOpen": 4.019649106175253e-49,
+            "mouthWide": 0.49999999999999994,
+            "mouthRound": 5.742355865964641e-49,
+            "smile": 0.24999999999999994,
+            "blush": 0.44999996818927274,
+            "squash": -1.0678035470093221e-11,
+            "wobble": 0,
+            "reveal": 1
+          },
+          "anchor": [
+            0,
+            0.7095000118017196,
+            -2.6399999165534975
+          ],
+          "size": 0.30100000500679014,
+          "facePos": [
+            -5.636834607634912e-7,
+            0.7095000118017196,
+            -2.639708653709117
+          ],
+          "faceDir": [
+            -0.0019353048836341874,
+            0,
+            0.9999981272957502
+          ],
+          "pokes": 0,
+          "pets": 0,
+          "flicks": 0,
+          "lines": 0,
+          "voiceMode": "",
+          "bubble": false,
+          "bubbleInfo": {
+            "content": null,
+            "corners": [
+              [
+                -0.44578279427279,
+                0.8701955743977827,
+                -2.59764514560513
+              ],
+              [
+                0.44578279427279,
+                0.8701955743977827,
+                -2.59764514560513
+              ],
+              [
+                0.44578279427279,
+                1.307855937215004,
+                -2.682354687501865
+              ],
+              [
+                -0.44578279427279,
+                1.307855937215004,
+                -2.682354687501865
+              ]
+            ]
+          },
+          "sourceChip": {
+            "visible": true,
+            "text": "Built-in face · not generated"
+          },
+          "faceSource": "built-in",
+          "hasPersona": false,
+          "anchorErrorCm": 0
+        }
+      },
+      "at": "2026-10-26T22:41:37.994Z",
+      "shot": "xr-fixes.jpg",
+      "capture": "audit/browser/xr-fixes-network.json"
+    }
+  ]
+}

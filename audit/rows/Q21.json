@@ -1,0 +1,41 @@
+{
+  "id": "Q21",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/quest-results.json",
+      "detail": {
+        "assertion": {
+          "name": "emulator frame time recorded (600 XR frames)",
+          "ok": true,
+          "detail": "p50 1.00 p95 2.00 ms, draw calls p95 22, tris max 18584"
+        },
+        "observations": {
+          "frames": 600,
+          "cpuMs": {
+            "p50": 1,
+            "p95": 2,
+            "max": 2.2999999821186066,
+            "mean": 1.1124999994039535
+          },
+          "drawCalls": {
+            "p50": 22,
+            "p95": 22,
+            "max": 26
+          },
+          "triangles": {
+            "p50": 18576,
+            "max": 18584
+          },
+          "xrFrames": 600,
+          "gl": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)"
+        }
+      },
+      "at": "2026-10-26T22:40:53.539Z",
+      "shot": "quest-perf.jpg",
+      "capture": "audit/browser/quest-network.json"
+    }
+  ]
+}

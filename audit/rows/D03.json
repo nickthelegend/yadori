@@ -1,0 +1,14 @@
+{
+  "id": "D03",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/doc-review.json",
+      "detail": "No realtime proxy; current gateway integration sends a WAV file, live Transcribe untested.",
+      "at": "2026-10-26T22:51:43.623Z",
+      "capture": null
+    }
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "id": "Q23",
+  "ok": true,
+  "detail": {
+    "before": [
+      {
+        "id": "sp_1nlum35rexgo",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 0,
+          "pupil": 0.9999999999999998,
+          "lookX": -8.925882131140591e-13,
+          "lookY": 0.5422097205444607,
+          "browY": 1.1735060390660906e-28,
+          "browTilt": -3.520518117198266e-29,
+          "mouthOpen": 6.208918557240995e-12,
+          "mouthWide": 0.49999999969468,
+          "mouthRound": 1.0255413401418296e-13,
+          "smile": 0.24999999999999994,
+          "blush": 0.4499999999983326,
+          "squash": -0.00023779893546184015,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "faceDir": [
+          0,
+          0,
+          1
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 1,
+        "voiceMode": "browser",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "puppet line (you)",
+            "text": "Hello lamp.",
+            "shown": 999
+          },
+          "corners": [
+            [
+              -0.44578279427279,
+              0.8701955743977827,
+              -2.59764514560513
+            ],
+            [
+              0.44578279427279,
+              0.8701955743977827,
+              -2.59764514560513
+            ],
+            [
+              0.44578279427279,
+              1.307855937215004,
+              -2.682354687501865
+            ],
+            [
+              -0.44578279427279,
+              1.307855937215004,
+              -2.682354687501865
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      },
+      {
+        "id": "sp_i8vujtxzx09m",
+        "name": "Lamp",
+        "label": "lamp",
+        "targetId": "mesh-24",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 0.7421874999999971,
+          "eyeSmile": 0,
+          "pupil": 0.9999999999997954,
+          "lookX": 0.7593578515326685,
+          "lookY": -0.6441512210940185,
+          "browY": 5.848956243118846e-13,
+          "browTilt": -1.754686872935652e-13,
+          "mouthOpen": 3.920437717332234e-35,
+          "mouthWide": 0.49999999999999994,
+          "mouthRound": 5.600625310474609e-35,
+          "smile": 0.24999999999985378,
+          "blush": 0.4499968286489681,
+          "squash": -1.7454924174946233e-9,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          -1.6200000047683716,
+          1.4166667064030964,
+          -2.9200000965595247
+        ],
+        "size": 0.15399999916553497,
+        "facePos": [
+          -1.6018776467675724,
+          1.4166667064030964,
+          -2.887335104611092
+        ],
+        "faceDir": [
+          0.48513431128603296,
+          0,
+          0.8744396491542604
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": false,
+        "bubbleInfo": {
+          "content": null,
+          "corners": [
+            [
+              -2.0705944831964587,
+              1.4910765732805347,
+              -2.6415118331721272
+            ],
+            [
+              -1.1452241643904195,
+              1.4910765732805347,
+              -3.1549022000575944
+            ],
+            [
+              -1.133160810338686,
+              2.0196138525154512,
+              -3.1331583760500568
+            ],
+            [
+              -2.0585311291447255,
+              2.0196138525154512,
+              -2.6197680091645896
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": true,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "after": [
+      {
+        "id": "sp_1nlum35rexgo",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": false,
+        "expression": "surprised",
+        "mouth": "O",
+        "params": {
+          "eyeOpen": 1.2499998034392634,
+          "eyeSmile": 0,
+          "pupil": 0.6604221479719481,
+          "lookX": 0,
+          "lookY": 0.5412388354304721,
+          "browY": 0.9702224343658625,
+          "browTilt": -0.29106673030975877,
+          "mouthOpen": 0.6999626760349916,
+          "mouthWide": 0.2500133299875029,
+          "mouthRound": 0.9999466800499882,
+          "smile": 0.0074443914085343624,
+          "blush": 0.21226099401852236,
+          "squash": -0.04556196321648144,
+          "wobble": 0,
+          "reveal": 0.8274382266139528
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "faceDir": [
+          0,
+          0,
+          1
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 1,
+        "voiceMode": "",
+        "bubble": false,
+        "bubbleInfo": {
+          "content": null,
+          "corners": [
+            [
+              -0.5,
+              -0.5,
+              0
+            ],
+            [
+              0.5,
+              -0.5,
+              0
+            ],
+            [
+              0.5,
+              0.5,
+              0
+            ],
+            [
+              -0.5,
+              0.5,
+              0
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": true,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      },
+      {
+        "id": "sp_i8vujtxzx09m",
+        "name": "Lamp",
+        "label": "lamp",
+        "targetId": "mesh-24",
+        "awake": true,
+        "speaking": false,
+        "expression": "surprised",
+        "mouth": "O",
+        "params": {
+          "eyeOpen": 1.2499998034392634,
+          "eyeSmile": 0,
+          "pupil": 0.6604221479719481,
+          "lookX": 8.944226623679797e-17,
+          "lookY": 0.09228617460499121,
+          "browY": 0.9702224343658625,
+          "browTilt": -0.29106673030975877,
+          "mouthOpen": 0.6999626760349916,
+          "mouthWide": 0.2500133299875029,
+          "mouthRound": 0.9999466800499882,
+          "smile": 0.0074443914085343624,
+          "blush": 0.21226099401852236,
+          "squash": -0.04556196321648144,
+          "wobble": 0,
+          "reveal": 0.8274382266139528
+        },
+        "anchor": [
+          -1.6200000047683716,
+          1.4166667064030964,
+          -2.9200000965595247
+        ],
+        "size": 0.15399999916553497,
+        "facePos": [
+          -1.6018776467675724,
+          1.4166667064030964,
+          -2.887335104611092
+        ],
+        "faceDir": [
+          0.48513431128603296,
+          0,
+          0.8744396491542604
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": false,
+        "bubbleInfo": {
+          "content": null,
+          "corners": [
+            [
+              -0.5,
+              -0.5,
+              0
+            ],
+            [
+              0.5,
+              -0.5,
+              0
+            ],
+            [
+              0.5,
+              0.5,
+              0
+            ],
+            [
+              -0.5,
+              0.5,
+              0
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": true,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ]
+  },
+  "at": "2026-10-26T22:43:22.267Z",
+  "shot": "xr-persistence.jpg"
+}

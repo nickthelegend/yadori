@@ -1,0 +1,14 @@
+{
+  "id": "I15",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/doc-review.json",
+      "detail": "App gateway client uses /api; server alone owns Meta client; MMS runtime disallows remote model fetch. Fresh independent browser network captures corroborate.",
+      "at": "2026-10-26T22:51:43.639Z",
+      "capture": null
+    }
+  ]
+}

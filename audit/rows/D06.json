@@ -1,0 +1,14 @@
+{
+  "id": "D06",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/doc-review.json",
+      "detail": "Local HTTPS :8091 and gateway :8440 instructions; docs/QUEST.md for a later device run; no deployment performed.",
+      "at": "2026-10-26T22:51:43.637Z",
+      "capture": null
+    }
+  ]
+}

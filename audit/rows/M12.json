@@ -1,0 +1,25 @@
+{
+  "id": "M12",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/server/results.json",
+      "detail": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"error\":\"unknown tool nonexistent\"}"
+          }
+        ],
+        "isError": true,
+        "body": {
+          "error": "unknown tool nonexistent"
+        }
+      },
+      "at": "2026-10-26T22:39:25.873Z",
+      "capture": "audit/server/network.json"
+    }
+  ]
+}

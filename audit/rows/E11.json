@@ -1,0 +1,15 @@
+{
+  "id": "E11",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": "Also measured Oct 25: XR CPU p50 0.70 ms, p95 1.00 ms, 26 draw calls; 82 unit tests; emulator 21/21; glasses profile 8/8; browser diorama 18/18; responsive 12/12. Quest frame time is unverified. Full table: TESTING.md.",
+      "at": "2026-10-26T22:45:27.732Z",
+      "shot": "evidence-1280.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

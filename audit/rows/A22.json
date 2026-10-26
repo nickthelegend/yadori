@@ -1,0 +1,30 @@
+{
+  "id": "A22",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/server/results.json",
+      "detail": {
+        "at": "2026-10-26T22:39:25.376Z",
+        "method": "POST",
+        "path": "/api/chat",
+        "status": 400,
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+          "keep-alive": "timeout=5",
+          "transfer-encoding": "chunked"
+        },
+        "body": {
+          "error": "body is not JSON"
+        }
+      },
+      "at": "2026-10-26T22:39:25.376Z",
+      "capture": "audit/server/network.json"
+    }
+  ]
+}

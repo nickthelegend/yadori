@@ -1,0 +1,18 @@
+{
+  "id": "B39",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": {
+        "before": 1,
+        "after": 2
+      },
+      "at": "2026-10-26T22:47:03.755Z",
+      "shot": "desktop-forget.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

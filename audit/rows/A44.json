@@ -1,0 +1,66 @@
+{
+  "id": "A44",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/server/results.json",
+      "detail": [
+        {
+          "at": "2026-10-26T22:39:25.487Z",
+          "method": "PUT",
+          "path": "/api/wake",
+          "status": 404,
+          "headers": {
+            "cache-control": "no-store",
+            "connection": "keep-alive",
+            "content-type": "application/json",
+            "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+            "keep-alive": "timeout=5",
+            "transfer-encoding": "chunked"
+          },
+          "body": {
+            "error": "no such endpoint"
+          }
+        },
+        {
+          "at": "2026-10-26T22:39:25.489Z",
+          "method": "GET",
+          "path": "/api/wake",
+          "status": 404,
+          "headers": {
+            "cache-control": "no-store",
+            "connection": "keep-alive",
+            "content-type": "application/json",
+            "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+            "keep-alive": "timeout=5",
+            "transfer-encoding": "chunked"
+          },
+          "body": {
+            "error": "no such endpoint"
+          }
+        },
+        {
+          "at": "2026-10-26T22:39:25.490Z",
+          "method": "POST",
+          "path": "/api/status",
+          "status": 404,
+          "headers": {
+            "cache-control": "no-store",
+            "connection": "keep-alive",
+            "content-type": "application/json",
+            "date": "Mon, 26 Oct 2026 22:39:25 GMT",
+            "keep-alive": "timeout=5",
+            "transfer-encoding": "chunked"
+          },
+          "body": {
+            "error": "no such endpoint"
+          }
+        }
+      ],
+      "at": "2026-10-26T22:39:25.490Z",
+      "capture": "audit/server/network.json"
+    }
+  ]
+}

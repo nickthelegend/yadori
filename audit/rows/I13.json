@@ -1,0 +1,19 @@
+{
+  "id": "I13",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/server/results.json",
+      "detail": {
+        "noSuccessfulModelRuns": true,
+        "interface": "export interface RunEntry {\n  kind: string;\n  model: string;\n  ok: boolean;\n  latency_ms: number;\n  request_id?: string | null;\n  cost_usd?: number;\n  error?: string;\n}\n\n",
+        "serializedTimestamp": "t",
+        "source": "packages/server/src/runlog.ts"
+      },
+      "at": "2026-10-26T22:39:26.013Z",
+      "capture": "audit/server/network.json"
+    }
+  ]
+}

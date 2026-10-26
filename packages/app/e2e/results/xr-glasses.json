@@ -1,6 +1,6 @@
 {
   "profile": "metaVRGlasses",
-  "pass": 8,
+  "pass": 10,
   "fail": 0,
   "results": [
     {
@@ -34,6 +34,11 @@
       "detail": "h 0.0°, v 10.9°"
     },
     {
+      "name": "actual speech bubble corners fit the glasses view",
+      "ok": true,
+      "detail": "[{\"h\":-9.390233469627299,\"v\":2.5202469484033685},{\"h\":9.390233469627299,\"v\":2.5202469484033685},{\"h\":9.58694639890725,\"v\":11.997101947083594},{\"h\":-9.58694639890725,\"v\":11.997101947083594}]"
+    },
+    {
       "name": "with gaze disconnected, the hand ray wakes the lamp",
       "ok": true,
       "detail": ""
@@ -42,7 +47,12 @@
       "name": "no console errors",
       "ok": true,
       "detail": ""
+    },
+    {
+      "name": "independent console, page and network capture is clean",
+      "ok": true,
+      "detail": "389 responses; 0 errors"
     }
   ],
-  "at": "2026-10-25T11:20:06.192Z"
+  "at": "2026-10-26T22:51:08.360Z"
 }

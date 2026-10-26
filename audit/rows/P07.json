@@ -1,0 +1,105 @@
+{
+  "id": "P07",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/mobile-results.json",
+      "detail": {
+        "max": 0.699953472916879,
+        "spirits": [
+          {
+            "id": "sp_mrqptlk9r8zq",
+            "name": "Couch",
+            "label": "couch",
+            "targetId": "den-couch",
+            "awake": true,
+            "speaking": false,
+            "expression": "neutral",
+            "mouth": "rest",
+            "params": {
+              "eyeOpen": 1,
+              "eyeSmile": 0,
+              "pupil": 0.9999999999999997,
+              "lookX": -4.882963669100785e-7,
+              "lookY": 0.3342746657484351,
+              "browY": 3.633303304513668e-18,
+              "browTilt": -1.089990991354098e-18,
+              "mouthOpen": 7.944827002388842e-13,
+              "mouthWide": 0.4999999999997162,
+              "mouthRound": 1.1349752687863056e-12,
+              "smile": 0.24999999999999992,
+              "blush": 0.4499999737968215,
+              "squash": -0.000012522537206571756,
+              "wobble": 0,
+              "reveal": 1
+            },
+            "anchor": [
+              0,
+              0.7095,
+              -2.64
+            ],
+            "size": 0.301,
+            "facePos": [
+              -0.0021563687203553427,
+              0.7095,
+              -2.622114710895394
+            ],
+            "faceDir": [
+              -0.11969975507279582,
+              0,
+              0.9928101372546075
+            ],
+            "pokes": 0,
+            "pets": 0,
+            "flicks": 0,
+            "lines": 1,
+            "voiceMode": "browser",
+            "bubble": true,
+            "bubbleInfo": {
+              "content": {
+                "speaker": "Couch",
+                "tag": "puppet line (you)",
+                "text": "Hello couch.",
+                "shown": 999
+              },
+              "corners": [
+                [
+                  -0.6025173125111184,
+                  0.8656030045041856,
+                  -2.6551604676756075
+                ],
+                [
+                  0.5888548521944107,
+                  0.8656030045041856,
+                  -2.5115207615882524
+                ],
+                [
+                  0.5982045750704078,
+                  1.4604969954958147,
+                  -2.5890689541151803
+                ],
+                [
+                  -0.5931675896351213,
+                  1.4604969954958147,
+                  -2.7327086602025354
+                ]
+              ]
+            },
+            "sourceChip": {
+              "visible": true,
+              "text": "Built-in face · not generated"
+            },
+            "faceSource": "built-in",
+            "hasPersona": false,
+            "anchorErrorCm": 0
+          }
+        ]
+      },
+      "at": "2026-10-26T22:48:41.634Z",
+      "shot": "mobile.jpg",
+      "capture": "audit/browser/mobile-events.jsonl"
+    }
+  ]
+}

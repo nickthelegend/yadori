@@ -1,0 +1,27 @@
+{
+  "id": "M01",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/server/results.json",
+      "detail": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": {
+          "protocolVersion": "2025-06-18",
+          "capabilities": {
+            "tools": {}
+          },
+          "serverInfo": {
+            "name": "yadori",
+            "version": "0.1.0"
+          }
+        }
+      },
+      "at": "2026-10-26T22:39:25.827Z",
+      "capture": "audit/server/network.json"
+    }
+  ]
+}

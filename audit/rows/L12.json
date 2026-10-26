@@ -1,0 +1,15 @@
+{
+  "id": "L12",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/browser/extra-results.json",
+      "detail": "Skip to content\nYadori\n宿り\nHow\nProof\nLive\nEvidence\nPinch the couch.\nIt wakes up.\n\nA face blooms on the real couch and flinches when you poke it.\n\nTry it without a headset\nSee the evidence\nCouch\n#001\n\nBuilt-in face, not generated\n\nThree moves.\n\nPoint, pinch, and the room starts talking.\n\nPinch\n\nThe room scan already named the couch.\n\nBloom\n\nA face sits on it and flinches when poked.\n\nGossip\n\nWake the lamp and the two of them talk.\n\nMeasured, not mocked.\n\nEmulator and unit tests. No Quest run yet.\n\n5\npieces\n0\nkeys\n1\npinch\nSee the evidence\nLive now. Models wait.\n\nNothing is faked while the key is missing.\n\nLIVE\n\nPinch, face, poke, pet, flick, puppet gossip. Browser and emulator.\n\nSETUP REQUIRED\n\nMuse Spark, Muse Image, and voice. They wait for MODEL_API_KEY.\n\nNo headset required.\n\nClick the couch in the browser diorama.\n\nHow to open it\nYadori\n· 宿り, to dwell in a thing.\n\nEvidence · MIT · © 2026 Nivesh Gajengi",
+      "at": "2026-10-26T22:45:24.330Z",
+      "shot": "index-1280.jpg",
+      "capture": "audit/browser/extra-events.jsonl"
+    }
+  ]
+}

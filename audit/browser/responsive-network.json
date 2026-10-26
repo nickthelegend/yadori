@@ -1,0 +1,19 @@
+{
+  "responses": 755,
+  "errors": [],
+  "cases": {
+    "landing-375": {
+      "responses": 10,
+      "errors": []
+    },
+    "landing-1280": {
+      "responses": 10,
+      "errors": []
+    },
+    "app-375": {
+      "responses": 735,
+      "errors": []
+    }
+  },
+  "at": "2026-10-26T22:45:15.269Z"
+}

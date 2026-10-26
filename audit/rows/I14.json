@@ -1,0 +1,21 @@
+{
+  "id": "I14",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/server/results.json",
+      "detail": {
+        "utcDay": "2026-10-26",
+        "spentBefore": 0,
+        "noKeyWakeCost": 0,
+        "boundaryAccepted": true,
+        "overCapRejected": true,
+        "dayReset": "Source reviewed; no synthetic clock or model run injected."
+      },
+      "at": "2026-10-26T22:39:26.014Z",
+      "capture": "audit/server/network.json"
+    }
+  ]
+}

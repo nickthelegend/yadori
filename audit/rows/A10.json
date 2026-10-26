@@ -1,0 +1,25 @@
+{
+  "id": "A10",
+  "status": "PASS",
+  "runStartedAt": "2026-10-26T22:39:16.137Z",
+  "observations": [
+    {
+      "ok": true,
+      "source": "audit/server/results.json",
+      "detail": {
+        "spirit_id": "sp_6xckssjgwtr5",
+        "label": "couch",
+        "dims": [
+          2,
+          0.86,
+          0.9
+        ],
+        "face": "built-in",
+        "source": "label",
+        "created": "2026-10-26T22:39:25.330Z"
+      },
+      "at": "2026-10-26T22:39:25.331Z",
+      "capture": "audit/server/network.json"
+    }
+  ]
+}

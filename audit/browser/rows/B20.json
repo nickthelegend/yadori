@@ -1,0 +1,19 @@
+{
+  "id": "B20",
+  "ok": true,
+  "detail": {
+    "acceptedLength": 240,
+    "expected": "hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello",
+    "bubble": {
+      "speaker": "Couch",
+      "tag": "puppet line (you)",
+      "text": "hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello",
+      "shown": 0
+    }
+  },
+  "shot": "inputs.jpg",
+  "at": "2026-10-26T21:47:22.579Z",
+  "source": "inputs-results.json",
+  "status": "PASS",
+  "screenshot": "inputs.jpg"
+}

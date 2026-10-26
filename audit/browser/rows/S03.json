@@ -1,0 +1,10 @@
+{
+  "id": "S03",
+  "ok": true,
+  "detail": "Voice in \u00b7 Setup required: MODEL_API_KEY",
+  "at": "2026-10-26T21:48:52.027Z",
+  "shot": "desktop-awake.jpg",
+  "source": "extra-results.json",
+  "status": "PASS",
+  "screenshot": "desktop-awake.jpg"
+}

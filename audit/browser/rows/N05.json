@@ -1,0 +1,10 @@
+{
+  "id": "N05",
+  "ok": true,
+  "detail": "Tell me what this is: it needs a name before it can wake.",
+  "at": "2026-10-26T21:32:56.757Z",
+  "shot": "bare.jpg",
+  "source": "extra-results.json",
+  "status": "PASS",
+  "screenshot": "bare.jpg"
+}

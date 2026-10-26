@@ -1,0 +1,15 @@
+{
+  "id": "P03",
+  "ok": true,
+  "detail": [
+    375,
+    375,
+    375,
+    375
+  ],
+  "at": "2026-10-26T22:15:45.982Z",
+  "shot": "mobile.jpg",
+  "source": "mobile-results.json",
+  "status": "PASS",
+  "screenshot": "mobile.jpg"
+}

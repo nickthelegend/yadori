@@ -1,0 +1,27 @@
+{
+  "id": "E10",
+  "ok": true,
+  "detail": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "at": "2026-10-26T21:34:54.142Z",
+  "shot": "evidence-1280.jpg",
+  "source": "extra-results.json",
+  "status": "PASS",
+  "screenshot": "evidence-1280.jpg"
+}

@@ -1,0 +1,194 @@
+{
+  "id": "Q25",
+  "ok": true,
+  "detail": {
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_bare",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "status": {
+      "online": true,
+      "gateway": "yadori",
+      "spark": {
+        "ready": false,
+        "model": "muse-spark-1.3",
+        "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+      },
+      "wonder": {
+        "ready": false,
+        "model": "muse-wonder-1.0",
+        "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+      },
+      "image": {
+        "ready": false,
+        "model": "muse-image-1.0",
+        "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+      },
+      "transcribe": {
+        "ready": false,
+        "model": "muse-voice-transcribe-1.0",
+        "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+      },
+      "sam3": {
+        "ready": false,
+        "model": "sam-3.1",
+        "setup": "Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+      },
+      "tts": {
+        "ready": false,
+        "setup": "Setup required: run scripts/fetch-models.sh (MMS-TTS weights, CC-BY-NC-4.0)",
+        "model": "facebook/mms-tts-eng",
+        "license": "CC-BY-NC-4.0"
+      },
+      "budget": {
+        "cap_usd": 3,
+        "spent_usd": 0
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        "Coat Rack",
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_vppx47jq1qoi",
+        "name": "Coat Rack",
+        "label": "coat rack",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 0,
+          "pupil": 0.9999999989989511,
+          "lookX": -1.7290209977943657e-17,
+          "lookY": 0.819454216672517,
+          "browY": 2.860139820903764e-09,
+          "browTilt": -8.580419462711284e-10,
+          "mouthOpen": 8.384228495380694e-25,
+          "mouthWide": 0.49999999999999994,
+          "mouthRound": 1.1977469279115288e-24,
+          "smile": 0.24999999928496505,
+          "blush": 0.4499052091473815,
+          "squash": -2.2277413385885121e-07,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          0.20000000298023224,
+          0.4537500098347664,
+          -2.140000095367432
+        ],
+        "size": 0.19250000417232513,
+        "facePos": [
+          0.1991665975215305,
+          0.4537500098347664,
+          -2.1310826566948045
+        ],
+        "faceDir": [
+          -0.09305244663528373,
+          0,
+          0.9956612085318921
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": false,
+        "bubbleInfo": {
+          "content": null,
+          "corners": [
+            [
+              -0.19432160078977406,
+              0.5656829700198647,
+              -2.0955682700661193
+            ],
+            [
+              0.5792598334807808,
+              0.5656829700198647,
+              -2.02327094190502
+            ],
+            [
+              0.592654795832835,
+              0.9265042393660607,
+              -2.1665970433234896
+            ],
+            [
+              -0.1809266384377199,
+              0.9265042393660607,
+              -2.238894371484589
+            ]
+          ]
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "targets": [
+      {
+        "id": "mesh-23",
+        "label": "other",
+        "center": [
+          0.20000000298023224,
+          0.2750000059604645,
+          -2.4000000953674316
+        ],
+        "dims": [
+          0.699999988079071,
+          0.550000011920929,
+          0.5
+        ]
+      }
+    ],
+    "saved": [
+      {
+        "spiritId": "sp_vppx47jq1qoi",
+        "label": "coat rack",
+        "name": "Coat Rack",
+        "dims": [
+          0.699999988079071,
+          0.550000011920929,
+          0.5
+        ],
+        "position": [
+          0.20000000298023224,
+          0.2750000059604645,
+          -2.4000000953674316
+        ],
+        "persona": null,
+        "sheet": null,
+        "faceSource": "built-in",
+        "source": "label",
+        "firstWoke": "2026-10-27",
+        "lines": 0,
+        "memories": 0,
+        "room": "iwer:yadori_bare"
+      }
+    ],
+    "body": "Yadori\nSetup required (5)\nforget\nCoat Rack\ncoat rack \u00b7 0.7 \u00d7 0.6 m\n\n5\nopen\n\nSpeaker\nCoat Rack\nSay\nPuppet mode: you are the voice. Setup required for Muse Spark (MODEL_API_KEY). Lines are yours, spoken by Browser voice, not a Meta model.\nBuilt-in face and puppet mode: Setup required: MODEL_API_KEY (Meta Model API key from dev.meta.ai, in projects/yadori/.env)"
+  },
+  "at": "2026-10-26T21:35:58.309Z",
+  "shot": "xr-extra.jpg",
+  "source": "xr-extra-results.json",
+  "status": "PASS",
+  "screenshot": "xr-extra.jpg",
+  "networkCaptureReview": "../supplemental-network-review.json",
+  "networkErrorsInObservationWindow": []
+}

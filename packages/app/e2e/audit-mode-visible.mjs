@@ -1,0 +1,2 @@
+import{args}from'./page-args.mjs';import{join}from'node:path';
+export default async function({page,frame,workspaceRoot}){const a=args(workspaceRoot),r={visible:await frame.locator('#y-mode').isVisible(),text:await frame.locator('#y-mode').innerText(),scene:await frame.evaluate(()=>__yadori.scene())};await page.screenshot({path:join(workspaceRoot,'../../audit/browser',a.shot+'.jpg'),type:'jpeg',quality:60});return r;}

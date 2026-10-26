@@ -148,6 +148,7 @@ export class YadoriSystem extends createSystem({
   private waking: { target: Target; start: number } | null = null;
   private t = 0;
   private xrActive = false;
+  private roomGeneration = 0;
   private emulator = false;
   private roomKey = '';
   private pendingSaved: SavedSpirit[] = [];
@@ -529,6 +530,7 @@ export class YadoriSystem extends createSystem({
       this.overlay.toast(`At most ${MAX_SPIRITS} spirits (persistent anchors are limited); forget one first.`);
       return;
     }
+    const generation = this.roomGeneration;
     let t = target;
     if (labelKind(t.label) === 'needs-name') {
       if (this.xrActive && !this.emulator) {
@@ -536,6 +538,7 @@ export class YadoriSystem extends createSystem({
         return;
       }
       const typed = await new Promise<string | null>((res) => this.overlay.askName(res, () => res(null)));
+      if (generation !== this.roomGeneration) return;
       const clean = typed ? cleanUserLabel(typed) : null;
       if (!clean) {
         this.overlay.toast('Tell me what this is: it needs a name before it can wake.');
@@ -574,6 +577,7 @@ export class YadoriSystem extends createSystem({
     if (!saved) saved = this.newSaved(t, `local-${Math.random().toString(36).slice(2, 10)}`, null, null, 'built-in', 'label');
     const waited = (performance.now() - started) / 1000;
     if (waited < WAKE_MIN_S) await new Promise((r) => setTimeout(r, (WAKE_MIN_S - waited) * 1000));
+    if (generation !== this.roomGeneration) return;
     this.waking = null;
     saveSpirit(saved);
     const s = this.createSpirit(t, saved, false);
@@ -766,13 +770,15 @@ export class YadoriSystem extends createSystem({
     s.bubble.set(content);
     s.bubbleUntil = Infinity;
     const handle = await this.voice.speak(this.voiceTarget(s), text, (n) => {
-      if (n !== shown) {
+      if (this.spirits.has(s.id) && n !== shown) {
         shown = n;
         s.bubble.set({ ...content, shown: n });
       }
     });
-    s.entity.setValue(Spirit, 'voiceMode', handle.mode);
+    if (!this.spirits.has(s.id)) this.voice.cancel(s.id);
+    else s.entity.setValue(Spirit, 'voiceMode', handle.mode);
     await handle.done;
+    if (!this.spirits.has(s.id)) return;
     s.bubble.set({ ...content, shown: 999 });
     s.lines++;
     s.entity.setValue(Spirit, 'lines', s.lines);
@@ -853,6 +859,7 @@ export class YadoriSystem extends createSystem({
     const s = this.spirits.get(id);
     if (!s) return;
     this.spirits.delete(id);
+    this.voice.cancel(id);
     if (s.voiceAudio.isPlaying) s.voiceAudio.stop();
     s.bubble.dispose();
     s.srcChip.dispose();
@@ -940,6 +947,7 @@ export class YadoriSystem extends createSystem({
     const xr = this.renderer.xr.isPresenting;
     if (xr !== this.xrActive) {
       this.xrActive = xr;
+      this.roomGeneration++;
       // a different room: put this room's spirits away (they stay saved) and re-find the
       // new room's own spirits once its furniture is detected
       for (const id of [...this.spirits.keys()]) this.removeRuntime(id);
@@ -1070,8 +1078,8 @@ export class YadoriSystem extends createSystem({
       o.dist += (this.shot.dist - o.dist) * k;
     }
     const aspect = this.renderer.domElement.clientWidth / Math.max(1, this.renderer.domElement.clientHeight);
-    // portrait screens: pull back for the whole room, much less once a spirit is the subject
-    const fit = this.spirits.size ? Math.min(1, Math.max(0.72, aspect * 1.4)) : Math.min(1, Math.max(0.45, aspect * 0.95));
+    // Portrait screens keep the other furniture reachable after a spirit wakes.
+    const fit = Math.min(1, Math.max(0.45, aspect * 0.95));
     const dist = o.dist / fit;
     const cp = Math.cos(o.pitch);
     this.camera.position.set(o.focus.x + Math.sin(o.yaw) * cp * dist, o.focus.y + Math.sin(o.pitch) * dist, o.focus.z + Math.cos(o.yaw) * cp * dist);
@@ -1251,6 +1259,7 @@ export class YadoriSystem extends createSystem({
     const api = {
       mode: () => ({ xr: this.xrActive, emulator: this.emulator, room: this.currentRoomKey(), label: this.modeLabel() }),
       status: () => this.status,
+      scene: () => ({ denVisible: this.den.root.visible, camera: v3(this.camera.position), orbit: { yaw: this.orbit.yaw, pitch: this.orbit.pitch, dist: this.orbit.dist } }),
       voiceMode: (): VoiceMode => this.voice.nextMode(),
       targets: () => this.targets.map((t) => ({ id: t.id, label: t.label, center: t.box.center, dims: t.dims })),
       waking: () => (this.waking ? this.waking.target.id : null),
@@ -1276,6 +1285,11 @@ export class YadoriSystem extends createSystem({
           lines: s.lines,
           voiceMode: s.entity.getValue(Spirit, 'voiceMode'),
           bubble: s.bubble.mesh.visible,
+          bubbleInfo: { content: s.bubble.content, corners: [[-0.5, -0.5], [0.5, -0.5], [0.5, 0.5], [-0.5, 0.5]].map(([x, y]) => v3(new Vector3(x, y, 0).applyMatrix4(s.bubble.mesh.matrixWorld))) },
+          sourceChip: { visible: s.srcChip.mesh.visible, text: s.srcChip.text },
+          faceSource: s.faceSource,
+          hasPersona: !!s.persona,
+          anchorErrorCm: s.entity.getValue(Spirit, 'anchorErrorCm'),
         })),
       /** project a world point to page pixels (for browser e2e clicks) */
       toScreen: (p: Vec3) => {

@@ -1,0 +1,11 @@
+// Audit-only synthetic room. Seven bounded furniture boxes, never a real room.
+import * as THREE from 'three';
+import {scene} from '@drawcall/glts';
+const root=new THREE.Group();root.name='Audit synthetic seven furniture boxes';
+scene.add(root);scene.background=new THREE.Color(0xe6e2d6);
+root.add(new THREE.HemisphereLight(0xffffff,0x889090,3));
+for(let i=0;i<7;i++){
+ const a=(i-3)*.42;const center=[Math.sin(a)*3,.6,-Math.cos(a)*3];
+ const visible=new THREE.Mesh(new THREE.BoxGeometry(.65,1.2,.65),new THREE.MeshStandardMaterial({color:[0x87a997,0xff9db0,0xc9a25a][i%3]}));visible.position.set(...center);root.add(visible);
+ const volume=new THREE.Mesh(new THREE.BoxGeometry(.65,1.2,.65),new THREE.MeshBasicMaterial({visible:false}));volume.position.set(...center);volume.userData.xrMesh='table';volume.name='audit-bounded-table-'+i;root.add(volume);
+}

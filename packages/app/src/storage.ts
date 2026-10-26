@@ -24,13 +24,17 @@ export interface SavedSpirit {
 
 const KEY = 'yadori.spirits.v1';
 
-export function loadSpirits(room: string): SavedSpirit[] {
+function readAll(): SavedSpirit[] {
   try {
-    const all = JSON.parse(localStorage.getItem(KEY) ?? '[]') as SavedSpirit[];
-    return Array.isArray(all) ? all.filter((s) => s.room === room) : [];
+    const parsed: unknown = JSON.parse(localStorage.getItem(KEY) ?? '[]');
+    return Array.isArray(parsed) ? parsed.filter((s) => s !== null && typeof s === 'object') : [];
   } catch {
     return [];
   }
+}
+
+export function loadSpirits(room: string): SavedSpirit[] {
+  return readAll().filter((s) => s.room === room);
 }
 
 function writeAll(list: SavedSpirit[]): void {
@@ -42,12 +46,7 @@ function writeAll(list: SavedSpirit[]): void {
 }
 
 export function saveSpirit(s: SavedSpirit): void {
-  let all: SavedSpirit[] = [];
-  try {
-    all = JSON.parse(localStorage.getItem(KEY) ?? '[]');
-  } catch {
-    all = [];
-  }
+  const all = readAll();
   const i = all.findIndex((x) => x.spiritId === s.spiritId);
   if (i >= 0) all[i] = s;
   else all.push(s);
@@ -56,7 +55,7 @@ export function saveSpirit(s: SavedSpirit): void {
 
 export function deleteSpirit(spiritId: string): void {
   try {
-    const all = (JSON.parse(localStorage.getItem(KEY) ?? '[]') as SavedSpirit[]).filter((x) => x.spiritId !== spiritId);
+    const all = readAll().filter((x) => x.spiritId !== spiritId);
     writeAll(all);
   } catch {
     /* nothing to delete */

@@ -1,5 +1,30 @@
 # Testing
 
+## Fresh browser audit — Oct 26–27, 2026
+
+This task recorded **154 PASS, 2 FAIL, 2 newly UNTESTED** across 158 browser/IWER/landing/setup-related audit rows. The detailed results, screenshots, console/network evidence and fixes are in [AUDIT.md](AUDIT.md) and [the run report](audit/browser/summary.md). Existing MODEL_API_KEY, weights and physical-headset UNTESTED rows remain unchanged. The OS has no microphone input; recorder capture remains UNTESTED.
+
+| Suite | Fresh result |
+|---|---:|
+| Quest 3 IWER, hands, synthetic den + bare room | 22/22 |
+| Meta VR Glasses IWER, gaze + pinch, actual bubble bounds | 10/10 |
+| Browser diorama, mouse + keyboard | 20/20 |
+| Responsive landing 375/1280 and phone app | 12/12 |
+| Changed rig unit regression | 14/14 |
+| App typecheck and production build | PASS |
+
+Each main browser/emulator suite now captures console, page errors and failed/unexpected network outcomes independently. Final captures observed 1,531 / 389 / 763 / 755 responses respectively, with zero errors. Additional cold-load checks covered the 158 audit rows; these row totals are separate from suite assertion totals. Full server/unit re-verification is left to the next task.
+
+Fixed hidden provenance labels on narrow layouts, header/binder overlap, non-array storage crashes, a wake crossing immersive room boundaries, speech continuing after Forget, incomplete blink closure and portrait framing that hid the lamp. All affected items were re-run. **Remaining FAIL:** S16's deliberate gateway 502 creates Chrome's resource console error; Q35's hand/depth occlusion gate remains unimplemented/unverified. No mocks, model output substitutions, live Meta calls or weight downloads were used.
+
+600-frame host CPU probe (Apple M4/ANGLE Metal; excludes GPU/headset time): Quest IWER p50 0.90ms, p95 1.90ms, max 2.30ms; draw calls max 26; triangles max 18,584. Browser p50 2.30ms, p95 3.10ms, max 3.40ms; draw calls max 107. Physical Quest/Glasses performance is UNTESTED.
+
+`metaQuest3` was restored and verified after the glasses runner, including an interrupted child run (exit 130, no orphan). Gateway, dev server and owned Chrome processes were stopped; the heavy slot was released. See [cleanup evidence](audit/browser/cleanup-final.json). No commits, pushes or deployments were made in this worker.
+
+## Historical archive (Oct 25 and earlier retry)
+
+The material below describes earlier runs; use the fresh section and audit evidence above for the current browser results.
+
 Evidence as of Oct 25, 2026: fresh unit, typecheck and build runs below; emulator/browser results restored
 from the last complete run, `74e90e1` (MacBook, Apple M4, Chromium via IWSDK agent mode). **Device: no.**
 Nothing here ran on a Quest or on Meta VR Glasses hardware; emulator numbers are a relative proxy (the M4 CPU

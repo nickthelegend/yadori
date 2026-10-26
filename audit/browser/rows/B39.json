@@ -1,0 +1,13 @@
+{
+  "id": "B39",
+  "ok": true,
+  "detail": {
+    "before": 1,
+    "after": 2
+  },
+  "at": "2026-10-26T21:50:03.882Z",
+  "shot": "desktop-forget.jpg",
+  "source": "extra-results.json",
+  "status": "PASS",
+  "screenshot": "desktop-forget.jpg"
+}

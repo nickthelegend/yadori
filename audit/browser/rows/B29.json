@@ -1,0 +1,95 @@
+{
+  "id": "B29",
+  "ok": true,
+  "detail": {
+    "id": "sp_svyx2j7jtbcf",
+    "name": "Lamp",
+    "label": "lamp",
+    "targetId": "den-lamp",
+    "awake": true,
+    "speaking": false,
+    "expression": "neutral",
+    "mouth": "rest",
+    "params": {
+      "eyeOpen": 1,
+      "eyeSmile": 0,
+      "pupil": 0.9999999999999999,
+      "lookX": 0.7327381007645436,
+      "lookY": -0.6803734175472924,
+      "browY": 2.3463713852401403e-103,
+      "browTilt": -7.039114155720411e-104,
+      "mouthOpen": 2.8588803201660996e-05,
+      "mouthWide": 0.500039836514582,
+      "mouthRound": 3.0796840601368183e-09,
+      "smile": 0.24999999999999997,
+      "blush": 0.44999999999999973,
+      "squash": 0.0013192557322884307,
+      "wobble": 0,
+      "reveal": 1
+    },
+    "anchor": [
+      -1.62,
+      1.4166666666666665,
+      -2.92
+    ],
+    "size": 0.154,
+    "facePos": [
+      -1.6184273813840004,
+      1.4166666666666665,
+      -2.9091087877570683
+    ],
+    "faceDir": [
+      0.14291122555490787,
+      0,
+      0.9897355109373384
+    ],
+    "pokes": 0,
+    "pets": 0,
+    "flicks": 0,
+    "lines": 1,
+    "voiceMode": "browser",
+    "bubble": true,
+    "bubbleInfo": {
+      "content": {
+        "speaker": "Lamp \u2192 Couch",
+        "tag": "puppet line (you)",
+        "text": "Then stop being so comfortable.",
+        "shown": 999
+      },
+      "corners": [
+        [
+          -2.1184445044119755,
+          1.491345073019056,
+          -2.8427309048445215
+        ],
+        [
+          -1.1200570278353854,
+          1.491345073019056,
+          -2.986891416697941
+        ],
+        [
+          -1.1184102583560251,
+          1.9955842737551888,
+          -2.975486670669615
+        ],
+        [
+          -2.1167977349326157,
+          1.9955842737551888,
+          -2.8313261588161955
+        ]
+      ]
+    },
+    "sourceChip": {
+      "visible": false,
+      "text": "Built-in face \u00b7 not generated"
+    },
+    "faceSource": "built-in",
+    "hasPersona": false,
+    "anchorErrorCm": 0
+  },
+  "at": "2026-10-26T21:49:25.045Z",
+  "shot": "desktop-gossip.jpg",
+  "source": "extra-results.json",
+  "status": "PASS",
+  "screenshot": "desktop-gossip.jpg"
+}

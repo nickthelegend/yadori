@@ -1,0 +1,266 @@
+{
+  "id": "Q13",
+  "ok": true,
+  "detail": {
+    "pre": {
+      "id": "sp_s5fxwsznaru9",
+      "name": "Couch",
+      "label": "couch",
+      "targetId": "mesh-23",
+      "awake": true,
+      "speaking": false,
+      "expression": "neutral",
+      "mouth": "rest",
+      "params": {
+        "eyeOpen": 1,
+        "eyeSmile": 0,
+        "pupil": 0.9999999999999998,
+        "lookX": -0.002334258382472874,
+        "lookY": 2.0185120422101013e-05,
+        "browY": 1.6735572216886142e-21,
+        "browTilt": -5.020671665065843e-22,
+        "mouthOpen": 4.695692233448691e-59,
+        "mouthWide": 0.49999999999999994,
+        "mouthRound": 6.708131762069562e-59,
+        "smile": 0.24999999999999994,
+        "blush": 0.44999999878689206,
+        "squash": -3.212542104180592e-13,
+        "wobble": 0,
+        "reveal": 1
+      },
+      "anchor": [
+        0,
+        0.7095000118017196,
+        -2.6399999165534975
+      ],
+      "size": 0.30100000500679014,
+      "facePos": [
+        1.152398482311715e-09,
+        0.7095000118017196,
+        -2.6399867470442238
+      ],
+      "faceDir": [
+        8.750504319901421e-05,
+        0,
+        0.9999999961714336
+      ],
+      "pokes": 0,
+      "pets": 0,
+      "flicks": 0,
+      "lines": 0,
+      "voiceMode": "",
+      "bubble": false,
+      "bubbleInfo": {
+        "content": null,
+        "corners": [
+          [
+            -0.44578279427279,
+            0.8701955743977827,
+            -2.59764514560513
+          ],
+          [
+            0.44578279427279,
+            0.8701955743977827,
+            -2.59764514560513
+          ],
+          [
+            0.44578279427279,
+            1.307855937215004,
+            -2.682354687501865
+          ],
+          [
+            -0.44578279427279,
+            1.307855937215004,
+            -2.682354687501865
+          ]
+        ]
+      },
+      "sourceChip": {
+        "visible": true,
+        "text": "Built-in face \u00b7 not generated"
+      },
+      "faceSource": "built-in",
+      "hasPersona": false,
+      "anchorErrorCm": 0
+    },
+    "back": {
+      "id": "sp_s5fxwsznaru9",
+      "name": "Couch",
+      "label": "couch",
+      "targetId": "mesh-23",
+      "awake": true,
+      "speaking": false,
+      "expression": "neutral",
+      "mouth": "rest",
+      "params": {
+        "eyeOpen": 1,
+        "eyeSmile": 0,
+        "pupil": 0.9999999999999998,
+        "lookX": -0.0023330771236485565,
+        "lookY": 0.00022442711781852596,
+        "browY": 2.4578618514988603e-25,
+        "browTilt": -7.373585554496585e-26,
+        "mouthOpen": 8.690944012777097e-70,
+        "mouthWide": 0.49999999999999994,
+        "mouthRound": 1.2415634303967295e-69,
+        "smile": 0.24999999999999994,
+        "blush": 0.4499999999644642,
+        "squash": -8.386766475582272e-17,
+        "wobble": 0,
+        "reveal": 1
+      },
+      "anchor": [
+        0,
+        0.7095000118017196,
+        -2.6399999165534975
+      ],
+      "size": 0.30100000500679014,
+      "facePos": [
+        1.152398482311715e-09,
+        0.7095000118017196,
+        -2.6399867470442238
+      ],
+      "faceDir": [
+        8.750504319901421e-05,
+        0,
+        0.9999999961714336
+      ],
+      "pokes": 0,
+      "pets": 0,
+      "flicks": 0,
+      "lines": 0,
+      "voiceMode": "",
+      "bubble": false,
+      "bubbleInfo": {
+        "content": null,
+        "corners": [
+          [
+            -0.44578279427279,
+            0.8701955743977827,
+            -2.59764514560513
+          ],
+          [
+            0.44578279427279,
+            0.8701955743977827,
+            -2.59764514560513
+          ],
+          [
+            0.44578279427279,
+            1.307855937215004,
+            -2.682354687501865
+          ],
+          [
+            -0.44578279427279,
+            1.307855937215004,
+            -2.682354687501865
+          ]
+        ]
+      },
+      "sourceChip": {
+        "visible": false,
+        "text": "Built-in face \u00b7 not generated"
+      },
+      "faceSource": "built-in",
+      "hasPersona": false,
+      "anchorErrorCm": 0
+    },
+    "poke": {
+      "id": "sp_s5fxwsznaru9",
+      "name": "Couch",
+      "label": "couch",
+      "targetId": "mesh-23",
+      "awake": true,
+      "speaking": false,
+      "expression": "surprised",
+      "mouth": "O",
+      "params": {
+        "eyeOpen": 1.2499999999998257,
+        "eyeSmile": 0,
+        "pupil": 0.6503197976440727,
+        "lookX": 0.0034738538495264807,
+        "lookY": 3.605968765860518e-08,
+        "browY": 0.9990862924455067,
+        "browTilt": -0.299725887733652,
+        "mouthOpen": 0.6999999978354967,
+        "mouthWide": 0.2500000007730369,
+        "mouthRound": 0.9999999969078525,
+        "smile": 0.00022842688862330948,
+        "blush": 0.21521468253508128,
+        "squash": -0.00270024477300206,
+        "wobble": 0,
+        "reveal": 1
+      },
+      "anchor": [
+        0,
+        0.7095000118017196,
+        -2.6399999165534975
+      ],
+      "size": 0.30100000500679014,
+      "facePos": [
+        -1.017063794364084e-06,
+        0.7095000118017196,
+        -2.6396086786857267
+      ],
+      "faceDir": [
+        -0.0025995959019671335,
+        0,
+        0.9999966210448646
+      ],
+      "pokes": 1,
+      "pets": 0,
+      "flicks": 0,
+      "lines": 0,
+      "voiceMode": "",
+      "bubble": true,
+      "bubbleInfo": {
+        "content": {
+          "speaker": "Couch",
+          "tag": "",
+          "text": "",
+          "shown": 0,
+          "glyph": "!"
+        },
+        "corners": [
+          [
+            -0.21006588294554532,
+            0.8739251076395704,
+            -2.614929426827731
+          ],
+          [
+            0.20993269789329774,
+            0.8739251076395704,
+            -2.6138375965489047
+          ],
+          [
+            0.21006384881795662,
+            1.077774921471338,
+            -2.6642879305437224
+          ],
+          [
+            -0.20993473202088644,
+            1.077774921471338,
+            -2.6653797608225487
+          ]
+        ]
+      },
+      "sourceChip": {
+        "visible": false,
+        "text": "Built-in face \u00b7 not generated"
+      },
+      "faceSource": "built-in",
+      "hasPersona": false,
+      "anchorErrorCm": 0
+    }
+  },
+  "at": "2026-10-26T22:01:51.070Z",
+  "shot": "xr-fixes.jpg",
+  "network": {
+    "startedAt": "2026-10-26T22:01:34.781Z",
+    "endedAt": "2026-10-26T22:02:06.638Z",
+    "responses": 780,
+    "errors": []
+  },
+  "source": "xr-fixes-results.json",
+  "status": "PASS",
+  "screenshot": "xr-fixes.jpg"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "B30",
+  "ok": true,
+  "detail": {
+    "concurrency": 1,
+    "seen": [
+      "lamp",
+      "lamp",
+      "lamp",
+      "lamp",
+      "lamp",
+      "lamp",
+      "lamp",
+      "lamp",
+      "lamp",
+      "lamp",
+      "lamp",
+      "lamp",
+      "lamp",
+      "lamp",
+      "lamp",
+      "lamp"
+    ],
+    "lines": 3
+  },
+  "at": "2026-10-26T21:49:28.414Z",
+  "shot": "desktop-gossip.jpg",
+  "source": "extra-results.json",
+  "status": "PASS",
+  "screenshot": "desktop-gossip.jpg"
+}

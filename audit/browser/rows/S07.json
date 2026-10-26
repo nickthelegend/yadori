@@ -1,0 +1,14 @@
+{
+  "id": "S07",
+  "ok": true,
+  "detail": {
+    "permissionBefore": "prompt",
+    "permissionAfter": "prompt",
+    "title": "Setup required: MODEL_API_KEY (Muse Voice Transcribe)"
+  },
+  "shot": "inputs.jpg",
+  "at": "2026-10-26T21:47:22.257Z",
+  "source": "inputs-results.json",
+  "status": "PASS",
+  "screenshot": "inputs.jpg"
+}

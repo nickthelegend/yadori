@@ -1,0 +1,5950 @@
+[
+  {
+    "at": "2026-10-26T21:47:32.922Z",
+    "mode": {
+      "xr": false,
+      "emulator": true,
+      "room": "diorama:den",
+      "label": "Browser diorama, not your room"
+    },
+    "scene": {
+      "denVisible": true,
+      "camera": [
+        -0.9883163571357727,
+        1.9619778394699097,
+        2.645498037338257
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.599999999999988
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [],
+    "shot": "xr-capture-0.jpg"
+  },
+  {
+    "at": "2026-10-26T21:47:40.007Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        0,
+        1.600000023841858,
+        0.03150000050663948
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [],
+    "shot": "xr-capture-1.jpg"
+  },
+  {
+    "at": "2026-10-26T21:47:43.028Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        0,
+        1.600000023841858,
+        0.03150000050663948
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": false,
+        "expression": "surprised",
+        "mouth": "O",
+        "params": {
+          "eyeOpen": 1.199323569663458,
+          "eyeSmile": 0,
+          "pupil": 0.8848467454597081,
+          "lookX": 0,
+          "lookY": 0.27781242883582685,
+          "browY": 0.32900929868654827,
+          "browTilt": -0.09870278960596449,
+          "mouthOpen": 0.4709637392566697,
+          "mouthWide": 0.3317986645511894,
+          "mouthRound": 0.6728053417952424,
+          "smile": 0.16774767532836293,
+          "blush": 0.24262423573210332,
+          "squash": 0.10243941295733949,
+          "wobble": 0,
+          "reveal": 0.18085977921148833
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "faceDir": [
+          0,
+          0,
+          1
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "",
+            "text": "",
+            "shown": 0,
+            "glyph": "!"
+          },
+          "corners": [
+            [
+              -0.44578279427279,
+              0.8701955743977827,
+              -2.59764514560513
+            ],
+            [
+              0.44578279427279,
+              0.8701955743977827,
+              -2.59764514560513
+            ],
+            [
+              0.44578279427279,
+              1.307855937215004,
+              -2.682354687501865
+            ],
+            [
+              -0.44578279427279,
+              1.307855937215004,
+              -2.682354687501865
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "shot": "xr-capture-2.jpg"
+  },
+  {
+    "at": "2026-10-26T21:47:43.863Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        0,
+        1.600000023841858,
+        0.03150000050663948
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        "Couch",
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 0.2412934570007088,
+          "eyeSmile": 0,
+          "pupil": 0.846208678652782,
+          "lookX": 0,
+          "lookY": 0.5422096513467269,
+          "browY": 0.43940377527776564,
+          "browTilt": -0.13182113258332973,
+          "mouthOpen": 0.07006899046596657,
+          "mouthWide": 0.4749753605478691,
+          "mouthRound": 0.10009855780852367,
+          "smile": 0.1401490561805586,
+          "blush": 0.27152202667259084,
+          "squash": -0.0029210930551433847,
+          "wobble": 0,
+          "reveal": 0.987838742561632
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "faceDir": [
+          0,
+          0,
+          1
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "",
+            "text": "",
+            "shown": 0,
+            "glyph": "!"
+          },
+          "corners": [
+            [
+              -0.44578279427279,
+              0.8701955743977827,
+              -2.59764514560513
+            ],
+            [
+              0.44578279427279,
+              0.8701955743977827,
+              -2.59764514560513
+            ],
+            [
+              0.44578279427279,
+              1.307855937215004,
+              -2.682354687501865
+            ],
+            [
+              -0.44578279427279,
+              1.307855937215004,
+              -2.682354687501865
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": true,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "shot": "xr-capture-3.jpg"
+  },
+  {
+    "at": "2026-10-26T21:47:48.439Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.15790247917175293,
+        1.5160531997680664,
+        -2.222259044647217
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        "Couch",
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": false,
+        "expression": "surprised",
+        "mouth": "O",
+        "params": {
+          "eyeOpen": 0.24917889339541927,
+          "eyeSmile": 0,
+          "pupil": 0.8603837311461013,
+          "lookX": 0.41355264366431577,
+          "lookY": 0.26095724557555167,
+          "browY": 0.39890362529685286,
+          "browTilt": -0.11967108758905586,
+          "mouthOpen": 0.5316777436002075,
+          "mouthWide": 0.3101150915713545,
+          "mouthRound": 0.7595396337145821,
+          "smile": 0.15027409367578676,
+          "blush": 0.40394715327127334,
+          "squash": -0.1640789169894572,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.021261568911574838,
+          0.7095000118017196,
+          -2.58758034137555
+        ],
+        "faceDir": [
+          -0.37586284836822476,
+          0,
+          0.926675304093362
+        ],
+        "pokes": 1,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "",
+            "text": "",
+            "shown": 0,
+            "glyph": "!"
+          },
+          "corners": [
+            [
+              -0.24826127942351894,
+              0.9158897007628988,
+              -2.5866357793649595
+            ],
+            [
+              0.14094234829569308,
+              0.9158897007628988,
+              -2.4287733830503053
+            ],
+            [
+              0.2057381416003693,
+              1.0358103283480096,
+              -2.5885249033861406
+            ],
+            [
+              -0.18346548611884272,
+              1.0358103283480096,
+              -2.7463872997007948
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": true,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "shot": "xr-capture-4.jpg"
+  },
+  {
+    "at": "2026-10-26T21:47:49.327Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.16583269834518433,
+        1.6176966428756714,
+        -2.303480863571167
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1.033296787392204,
+          "eyeSmile": 0,
+          "pupil": 0.7885927067525311,
+          "lookX": 0.9782356839665858,
+          "lookY": -0.0012646792063260427,
+          "browY": 0.6040208378499115,
+          "browTilt": -0.18120625135497342,
+          "mouthOpen": 0.17069534081693777,
+          "mouthWide": 0.4390373782796651,
+          "mouthRound": 0.2438504868813397,
+          "smile": 0.09899479053752214,
+          "blush": 0.2516259795868234,
+          "squash": 0.0011286367018099861,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.03362667612029586,
+          0.7095000118017196,
+          -2.5773097140224315
+        ],
+        "faceDir": [
+          -0.4726870637172956,
+          0,
+          0.881230355692722
+        ],
+        "pokes": 1,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": false,
+        "bubbleInfo": {
+          "content": null,
+          "corners": [
+            [
+              -0.2661394273871929,
+              0.9334565009675454,
+              -2.5946992104899094
+            ],
+            [
+              0.10022331907757517,
+              0.9334565009675454,
+              -2.389325555892266
+            ],
+            [
+              0.19416845261384544,
+              1.0182435281433628,
+              -2.5569127627654025
+            ],
+            [
+              -0.17219429385092264,
+              1.0182435281433628,
+              -2.762286417363046
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "shot": "xr-capture-5.jpg"
+  },
+  {
+    "at": "2026-10-26T21:47:53.072Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.2790658175945282,
+        1.6150109767913818,
+        -2.5763332843780518
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": false,
+        "expression": "happy",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 0.5159681494277943,
+          "pupil": 1,
+          "lookX": 0.5375693150828288,
+          "lookY": -0.8343773913955471,
+          "browY": 0.2124574732937977,
+          "browTilt": -0.09105320284019901,
+          "mouthOpen": 4.114117806893171e-47,
+          "mouthWide": 0.5,
+          "mouthRound": 5.877311152704499e-47,
+          "smile": 0.705266014200995,
+          "blush": 0.5902864687255451,
+          "squash": 0.06207144126843303,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.06218297566490603,
+          0.7095000118017196,
+          -2.5658931319066474
+        ],
+        "faceDir": [
+          -0.6427876096865394,
+          0,
+          0.7660444431189781
+        ],
+        "pokes": 1,
+        "pets": 1,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "",
+            "text": "",
+            "shown": 0,
+            "glyph": "♥"
+          },
+          "corners": [
+            [
+              -0.12345311611261664,
+              0.9409096645193255,
+              -2.7898354053363654
+            ],
+            [
+              -0.19597069392851882,
+              0.9409096645193255,
+              -2.376143248161837
+            ],
+            [
+              -0.0009128352171954082,
+              1.0107903645915828,
+              -2.3419508584769293
+            ],
+            [
+              0.07160474259870678,
+              1.0107903645915828,
+              -2.7556430156514575
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "shot": "xr-capture-6.jpg"
+  },
+  {
+    "at": "2026-10-26T21:47:54.500Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.22252687811851501,
+        1.6172688007354736,
+        -2.5474727153778076
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        "Couch",
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": false,
+        "expression": "happy",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 0.849999798709949,
+          "pupil": 1,
+          "lookX": 0.6565734022889308,
+          "lookY": -0.7506558836130017,
+          "browY": 0.3499999171158613,
+          "browTilt": -0.1499999644782263,
+          "mouthOpen": 1.5789672714402945e-64,
+          "mouthWide": 0.5,
+          "mouthRound": 2.2556675306289785e-64,
+          "smile": 0.9999998223911315,
+          "blush": 0.8989931287227344,
+          "squash": 0.02102302250654416,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.06218297566490603,
+          0.7095000118017196,
+          -2.5658931319066474
+        ],
+        "faceDir": [
+          -0.6427876096865394,
+          0,
+          0.7660444431189781
+        ],
+        "pokes": 1,
+        "pets": 2,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "",
+            "text": "",
+            "shown": 0,
+            "glyph": "♥"
+          },
+          "corners": [
+            [
+              -0.15247496912902525,
+              0.9496977657082815,
+              -2.7810405599566033
+            ],
+            [
+              -0.17498078259016742,
+              0.9496977657082815,
+              -2.361643983479813
+            ],
+            [
+              0.028109017799213203,
+              1.0020022634026269,
+              -2.3507457038566915
+            ],
+            [
+              0.05061483126035537,
+              1.0020022634026269,
+              -2.7701422803334816
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "shot": "xr-capture-7.jpg"
+  },
+  {
+    "at": "2026-10-26T21:47:58.885Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.5266231894493103,
+        1.6145826578140259,
+        -2.591541290283203
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": false,
+        "expression": "grumpy",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 0.6684325085600319,
+          "eyeSmile": 3.682169757441595e-12,
+          "pupil": 1.0201249702690882,
+          "lookX": -0.20394777803367165,
+          "lookY": -7.545321061097185e-7,
+          "browY": -0.2414996432275413,
+          "browTilt": 0.40249940538111273,
+          "mouthOpen": 7.855123775868858e-118,
+          "mouthWide": 0.5,
+          "mouthRound": 1.1221605394098305e-117,
+          "smile": -0.17262437564760164,
+          "blush": 0.36623770425684676,
+          "squash": 1.069746879091139e-11,
+          "wobble": -0.1456158813281519,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.06218297566490603,
+          0.7095000118017196,
+          -2.5658931319066474
+        ],
+        "faceDir": [
+          -0.6427876096865394,
+          0,
+          0.7660444431189781
+        ],
+        "pokes": 1,
+        "pets": 2,
+        "flicks": 1,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "",
+            "text": "",
+            "shown": 0,
+            "glyph": "?!"
+          },
+          "corners": [
+            [
+              -0.12179303389150355,
+              0.9128810892642868,
+              -2.7840823970089823
+            ],
+            [
+              -0.16953050753054238,
+              0.9128810892642868,
+              -2.3668041521763983
+            ],
+            [
+              -0.0025729174383085085,
+              1.0388189398466214,
+              -2.3477038668043124
+            ],
+            [
+              0.04516455620073034,
+              1.0388189398466214,
+              -2.7649821116368964
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "shot": "xr-capture-8.jpg"
+  },
+  {
+    "at": "2026-10-26T21:48:03.134Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.09251044690608978,
+        1.6160154342651367,
+        -2.422826051712036
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": true,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 1.2776645746084004e-30,
+          "pupil": 1.0000000000000107,
+          "lookX": 0.6730707137033808,
+          "lookY": 1.6483547609907793e-8,
+          "browY": -1.2863125261122476e-13,
+          "browTilt": 2.1438542101870758e-13,
+          "mouthOpen": 1.614468454033261e-169,
+          "mouthWide": 0.5,
+          "mouthRound": 2.3063835057617874e-169,
+          "smile": 0.24999999999977493,
+          "blush": 0.44999616309178203,
+          "squash": 2.958249149585741e-20,
+          "wobble": -0.0000021155616819722006,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.029110135679449773,
+          0.7095000118017196,
+          -2.5805551901822255
+        ],
+        "faceDir": [
+          -0.4397986189354342,
+          0,
+          0.8980964173085677
+        ],
+        "pokes": 1,
+        "pets": 2,
+        "flicks": 1,
+        "lines": 0,
+        "voiceMode": "browser",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "puppet line (you)",
+            "text": "Oh. Hello. You have very cold fingers.",
+            "shown": 0
+          },
+          "corners": [
+            [
+              -0.2626887722764629,
+              0.9520642744782675,
+              -2.581064203405015
+            ],
+            [
+              0.11451172299313532,
+              0.9520642744782675,
+              -2.396348783452132
+            ],
+            [
+              0.20446850091756338,
+              0.9996357546326409,
+              -2.580046176959436
+            ],
+            [
+              -0.17273199435203487,
+              0.9996357546326409,
+              -2.7647615969123187
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "shot": "xr-capture-9.jpg"
+  },
+  {
+    "at": "2026-10-26T21:48:03.565Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.09251044690608978,
+        1.6160154342651367,
+        -2.422826051712036
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": true,
+        "expression": "neutral",
+        "mouth": "O",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 1.6790095169120718e-32,
+          "pupil": 1.0000000000000004,
+          "lookX": 0.6730707137033808,
+          "lookY": 1.6483547609907793e-8,
+          "browY": -1.6903739964204773e-15,
+          "browTilt": 2.8172899940341243e-15,
+          "mouthOpen": 0.5249484792215342,
+          "mouthWide": 0.3125184002780235,
+          "mouthRound": 0.7499263988879059,
+          "smile": 0.24999999999999706,
+          "blush": 0.4499993216779537,
+          "squash": 0.0008282091648797539,
+          "wobble": -4.692276813049538e-7,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.029110135679449773,
+          0.7095000118017196,
+          -2.5805551901822255
+        ],
+        "faceDir": [
+          -0.4397986189354342,
+          0,
+          0.8980964173085677
+        ],
+        "pokes": 1,
+        "pets": 2,
+        "flicks": 1,
+        "lines": 0,
+        "voiceMode": "browser",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "puppet line (you)",
+            "text": "Oh. Hello. You have very cold fingers.",
+            "shown": 1
+          },
+          "corners": [
+            [
+              -0.2626887722764629,
+              0.9520642744782675,
+              -2.581064203405015
+            ],
+            [
+              0.11451172299313532,
+              0.9520642744782675,
+              -2.396348783452132
+            ],
+            [
+              0.20446850091756338,
+              0.9996357546326409,
+              -2.580046176959436
+            ],
+            [
+              -0.17273199435203487,
+              0.9996357546326409,
+              -2.7647615969123187
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "shot": "xr-capture-10.jpg"
+  },
+  {
+    "at": "2026-10-26T21:48:03.947Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.09251044690608978,
+        1.6160154342651367,
+        -2.422826051712036
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": true,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 3.6487120136934282e-34,
+          "pupil": 1.0000000000000004,
+          "lookX": 0.6730707137033808,
+          "lookY": 1.6483547609907793e-8,
+          "browY": -3.67340854607995e-17,
+          "browTilt": 6.122347576799904e-17,
+          "mouthOpen": 0.10398463824685912,
+          "mouthWide": 0.46286262919755033,
+          "mouthRound": 0.14854948320979874,
+          "smile": 0.24999999999999992,
+          "blush": 0.44999985335390463,
+          "squash": 0.001520216653670528,
+          "wobble": 3.4866323023476896e-7,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.029110135679449773,
+          0.7095000118017196,
+          -2.5805551901822255
+        ],
+        "faceDir": [
+          -0.4397986189354342,
+          0,
+          0.8980964173085677
+        ],
+        "pokes": 1,
+        "pets": 2,
+        "flicks": 1,
+        "lines": 0,
+        "voiceMode": "browser",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "puppet line (you)",
+            "text": "Oh. Hello. You have very cold fingers.",
+            "shown": 1
+          },
+          "corners": [
+            [
+              -0.2626887722764629,
+              0.9520642744782675,
+              -2.581064203405015
+            ],
+            [
+              0.11451172299313532,
+              0.9520642744782675,
+              -2.396348783452132
+            ],
+            [
+              0.20446850091756338,
+              0.9996357546326409,
+              -2.580046176959436
+            ],
+            [
+              -0.17273199435203487,
+              0.9996357546326409,
+              -2.7647615969123187
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "shot": "xr-capture-11.jpg"
+  },
+  {
+    "at": "2026-10-26T21:48:04.441Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.09251044690608978,
+        1.6160154342651367,
+        -2.422826051712036
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": true,
+        "expression": "neutral",
+        "mouth": "E",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 2.9374575206713692e-36,
+          "pupil": 1.0000000000000004,
+          "lookX": 0.6730707137033808,
+          "lookY": 1.6483547609907793e-8,
+          "browY": -2.9573398831381903e-19,
+          "browTilt": 4.928899805230305e-19,
+          "mouthOpen": 0.34136074217146367,
+          "mouthWide": 0.9876579489399961,
+          "mouthRound": 2.0332967588487634e-7,
+          "smile": 0.24999999999999994,
+          "blush": 0.44999997868902564,
+          "squash": -0.004872995666856002,
+          "wobble": -1.1411956846125055e-7,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.029110135679449773,
+          0.7095000118017196,
+          -2.5805551901822255
+        ],
+        "faceDir": [
+          -0.4397986189354342,
+          0,
+          0.8980964173085677
+        ],
+        "pokes": 1,
+        "pets": 2,
+        "flicks": 1,
+        "lines": 0,
+        "voiceMode": "browser",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "puppet line (you)",
+            "text": "Oh. Hello. You have very cold fingers.",
+            "shown": 2
+          },
+          "corners": [
+            [
+              -0.2626887722764629,
+              0.9520642744782675,
+              -2.581064203405015
+            ],
+            [
+              0.11451172299313532,
+              0.9520642744782675,
+              -2.396348783452132
+            ],
+            [
+              0.20446850091756338,
+              0.9996357546326409,
+              -2.580046176959436
+            ],
+            [
+              -0.17273199435203487,
+              0.9996357546326409,
+              -2.7647615969123187
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "shot": "xr-capture-12.jpg"
+  },
+  {
+    "at": "2026-10-26T21:48:04.747Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.09251044690608978,
+        1.6160154342651367,
+        -2.422826051712036
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": true,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 1.2227831257424757e-37,
+          "pupil": 1.0000000000000004,
+          "lookX": 0.6730707137033808,
+          "lookY": 1.6483547609907793e-8,
+          "browY": -1.2310596087735447e-20,
+          "browTilt": 2.0517660146225686e-20,
+          "mouthOpen": 0.16970171989392613,
+          "mouthWide": 0.4403100798781554,
+          "mouthRound": 0.24169675883339134,
+          "smile": 0.24999999999999994,
+          "blush": 0.44999999402477253,
+          "squash": 0.005281588026728334,
+          "wobble": 5.479525452448759e-8,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.029110135679449773,
+          0.7095000118017196,
+          -2.5805551901822255
+        ],
+        "faceDir": [
+          -0.4397986189354342,
+          0,
+          0.8980964173085677
+        ],
+        "pokes": 1,
+        "pets": 2,
+        "flicks": 1,
+        "lines": 0,
+        "voiceMode": "browser",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "puppet line (you)",
+            "text": "Oh. Hello. You have very cold fingers.",
+            "shown": 2
+          },
+          "corners": [
+            [
+              -0.2626887722764629,
+              0.9520642744782675,
+              -2.581064203405015
+            ],
+            [
+              0.11451172299313532,
+              0.9520642744782675,
+              -2.396348783452132
+            ],
+            [
+              0.20446850091756338,
+              0.9996357546326409,
+              -2.580046176959436
+            ],
+            [
+              -0.17273199435203487,
+              0.9996357546326409,
+              -2.7647615969123187
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "shot": "xr-capture-13.jpg"
+  },
+  {
+    "at": "2026-10-26T21:48:05.111Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.09251044690608978,
+        1.6160154342651367,
+        -2.422826051712036
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": true,
+        "expression": "neutral",
+        "mouth": "E",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 3.7072846089224276e-39,
+          "pupil": 1.0000000000000004,
+          "lookX": 0.6730707137033808,
+          "lookY": 1.6483547609907793e-8,
+          "browY": -3.732377593533626e-22,
+          "browTilt": 6.2206293225560285e-22,
+          "mouthOpen": 0.3283654107050649,
+          "mouthWide": 0.9690765020852634,
+          "mouthRound": 0.000013553423292014264,
+          "smile": 0.24999999999999994,
+          "blush": 0.44999999852416767,
+          "squash": -0.0038014377900002856,
+          "wobble": -2.0551216736169575e-8,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.029110135679449773,
+          0.7095000118017196,
+          -2.5805551901822255
+        ],
+        "faceDir": [
+          -0.4397986189354342,
+          0,
+          0.8980964173085677
+        ],
+        "pokes": 1,
+        "pets": 2,
+        "flicks": 1,
+        "lines": 0,
+        "voiceMode": "browser",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "puppet line (you)",
+            "text": "Oh. Hello. You have very cold fingers.",
+            "shown": 3
+          },
+          "corners": [
+            [
+              -0.2626887722764629,
+              0.9520642744782675,
+              -2.581064203405015
+            ],
+            [
+              0.11451172299313532,
+              0.9520642744782675,
+              -2.396348783452132
+            ],
+            [
+              0.20446850091756338,
+              0.9996357546326409,
+              -2.580046176959436
+            ],
+            [
+              -0.17273199435203487,
+              0.9996357546326409,
+              -2.7647615969123187
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "shot": "xr-capture-14.jpg"
+  },
+  {
+    "at": "2026-10-26T21:48:05.601Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.09251044690608978,
+        1.6160154342651367,
+        -2.422826051712036
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": true,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 2.4904661039939493e-41,
+          "pupil": 1.0000000000000004,
+          "lookX": 0.6730707137033808,
+          "lookY": 1.6483547609907793e-8,
+          "browY": -2.50732297747807e-24,
+          "browTilt": 4.178871629130105e-24,
+          "mouthOpen": 0.13787259179984035,
+          "mouthWide": 0.6967380297209007,
+          "mouthRound": 1.1175788697224225e-11,
+          "smile": 0.24999999999999994,
+          "blush": 0.4499999998005073,
+          "squash": 0.0026212428761942324,
+          "wobble": -3.240525663353258e-9,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.029110135679449773,
+          0.7095000118017196,
+          -2.5805551901822255
+        ],
+        "faceDir": [
+          -0.4397986189354342,
+          0,
+          0.8980964173085677
+        ],
+        "pokes": 1,
+        "pets": 2,
+        "flicks": 1,
+        "lines": 0,
+        "voiceMode": "browser",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "puppet line (you)",
+            "text": "Oh. Hello. You have very cold fingers.",
+            "shown": 6
+          },
+          "corners": [
+            [
+              -0.2626887722764629,
+              0.9520642744782675,
+              -2.581064203405015
+            ],
+            [
+              0.11451172299313532,
+              0.9520642744782675,
+              -2.396348783452132
+            ],
+            [
+              0.20446850091756338,
+              0.9996357546326409,
+              -2.580046176959436
+            ],
+            [
+              -0.17273199435203487,
+              0.9996357546326409,
+              -2.7647615969123187
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "shot": "xr-capture-15.jpg"
+  },
+  {
+    "at": "2026-10-26T21:48:05.700Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.09251044690608978,
+        1.6160154342651367,
+        -2.422826051712036
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": true,
+        "expression": "neutral",
+        "mouth": "O",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 9.143607271708553e-42,
+          "pupil": 1.0000000000000004,
+          "lookX": 0.6730707137033808,
+          "lookY": 1.6483547609907793e-8,
+          "browY": -9.205496341678426e-25,
+          "browTilt": 1.5342493902797329e-24,
+          "mouthOpen": 0.5432819601603563,
+          "mouthWide": 0.32084515032823613,
+          "mouthRound": 0.7642067694749131,
+          "smile": 0.24999999999999994,
+          "blush": 0.44999999986638295,
+          "squash": -0.0035659107953840085,
+          "wobble": -4.998434815632051e-9,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.029110135679449773,
+          0.7095000118017196,
+          -2.5805551901822255
+        ],
+        "faceDir": [
+          -0.4397986189354342,
+          0,
+          0.8980964173085677
+        ],
+        "pokes": 1,
+        "pets": 2,
+        "flicks": 1,
+        "lines": 0,
+        "voiceMode": "browser",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "puppet line (you)",
+            "text": "Oh. Hello. You have very cold fingers.",
+            "shown": 6
+          },
+          "corners": [
+            [
+              -0.2626887722764629,
+              0.9520642744782675,
+              -2.581064203405015
+            ],
+            [
+              0.11451172299313532,
+              0.9520642744782675,
+              -2.396348783452132
+            ],
+            [
+              0.20446850091756338,
+              0.9996357546326409,
+              -2.580046176959436
+            ],
+            [
+              -0.17273199435203487,
+              0.9996357546326409,
+              -2.7647615969123187
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "shot": "xr-capture-16.jpg"
+  },
+  {
+    "at": "2026-10-26T21:48:05.999Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.09251044690608978,
+        1.6160154342651367,
+        -2.422826051712036
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": true,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 4.543238434113071e-43,
+          "pupil": 1.0000000000000004,
+          "lookX": 0.6730707137033808,
+          "lookY": 1.6483547609907793e-8,
+          "browY": -4.5739896237675794e-26,
+          "browTilt": 7.623316039612605e-26,
+          "mouthOpen": 0.0636710570392996,
+          "mouthWide": 0.4772636628647387,
+          "mouthRound": 0.09095598962852398,
+          "smile": 0.24999999999999994,
+          "blush": 0.4499999999597875,
+          "squash": 0.0015205995015238924,
+          "wobble": 2.0672360076668103e-9,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.029110135679449773,
+          0.7095000118017196,
+          -2.5805551901822255
+        ],
+        "faceDir": [
+          -0.4397986189354342,
+          0,
+          0.8980964173085677
+        ],
+        "pokes": 1,
+        "pets": 2,
+        "flicks": 1,
+        "lines": 0,
+        "voiceMode": "browser",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "puppet line (you)",
+            "text": "Oh. Hello. You have very cold fingers.",
+            "shown": 7
+          },
+          "corners": [
+            [
+              -0.2626887722764629,
+              0.9520642744782675,
+              -2.581064203405015
+            ],
+            [
+              0.11451172299313532,
+              0.9520642744782675,
+              -2.396348783452132
+            ],
+            [
+              0.20446850091756338,
+              0.9996357546326409,
+              -2.580046176959436
+            ],
+            [
+              -0.17273199435203487,
+              0.9996357546326409,
+              -2.7647615969123187
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "shot": "xr-capture-17.jpg"
+  },
+  {
+    "at": "2026-10-26T21:48:06.099Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.09251044690608978,
+        1.6160154342651367,
+        -2.422826051712036
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": true,
+        "expression": "neutral",
+        "mouth": "E",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 1.6780628611730112e-43,
+          "pupil": 1.0000000000000004,
+          "lookX": 0.6730707137033808,
+          "lookY": 1.6483547609907793e-8,
+          "browY": -1.689420933183641e-26,
+          "browTilt": 2.8157015553060584e-26,
+          "mouthOpen": 0.3323922120684398,
+          "mouthWide": 0.9678543479634836,
+          "mouthRound": 0.0055933352734936674,
+          "smile": 0.24999999999999994,
+          "blush": 0.44999999997300166,
+          "squash": 0.005019601039905012,
+          "wobble": 1.5733825260248333e-9,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.029110135679449773,
+          0.7095000118017196,
+          -2.5805551901822255
+        ],
+        "faceDir": [
+          -0.4397986189354342,
+          0,
+          0.8980964173085677
+        ],
+        "pokes": 1,
+        "pets": 2,
+        "flicks": 1,
+        "lines": 0,
+        "voiceMode": "browser",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "puppet line (you)",
+            "text": "Oh. Hello. You have very cold fingers.",
+            "shown": 7
+          },
+          "corners": [
+            [
+              -0.2626887722764629,
+              0.9520642744782675,
+              -2.581064203405015
+            ],
+            [
+              0.11451172299313532,
+              0.9520642744782675,
+              -2.396348783452132
+            ],
+            [
+              0.20446850091756338,
+              0.9996357546326409,
+              -2.580046176959436
+            ],
+            [
+              -0.17273199435203487,
+              0.9996357546326409,
+              -2.7647615969123187
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "shot": "xr-capture-18.jpg"
+  },
+  {
+    "at": "2026-10-26T21:48:06.589Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.09251044690608978,
+        1.6160154342651367,
+        -2.422826051712036
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": true,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 1.3361739318814439e-45,
+          "pupil": 1.0000000000000004,
+          "lookX": 0.6730707137033808,
+          "lookY": 1.6483547609907793e-8,
+          "browY": -1.345217907579963e-28,
+          "browTilt": 2.242029845966596e-28,
+          "mouthOpen": 0.08630891400959242,
+          "mouthWide": 0.6232984393054257,
+          "mouthRound": 7.423764821706786e-9,
+          "smile": 0.24999999999999994,
+          "blush": 0.4499999999960938,
+          "squash": -0.004638383455788103,
+          "wobble": 1.403960365109711e-10,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.029110135679449773,
+          0.7095000118017196,
+          -2.5805551901822255
+        ],
+        "faceDir": [
+          -0.4397986189354342,
+          0,
+          0.8980964173085677
+        ],
+        "pokes": 1,
+        "pets": 2,
+        "flicks": 1,
+        "lines": 0,
+        "voiceMode": "browser",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "puppet line (you)",
+            "text": "Oh. Hello. You have very cold fingers.",
+            "shown": 7
+          },
+          "corners": [
+            [
+              -0.2626887722764629,
+              0.9520642744782675,
+              -2.581064203405015
+            ],
+            [
+              0.11451172299313532,
+              0.9520642744782675,
+              -2.396348783452132
+            ],
+            [
+              0.20446850091756338,
+              0.9996357546326409,
+              -2.580046176959436
+            ],
+            [
+              -0.17273199435203487,
+              0.9996357546326409,
+              -2.7647615969123187
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "shot": "xr-capture-19.jpg"
+  },
+  {
+    "at": "2026-10-26T21:48:06.704Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.09251044690608978,
+        1.6160154342651367,
+        -2.422826051712036
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 4.163663551881532e-46,
+          "pupil": 1.0000000000000002,
+          "lookX": 0.6730707137033808,
+          "lookY": 1.6483547609907793e-8,
+          "browY": -4.19184556552627e-29,
+          "browTilt": 6.986409275877088e-29,
+          "mouthOpen": 0.003297395399253856,
+          "mouthWide": 0.5047105645015497,
+          "mouthRound": 2.836217817028489e-10,
+          "smile": 0.24999999999999997,
+          "blush": 0.44999999999754986,
+          "squash": 0.003138330228849089,
+          "wobble": 3.597520655732748e-10,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.029110135679449773,
+          0.7095000118017196,
+          -2.5805551901822255
+        ],
+        "faceDir": [
+          -0.4397986189354342,
+          0,
+          0.8980964173085677
+        ],
+        "pokes": 1,
+        "pets": 2,
+        "flicks": 1,
+        "lines": 1,
+        "voiceMode": "browser",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "puppet line (you)",
+            "text": "Oh. Hello. You have very cold fingers.",
+            "shown": 999
+          },
+          "corners": [
+            [
+              -0.2626887722764629,
+              0.9520642744782675,
+              -2.581064203405015
+            ],
+            [
+              0.11451172299313532,
+              0.9520642744782675,
+              -2.396348783452132
+            ],
+            [
+              0.20446850091756338,
+              0.9996357546326409,
+              -2.580046176959436
+            ],
+            [
+              -0.17273199435203487,
+              0.9996357546326409,
+              -2.7647615969123187
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "shot": "xr-capture-20.jpg"
+  },
+  {
+    "at": "2026-10-26T21:48:13.705Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.09251044690608978,
+        1.6160154342651367,
+        -2.422826051712036
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 1.551074843535301e-76,
+          "pupil": 1,
+          "lookX": 0.6543502476751606,
+          "lookY": 0.6412022094264601,
+          "browY": -1.561573389313518e-59,
+          "browTilt": 2.602622315522518e-59,
+          "mouthOpen": 2.0768779662912082e-88,
+          "mouthWide": 0.5,
+          "mouthRound": 1.7864033816271937e-95,
+          "smile": 0.25,
+          "blush": 0.44999999999999984,
+          "squash": 9.740299410133557e-18,
+          "wobble": -3.905327403824326e-18,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.029110135679449773,
+          0.7095000118017196,
+          -2.5805551901822255
+        ],
+        "faceDir": [
+          -0.4397986189354342,
+          0,
+          0.8980964173085677
+        ],
+        "pokes": 1,
+        "pets": 2,
+        "flicks": 1,
+        "lines": 1,
+        "voiceMode": "browser",
+        "bubble": false,
+        "bubbleInfo": {
+          "content": null,
+          "corners": [
+            [
+              -0.2626887722764629,
+              0.9520642744782675,
+              -2.581064203405015
+            ],
+            [
+              0.11451172299313532,
+              0.9520642744782675,
+              -2.396348783452132
+            ],
+            [
+              0.20446850091756338,
+              0.9996357546326409,
+              -2.580046176959436
+            ],
+            [
+              -0.17273199435203487,
+              0.9996357546326409,
+              -2.7647615969123187
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      },
+      {
+        "id": "sp_4hbrzlwivxze",
+        "name": "Lamp",
+        "label": "lamp",
+        "targetId": "mesh-24",
+        "awake": true,
+        "speaking": false,
+        "expression": "surprised",
+        "mouth": "O",
+        "params": {
+          "eyeOpen": 1.2467668369912643,
+          "eyeSmile": 0,
+          "pupil": 0.7680293301831471,
+          "lookX": 8.35509024898162e-18,
+          "lookY": 0.19944617337830078,
+          "browY": 0.6627733423338652,
+          "browTilt": -0.19883200270015955,
+          "mouthOpen": 0.6666359045594527,
+          "mouthWide": 0.26191574837162407,
+          "mouthRound": 0.9523370065135037,
+          "smile": 0.08430666441653369,
+          "blush": 0.23236970664749446,
+          "squash": 0.02490339806258775,
+          "wobble": 0,
+          "reveal": 0.4192878013455075
+        },
+        "anchor": [
+          -1.3900000059604645,
+          1.4166667064030964,
+          -3.1500000953674316
+        ],
+        "size": 0.15399999916553497,
+        "facePos": [
+          -1.3578202678351152,
+          1.4166667064030964,
+          -3.1326357157022824
+        ],
+        "faceDir": [
+          0.8800503250129083,
+          0,
+          0.47488043278774345
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Lamp",
+            "tag": "",
+            "text": "",
+            "shown": 0,
+            "glyph": "!"
+          },
+          "corners": [
+            [
+              -1.468786211175864,
+              1.4967344476594828,
+              -2.929089323649826
+            ],
+            [
+              -1.2486063564067464,
+              1.4967344476594828,
+              -3.337127514681095
+            ],
+            [
+              -1.2468543244943664,
+              1.7285525229609497,
+              -3.336182107754739
+            ],
+            [
+              -1.467034179263484,
+              1.7285525229609497,
+              -2.92814391672347
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "shot": "xr-capture-21.jpg"
+  },
+  {
+    "at": "2026-10-26T21:48:14.430Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.09251044690608978,
+        1.6160154342651367,
+        -2.422826051712036
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 1.1048431917729301e-79,
+          "pupil": 1,
+          "lookX": 0.6543502471266125,
+          "lookY": 0.6412022186353199,
+          "browY": -1.1123213910841525e-62,
+          "browTilt": 1.853868985140246e-62,
+          "mouthOpen": 3.198019222673728e-97,
+          "mouthWide": 0.5,
+          "mouthRound": 2.7507405088875023e-104,
+          "smile": 0.25,
+          "blush": 0.4499999999999999,
+          "squash": -3.1154583878415305e-19,
+          "wobble": -8.770182244438832e-19,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.029110135679449773,
+          0.7095000118017196,
+          -2.5805551901822255
+        ],
+        "faceDir": [
+          -0.4397986189354342,
+          0,
+          0.8980964173085677
+        ],
+        "pokes": 1,
+        "pets": 2,
+        "flicks": 1,
+        "lines": 1,
+        "voiceMode": "browser",
+        "bubble": false,
+        "bubbleInfo": {
+          "content": null,
+          "corners": [
+            [
+              -0.2626887722764629,
+              0.9520642744782675,
+              -2.581064203405015
+            ],
+            [
+              0.11451172299313532,
+              0.9520642744782675,
+              -2.396348783452132
+            ],
+            [
+              0.20446850091756338,
+              0.9996357546326409,
+              -2.580046176959436
+            ],
+            [
+              -0.17273199435203487,
+              0.9996357546326409,
+              -2.7647615969123187
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      },
+      {
+        "id": "sp_4hbrzlwivxze",
+        "name": "Lamp",
+        "label": "lamp",
+        "targetId": "mesh-24",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1.0339694271161117,
+          "eyeSmile": 0,
+          "pupil": 0.7875859504533114,
+          "lookX": 1.029961688548125e-16,
+          "lookY": 0.2118009690891507,
+          "browY": 0.6068972844191104,
+          "browTilt": -0.18206918532573307,
+          "mouthOpen": 0.1731018820222485,
+          "mouthWide": 0.43817789927776835,
+          "mouthRound": 0.24728840288892645,
+          "smile": 0.09827567889522242,
+          "blush": 0.2470186463607704,
+          "squash": -0.0007063992583243667,
+          "wobble": 0,
+          "reveal": 0.9845013134914228
+        },
+        "anchor": [
+          -1.3900000059604645,
+          1.4166667064030964,
+          -3.1500000953674316
+        ],
+        "size": 0.15399999916553497,
+        "facePos": [
+          -1.3578202678351152,
+          1.4166667064030964,
+          -3.1326357157022824
+        ],
+        "faceDir": [
+          0.8800503250129083,
+          0,
+          0.47488043278774345
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Lamp",
+            "tag": "",
+            "text": "",
+            "shown": 0,
+            "glyph": "!"
+          },
+          "corners": [
+            [
+              -1.468786211175864,
+              1.4967344476594828,
+              -2.929089323649826
+            ],
+            [
+              -1.2486063564067464,
+              1.4967344476594828,
+              -3.337127514681095
+            ],
+            [
+              -1.2468543244943664,
+              1.7285525229609497,
+              -3.336182107754739
+            ],
+            [
+              -1.467034179263484,
+              1.7285525229609497,
+              -2.92814391672347
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": true,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "shot": "xr-capture-22.jpg"
+  },
+  {
+    "at": "2026-10-26T21:48:17.007Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.09251044690608978,
+        1.6160154342651367,
+        -2.422826051712036
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": true,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 7.898908086488838e-91,
+          "pupil": 1,
+          "lookX": 0.3198057275545913,
+          "lookY": 0.6738632641209567,
+          "browY": -7.952372333226879e-74,
+          "browTilt": 1.3253953888711423e-73,
+          "mouthOpen": 1.9807380114252028e-128,
+          "mouthWide": 0.5,
+          "mouthRound": 1.7037096734413335e-135,
+          "smile": 0.25,
+          "blush": 0.44999999999999996,
+          "squash": 3.2912649699654235e-24,
+          "wobble": -4.096204479259622e-22,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.029110135679449773,
+          0.7095000118017196,
+          -2.5805551901822255
+        ],
+        "faceDir": [
+          -0.4397986189354342,
+          0,
+          0.8980964173085677
+        ],
+        "pokes": 1,
+        "pets": 2,
+        "flicks": 1,
+        "lines": 1,
+        "voiceMode": "browser",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch → Lamp",
+            "tag": "puppet line (you)",
+            "text": "Lamp. They poked me. Again.",
+            "shown": 0
+          },
+          "corners": [
+            [
+              -0.2626887722764629,
+              0.9520642744782675,
+              -2.581064203405015
+            ],
+            [
+              0.11451172299313532,
+              0.9520642744782675,
+              -2.396348783452132
+            ],
+            [
+              0.20446850091756338,
+              0.9996357546326409,
+              -2.580046176959436
+            ],
+            [
+              -0.17273199435203487,
+              0.9996357546326409,
+              -2.7647615969123187
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      },
+      {
+        "id": "sp_4hbrzlwivxze",
+        "name": "Lamp",
+        "label": "lamp",
+        "targetId": "mesh-24",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 0,
+          "pupil": 0.9999999999984813,
+          "lookX": 0.1279075788422505,
+          "lookY": -0.7154360821041971,
+          "browY": 4.338919679519073e-12,
+          "browTilt": -1.30167590385572e-12,
+          "mouthOpen": 1.0721307587515025e-32,
+          "mouthWide": 0.5,
+          "mouthRound": 1.5316153696450055e-32,
+          "smile": 0.24999999999891528,
+          "blush": 0.44999293417770125,
+          "squash": 9.674402979119854e-9,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          -1.3900000059604645,
+          1.4166667064030964,
+          -3.1500000953674316
+        ],
+        "size": 0.15399999916553497,
+        "facePos": [
+          -1.3578202678351152,
+          1.4166667064030964,
+          -3.1326357157022824
+        ],
+        "faceDir": [
+          0.8800503250129083,
+          0,
+          0.47488043278774345
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": false,
+        "bubbleInfo": {
+          "content": null,
+          "corners": [
+            [
+              -1.468786211175864,
+              1.4967344476594828,
+              -2.929089323649826
+            ],
+            [
+              -1.2486063564067464,
+              1.4967344476594828,
+              -3.337127514681095
+            ],
+            [
+              -1.2468543244943664,
+              1.7285525229609497,
+              -3.336182107754739
+            ],
+            [
+              -1.467034179263484,
+              1.7285525229609497,
+              -2.92814391672347
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": true,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "shot": "xr-capture-23.jpg"
+  },
+  {
+    "at": "2026-10-26T21:48:17.115Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.09251044690608978,
+        1.6160154342651367,
+        -2.422826051712036
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": true,
+        "expression": "neutral",
+        "mouth": "A",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 2.4491096073511178e-91,
+          "pupil": 1,
+          "lookX": -0.5241402200550291,
+          "lookY": 0.7562563549345274,
+          "browY": -2.4656865568360596e-74,
+          "browTilt": 4.109477594726753e-74,
+          "mouthOpen": 0.7138119911191166,
+          "mouthWide": 0.6679557626162628,
+          "mouthRound": 6.418460042715202e-137,
+          "smile": 0.25,
+          "blush": 0.44999999999999996,
+          "squash": -0.0033126387702264145,
+          "wobble": -3.3915175994759506e-22,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.029110135679449773,
+          0.7095000118017196,
+          -2.5805551901822255
+        ],
+        "faceDir": [
+          -0.4397986189354342,
+          0,
+          0.8980964173085677
+        ],
+        "pokes": 1,
+        "pets": 2,
+        "flicks": 1,
+        "lines": 1,
+        "voiceMode": "browser",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch → Lamp",
+            "tag": "puppet line (you)",
+            "text": "Lamp. They poked me. Again.",
+            "shown": 1
+          },
+          "corners": [
+            [
+              -0.2626887722764629,
+              0.9520642744782675,
+              -2.581064203405015
+            ],
+            [
+              0.11451172299313532,
+              0.9520642744782675,
+              -2.396348783452132
+            ],
+            [
+              0.20446850091756338,
+              0.9996357546326409,
+              -2.580046176959436
+            ],
+            [
+              -0.17273199435203487,
+              0.9996357546326409,
+              -2.7647615969123187
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      },
+      {
+        "id": "sp_4hbrzlwivxze",
+        "name": "Lamp",
+        "label": "lamp",
+        "targetId": "mesh-24",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 0,
+          "pupil": 0.9999999999995292,
+          "lookX": 0.13388124262252,
+          "lookY": -0.7587408072668282,
+          "browY": 1.345311245083572e-12,
+          "browTilt": -4.0359337352507106e-13,
+          "mouthOpen": 4.039085146304659e-34,
+          "mouthWide": 0.5,
+          "mouthRound": 5.770121637578091e-34,
+          "smile": 0.24999999999966369,
+          "blush": 0.4499955767735325,
+          "squash": -5.8158765492380915e-9,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          -1.3900000059604645,
+          1.4166667064030964,
+          -3.1500000953674316
+        ],
+        "size": 0.15399999916553497,
+        "facePos": [
+          -1.3578202678351152,
+          1.4166667064030964,
+          -3.1326357157022824
+        ],
+        "faceDir": [
+          0.8800503250129083,
+          0,
+          0.47488043278774345
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": false,
+        "bubbleInfo": {
+          "content": null,
+          "corners": [
+            [
+              -1.468786211175864,
+              1.4967344476594828,
+              -2.929089323649826
+            ],
+            [
+              -1.2486063564067464,
+              1.4967344476594828,
+              -3.337127514681095
+            ],
+            [
+              -1.2468543244943664,
+              1.7285525229609497,
+              -3.336182107754739
+            ],
+            [
+              -1.467034179263484,
+              1.7285525229609497,
+              -2.92814391672347
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": true,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "shot": "xr-capture-24.jpg"
+  },
+  {
+    "at": "2026-10-26T21:48:17.213Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.09251044690608978,
+        1.6160154342651367,
+        -2.422826051712036
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": true,
+        "expression": "neutral",
+        "mouth": "M",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 9.018785015130313e-92,
+          "pupil": 1,
+          "lookX": -0.6215371879799342,
+          "lookY": 0.7657650648773059,
+          "browY": -9.079829217955135e-75,
+          "browTilt": 1.5133048696591845e-74,
+          "mouthOpen": 0.20307071511372804,
+          "mouthWide": 0.4726490550200104,
+          "mouthRound": 3.914013481652631e-138,
+          "smile": 0.25,
+          "blush": 0.44999999999999996,
+          "squash": -0.0009190680307714208,
+          "wobble": -5.353433192178054e-23,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.029110135679449773,
+          0.7095000118017196,
+          -2.5805551901822255
+        ],
+        "faceDir": [
+          -0.4397986189354342,
+          0,
+          0.8980964173085677
+        ],
+        "pokes": 1,
+        "pets": 2,
+        "flicks": 1,
+        "lines": 1,
+        "voiceMode": "browser",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch → Lamp",
+            "tag": "puppet line (you)",
+            "text": "Lamp. They poked me. Again.",
+            "shown": 1
+          },
+          "corners": [
+            [
+              -0.2626887722764629,
+              0.9520642744782675,
+              -2.581064203405015
+            ],
+            [
+              0.11451172299313532,
+              0.9520642744782675,
+              -2.396348783452132
+            ],
+            [
+              0.20446850091756338,
+              0.9996357546326409,
+              -2.580046176959436
+            ],
+            [
+              -0.17273199435203487,
+              0.9996357546326409,
+              -2.7647615969123187
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      },
+      {
+        "id": "sp_4hbrzlwivxze",
+        "name": "Lamp",
+        "label": "lamp",
+        "targetId": "mesh-24",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 0,
+          "pupil": 0.9999999999998266,
+          "lookX": 0.13457064310041672,
+          "lookY": -0.7637384601847762,
+          "browY": 4.954075089750183e-13,
+          "browTilt": -1.486222526925053e-13,
+          "mouthOpen": 2.463057121329624e-35,
+          "mouthWide": 0.5,
+          "mouthRound": 3.518653030470895e-35,
+          "smile": 0.24999999999987615,
+          "blush": 0.44999703383640244,
+          "squash": -4.275958297163983e-9,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          -1.3900000059604645,
+          1.4166667064030964,
+          -3.1500000953674316
+        ],
+        "size": 0.15399999916553497,
+        "facePos": [
+          -1.3578202678351152,
+          1.4166667064030964,
+          -3.1326357157022824
+        ],
+        "faceDir": [
+          0.8800503250129083,
+          0,
+          0.47488043278774345
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": false,
+        "bubbleInfo": {
+          "content": null,
+          "corners": [
+            [
+              -1.468786211175864,
+              1.4967344476594828,
+              -2.929089323649826
+            ],
+            [
+              -1.2486063564067464,
+              1.4967344476594828,
+              -3.337127514681095
+            ],
+            [
+              -1.2468543244943664,
+              1.7285525229609497,
+              -3.336182107754739
+            ],
+            [
+              -1.467034179263484,
+              1.7285525229609497,
+              -2.92814391672347
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": true,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "shot": "xr-capture-25.jpg"
+  },
+  {
+    "at": "2026-10-26T21:48:17.833Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.09251044690608978,
+        1.6160154342651367,
+        -2.422826051712036
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": true,
+        "expression": "neutral",
+        "mouth": "E",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 1.8973910518179725e-94,
+          "pupil": 1,
+          "lookX": -0.6408664150896385,
+          "lookY": 0.7676521463534559,
+          "browY": -1.910233660219311e-77,
+          "browTilt": 3.183722767032175e-77,
+          "mouthOpen": 0.33670307684575124,
+          "mouthWide": 0.9810040494519296,
+          "mouthRound": 1.2503943283278742e-145,
+          "smile": 0.25,
+          "blush": 0.44999999999999996,
+          "squash": -0.0034588965328180305,
+          "wobble": -3.7743333008456503e-23,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.029110135679449773,
+          0.7095000118017196,
+          -2.5805551901822255
+        ],
+        "faceDir": [
+          -0.4397986189354342,
+          0,
+          0.8980964173085677
+        ],
+        "pokes": 1,
+        "pets": 2,
+        "flicks": 1,
+        "lines": 1,
+        "voiceMode": "browser",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch → Lamp",
+            "tag": "puppet line (you)",
+            "text": "Lamp. They poked me. Again.",
+            "shown": 2
+          },
+          "corners": [
+            [
+              -0.2626887722764629,
+              0.9520642744782675,
+              -2.581064203405015
+            ],
+            [
+              0.11451172299313532,
+              0.9520642744782675,
+              -2.396348783452132
+            ],
+            [
+              0.20446850091756338,
+              0.9996357546326409,
+              -2.580046176959436
+            ],
+            [
+              -0.17273199435203487,
+              0.9996357546326409,
+              -2.7647615969123187
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      },
+      {
+        "id": "sp_4hbrzlwivxze",
+        "name": "Lamp",
+        "label": "lamp",
+        "targetId": "mesh-24",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 0,
+          "pupil": 0.9999999999999997,
+          "lookX": 0.1347074602795416,
+          "lookY": -0.7647302853958133,
+          "browY": 1.0422487873429478e-15,
+          "browTilt": -3.126746362028839e-16,
+          "mouthOpen": 7.868630676146139e-43,
+          "mouthWide": 0.5,
+          "mouthRound": 1.1240900965923064e-42,
+          "smile": 0.24999999999999975,
+          "blush": 0.4499997480011109,
+          "squash": 1.7197701270307906e-10,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          -1.3900000059604645,
+          1.4166667064030964,
+          -3.1500000953674316
+        ],
+        "size": 0.15399999916553497,
+        "facePos": [
+          -1.3578202678351152,
+          1.4166667064030964,
+          -3.1326357157022824
+        ],
+        "faceDir": [
+          0.8800503250129083,
+          0,
+          0.47488043278774345
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": false,
+        "bubbleInfo": {
+          "content": null,
+          "corners": [
+            [
+              -1.468786211175864,
+              1.4967344476594828,
+              -2.929089323649826
+            ],
+            [
+              -1.2486063564067464,
+              1.4967344476594828,
+              -3.337127514681095
+            ],
+            [
+              -1.2468543244943664,
+              1.7285525229609497,
+              -3.336182107754739
+            ],
+            [
+              -1.467034179263484,
+              1.7285525229609497,
+              -2.92814391672347
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": true,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "shot": "xr-capture-26.jpg"
+  },
+  {
+    "at": "2026-10-26T21:48:17.928Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.09251044690608978,
+        1.6160154342651367,
+        -2.422826051712036
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": true,
+        "expression": "neutral",
+        "mouth": "M",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 6.98011159826491e-95,
+          "pupil": 1,
+          "lookX": -0.6408666600906853,
+          "lookY": 0.7676521702725155,
+          "browY": -7.027356914283591e-78,
+          "browTilt": 1.1712261523805943e-77,
+          "mouthOpen": 0.033163294322584344,
+          "mouthWide": 0.4570823654329467,
+          "mouthRound": 7.603655741183538e-147,
+          "smile": 0.25,
+          "blush": 0.44999999999999996,
+          "squash": 0.0010022961570880715,
+          "wobble": 1.0118548034915969e-23,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.029110135679449773,
+          0.7095000118017196,
+          -2.5805551901822255
+        ],
+        "faceDir": [
+          -0.4397986189354342,
+          0,
+          0.8980964173085677
+        ],
+        "pokes": 1,
+        "pets": 2,
+        "flicks": 1,
+        "lines": 1,
+        "voiceMode": "browser",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch → Lamp",
+            "tag": "puppet line (you)",
+            "text": "Lamp. They poked me. Again.",
+            "shown": 3
+          },
+          "corners": [
+            [
+              -0.2626887722764629,
+              0.9520642744782675,
+              -2.581064203405015
+            ],
+            [
+              0.11451172299313532,
+              0.9520642744782675,
+              -2.396348783452132
+            ],
+            [
+              0.20446850091756338,
+              0.9996357546326409,
+              -2.580046176959436
+            ],
+            [
+              -0.17273199435203487,
+              0.9996357546326409,
+              -2.7647615969123187
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      },
+      {
+        "id": "sp_4hbrzlwivxze",
+        "name": "Lamp",
+        "label": "lamp",
+        "targetId": "mesh-24",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 0,
+          "pupil": 0.9999999999999997,
+          "lookX": 0.13470746201372125,
+          "lookY": -0.7647302979673566,
+          "browY": 3.8342190144933704e-16,
+          "browTilt": -1.1502657043480095e-16,
+          "mouthOpen": 4.784919241911578e-44,
+          "mouthWide": 0.5,
+          "mouthRound": 6.835598917016545e-44,
+          "smile": 0.24999999999999992,
+          "blush": 0.44999983108009306,
+          "squash": 1.3197029689825903e-10,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          -1.3900000059604645,
+          1.4166667064030964,
+          -3.1500000953674316
+        ],
+        "size": 0.15399999916553497,
+        "facePos": [
+          -1.3578202678351152,
+          1.4166667064030964,
+          -3.1326357157022824
+        ],
+        "faceDir": [
+          0.8800503250129083,
+          0,
+          0.47488043278774345
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": false,
+        "bubbleInfo": {
+          "content": null,
+          "corners": [
+            [
+              -1.468786211175864,
+              1.4967344476594828,
+              -2.929089323649826
+            ],
+            [
+              -1.2486063564067464,
+              1.4967344476594828,
+              -3.337127514681095
+            ],
+            [
+              -1.2468543244943664,
+              1.7285525229609497,
+              -3.336182107754739
+            ],
+            [
+              -1.467034179263484,
+              1.7285525229609497,
+              -2.92814391672347
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": true,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "shot": "xr-capture-27.jpg"
+  },
+  {
+    "at": "2026-10-26T21:48:18.031Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.09251044690608978,
+        1.6160154342651367,
+        -2.422826051712036
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": true,
+        "expression": "neutral",
+        "mouth": "O",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 2.5627090071564883e-95,
+          "pupil": 1,
+          "lookX": -0.6408667006179062,
+          "lookY": 0.7676521742291232,
+          "browY": -2.580054861187981e-78,
+          "browTilt": 4.300091435313286e-78,
+          "mouthOpen": 0.5898505694164576,
+          "mouthWide": 0.2774849759605541,
+          "mouthRound": 0.8397788130813137,
+          "smile": 0.25,
+          "blush": 0.44999999999999996,
+          "squash": 0.00629322332022583,
+          "wobble": 3.166849855551613e-23,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.029110135679449773,
+          0.7095000118017196,
+          -2.5805551901822255
+        ],
+        "faceDir": [
+          -0.4397986189354342,
+          0,
+          0.8980964173085677
+        ],
+        "pokes": 1,
+        "pets": 2,
+        "flicks": 1,
+        "lines": 1,
+        "voiceMode": "browser",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch → Lamp",
+            "tag": "puppet line (you)",
+            "text": "Lamp. They poked me. Again.",
+            "shown": 3
+          },
+          "corners": [
+            [
+              -0.2626887722764629,
+              0.9520642744782675,
+              -2.581064203405015
+            ],
+            [
+              0.11451172299313532,
+              0.9520642744782675,
+              -2.396348783452132
+            ],
+            [
+              0.20446850091756338,
+              0.9996357546326409,
+              -2.580046176959436
+            ],
+            [
+              -0.17273199435203487,
+              0.9996357546326409,
+              -2.7647615969123187
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      },
+      {
+        "id": "sp_4hbrzlwivxze",
+        "name": "Lamp",
+        "label": "lamp",
+        "targetId": "mesh-24",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 0,
+          "pupil": 0.9999999999999997,
+          "lookX": 0.13470746230058323,
+          "lookY": -0.7647303000468976,
+          "browY": 1.4077121068229543e-16,
+          "browTilt": -4.223136320468857e-17,
+          "mouthOpen": 2.8934635372046734e-45,
+          "mouthWide": 0.5,
+          "mouthRound": 4.1335193388638204e-45,
+          "smile": 0.24999999999999992,
+          "blush": 0.4499998868601483,
+          "squash": -2.387197072919634e-11,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          -1.3900000059604645,
+          1.4166667064030964,
+          -3.1500000953674316
+        ],
+        "size": 0.15399999916553497,
+        "facePos": [
+          -1.3578202678351152,
+          1.4166667064030964,
+          -3.1326357157022824
+        ],
+        "faceDir": [
+          0.8800503250129083,
+          0,
+          0.47488043278774345
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": false,
+        "bubbleInfo": {
+          "content": null,
+          "corners": [
+            [
+              -1.468786211175864,
+              1.4967344476594828,
+              -2.929089323649826
+            ],
+            [
+              -1.2486063564067464,
+              1.4967344476594828,
+              -3.337127514681095
+            ],
+            [
+              -1.2468543244943664,
+              1.7285525229609497,
+              -3.336182107754739
+            ],
+            [
+              -1.467034179263484,
+              1.7285525229609497,
+              -2.92814391672347
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": true,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ]
+  },
+  {
+    "at": "2026-10-26T21:48:18.229Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.09251044690608978,
+        1.6160154342651367,
+        -2.422826051712036
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": true,
+        "expression": "neutral",
+        "mouth": "M",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 3.4578603365156714e-96,
+          "pupil": 1,
+          "lookX": -0.640866708391957,
+          "lookY": 0.7676521749880914,
+          "browY": -3.4812650775498633e-79,
+          "browTilt": 5.802108462583084e-79,
+          "mouthOpen": 0.09135158013147038,
+          "mouthWide": 0.5373212211519807,
+          "mouthRound": 0.01428262138359421,
+          "smile": 0.25,
+          "blush": 0.44999999999999996,
+          "squash": -0.0002643849900859571,
+          "wobble": 2.150709507198318e-24,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.029110135679449773,
+          0.7095000118017196,
+          -2.5805551901822255
+        ],
+        "faceDir": [
+          -0.4397986189354342,
+          0,
+          0.8980964173085677
+        ],
+        "pokes": 1,
+        "pets": 2,
+        "flicks": 1,
+        "lines": 1,
+        "voiceMode": "browser",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch → Lamp",
+            "tag": "puppet line (you)",
+            "text": "Lamp. They poked me. Again.",
+            "shown": 4
+          },
+          "corners": [
+            [
+              -0.2626887722764629,
+              0.9520642744782675,
+              -2.581064203405015
+            ],
+            [
+              0.11451172299313532,
+              0.9520642744782675,
+              -2.396348783452132
+            ],
+            [
+              0.20446850091756338,
+              0.9996357546326409,
+              -2.580046176959436
+            ],
+            [
+              -0.17273199435203487,
+              0.9996357546326409,
+              -2.7647615969123187
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      },
+      {
+        "id": "sp_4hbrzlwivxze",
+        "name": "Lamp",
+        "label": "lamp",
+        "targetId": "mesh-24",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 0,
+          "pupil": 0.9999999999999997,
+          "lookX": 0.13470746235560993,
+          "lookY": -0.7647303004458011,
+          "browY": 1.8994243380043527e-17,
+          "browTilt": -5.698273014013052e-18,
+          "mouthOpen": 1.0610133334260396e-47,
+          "mouthWide": 0.5,
+          "mouthRound": 1.5157333334657716e-47,
+          "smile": 0.24999999999999992,
+          "blush": 0.4499999492239555,
+          "squash": -8.783794195595723e-12,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          -1.3900000059604645,
+          1.4166667064030964,
+          -3.1500000953674316
+        ],
+        "size": 0.15399999916553497,
+        "facePos": [
+          -1.3578202678351152,
+          1.4166667064030964,
+          -3.1326357157022824
+        ],
+        "faceDir": [
+          0.8800503250129083,
+          0,
+          0.47488043278774345
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": false,
+        "bubbleInfo": {
+          "content": null,
+          "corners": [
+            [
+              -1.468786211175864,
+              1.4967344476594828,
+              -2.929089323649826
+            ],
+            [
+              -1.2486063564067464,
+              1.4967344476594828,
+              -3.337127514681095
+            ],
+            [
+              -1.2468543244943664,
+              1.7285525229609497,
+              -3.336182107754739
+            ],
+            [
+              -1.467034179263484,
+              1.7285525229609497,
+              -2.92814391672347
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": true,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ]
+  },
+  {
+    "at": "2026-10-26T21:48:18.357Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.09251044690608978,
+        1.6160154342651367,
+        -2.422826051712036
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": true,
+        "expression": "neutral",
+        "mouth": "E",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 1.0721328669194913e-96,
+          "pupil": 1,
+          "lookX": -0.6408667085827433,
+          "lookY": 0.7676521750067175,
+          "browY": -1.0793896643787492e-79,
+          "browTilt": 1.7989827739645755e-79,
+          "mouthOpen": 0.3004181371315088,
+          "mouthWide": 0.9142761208709149,
+          "mouthRound": 0.0005380754486702432,
+          "smile": 0.25,
+          "blush": 0.44999999999999996,
+          "squash": -0.006282727775031795,
+          "wobble": -1.257817709485264e-23,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.029110135679449773,
+          0.7095000118017196,
+          -2.5805551901822255
+        ],
+        "faceDir": [
+          -0.4397986189354342,
+          0,
+          0.8980964173085677
+        ],
+        "pokes": 1,
+        "pets": 2,
+        "flicks": 1,
+        "lines": 1,
+        "voiceMode": "browser",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch → Lamp",
+            "tag": "puppet line (you)",
+            "text": "Lamp. They poked me. Again.",
+            "shown": 4
+          },
+          "corners": [
+            [
+              -0.2626887722764629,
+              0.9520642744782675,
+              -2.581064203405015
+            ],
+            [
+              0.11451172299313532,
+              0.9520642744782675,
+              -2.396348783452132
+            ],
+            [
+              0.20446850091756338,
+              0.9996357546326409,
+              -2.580046176959436
+            ],
+            [
+              -0.17273199435203487,
+              0.9996357546326409,
+              -2.7647615969123187
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      },
+      {
+        "id": "sp_4hbrzlwivxze",
+        "name": "Lamp",
+        "label": "lamp",
+        "targetId": "mesh-24",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 0,
+          "pupil": 0.9999999999999998,
+          "lookX": 0.13470746235696035,
+          "lookY": -0.7647303004555909,
+          "browY": 5.8892929812581335e-18,
+          "browTilt": -1.7667878943774384e-18,
+          "mouthOpen": 3.997201984812809e-49,
+          "mouthWide": 0.5,
+          "mouthRound": 5.710288549732587e-49,
+          "smile": 0.24999999999999994,
+          "blush": 0.4499999682140401,
+          "squash": 1.894137977685934e-11,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          -1.3900000059604645,
+          1.4166667064030964,
+          -3.1500000953674316
+        ],
+        "size": 0.15399999916553497,
+        "facePos": [
+          -1.3578202678351152,
+          1.4166667064030964,
+          -3.1326357157022824
+        ],
+        "faceDir": [
+          0.8800503250129083,
+          0,
+          0.47488043278774345
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": false,
+        "bubbleInfo": {
+          "content": null,
+          "corners": [
+            [
+              -1.468786211175864,
+              1.4967344476594828,
+              -2.929089323649826
+            ],
+            [
+              -1.2486063564067464,
+              1.4967344476594828,
+              -3.337127514681095
+            ],
+            [
+              -1.2468543244943664,
+              1.7285525229609497,
+              -3.336182107754739
+            ],
+            [
+              -1.467034179263484,
+              1.7285525229609497,
+              -2.92814391672347
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": true,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ]
+  },
+  {
+    "at": "2026-10-26T21:48:18.422Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.09251044690608978,
+        1.6160154342651367,
+        -2.422826051712036
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": true,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 5.52473394152964e-97,
+          "pupil": 1,
+          "lookX": -0.6408667086011306,
+          "lookY": 0.7676521750085126,
+          "browY": -5.5621284440833804e-80,
+          "browTilt": 9.270214073472267e-80,
+          "mouthOpen": 0.1327431805598553,
+          "mouthWide": 0.6873063764388037,
+          "mouthRound": 0.00008406571287662142,
+          "smile": 0.25,
+          "blush": 0.44999999999999996,
+          "squash": -0.005602091889938506,
+          "wobble": -1.2660685326310657e-23,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.029110135679449773,
+          0.7095000118017196,
+          -2.5805551901822255
+        ],
+        "faceDir": [
+          -0.4397986189354342,
+          0,
+          0.8980964173085677
+        ],
+        "pokes": 1,
+        "pets": 2,
+        "flicks": 1,
+        "lines": 1,
+        "voiceMode": "browser",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch → Lamp",
+            "tag": "puppet line (you)",
+            "text": "Lamp. They poked me. Again.",
+            "shown": 4
+          },
+          "corners": [
+            [
+              -0.2626887722764629,
+              0.9520642744782675,
+              -2.581064203405015
+            ],
+            [
+              0.11451172299313532,
+              0.9520642744782675,
+              -2.396348783452132
+            ],
+            [
+              0.20446850091756338,
+              0.9996357546326409,
+              -2.580046176959436
+            ],
+            [
+              -0.17273199435203487,
+              0.9996357546326409,
+              -2.7647615969123187
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      },
+      {
+        "id": "sp_4hbrzlwivxze",
+        "name": "Lamp",
+        "label": "lamp",
+        "targetId": "mesh-24",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 0,
+          "pupil": 0.9999999999999998,
+          "lookX": 0.1347074623570905,
+          "lookY": -0.7647303004565345,
+          "browY": 3.0347709532173452e-18,
+          "browTilt": -9.104312859652026e-19,
+          "mouthOpen": 6.24499101744127e-50,
+          "mouthWide": 0.5,
+          "mouthRound": 8.921415739201816e-50,
+          "smile": 0.24999999999999994,
+          "blush": 0.44999997561849925,
+          "squash": 1.1968189807897897e-11,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          -1.3900000059604645,
+          1.4166667064030964,
+          -3.1500000953674316
+        ],
+        "size": 0.15399999916553497,
+        "facePos": [
+          -1.3578202678351152,
+          1.4166667064030964,
+          -3.1326357157022824
+        ],
+        "faceDir": [
+          0.8800503250129083,
+          0,
+          0.47488043278774345
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": false,
+        "bubbleInfo": {
+          "content": null,
+          "corners": [
+            [
+              -1.468786211175864,
+              1.4967344476594828,
+              -2.929089323649826
+            ],
+            [
+              -1.2486063564067464,
+              1.4967344476594828,
+              -3.337127514681095
+            ],
+            [
+              -1.2468543244943664,
+              1.7285525229609497,
+              -3.336182107754739
+            ],
+            [
+              -1.467034179263484,
+              1.7285525229609497,
+              -2.92814391672347
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": true,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ]
+  },
+  {
+    "at": "2026-10-26T21:48:18.781Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.09251044690608978,
+        1.6160154342651367,
+        -2.422826051712036
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": true,
+        "expression": "neutral",
+        "mouth": "A",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 1.6716650804949975e-98,
+          "pupil": 1,
+          "lookX": -0.6408667086091163,
+          "lookY": 0.7676521750092923,
+          "browY": -1.6829798487323725e-81,
+          "browTilt": 2.8049664145539447e-81,
+          "mouthOpen": 0.6295650213079905,
+          "mouthWide": 0.6481416492712767,
+          "mouthRound": 4.687756305109179e-9,
+          "smile": 0.25,
+          "blush": 0.44999999999999996,
+          "squash": 0.0027070343336005873,
+          "wobble": 5.011873046192015e-24,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.029110135679449773,
+          0.7095000118017196,
+          -2.5805551901822255
+        ],
+        "faceDir": [
+          -0.4397986189354342,
+          0,
+          0.8980964173085677
+        ],
+        "pokes": 1,
+        "pets": 2,
+        "flicks": 1,
+        "lines": 1,
+        "voiceMode": "browser",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch → Lamp",
+            "tag": "puppet line (you)",
+            "text": "Lamp. They poked me. Again.",
+            "shown": 5
+          },
+          "corners": [
+            [
+              -0.2626887722764629,
+              0.9520642744782675,
+              -2.581064203405015
+            ],
+            [
+              0.11451172299313532,
+              0.9520642744782675,
+              -2.396348783452132
+            ],
+            [
+              0.20446850091756338,
+              0.9996357546326409,
+              -2.580046176959436
+            ],
+            [
+              -0.17273199435203487,
+              0.9996357546326409,
+              -2.7647615969123187
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      },
+      {
+        "id": "sp_4hbrzlwivxze",
+        "name": "Lamp",
+        "label": "lamp",
+        "targetId": "mesh-24",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 0,
+          "pupil": 0.9999999999999998,
+          "lookX": 0.13470746235714703,
+          "lookY": -0.7647303004569441,
+          "browY": 9.182560976663703e-20,
+          "browTilt": -2.7547682929991075e-20,
+          "mouthOpen": 3.482394309833046e-54,
+          "mouthWide": 0.5,
+          "mouthRound": 4.9748490140472086e-54,
+          "smile": 0.24999999999999994,
+          "blush": 0.4499999939827841,
+          "squash": 1.1531195729180448e-12,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          -1.3900000059604645,
+          1.4166667064030964,
+          -3.1500000953674316
+        ],
+        "size": 0.15399999916553497,
+        "facePos": [
+          -1.3578202678351152,
+          1.4166667064030964,
+          -3.1326357157022824
+        ],
+        "faceDir": [
+          0.8800503250129083,
+          0,
+          0.47488043278774345
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": false,
+        "bubbleInfo": {
+          "content": null,
+          "corners": [
+            [
+              -1.468786211175864,
+              1.4967344476594828,
+              -2.929089323649826
+            ],
+            [
+              -1.2486063564067464,
+              1.4967344476594828,
+              -3.337127514681095
+            ],
+            [
+              -1.2468543244943664,
+              1.7285525229609497,
+              -3.336182107754739
+            ],
+            [
+              -1.467034179263484,
+              1.7285525229609497,
+              -2.92814391672347
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": true,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ]
+  },
+  {
+    "at": "2026-10-26T21:48:19.219Z",
+    "mode": {
+      "xr": true,
+      "emulator": true,
+      "room": "iwer:yadori_den",
+      "label": "Emulated room (IWER), not your room"
+    },
+    "scene": {
+      "denVisible": false,
+      "camera": [
+        -0.09251044690608978,
+        1.6160154342651367,
+        -2.422826051712036
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_is7rp81b3cbh",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 1.8551960353999436e-100,
+          "pupil": 1,
+          "lookX": -0.304594533853684,
+          "lookY": 0.7348224613159251,
+          "browY": -1.8677530442292665e-83,
+          "browTilt": 3.1129217403821e-83,
+          "mouthOpen": 0.05125544663367977,
+          "mouthWide": 0.5120601051195425,
+          "mouthRound": 1.5762987463876648e-14,
+          "smile": 0.25,
+          "blush": 0.44999999999999996,
+          "squash": -0.0004161724653780948,
+          "wobble": -5.253154921189358e-25,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.029110135679449773,
+          0.7095000118017196,
+          -2.5805551901822255
+        ],
+        "faceDir": [
+          -0.4397986189354342,
+          0,
+          0.8980964173085677
+        ],
+        "pokes": 1,
+        "pets": 2,
+        "flicks": 1,
+        "lines": 2,
+        "voiceMode": "browser",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch → Lamp",
+            "tag": "puppet line (you)",
+            "text": "Lamp. They poked me. Again.",
+            "shown": 999
+          },
+          "corners": [
+            [
+              -0.2626887722764629,
+              0.9520642744782675,
+              -2.581064203405015
+            ],
+            [
+              0.11451172299313532,
+              0.9520642744782675,
+              -2.396348783452132
+            ],
+            [
+              0.20446850091756338,
+              0.9996357546326409,
+              -2.580046176959436
+            ],
+            [
+              -0.17273199435203487,
+              0.9996357546326409,
+              -2.7647615969123187
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      },
+      {
+        "id": "sp_4hbrzlwivxze",
+        "name": "Lamp",
+        "label": "lamp",
+        "targetId": "mesh-24",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 0.378124999968949,
+          "eyeSmile": 0,
+          "pupil": 0.9999999999999998,
+          "lookX": 0.13470746235714712,
+          "lookY": -0.7647303004569448,
+          "browY": 1.0190708005745007e-21,
+          "browTilt": -3.0572124017234957e-22,
+          "mouthOpen": 1.1709853131730826e-59,
+          "mouthWide": 0.5,
+          "mouthRound": 1.6728361616758328e-59,
+          "smile": 0.24999999999999994,
+          "blush": 0.4499999990057587,
+          "squash": 2.3702855838143788e-14,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          -1.3900000059604645,
+          1.4166667064030964,
+          -3.1500000953674316
+        ],
+        "size": 0.15399999916553497,
+        "facePos": [
+          -1.3578202678351152,
+          1.4166667064030964,
+          -3.1326357157022824
+        ],
+        "faceDir": [
+          0.8800503250129083,
+          0,
+          0.47488043278774345
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": false,
+        "bubbleInfo": {
+          "content": null,
+          "corners": [
+            [
+              -1.468786211175864,
+              1.4967344476594828,
+              -2.929089323649826
+            ],
+            [
+              -1.2486063564067464,
+              1.4967344476594828,
+              -3.337127514681095
+            ],
+            [
+              -1.2468543244943664,
+              1.7285525229609497,
+              -3.336182107754739
+            ],
+            [
+              -1.467034179263484,
+              1.7285525229609497,
+              -2.92814391672347
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": true,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ]
+  },
+  {
+    "at": "2026-10-26T21:48:25.407Z",
+    "mode": {
+      "xr": false,
+      "emulator": true,
+      "room": "diorama:den",
+      "label": "Browser diorama, not your room"
+    },
+    "scene": {
+      "denVisible": true,
+      "camera": [
+        -0.3934043347835541,
+        1.7701526880264282,
+        2.056612253189087
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.4
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": []
+  },
+  {
+    "at": "2026-10-26T21:48:26.835Z",
+    "mode": {
+      "xr": false,
+      "emulator": true,
+      "room": "diorama:den",
+      "label": "Browser diorama, not your room"
+    },
+    "scene": {
+      "denVisible": true,
+      "camera": [
+        -0.39069926738739014,
+        1.735300064086914,
+        1.9241396188735962
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 4.284896085214658
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_ivazsxmvgib8",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "den-couch",
+        "awake": true,
+        "speaking": false,
+        "expression": "surprised",
+        "mouth": "O",
+        "params": {
+          "eyeOpen": 1.2160305728838874,
+          "eyeSmile": 0,
+          "pupil": 0.8624981227959104,
+          "lookX": -0.0002831848904071475,
+          "lookY": 0.21853604819639755,
+          "browY": 0.3928625062973986,
+          "browTilt": -0.11785875188921958,
+          "mouthOpen": 0.5268981179263768,
+          "mouthWide": 0.31182210074057976,
+          "mouthRound": 0.7527115970376811,
+          "smile": 0.15178437342565035,
+          "blush": 0.24095291554334394,
+          "squash": 0.12199025130891163,
+          "wobble": 0,
+          "reveal": 0.22080971919395614
+        },
+        "anchor": [
+          0,
+          0.7095,
+          -2.64
+        ],
+        "size": 0.301,
+        "facePos": [
+          -0.0010947956852193203,
+          0.7095,
+          -2.627210622648732
+        ],
+        "faceDir": [
+          -0.08529003420688804,
+          0,
+          0.9963561662703694
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "",
+            "text": "",
+            "shown": 0,
+            "glyph": "!"
+          },
+          "corners": [
+            [
+              -0.602089017475404,
+              0.8653766784525018,
+              -2.6412298599207817
+            ],
+            [
+              0.5935383820490393,
+              0.8653766784525018,
+              -2.538881818872516
+            ],
+            [
+              0.5998994261049654,
+              1.4607233215474986,
+              -2.613191385376682
+            ],
+            [
+              -0.5957279734194779,
+              1.4607233215474986,
+              -2.715539426424948
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ]
+  },
+  {
+    "at": "2026-10-26T21:48:27.644Z",
+    "mode": {
+      "xr": false,
+      "emulator": true,
+      "room": "diorama:den",
+      "label": "Browser diorama, not your room"
+    },
+    "scene": {
+      "denVisible": true,
+      "camera": [
+        -0.3667338192462921,
+        1.4265235662460327,
+        0.750497043132782
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 3.2651325312890243
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_ivazsxmvgib8",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "den-couch",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 0.22227997836221336,
+          "eyeSmile": 0,
+          "pupil": 0.8478910616542313,
+          "lookX": -0.00041024473105458106,
+          "lookY": 0.34782206772619,
+          "browY": 0.4345969667021964,
+          "browTilt": -0.1303790900106589,
+          "mouthOpen": 0.06794376209185815,
+          "mouthWide": 0.4757343706814792,
+          "mouthRound": 0.09706251727408305,
+          "smile": 0.14135075832445093,
+          "blush": 0.2723050198050521,
+          "squash": -0.0028811234559905,
+          "wobble": 0,
+          "reveal": 0.9879114916400571
+        },
+        "anchor": [
+          0,
+          0.7095,
+          -2.64
+        ],
+        "size": 0.301,
+        "facePos": [
+          -0.0017404440081667276,
+          0.7095,
+          -2.6239093916248164
+        ],
+        "faceDir": [
+          -0.10753795615686992,
+          0,
+          0.9942009796744334
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "",
+            "text": "",
+            "shown": 0,
+            "glyph": "!"
+          },
+          "corners": [
+            [
+              -0.5560594383464202,
+              0.8649228054879274,
+              -2.66050605115422
+            ],
+            [
+              0.5475832193535889,
+              0.8649228054879274,
+              -2.541130313086189
+            ],
+            [
+              0.5525785503300867,
+              1.418015611015624,
+              -2.587312732095413
+            ],
+            [
+              -0.5510641073699224,
+              1.418015611015624,
+              -2.706688470163444
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": true,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ]
+  },
+  {
+    "at": "2026-10-26T21:48:31.287Z",
+    "mode": {
+      "xr": false,
+      "emulator": true,
+      "room": "diorama:den",
+      "label": "Browser diorama, not your room"
+    },
+    "scene": {
+      "denVisible": true,
+      "camera": [
+        -0.3581784963607788,
+        1.316294550895691,
+        0.331522673368454
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 2.90109087528426
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        "Couch",
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_ivazsxmvgib8",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "den-couch",
+        "awake": true,
+        "speaking": false,
+        "expression": "surprised",
+        "mouth": "O",
+        "params": {
+          "eyeOpen": 0.2660363516979843,
+          "eyeSmile": 0,
+          "pupil": 0.8622857308994215,
+          "lookX": -0.0006404688408638594,
+          "lookY": 0.02997743853945908,
+          "browY": 0.3934693402873666,
+          "browTilt": -0.11804080208620997,
+          "mouthOpen": 0.5273821252408755,
+          "mouthWide": 0.3116492409854016,
+          "mouthRound": 0.7534030360583935,
+          "smile": 0.1516326649281583,
+          "blush": 0.40468260157598385,
+          "squash": -0.16254580732371793,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095,
+          -2.64
+        ],
+        "size": 0.301,
+        "facePos": [
+          -0.0021553255684033505,
+          0.7095,
+          -2.622118974589278
+        ],
+        "faceDir": [
+          -0.11967079895397008,
+          0,
+          0.9928136279673636
+        ],
+        "pokes": 1,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "",
+            "text": "",
+            "shown": 0,
+            "glyph": "!"
+          },
+          "corners": [
+            [
+              -0.48649571299232947,
+              0.8659257664439416,
+              -2.6634312561114957
+            ],
+            [
+              0.47812917793324367,
+              0.8659257664439416,
+              -2.5471582435982705
+            ],
+            [
+              0.48218506185552273,
+              1.3505457000640662,
+              -2.5808066930670606
+            ],
+            [
+              -0.4824398290700504,
+              1.3505457000640662,
+              -2.6970797055802858
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": true,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ]
+  },
+  {
+    "at": "2026-10-26T21:48:32.190Z",
+    "mode": {
+      "xr": false,
+      "emulator": true,
+      "room": "diorama:den",
+      "label": "Browser diorama, not your room"
+    },
+    "scene": {
+      "denVisible": true,
+      "camera": [
+        -0.3581589162349701,
+        1.3160425424575806,
+        0.33056455850601196
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 2.9002583759425744
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        "Couch",
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_ivazsxmvgib8",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "den-couch",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1.0173477170974714,
+          "eyeSmile": 0,
+          "pupil": 0.8203900427956083,
+          "lookX": -0.0033540922996125743,
+          "lookY": -0.0024105399903310396,
+          "browY": 0.5131713062982618,
+          "browTilt": -0.15395139188947848,
+          "mouthOpen": 0.10814580201860922,
+          "mouthWide": 0.4613764992790681,
+          "mouthRound": 0.1544940028837275,
+          "smile": 0.12170717342543455,
+          "blush": 0.2641316628745593,
+          "squash": 0.0003292859826005689,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095,
+          -2.64
+        ],
+        "size": 0.301,
+        "facePos": [
+          -0.0021564637967325397,
+          0.7095,
+          -2.62211432234156
+        ],
+        "faceDir": [
+          -0.11970239388254869,
+          0,
+          0.9928098190986968
+        ],
+        "pokes": 1,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": false,
+        "bubbleInfo": {
+          "content": null,
+          "corners": [
+            [
+              -0.48635175481064524,
+              0.8659278977958246,
+              -2.663436751672859
+            ],
+            [
+              0.4779853030603077,
+              0.8659278977958246,
+              -2.547170259104557
+            ],
+            [
+              0.48203904367817924,
+              1.3504060273889258,
+              -2.580792777634681
+            ],
+            [
+              -0.4822980141927737,
+              1.3504060273889258,
+              -2.697059270202983
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": true,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ]
+  },
+  {
+    "at": "2026-10-26T21:48:33.886Z",
+    "mode": {
+      "xr": false,
+      "emulator": true,
+      "room": "diorama:den",
+      "label": "Browser diorama, not your room"
+    },
+    "scene": {
+      "denVisible": true,
+      "camera": [
+        -0.35815325379371643,
+        1.315969467163086,
+        0.33028677105903625
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 2.9000170204517666
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        "Couch",
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_ivazsxmvgib8",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "den-couch",
+        "awake": true,
+        "speaking": false,
+        "expression": "happy",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 0.2413542850524556,
+          "pupil": 0.9999999925642595,
+          "lookX": 0.908912856133796,
+          "lookY": -0.20405703940536765,
+          "browY": 0.09938119744304241,
+          "browTilt": -0.04259193902980743,
+          "mouthOpen": 2.299282464363886e-22,
+          "mouthWide": 0.49999999999999994,
+          "mouthRound": 3.284689234805556e-22,
+          "smile": 0.46295965797033534,
+          "blush": 0.5060699976786881,
+          "squash": 0.03829827144452865,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095,
+          -2.64
+        ],
+        "size": 0.301,
+        "facePos": [
+          -0.0021567941673119586,
+          0.7095,
+          -2.622112972267582
+        ],
+        "faceDir": [
+          -0.11971156274380786,
+          0,
+          0.9928087135724765
+        ],
+        "pokes": 1,
+        "pets": 1,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "",
+            "text": "",
+            "shown": 0,
+            "glyph": "♥"
+          },
+          "corners": [
+            [
+              -0.4862905437983736,
+              0.8659288047197009,
+              -2.6634390830419425
+            ],
+            [
+              0.4779241241294085,
+              0.8659288047197009,
+              -2.54717535253661
+            ],
+            [
+              0.4819769554637497,
+              1.350346637012609,
+              -2.5807868614932215
+            ],
+            [
+              -0.4822377124640324,
+              1.350346637012609,
+              -2.697050591998554
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ]
+  },
+  {
+    "at": "2026-10-26T21:48:36.207Z",
+    "mode": {
+      "xr": false,
+      "emulator": true,
+      "room": "diorama:den",
+      "label": "Browser diorama, not your room"
+    },
+    "scene": {
+      "denVisible": true,
+      "camera": [
+        -0.3581528663635254,
+        1.3159643411636353,
+        0.33026766777038574
+      ],
+      "orbit": {
+        "yaw": -0.12,
+        "pitch": 0.2,
+        "dist": 2.900000417987257
+      }
+    },
+    "hover": {
+      "targets": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "faces": [
+        null,
+        null,
+        "Couch",
+        null
+      ],
+      "gaze": false
+    },
+    "spirits": [
+      {
+        "id": "sp_ivazsxmvgib8",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "den-couch",
+        "awake": true,
+        "speaking": false,
+        "expression": "grumpy",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 0.7203005574560857,
+          "eyeSmile": 0.0034668151011754845,
+          "pupil": 1.0141614902911467,
+          "lookX": 0.7155948502095366,
+          "lookY": -0.016998849261551104,
+          "browY": -0.16851037139327973,
+          "browTilt": 0.2826180149227321,
+          "mouthOpen": 1.5486439948415905e-50,
+          "mouthWide": 0.5,
+          "mouthRound": 2.212348564059418e-50,
+          "smile": -0.044332341613049386,
+          "blush": 0.4436648250435785,
+          "squash": -6.120937793456777e-7,
+          "wobble": 0.10105698934051507,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095,
+          -2.64
+        ],
+        "size": 0.301,
+        "facePos": [
+          -0.002156816913293406,
+          0.7095,
+          -2.622112879319097
+        ],
+        "faceDir": [
+          -0.11971219399315099,
+          0,
+          0.992808637457061
+        ],
+        "pokes": 1,
+        "pets": 1,
+        "flicks": 1,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "",
+            "text": "",
+            "shown": 0,
+            "glyph": "?!"
+          },
+          "corners": [
+            [
+              -0.48628736834133834,
+              0.8659288511820098,
+              -2.663439212035775
+            ],
+            [
+              0.4779209523093071,
+              0.8659288511820098,
+              -2.5471756248985886
+            ],
+            [
+              0.48197373451475156,
+              1.350343557528855,
+              -2.580786546602419
+            ],
+            [
+              -0.4822345861358939,
+              1.350343557528855,
+              -2.6970501337396056
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ]
+  }
+]

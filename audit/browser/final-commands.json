@@ -1,0 +1,138 @@
+[
+  {
+    "suite": "xr",
+    "command": [
+      "pnpm",
+      "--filter",
+      "app",
+      "e2e:xr"
+    ],
+    "start": "2026-10-26T22:00:15.087261+00:00",
+    "end": "2026-10-26T22:01:34.602331+00:00",
+    "exit": 0
+  },
+  {
+    "suite": "xr-fixes",
+    "command": [
+      "node",
+      "packages/app/e2e/audit-xr-fixes.mjs"
+    ],
+    "start": "2026-10-26T22:01:34.602903+00:00",
+    "end": "2026-10-26T22:02:06.653384+00:00",
+    "exit": 0
+  },
+  {
+    "suite": "persistence",
+    "command": [
+      "node",
+      "packages/app/e2e/audit-persistence.mjs"
+    ],
+    "start": "2026-10-26T22:02:06.654007+00:00",
+    "end": "2026-10-26T22:02:28.257305+00:00",
+    "exit": 0
+  },
+  {
+    "suite": "capacity",
+    "command": [
+      "node",
+      "packages/app/e2e/audit-capacity.mjs"
+    ],
+    "start": "2026-10-26T22:02:28.257721+00:00",
+    "end": "2026-10-26T22:02:57.340081+00:00",
+    "exit": 0
+  },
+  {
+    "suite": "glasses-interrupt",
+    "command": [
+      "python3",
+      "/tmp/glasses-interrupt-t3.py"
+    ],
+    "start": "2026-10-26T22:02:57.340482+00:00",
+    "end": "2026-10-26T22:03:06.181767+00:00",
+    "exit": 0
+  },
+  {
+    "suite": "glasses",
+    "command": [
+      "pnpm",
+      "--filter",
+      "app",
+      "e2e:glasses"
+    ],
+    "start": "2026-10-26T22:03:07.014655+00:00",
+    "end": "2026-10-26T22:03:36.522262+00:00",
+    "exit": 0
+  },
+  {
+    "suite": "browser",
+    "command": [
+      "pnpm",
+      "--filter",
+      "app",
+      "e2e:browser"
+    ],
+    "start": "2026-10-26T22:03:36.522887+00:00",
+    "end": "2026-10-26T22:04:14.029584+00:00",
+    "exit": 0
+  },
+  {
+    "suite": "responsive",
+    "command": [
+      "pnpm",
+      "e2e:responsive"
+    ],
+    "start": "2026-10-26T22:04:14.030140+00:00",
+    "end": "2026-10-26T22:04:24.760704+00:00",
+    "exit": 0
+  },
+  {
+    "suite": "furniture",
+    "command": [
+      "node",
+      "packages/app/e2e/audit-furniture.mjs"
+    ],
+    "captureStart": "2026-10-26T22:05:52.526Z",
+    "end": "2026-10-26T22:06:25.332Z",
+    "exit": 0
+  },
+  {
+    "suite": "responsive-capture",
+    "command": [
+      "pnpm",
+      "e2e:responsive"
+    ],
+    "end": "2026-10-26T22:05:15.642Z",
+    "exit": 0
+  },
+  {
+    "suite": "visible-mode-labels",
+    "command": [
+      "node",
+      "packages/app/e2e/audit-mode-label.mjs"
+    ],
+    "captureStart": "2026-10-26T22:15:20.460Z",
+    "end": "2026-10-26T22:15:32.994Z",
+    "exit": 0
+  },
+  {
+    "suite": "browser-after-caption-fix",
+    "command": [
+      "pnpm",
+      "--filter",
+      "app",
+      "e2e:browser"
+    ],
+    "captureStart": "2026-10-26T22:16:05.844Z",
+    "end": "2026-10-26T22:16:43.416Z",
+    "exit": 0
+  },
+  {
+    "suite": "responsive-after-caption-fix",
+    "command": [
+      "pnpm",
+      "e2e:responsive"
+    ],
+    "end": "2026-10-26T22:16:05.511Z",
+    "exit": 0
+  }
+]

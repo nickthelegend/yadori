@@ -1,0 +1,636 @@
+[
+  {
+    "id": "Q12",
+    "ok": true,
+    "detail": {
+      "before": {
+        "pokes": 0,
+        "flicks": 0
+      },
+      "missed": {
+        "id": "sp_s5fxwsznaru9",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 0,
+          "pupil": 0.9999999999999997,
+          "lookX": 0.00016364763780391662,
+          "lookY": 0.9995915633433258,
+          "browY": 5.028874265032857e-18,
+          "browTilt": -1.508662279509857e-18,
+          "mouthOpen": 2.5681726434665154e-49,
+          "mouthWide": 0.49999999999999994,
+          "mouthRound": 3.668818062095024e-49,
+          "smile": 0.24999999999999992,
+          "blush": 0.44999997014400606,
+          "squash": -1.4535308162243496e-12,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -5.636834607634912e-7,
+          0.7095000118017196,
+          -2.639708653709117
+        ],
+        "faceDir": [
+          -0.0019353048836341874,
+          0,
+          0.9999981272957502
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": false,
+        "bubbleInfo": {
+          "content": null,
+          "corners": [
+            [
+              -0.44578279427279,
+              0.8701955743977827,
+              -2.59764514560513
+            ],
+            [
+              0.44578279427279,
+              0.8701955743977827,
+              -2.59764514560513
+            ],
+            [
+              0.44578279427279,
+              1.307855937215004,
+              -2.682354687501865
+            ],
+            [
+              -0.44578279427279,
+              1.307855937215004,
+              -2.682354687501865
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": true,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    },
+    "at": "2026-10-26T22:01:47.640Z",
+    "shot": "xr-fixes.jpg"
+  },
+  {
+    "id": "Q13",
+    "ok": true,
+    "detail": {
+      "pre": {
+        "id": "sp_s5fxwsznaru9",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 0,
+          "pupil": 0.9999999999999998,
+          "lookX": -0.002334258382472874,
+          "lookY": 0.000020185120422101013,
+          "browY": 1.6735572216886142e-21,
+          "browTilt": -5.020671665065843e-22,
+          "mouthOpen": 4.695692233448691e-59,
+          "mouthWide": 0.49999999999999994,
+          "mouthRound": 6.708131762069562e-59,
+          "smile": 0.24999999999999994,
+          "blush": 0.44999999878689206,
+          "squash": -3.212542104180592e-13,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          1.152398482311715e-9,
+          0.7095000118017196,
+          -2.6399867470442238
+        ],
+        "faceDir": [
+          0.00008750504319901421,
+          0,
+          0.9999999961714336
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": false,
+        "bubbleInfo": {
+          "content": null,
+          "corners": [
+            [
+              -0.44578279427279,
+              0.8701955743977827,
+              -2.59764514560513
+            ],
+            [
+              0.44578279427279,
+              0.8701955743977827,
+              -2.59764514560513
+            ],
+            [
+              0.44578279427279,
+              1.307855937215004,
+              -2.682354687501865
+            ],
+            [
+              -0.44578279427279,
+              1.307855937215004,
+              -2.682354687501865
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": true,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      },
+      "back": {
+        "id": "sp_s5fxwsznaru9",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 0,
+          "pupil": 0.9999999999999998,
+          "lookX": -0.0023330771236485565,
+          "lookY": 0.00022442711781852596,
+          "browY": 2.4578618514988603e-25,
+          "browTilt": -7.373585554496585e-26,
+          "mouthOpen": 8.690944012777097e-70,
+          "mouthWide": 0.49999999999999994,
+          "mouthRound": 1.2415634303967295e-69,
+          "smile": 0.24999999999999994,
+          "blush": 0.4499999999644642,
+          "squash": -8.386766475582272e-17,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          1.152398482311715e-9,
+          0.7095000118017196,
+          -2.6399867470442238
+        ],
+        "faceDir": [
+          0.00008750504319901421,
+          0,
+          0.9999999961714336
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": false,
+        "bubbleInfo": {
+          "content": null,
+          "corners": [
+            [
+              -0.44578279427279,
+              0.8701955743977827,
+              -2.59764514560513
+            ],
+            [
+              0.44578279427279,
+              0.8701955743977827,
+              -2.59764514560513
+            ],
+            [
+              0.44578279427279,
+              1.307855937215004,
+              -2.682354687501865
+            ],
+            [
+              -0.44578279427279,
+              1.307855937215004,
+              -2.682354687501865
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      },
+      "poke": {
+        "id": "sp_s5fxwsznaru9",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "mesh-23",
+        "awake": true,
+        "speaking": false,
+        "expression": "surprised",
+        "mouth": "O",
+        "params": {
+          "eyeOpen": 1.2499999999998257,
+          "eyeSmile": 0,
+          "pupil": 0.6503197976440727,
+          "lookX": 0.0034738538495264807,
+          "lookY": 3.605968765860518e-8,
+          "browY": 0.9990862924455067,
+          "browTilt": -0.299725887733652,
+          "mouthOpen": 0.6999999978354967,
+          "mouthWide": 0.2500000007730369,
+          "mouthRound": 0.9999999969078525,
+          "smile": 0.00022842688862330948,
+          "blush": 0.21521468253508128,
+          "squash": -0.00270024477300206,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095000118017196,
+          -2.6399999165534975
+        ],
+        "size": 0.30100000500679014,
+        "facePos": [
+          -0.000001017063794364084,
+          0.7095000118017196,
+          -2.6396086786857267
+        ],
+        "faceDir": [
+          -0.0025995959019671335,
+          0,
+          0.9999966210448646
+        ],
+        "pokes": 1,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 0,
+        "voiceMode": "",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "",
+            "text": "",
+            "shown": 0,
+            "glyph": "!"
+          },
+          "corners": [
+            [
+              -0.21006588294554532,
+              0.8739251076395704,
+              -2.614929426827731
+            ],
+            [
+              0.20993269789329774,
+              0.8739251076395704,
+              -2.6138375965489047
+            ],
+            [
+              0.21006384881795662,
+              1.077774921471338,
+              -2.6642879305437224
+            ],
+            [
+              -0.20993473202088644,
+              1.077774921471338,
+              -2.6653797608225487
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": false,
+          "text": "Built-in face · not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    },
+    "at": "2026-10-26T22:01:51.070Z",
+    "shot": "xr-fixes.jpg"
+  },
+  {
+    "id": "Q30",
+    "ok": true,
+    "detail": {
+      "outside": {
+        "scene": {
+          "denVisible": true,
+          "camera": [
+            -0.3934043347835541,
+            1.7701526880264282,
+            2.056612253189087
+          ],
+          "orbit": {
+            "yaw": -0.12,
+            "pitch": 0.2,
+            "dist": 4.4
+          }
+        },
+        "mode": {
+          "xr": false,
+          "emulator": true,
+          "room": "diorama:den",
+          "label": "Browser diorama, not your room"
+        },
+        "waking": null,
+        "particles": 0,
+        "voiceMode": "browser",
+        "targets": [
+          {
+            "id": "den-couch",
+            "label": "couch",
+            "center": [
+              0,
+              0.43,
+              -3.1
+            ],
+            "dims": [
+              2,
+              0.86,
+              0.9
+            ]
+          },
+          {
+            "id": "den-lamp",
+            "label": "lamp",
+            "center": [
+              -1.62,
+              0.85,
+              -3.15
+            ],
+            "dims": [
+              0.44,
+              1.7,
+              0.44
+            ]
+          },
+          {
+            "id": "den-plant",
+            "label": "plant",
+            "center": [
+              1.65,
+              0.75,
+              -3.05
+            ],
+            "dims": [
+              0.78,
+              1.5,
+              0.78
+            ]
+          },
+          {
+            "id": "den-table",
+            "label": "table",
+            "center": [
+              0,
+              0.225,
+              -1.85
+            ],
+            "dims": [
+              1.1,
+              0.45,
+              0.6
+            ]
+          },
+          {
+            "id": "den-screen",
+            "label": "screen",
+            "center": [
+              2.32,
+              1,
+              -1.7
+            ],
+            "dims": [
+              1.2,
+              0.72,
+              0.06
+            ]
+          }
+        ],
+        "spirits": []
+      },
+      "after": {
+        "scene": {
+          "denVisible": false,
+          "camera": [
+            0,
+            1.600000023841858,
+            0.03150000050663948
+          ],
+          "orbit": {
+            "yaw": -0.12,
+            "pitch": 0.2,
+            "dist": 4.4
+          }
+        },
+        "mode": {
+          "xr": true,
+          "emulator": true,
+          "room": "iwer:yadori_den",
+          "label": "Emulated room (IWER), not your room"
+        },
+        "waking": null,
+        "particles": 0,
+        "voiceMode": "browser",
+        "targets": [
+          {
+            "id": "mesh-21",
+            "label": "couch",
+            "center": [
+              0,
+              0.4300000071525574,
+              -3.0999999046325684
+            ],
+            "dims": [
+              2,
+              0.8600000143051147,
+              0.8999999761581421
+            ]
+          },
+          {
+            "id": "mesh-20",
+            "label": "lamp",
+            "center": [
+              -1.6200000047683716,
+              0.8500000238418579,
+              -3.1500000953674316
+            ],
+            "dims": [
+              0.4399999976158142,
+              1.7000000476837158,
+              0.4399999976158142
+            ]
+          },
+          {
+            "id": "mesh-19",
+            "label": "plant",
+            "center": [
+              1.649999976158142,
+              0.75,
+              -3.049999952316284
+            ],
+            "dims": [
+              0.7799999713897705,
+              1.5,
+              0.7799999713897705
+            ]
+          },
+          {
+            "id": "mesh-18",
+            "label": "table",
+            "center": [
+              0,
+              0.22499999403953552,
+              -1.850000023841858
+            ],
+            "dims": [
+              1.100000023841858,
+              0.44999998807907104,
+              0.6000000238418579
+            ]
+          },
+          {
+            "id": "mesh-17",
+            "label": "screen",
+            "center": [
+              2.319999933242798,
+              1,
+              -1.7000000476837158
+            ],
+            "dims": [
+              1.2000000476837158,
+              0.7200000286102295,
+              0.05999999865889549
+            ]
+          }
+        ],
+        "spirits": [
+          {
+            "id": "sp_csvr878th2rh",
+            "name": "Couch",
+            "label": "couch",
+            "targetId": "mesh-21",
+            "awake": true,
+            "speaking": false,
+            "expression": "neutral",
+            "mouth": "rest",
+            "params": {
+              "eyeOpen": 1,
+              "eyeSmile": 0,
+              "pupil": 0.9999999671777321,
+              "lookX": 0,
+              "lookY": 0.5422097205441361,
+              "browY": 9.377790836446462e-8,
+              "browTilt": -2.813337250933939e-8,
+              "mouthOpen": 1.4702418567668815e-20,
+              "mouthWide": 0.49999999999999994,
+              "mouthRound": 2.1003455096669738e-20,
+              "smile": 0.2499999765555229,
+              "blush": 0.4496169289527784,
+              "squash": 5.685673058460157e-7,
+              "wobble": 0,
+              "reveal": 1
+            },
+            "anchor": [
+              0,
+              0.7095000118017196,
+              -2.6399999165534975
+            ],
+            "size": 0.30100000500679014,
+            "facePos": [
+              0,
+              0.7095000118017196,
+              -2.6399999165534975
+            ],
+            "faceDir": [
+              0,
+              0,
+              1
+            ],
+            "pokes": 0,
+            "pets": 0,
+            "flicks": 0,
+            "lines": 0,
+            "voiceMode": "",
+            "bubble": false,
+            "bubbleInfo": {
+              "content": null,
+              "corners": [
+                [
+                  -0.44578279427279,
+                  0.8701955743977827,
+                  -2.59764514560513
+                ],
+                [
+                  0.44578279427279,
+                  0.8701955743977827,
+                  -2.59764514560513
+                ],
+                [
+                  0.44578279427279,
+                  1.307855937215004,
+                  -2.682354687501865
+                ],
+                [
+                  -0.44578279427279,
+                  1.307855937215004,
+                  -2.682354687501865
+                ]
+              ]
+            },
+            "sourceChip": {
+              "visible": true,
+              "text": "Built-in face · not generated"
+            },
+            "faceSource": "built-in",
+            "hasPersona": false,
+            "anchorErrorCm": 0
+          }
+        ]
+      }
+    },
+    "at": "2026-10-26T22:02:05.422Z",
+    "shot": "xr-fixes.jpg"
+  }
+]

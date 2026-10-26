@@ -54,6 +54,7 @@ export class Bubble {
   private tex: CanvasTexture;
   private key = '';
   aspect = 2;
+  content: BubbleContent | null = null;
 
   constructor(name: string) {
     this.canvas = document.createElement('canvas');
@@ -71,6 +72,7 @@ export class Bubble {
   }
 
   set(c: BubbleContent | null): void {
+    this.content = c;
     if (!c) {
       this.mesh.visible = false;
       this.key = '';
@@ -157,6 +159,7 @@ export class Chip {
   private tex: CanvasTexture;
   private key = '';
   aspect = 4;
+  text: string | null = null;
 
   constructor(name: string) {
     this.canvas = document.createElement('canvas');
@@ -173,6 +176,7 @@ export class Chip {
   }
 
   set(text: string | null, tone: 'ink' | 'cobalt' | 'pink' = 'ink'): void {
+    this.text = text;
     if (!text) {
       this.mesh.visible = false;
       this.key = '';

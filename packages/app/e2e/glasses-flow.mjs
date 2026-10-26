@@ -1,3 +1,4 @@
+import { captureManaged } from './audit-network.mjs';
 // Meta VR Glasses profile (IWER metaVRGlasses): gaze picks, a pinch selects; the woken face
 // and its bubble must sit inside the glasses' view (37° left/right, 25° up, 43° down).
 // Run with dev.emulator.device = "metaVRGlasses" (e2e/run-glasses.sh switches it).
@@ -68,6 +69,11 @@ async function main() {
   }
   mkdirSync(join(APP, '../../e2e/shots'), { recursive: true });
   cli('browser', 'screenshot', '--output-file', join(APP, '../../e2e/shots/glasses-fov.png'));
+  {
+    const { auditGlassesBubble } = await import('./audit-glasses-bubble.mjs');
+    const bubble = await auditGlassesBubble();
+    check('actual speech bubble corners fit the glasses view', bubble.ok, JSON.stringify(bubble.angles));
+  }
   // fallback: gaze disconnected -> the hand ray targets again
   xr('set-connected', { device: 'gaze', connected: false });
   const lamp = s.targets.find((t) => t.label === 'lamp');
@@ -82,10 +88,17 @@ async function main() {
   void hov;
   xr('exit');
 }
+let capture;
 try {
+  capture = await captureManaged('glasses');
   await main();
 } catch (e) {
   check('flow completed', false, e instanceof Error ? e.message : String(e));
+} finally {
+  if (capture) {
+    const network = await capture.stop();
+    check('independent console, page and network capture is clean', network.responses > 0 && network.errors.length === 0, `${network.responses} responses; ${network.errors.length} errors`);
+  }
 }
 const fail = results.filter((r) => !r.ok).length;
 mkdirSync(join(APP, 'e2e', 'results'), { recursive: true });

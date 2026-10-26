@@ -1,0 +1,100 @@
+{
+  "id": "P07",
+  "ok": true,
+  "detail": {
+    "max": 0.6999886523668787,
+    "spirits": [
+      {
+        "id": "sp_ckccimwnvowx",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "den-couch",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 1,
+          "eyeSmile": 0,
+          "pupil": 0.9999999999999997,
+          "lookX": -5.401003553763372e-07,
+          "lookY": 0.33427575055223124,
+          "browY": 5.865775885101683e-18,
+          "browTilt": -1.7597327655305028e-18,
+          "mouthOpen": 4.9034353152768575e-12,
+          "mouthWide": 0.49999999999824873,
+          "mouthRound": 7.004907485183983e-12,
+          "smile": 0.24999999999999992,
+          "blush": 0.44999996826519173,
+          "squash": 1.7276560282690633e-05,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095,
+          -2.64
+        ],
+        "size": 0.301,
+        "facePos": [
+          -0.0021563316205267624,
+          0.7095,
+          -2.62211486251572
+        ],
+        "faceDir": [
+          -0.11969872536496956,
+          0,
+          0.9928102614024502
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 1,
+        "voiceMode": "browser",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "puppet line (you)",
+            "text": "Hello couch.",
+            "shown": 999
+          },
+          "corners": [
+            [
+              -0.6025173838370799,
+              0.8656030858441555,
+              -2.6551593815861905
+            ],
+            [
+              0.5888549298458603,
+              0.8656030858441555,
+              -2.511520911148227
+            ],
+            [
+              0.5982047205960264,
+              1.4604969141558448,
+              -2.5890703434452496
+            ],
+            [
+              -0.5931675930869138,
+              1.4604969141558448,
+              -2.732708813883213
+            ]
+          ]
+        },
+        "sourceChip": {
+          "visible": true,
+          "text": "Built-in face \u00b7 not generated"
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ]
+  },
+  "at": "2026-10-26T22:15:42.413Z",
+  "shot": "mobile.jpg",
+  "source": "mobile-results.json",
+  "status": "PASS",
+  "screenshot": "mobile.jpg"
+}

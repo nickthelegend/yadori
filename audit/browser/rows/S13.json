@@ -1,0 +1,19 @@
+{
+  "id": "S13",
+  "ok": true,
+  "detail": {
+    "status": {
+      "status": 200,
+      "body": {
+        "gateway": "offline",
+        "error": "Gateway offline: start it with pnpm gateway"
+      }
+    },
+    "body": "Yadori\n\u5bbf\u308a \u00b7 wake up your room\nBrowser diorama, not your room\nGateway offline \u00b7 Meta models unavailable\nVoice out \u00b7 Browser voice, not a Meta model\nBINDER\n0 / 6\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nNot awakened yet\nClick a piece of furniture to wake it\nThen poke it, pet it, flick it \u00b7 drag the room to look around\nEnter mixed reality (emulated)"
+  },
+  "shot": "offline-status.jpg",
+  "at": "2026-10-26T21:52:06.499Z",
+  "source": "recovery-results.json",
+  "status": "PASS",
+  "screenshot": "offline-status.jpg"
+}

@@ -1,0 +1,100 @@
+{
+  "id": "S11",
+  "ok": true,
+  "detail": {
+    "capability": {
+      "storage": true,
+      "voices": 0
+    },
+    "s": [
+      {
+        "id": "sp_e9bjorytxdsp",
+        "name": "Couch",
+        "label": "couch",
+        "targetId": "den-couch",
+        "awake": true,
+        "speaking": false,
+        "expression": "neutral",
+        "mouth": "rest",
+        "params": {
+          "eyeOpen": 0.5817000524610715,
+          "eyeSmile": 0,
+          "pupil": 0.9999999999999998,
+          "lookX": -3.8049483315115387e-07,
+          "lookY": 0.3354129685396508,
+          "browY": 5.33318743199682e-21,
+          "browTilt": -1.5999562295990448e-21,
+          "mouthOpen": 2.860709329000168e-07,
+          "mouthWide": 0.5000004086681061,
+          "mouthRound": 2.4634773121123157e-13,
+          "smile": 0.24999999999999994,
+          "blush": 0.44999999807146135,
+          "squash": 0.0006071468866129759,
+          "wobble": 0,
+          "reveal": 1
+        },
+        "anchor": [
+          0,
+          0.7095,
+          -2.64
+        ],
+        "size": 0.301,
+        "facePos": [
+          -0.0021564741940016,
+          0.7095,
+          -2.622114279851014
+        ],
+        "faceDir": [
+          -0.1197026824513852,
+          0,
+          0.9928097843061091
+        ],
+        "pokes": 0,
+        "pets": 0,
+        "flicks": 0,
+        "lines": 1,
+        "voiceMode": "silent",
+        "bubble": true,
+        "bubbleInfo": {
+          "content": {
+            "speaker": "Couch",
+            "tag": "puppet line (you)",
+            "text": "Hello. This mouth speaks a typed puppet line.",
+            "shown": 999
+          },
+          "corners": [
+            [
+              -0.4619044079859428,
+              0.8663417062013804,
+              -2.6620148602265994
+            ],
+            [
+              0.4538999786598926,
+              0.8663417062013804,
+              -2.5515966880700165
+            ],
+            [
+              0.45759145959793956,
+              1.3265280091446816,
+              -2.582213699475429
+            ],
+            [
+              -0.45821292704789585,
+              1.3265280091446816,
+              -2.692631871632012
+            ]
+          ]
+        },
+        "faceSource": "built-in",
+        "hasPersona": false,
+        "anchorErrorCm": 0
+      }
+    ],
+    "max": 0.8338881127379082
+  },
+  "shot": "silent-browser.jpg",
+  "at": "2026-10-26T21:38:05.173Z",
+  "source": "recovery-results.json",
+  "status": "PASS",
+  "screenshot": "silent-browser.jpg"
+}

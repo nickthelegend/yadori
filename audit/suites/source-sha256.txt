@@ -1,0 +1,12 @@
+Fresh suite source SHA256, 2026-10-26T21:25:33.917384+00:00
+a0447f5410eec3f3de20682bf71b5c9bab95dafdd70408fd47ecac2c444865d2  packages/rig/test/rig.test.ts
+9dd7fe6ac1f51e1bd8c793848434573402497eaa90c59801ebfa650629949bd8  packages/room/test/geometry.test.ts
+89c53fe69b1a79027e19d91a571ae8b0bc6778468ce19fb237e0e60bb50448ca  packages/room/test/gestures.test.ts
+4656e1e9e668914db630e6ae113943d7bde3d2c891e55a1bb2315db3b172a0bc  packages/room/test/placement.test.ts
+681b2f539ab1baf46448339354d22ef9f0bc9c99c109a72b73b355dcc2747b22  packages/room/test/room.test.ts
+4ee9b96f7ffeefa76c45b2d18c0c9c6359412501cd4d24b1349686d8d1279bcb  packages/server/test/contract.test.ts
+b97c0f3549fdc02be00c5c7f7dd063c838570ccac3c097713304f76b5be10d82  packages/server/test/helpers.ts
+56fff4b9d7457eadbd17f3cb9282e4a167e28ee0212d2374f75c517d25c60376  packages/server/test/live-meta.test.ts
+6ca052285b8162a23b892f7a4cd9194ffa5752330fc0a2dc1a5cfff882dc5caf  packages/server/test/mcp.test.ts
+2eaf93b3f03ed35c69a9a8c02277b61e6d7649f0ae0d1b3bb7c860abdd18b2f0  packages/server/test/process.test.ts
+bb027a32d56dcf242ba58b6a42f3aa0c45b0bc208ff96ac36165fcf24bb25dce  packages/server/test/units.test.ts

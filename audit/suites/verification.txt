@@ -1,0 +1,6 @@
+UTC: 2026-10-26T21:25:33.916773+00:00
+All five fresh exit codes are 0. Vitest totals match all expected cells; no failed/skipped/todo or unhandled-error markers.
+Built dist/index.html exists; all directly referenced local assets exist:
+./assets/index-C0iwN3qH.js: 4085819 bytes; SHA256 854ccd5290e3d41f616cdd519165f578ad123485d5f38b0c97f75105cdf6a433
+./assets/index-DYp4jZV7.css: 8503 bytes; SHA256 882139dcc5fe8e4aa46b1713e90619cf7935f867b9cd6f7f2597b490d095b146
+No running gateway/MCP process with this worktree entrypoint remains.
